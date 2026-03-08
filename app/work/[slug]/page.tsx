@@ -20,6 +20,7 @@ const projects: Record<
     nextTitle: string;
     youtubeId?: string;
     coverImage?: string;
+    links?: { label: string; href: string }[];
   }
 > = {
   "infrastructure-of-influence": {
@@ -63,21 +64,28 @@ const projects: Record<
   "creative-connect": {
     id: "03",
     title: "Creative Connect",
-    category: "Brand Identity · Strategy",
+    category: "Podcast · Community Platform",
     year: "2024",
-    client: "Creative Connect",
-    role: "Brand Strategist, Creative Director",
+    client: "Corex Creative",
+    role: "Creator, Host, Executive Producer",
     overview:
-      "A full brand overhaul for Creative Connect, Toronto's leading community for creative entrepreneurs. The engagement covered brand positioning, visual identity, content strategy, and the narrative architecture underpinning all external communications.",
+      "Creative Connect is a podcast dedicated to shining a light on the often overlooked stars of the creative world. Artists, designers, filmmakers, musicians, and other creatives step out from behind the scenes and into the spotlight. Each episode offers an intimate look into the lives, passions, and processes of those who shape the art and culture we all consume.",
     challenge:
-      "Creative Connect had strong community loyalty but a brand that didn't reflect its ambition. The organization was growing beyond its grassroots roots and needed positioning that would attract corporate partners and established founders, without alienating the community that built it.",
+      "The creative industry is full of extraordinary talent that never gets the platform it deserves. Most media focuses on the finished product, not the person who made it, the process behind it, or the obstacles overcome to bring it to life. Creative Connect was built to close that gap: to give the makers the spotlight, not just the made.",
     approach:
-      "We started with a deep positioning workshop with the founder and core team, uncovering what made Creative Connect irreplaceable, not just useful. From that session, we derived a positioning statement and brand voice that sat at the intersection of access and excellence. The visual identity was built to feel premium without being exclusionary, grounded in deep tones, purposeful typography, and photography that centred real community members.",
+      "Through open and honest conversations, each episode digs deep into the who, what, why, and how of our guests' creative journeys. We explore the motivations that drive them, the challenges they face, and the triumphs that define their careers. The format is intentionally intimate: no panels, no gimmicks, just two people going deep on craft, purpose, and the reality of building a creative life.",
     outcome:
-      "Creative Connect launched its new brand to its community of 4,000+ members to overwhelming positive reception. Within 90 days of the rebrand, the organization secured two new corporate partnerships and saw a 60% increase in event registrations.",
-    tags: ["Brand Identity", "Community", "Strategy", "Toronto"],
+      "Creative Connect has grown into a platform for revealing the untold stories behind the art, giving listeners a unique and inspiring glimpse into the world of creativity. Whether you're a seasoned professional, someone aspiring to break into the creative industries, or simply a fan of the arts, Creative Connect offers valuable insights, inspiration, and a genuine sense of community.",
+    tags: ["Podcast", "Community", "Creative Industries", "Toronto"],
     nextSlug: "ctc-black-history-month",
     nextTitle: "CTC Black History Month",
+    links: [
+      { label: "Listen Now", href: "https://corexcreative.com/listen/" },
+      { label: "Instagram", href: "https://www.instagram.com/corexcreativeinc/" },
+      { label: "Facebook", href: "https://www.facebook.com/corexcreative/" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/corex-creative/" },
+      { label: "TikTok", href: "https://www.tiktok.com/@corexcreative" },
+    ],
   },
   "ctc-black-history-month": {
     id: "04",
@@ -167,7 +175,7 @@ export default async function WorkDetailPage({
   const project = projects[slug];
   if (!project) notFound();
 
-  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeId, coverImage } = project;
+  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeId, coverImage, links } = project;
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -364,6 +372,44 @@ export default async function WorkDetailPage({
                 </span>
               ))}
             </div>
+
+            {links && links.length > 0 && (
+              <>
+                <p
+                  style={{
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    fontWeight: 500,
+                    marginBottom: "1.25rem",
+                  }}
+                >
+                  Links
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "3rem" }}>
+                  {links.map(({ label, href }) => (
+                    <a
+                      key={href}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        fontSize: "0.8125rem",
+                        color: "var(--cream-dim)",
+                        textDecoration: "none",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.375rem",
+                      }}
+                    >
+                      {label} <span aria-hidden style={{ opacity: 0.5 }}>↗</span>
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+
             <Link
               href="/speaking#book"
               style={{

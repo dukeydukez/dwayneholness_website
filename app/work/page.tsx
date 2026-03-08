@@ -30,12 +30,12 @@ const projects = [
     id: "03",
     slug: "creative-connect",
     title: "Creative Connect",
-    category: "Brand Identity",
+    category: "Podcast",
     year: "2024",
-    client: "Creative Connect",
+    client: "Corex Creative",
     description:
-      "Brand narrative, visual identity, and content strategy for Toronto's leading creative entrepreneur community. From positioning to execution.",
-    tags: ["Brand Identity", "Community", "Strategy"],
+      "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
+    tags: ["Podcast", "Community", "Creative Industries"],
   },
   {
     id: "04",

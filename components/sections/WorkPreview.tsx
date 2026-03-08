@@ -23,9 +23,9 @@ const projects = [
     id: "03",
     slug: "creative-connect",
     title: "Creative Connect",
-    category: "Brand Identity · Community",
+    category: "Podcast · Community Platform",
     description:
-      "Brand narrative and visual identity for Toronto's leading creative entrepreneur community.",
+      "A podcast shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step into the spotlight.",
   },
   {
     id: "06",
