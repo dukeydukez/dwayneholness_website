@@ -358,7 +358,7 @@ export default async function WorkDetailPage({
             >
               Tags
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", marginBottom: "3rem" }}>
+            <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "0.5rem", marginBottom: "3rem" }}>
               {tags.map((tag) => (
                 <span
                   key={tag}
@@ -387,7 +387,7 @@ export default async function WorkDetailPage({
                 >
                   Links
                 </p>
-                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "3rem" }}>
+                <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "0.75rem", marginBottom: "3rem" }}>
                   {links.map(({ label, href }) => (
                     <a
                       key={href}
