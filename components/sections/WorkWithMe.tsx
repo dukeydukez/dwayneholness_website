@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -28,30 +27,46 @@ const testimonials = [
 
 const tiers = [
   {
-    label: "Production & Strategy",
-    price: "Contact for Quote",
-    priceNote: null,
+    label: "Pick My Brain",
+    price: "$247",
+    priceNote: "1-hour session",
     features: [
-      "Full-scale content production",
-      "Brand storytelling systems",
-      "Enterprise media strategy",
+      "60-minute video session",
+      "Session notes & 3 action items",
+      "One follow-up email (7 days)",
     ],
-    cta: "Start Project",
-    href: "/packages",
+    cta: "Book a Session",
+    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
     highlight: false,
+    external: true,
   },
   {
     label: "Strategic Brand & Growth Session",
     price: "$3,497",
-    priceNote: "one-time",
+    priceNote: "one-time investment",
     features: [
       "90-min strategy deep dive",
-      "Actionable roadmap",
-      "Founders & Brand leaders",
+      "Positioning & messaging framework",
+      "Prioritized 90-day roadmap",
     ],
-    cta: "Book Session",
-    href: "/packages",
+    cta: "Book This Session",
+    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
     highlight: true,
+    external: true,
+  },
+  {
+    label: "Production & Strategy",
+    price: "Custom",
+    priceNote: "project-based or retainer",
+    features: [
+      "Full-scale cinematic production",
+      "Multi-platform content systems",
+      "Ongoing creative direction",
+    ],
+    cta: "Start the Conversation",
+    href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
+    highlight: false,
+    external: true,
   },
 ];
 
@@ -228,10 +243,10 @@ export default function WorkWithMe() {
           style={{
             display: "grid",
             gap: "1.5rem",
-            maxWidth: "860px",
+            maxWidth: "1100px",
             margin: "0 auto",
           }}
-          className="md-grid-cols-2"
+          className="md-grid-cols-3"
         >
           {tiers.map((tier, i) => (
             <motion.div
@@ -360,8 +375,10 @@ export default function WorkWithMe() {
               <div style={{ flex: 1 }} />
 
               {/* CTA */}
-              <Link
+              <a
                 href={tier.href}
+                target={tier.external ? "_blank" : undefined}
+                rel={tier.external ? "noopener noreferrer" : undefined}
                 style={{
                   display: "block",
                   textAlign: "center",
@@ -379,7 +396,7 @@ export default function WorkWithMe() {
                 }}
               >
                 {tier.cta} <span aria-hidden>→</span>
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>
