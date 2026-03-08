@@ -1,8 +1,30 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
+
+const testimonials = [
+  {
+    quote:
+      "Dwayne has been an integral part of my success online. He created my entire online persona and helped me grow into the largest Real Estate Developer account in Canada. His filming is on a level unseen before and he has great vision.",
+    name: "Sherard McQueen",
+    role: "Real Estate Developer, M5V Developments Inc",
+  },
+  {
+    quote:
+      "With Dwayne, you never feel you are getting last year's cool trend but an authentic and relevant brand lens. He cares about relationships, the end product, and his own team. It shows in the work. And probably most important, he's fun to work with.",
+    name: "Leigh Himel",
+    role: "Entrepreneur, Writer & Brand Storyteller",
+  },
+  {
+    quote:
+      "Dwayne is a gifted creative leader who has a unique ability to bring initiatives to life through powerful storytelling, photography, and videography. He is a trusted partner, an innovative thinker, and simply a wonderful person to work with.",
+    name: "Letecia Rose",
+    role: "Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
+  },
+];
 
 const tiers = [
   {
@@ -34,6 +56,15 @@ const tiers = [
 ];
 
 export default function WorkWithMe() {
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((i) => (i + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section
       style={{
@@ -62,7 +93,7 @@ export default function WorkWithMe() {
           position: "relative",
         }}
       >
-        {/* Testimonial */}
+        {/* Testimonial carousel */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -82,31 +113,80 @@ export default function WorkWithMe() {
               margin: "0 auto 3rem",
             }}
           />
-          <p
+          <div style={{ minHeight: "10rem", position: "relative" }}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.5, ease }}
+              >
+                <p
+                  style={{
+                    fontFamily: "var(--font-display), sans-serif",
+                    fontSize: "clamp(1.125rem, 2.2vw, 1.5rem)",
+                    fontStyle: "italic",
+                    color: "var(--cream)",
+                    lineHeight: 1.6,
+                    letterSpacing: "-0.01em",
+                    marginBottom: "1.75rem",
+                  }}
+                >
+                  &ldquo;{testimonials[active].quote}&rdquo;
+                </p>
+                <p
+                  style={{
+                    fontSize: "0.8125rem",
+                    color: "var(--cream)",
+                    fontWeight: 600,
+                    marginBottom: "0.25rem",
+                  }}
+                >
+                  {testimonials[active].name}
+                </p>
+                <p
+                  style={{
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    fontWeight: 500,
+                  }}
+                >
+                  {testimonials[active].role}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          {/* Dot navigation */}
+          <div
             style={{
-              fontFamily: "var(--font-display), sans-serif",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontStyle: "italic",
-              color: "var(--cream)",
-              lineHeight: 1.55,
-              letterSpacing: "-0.01em",
-              marginBottom: "2rem",
+              display: "flex",
+              justifyContent: "center",
+              gap: "0.625rem",
+              marginTop: "2rem",
             }}
           >
-            &ldquo;Dwayne is the bridge between culture, commerce, and creative
-            legacy.&rdquo;
-          </p>
-          <p
-            style={{
-              fontSize: "0.6875rem",
-              letterSpacing: "0.22em",
-              textTransform: "uppercase",
-              color: "var(--gold)",
-              fontWeight: 500,
-            }}
-          >
-            Brand Partner, Corporate Client
-          </p>
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                aria-label={`Testimonial ${i + 1}`}
+                style={{
+                  width: i === active ? "1.5rem" : "0.5rem",
+                  height: "0.5rem",
+                  borderRadius: "999px",
+                  backgroundColor:
+                    i === active ? "var(--gold)" : "rgba(201,168,76,0.25)",
+                  border: "none",
+                  cursor: "pointer",
+                  padding: 0,
+                  transition: "width 0.3s ease, background-color 0.2s ease",
+                }}
+              />
+            ))}
+          </div>
         </motion.div>
 
         {/* Section heading */}
