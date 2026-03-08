@@ -262,7 +262,7 @@ export default async function WorkDetailPage({
           {title}
         </h1>
 
-        {/* Project visual: cover image or placeholder */}
+        {/* Project visual: cover image or placeholder (placeholder hidden when videos exist) */}
         {coverImage ? (
           <div
             style={{
@@ -280,7 +280,7 @@ export default async function WorkDetailPage({
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
           </div>
-        ) : (
+        ) : (!youtubeIds || youtubeIds.length === 0) ? (
           <div
             style={{
               width: "100%",
@@ -304,11 +304,18 @@ export default async function WorkDetailPage({
               {id} / {title}
             </span>
           </div>
-        )}
+        ) : null}
 
         {/* YouTube embeds */}
         {youtubeIds && youtubeIds.length > 0 && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem", marginTop: "2rem" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: youtubeIds.length > 1 ? "1fr 1fr" : "1fr",
+              gap: "1rem",
+              marginTop: "2rem",
+            }}
+          >
             {youtubeIds.map((id) => (
               <div key={id} style={{ width: "100%", aspectRatio: "16/9" }}>
                 <iframe
