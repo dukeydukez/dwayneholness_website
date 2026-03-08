@@ -39,7 +39,7 @@ const packages = [
       "Pre-session brand and positioning audit",
       "Positioning statement and messaging framework",
       "Content infrastructure blueprint",
-      "Prioritised 90-day action roadmap",
+      "Prioritized 90-day action roadmap",
       "Full session recording",
       "30-day follow-up check-in call",
     ],
@@ -91,7 +91,7 @@ const process = [
   {
     step: "04",
     title: "Your roadmap",
-    body: "You leave with something tangible. A clear next step, a prioritised plan, or a full blueprint depending on which engagement you choose.",
+    body: "You leave with something tangible. A clear next step, a prioritized plan, or a full blueprint depending on which engagement you choose.",
   },
 ];
 

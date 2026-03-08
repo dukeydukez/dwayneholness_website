@@ -49,7 +49,7 @@ I had a social media account get hacked and removed. Followers, gone. Everything
 
 That is the difference between renting and owning. You can build forever on a rented platform, rack up followers, grow an audience. But the moment the algorithm shifts, the terms change, or the platform disappears, you start over.
 
-True ownership looks like a newsletter your audience signed up for because they wanted to hear from you. It looks like a CRM with every client and prospect categorised and nurtured. It looks like a brand that carries weight regardless of which platform you are on.
+True ownership looks like a newsletter your audience signed up for because they wanted to hear from you. It looks like a CRM with every client and prospect categorized and nurtured. It looks like a brand that carries weight regardless of which platform you are on.
 
 From Canadian Tire to LCBO to CSA Group, eight-year client relationships, the work that lasts did not last because of a viral moment. It lasted because there were systems in place to deliver, and the relationship lived somewhere they could not unfollow.
 

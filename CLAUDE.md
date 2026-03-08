@@ -55,7 +55,7 @@
 ## Canadian English & Grammar
 All copy on this site uses Canadian English. Enforce the following at all times:
 
-- **Spelling "-ize" not "-ise":** organize, organizer, recognize, analyze, realize, prioritize, utilize — NOT organise/recognise/analyse
+- **Spelling "-ize" not "-ise":** organize, organizer, organizing, organization, recognize, analyze, realize, prioritize, prioritized, categorize, categorized, utilize — NOT organise/organised/organising/organisation/recognise/analyse/realise/prioritise/prioritised/categorise/categorised
 - **Spelling "-our":** colour, favourite, honour, neighbour, behaviour, flavour
 - **Other:** centre, theatre, travelling, fulfill, program (not programme), cheque (banking)
 - **Punctuation:** No Oxford comma in flowing prose (Canadian style). Use double quotation marks `"` for quotes, not single.
