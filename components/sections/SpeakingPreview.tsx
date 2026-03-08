@@ -1,17 +1,36 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 const topics = [
-  "Media Infrastructure for Founders",
-  "Building Thought Leadership Systems",
-  "The Architecture of Creative Ecosystems",
-  "From Content to Category Leader",
+  {
+    title: "Media Infrastructure for Founders",
+    description:
+      "Most founders build content. Few build infrastructure. This talk covers the systems, workflows, and distribution architecture that turn consistent output into compounding authority.",
+  },
+  {
+    title: "Building Thought Leadership Systems",
+    description:
+      "Thought leadership isn't a content strategy. It's a positioning strategy. I break down how to build a repeatable system that generates authority, not just visibility.",
+  },
+  {
+    title: "The Architecture of Creative Ecosystems",
+    description:
+      "How brands move from campaign-driven creative to ecosystem-driven output. A framework for building internal creative capacity that scales without losing quality.",
+  },
+  {
+    title: "From Content to Category Leader",
+    description:
+      "The frameworks founders use to establish category leadership — not through volume, but through strategic positioning and consistent point of view.",
+  },
 ];
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export default function SpeakingPreview() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <section
       style={{
@@ -134,15 +153,14 @@ export default function SpeakingPreview() {
             Topics
           </p>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            {topics.map((topic, i) => (
+            {topics.map(({ title, description }, i) => (
               <motion.div
-                key={topic}
+                key={title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.08, ease }}
                 style={{
-                  padding: "1.25rem 0",
                   borderTop:
                     i === 0
                       ? "1px solid rgba(200,194,180,0.2)"
@@ -151,23 +169,71 @@ export default function SpeakingPreview() {
                     i === topics.length - 1
                       ? "1px solid rgba(200,194,180,0.2)"
                       : "none",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "1rem",
                 }}
               >
-                <span
+                <button
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   style={{
-                    fontFamily: "var(--font-display), sans-serif",
-                    fontSize: "1.125rem",
-                    color: "var(--cream)",
-                    fontWeight: 400,
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: "1rem",
+                    padding: "1.25rem 0",
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    textAlign: "left",
                   }}
                 >
-                  {topic}
-                </span>
-                <span style={{ color: "var(--gold)", opacity: 0.6 }}>→</span>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-display), sans-serif",
+                      fontSize: "1.125rem",
+                      color: openIndex === i ? "var(--gold)" : "var(--cream)",
+                      fontWeight: 400,
+                      transition: "color 0.2s ease",
+                    }}
+                  >
+                    {title}
+                  </span>
+                  <motion.span
+                    animate={{ rotate: openIndex === i ? 90 : 0 }}
+                    transition={{ duration: 0.2, ease }}
+                    style={{
+                      color: "var(--gold)",
+                      opacity: openIndex === i ? 1 : 0.6,
+                      flexShrink: 0,
+                      display: "inline-block",
+                    }}
+                  >
+                    →
+                  </motion.span>
+                </button>
+                <AnimatePresence initial={false}>
+                  {openIndex === i && (
+                    <motion.div
+                      key="desc"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease }}
+                      style={{ overflow: "hidden" }}
+                    >
+                      <p
+                        style={{
+                          fontSize: "0.9375rem",
+                          color: "var(--cream-dim)",
+                          lineHeight: 1.75,
+                          paddingBottom: "1.25rem",
+                          maxWidth: "48ch",
+                        }}
+                      >
+                        {description}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             ))}
           </div>
