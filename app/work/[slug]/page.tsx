@@ -18,6 +18,8 @@ const projects: Record<
     tags: string[];
     nextSlug: string;
     nextTitle: string;
+    youtubeId?: string;
+    coverImage?: string;
   }
 > = {
   "infrastructure-of-influence": {
@@ -112,8 +114,29 @@ const projects: Record<
     outcome:
       "17 episodes produced across two seasons. The series has become a pipeline driver for Corex Creative; multiple clients have engaged Corex after appearing in or watching the Founder Series. It is now the flagship content property for Corex's own brand.",
     tags: ["Brand Film", "Interviews", "Ongoing", "Documentary Style"],
+    nextSlug: "hodans-story",
+    nextTitle: "Hodan's Story",
+  },
+  "hodans-story": {
+    id: "06",
+    title: "Hodan's Story",
+    category: "Documentary · CBC Short Docs",
+    year: "2019",
+    client: "CBC Short Docs",
+    role: "Director, Videographer",
+    overview:
+      "A short documentary following Somali-Canadian journalist, activist, and single mother of two, Hodan Nalayeh, as she returns to her birth country of Somalia 25 years after fleeing. Hodan founded Integration TV to share positive stories about the Somali diaspora and spent her life working to shift the narrative around a people the world had largely written off. This film chronicles her mission to spread light in places where many only see darkness.",
+    challenge:
+      "Hodan's story was one of extraordinary hope set against an equally extraordinary backdrop of trauma, displacement, and global misunderstanding. The challenge was honouring the weight of that context without letting it define her. She was not a refugee story. She was a leader, a mother, and a builder. The film had to hold that truth from frame one.",
+    approach:
+      "The visual approach was observational and intimate. We followed Hodan through her daily life, her conversations, her moments of quiet reflection and fierce advocacy. Rather than constructing a narrative through interview, we let the camera bear witness. Every editorial decision was made to amplify her voice, not interpret it. The result is a portrait built on presence.",
+    outcome:
+      "The film was released on CBC Gem and YouTube as part of CBC Short Docs. Hodan Nalayeh was killed in a hotel bombing in Kismayo, Somalia in July 2019, while pregnant, shortly after filming. The film has since become a tribute to her life, her work, and the communities she gave everything to serve. It remains one of the most personal and meaningful projects of my career.",
+    tags: ["Documentary", "CBC", "Human Interest", "Somali-Canadian"],
     nextSlug: "infrastructure-of-influence",
     nextTitle: "The Infrastructure of Influence",
+    youtubeId: "CqbUHMJmnfc",
+    coverImage: "/images/Hodans_Story.png",
   },
 };
 
@@ -144,7 +167,7 @@ export default async function WorkDetailPage({
   const project = projects[slug];
   if (!project) notFound();
 
-  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle } = project;
+  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeId, coverImage } = project;
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -230,30 +253,71 @@ export default async function WorkDetailPage({
           {title}
         </h1>
 
-        {/* Placeholder visual */}
-        <div
-          style={{
-            width: "100%",
-            aspectRatio: "16/7",
-            backgroundColor: "var(--charcoal)",
-            backgroundImage: "radial-gradient(ellipse 80% 80% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginBottom: "0.5rem",
-          }}
-        >
-          <span
+        {/* Project visual: cover image or placeholder */}
+        {coverImage ? (
+          <div
             style={{
-              fontSize: "0.6875rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "rgba(200,194,180,0.2)",
+              width: "100%",
+              aspectRatio: "16/7",
+              position: "relative",
+              overflow: "hidden",
+              marginBottom: "0.5rem",
             }}
           >
-            {id} / {title}
-          </span>
-        </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={coverImage}
+              alt={title}
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+          </div>
+        ) : (
+          <div
+            style={{
+              width: "100%",
+              aspectRatio: "16/7",
+              backgroundColor: "var(--charcoal)",
+              backgroundImage: "radial-gradient(ellipse 80% 80% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "0.5rem",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "0.6875rem",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "rgba(200,194,180,0.2)",
+              }}
+            >
+              {id} / {title}
+            </span>
+          </div>
+        )}
+
+        {/* YouTube embed */}
+        {youtubeId && (
+          <div
+            style={{
+              width: "100%",
+              aspectRatio: "16/9",
+              marginTop: "2rem",
+            }}
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/${youtubeId}`}
+              title={title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ display: "block" }}
+            />
+          </div>
+        )}
       </div>
 
       {/* Case Study Body */}

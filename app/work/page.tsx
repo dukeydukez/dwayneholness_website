@@ -59,6 +59,17 @@ const projects = [
       "An ongoing documentary-style interview series profiling founders and creatives building companies worth believing in.",
     tags: ["Brand Film", "Interviews", "Ongoing"],
   },
+  {
+    id: "06",
+    slug: "hodans-story",
+    title: "Hodan's Story",
+    category: "Documentary",
+    year: "2019",
+    client: "CBC Short Docs",
+    description:
+      "A short documentary following Somali-Canadian journalist and activist Hodan Nalayeh as she returns to Somalia 25 years after fleeing, on a mission to spread light where many only see darkness.",
+    tags: ["Documentary", "CBC", "Human Interest"],
+  },
 ];
 
 const allTags = Array.from(new Set(projects.flatMap((p) => p.tags)));

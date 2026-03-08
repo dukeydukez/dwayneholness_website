@@ -27,6 +27,14 @@ const projects = [
     description:
       "Brand narrative and visual identity for Toronto's leading creative entrepreneur community.",
   },
+  {
+    id: "06",
+    slug: "hodans-story",
+    title: "Hodan's Story",
+    category: "Documentary · CBC Short Docs",
+    description:
+      "A short documentary following Somali-Canadian journalist Hodan Nalayeh as she returns to Somalia, on a mission to spread light where many only see darkness.",
+  },
 ];
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
