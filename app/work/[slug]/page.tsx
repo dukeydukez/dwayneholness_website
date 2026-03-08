@@ -18,7 +18,7 @@ const projects: Record<
     tags: string[];
     nextSlug: string;
     nextTitle: string;
-    youtubeId?: string;
+    youtubeIds?: string[];
     coverImage?: string;
     links?: { label: string; href: string }[];
   }
@@ -79,6 +79,7 @@ const projects: Record<
     tags: ["Podcast", "Community", "Creative Industries", "Toronto"],
     nextSlug: "ctc-black-history-month",
     nextTitle: "CTC Black History Month",
+    youtubeIds: ["LYPeCo5TsfE", "xAlwzsPEDlA"],
     links: [
       { label: "Listen Now", href: "https://corexcreative.com/listen/" },
       { label: "Instagram", href: "https://www.instagram.com/corexcreativeinc/" },
@@ -143,7 +144,7 @@ const projects: Record<
     tags: ["Documentary", "CBC", "Human Interest", "Somali-Canadian"],
     nextSlug: "infrastructure-of-influence",
     nextTitle: "The Infrastructure of Influence",
-    youtubeId: "CqbUHMJmnfc",
+    youtubeIds: ["CqbUHMJmnfc"],
     coverImage: "/images/Hodans_Story.png",
   },
 };
@@ -175,7 +176,7 @@ export default async function WorkDetailPage({
   const project = projects[slug];
   if (!project) notFound();
 
-  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeId, coverImage, links } = project;
+  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeIds, coverImage, links } = project;
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -305,25 +306,23 @@ export default async function WorkDetailPage({
           </div>
         )}
 
-        {/* YouTube embed */}
-        {youtubeId && (
-          <div
-            style={{
-              width: "100%",
-              aspectRatio: "16/9",
-              marginTop: "2rem",
-            }}
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/${youtubeId}`}
-              title={title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ display: "block" }}
-            />
+        {/* YouTube embeds */}
+        {youtubeIds && youtubeIds.length > 0 && (
+          <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem", marginTop: "2rem" }}>
+            {youtubeIds.map((id) => (
+              <div key={id} style={{ width: "100%", aspectRatio: "16/9" }}>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title={title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ display: "block" }}
+                />
+              </div>
+            ))}
           </div>
         )}
       </div>
