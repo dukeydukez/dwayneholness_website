@@ -19,47 +19,51 @@ const projects: Record<
     nextSlug: string;
     nextTitle: string;
     youtubeIds?: string[];
+    vimeoIds?: string[];
     coverImage?: string;
     links?: { label: string; href: string }[];
   }
 > = {
-  "infrastructure-of-influence": {
+  "hodans-story": {
     id: "01",
-    title: "The Infrastructure of Influence",
-    category: "Documentary · Brand Film",
-    year: "2025",
-    client: "Personal Project",
-    role: "Director, Writer, Producer",
+    title: "Hodan's Story",
+    category: "Documentary · CBC Short Docs",
+    year: "2019",
+    client: "CBC Short Docs",
+    role: "Director, Videographer",
     overview:
-      "A feature-length documentary exploring how founders build lasting authority, not through hype, but through consistent presence, authentic narrative, and strategic positioning. Shot across Toronto over six months, the film profiles five entrepreneurs at different stages of their journeys.",
+      "A short documentary following Somali-Canadian journalist, activist, and single mother of two, Hodan Nalayeh, as she returns to her birth country of Somalia 25 years after fleeing. Hodan founded Integration TV to share positive stories about the Somali diaspora and spent her life working to shift the narrative around a people the world had largely written off. This film chronicles her mission to spread light in places where many only see darkness.",
     challenge:
-      "Authority is abstract. Most founders know they need it but don't understand how it's actually built over time. The challenge was making the invisible visible: capturing the habits, decisions, and long-game thinking that separate category leaders from everyone else.",
+      "Hodan's story was one of extraordinary hope set against an equally extraordinary backdrop of trauma, displacement, and global misunderstanding. The challenge was honouring the weight of that context without letting it define her. She was not a refugee story. She was a leader, a mother, and a builder. The film had to hold that truth from frame one.",
     approach:
-      "Inspired by the observational style of Frederick Wiseman, the film eschews narration and talking-head interviews in favour of immersive, fly-on-the-wall sequences. We spent weeks embedded with each subject before filming, building the trust needed for genuine access. Each chapter is anchored by a single idea about authority, and the cinematography reinforces that idea visually.",
+      "The visual approach was observational and intimate. We followed Hodan through her daily life, her conversations, her moments of quiet reflection and fierce advocacy. Rather than constructing a narrative through interview, we let the camera bear witness. Every editorial decision was made to amplify her voice, not interpret it. The result is a portrait built on presence.",
     outcome:
-      "The film premiered at a private industry screening in Toronto to a room of 200 founders and creative leaders. It has since been used as a centrepiece content asset by two of its featured subjects to build their own authority positioning. A public digital release is in development.",
-    tags: ["Documentary", "Brand Film", "Self-directed", "Toronto"],
-    nextSlug: "luvbay-radio",
-    nextTitle: "Luvbay Radio",
+      "The film was released on CBC Gem and YouTube as part of CBC Short Docs. Hodan Nalayeh was killed in a hotel bombing in Kismayo, Somalia in July 2019, while pregnant, shortly after filming. The film has since become a tribute to her life, her work, and the communities she gave everything to serve. It remains one of the most personal and meaningful projects of my career.",
+    tags: ["Documentary", "CBC", "Human Interest", "Somali-Canadian"],
+    nextSlug: "historica-canada-the-blackburns",
+    nextTitle: "Historica Canada – The Blackburns",
+    youtubeIds: ["CqbUHMJmnfc"],
+    coverImage: "/images/Hodans_Story.png",
   },
-  "luvbay-radio": {
+  "historica-canada-the-blackburns": {
     id: "02",
-    title: "Luvbay Radio",
-    category: "Content Series",
-    year: "2025",
-    client: "Luvbay",
-    role: "Creative Director, Director of Photography",
+    title: "Historica Canada – The Blackburns",
+    category: "Heritage Film · Documentary",
+    year: "2023",
+    client: "Historica Canada",
+    role: "Director, Director of Photography",
     overview:
-      "A 12-episode long-form social content series for Luvbay, a Toronto-based music and culture brand, capturing raw, unscripted conversations at the intersection of entrepreneurship, music, and identity. Each episode runs 20–40 minutes and is cut for both YouTube and short-form distribution.",
+      "A heritage documentary short produced for Historica Canada, telling the story of Thornton and Lucie Blackburn: freedom seekers who escaped enslavement in Kentucky and built a new life in Toronto in the 1830s, ultimately becoming the city's first Black cab operators. The film brings one of Canada's most significant but underrecognized Black history stories to a new generation of audiences.",
     challenge:
-      "Luvbay had a clear voice and audience, but no consistent content presence. The challenge was building a repeatable content system that felt authentic to the culture while being sustainable to produce, without sacrificing quality for volume.",
+      "Heritage storytelling carries the weight of responsibility: get it wrong and you dishonour the people whose lives it represents. The challenge was producing something that felt cinematic, emotionally alive, and respectful of the Blackburns' legacy, while staying true to the historical record. We needed to make history feel urgent, not archival.",
     approach:
-      "We designed a minimal, controlled studio environment that could be set up in under two hours, allowing production agility without losing the cinematic look Luvbay needed to stand apart. Every episode followed a loose structural framework: origins, craft, vision. But the conversations were always allowed to breathe and go wherever they needed to.",
+      "The visual language was rooted in warmth and intimacy, honouring the humanity of the Blackburns rather than reducing them to symbols. We used a combination of dramatic re-enactment-style framing, evocative natural light, and a restrained colour palette that grounded the film in the period without feeling like a museum exhibit. Every editorial decision was made to serve the emotional truth of the story.",
     outcome:
-      "All 12 episodes were delivered on schedule over a 4-month production run. Average episode view count: 14K across platforms. Two episodes exceeded 30K views. The series established Luvbay as a serious editorial voice in Toronto's music and creative community.",
-    tags: ["Social Content", "Series", "Long-form", "YouTube"],
+      "The film was produced for Historica Canada, the organization behind Canada's beloved Heritage Minutes, and stands as a testament to the richness of Black Canadian history. It has been used in educational and public history contexts to bring the Blackburns' story to broader audiences across the country.",
+    tags: ["Heritage Film", "Documentary", "Black Canadian History", "Historica Canada"],
     nextSlug: "creative-connect",
     nextTitle: "Creative Connect",
+    vimeoIds: ["801325699"],
   },
   "creative-connect": {
     id: "03",
@@ -77,8 +81,8 @@ const projects: Record<
     outcome:
       "Creative Connect has grown into a platform for revealing the untold stories behind the art, giving listeners a unique and inspiring glimpse into the world of creativity. Whether you're a seasoned professional, someone aspiring to break into the creative industries, or simply a fan of the arts, Creative Connect offers valuable insights, inspiration, and a genuine sense of community.",
     tags: ["Podcast", "Community", "Creative Industries", "Toronto"],
-    nextSlug: "ctc-black-history-month",
-    nextTitle: "CTC Black History Month",
+    nextSlug: "corex-founder-series",
+    nextTitle: "Corex Founder Series",
     youtubeIds: ["LYPeCo5TsfE", "xAlwzsPEDlA"],
     links: [
       { label: "Listen Now", href: "https://corexcreative.com/listen/" },
@@ -88,27 +92,8 @@ const projects: Record<
       { label: "TikTok", href: "https://www.tiktok.com/@corexcreative" },
     ],
   },
-  "ctc-black-history-month": {
-    id: "04",
-    title: "CTC Black History Month",
-    category: "Institutional Campaign",
-    year: "2025",
-    client: "CTC",
-    role: "Lead Creative Director, Campaign Producer",
-    overview:
-      "A multi-format campaign for CTC honouring Black History Month, spanning cinematic hero films, a social content series, event production, and internal communications assets. The campaign centred authentic stories of Black leadership within the organization and the broader community.",
-    challenge:
-      "Institutional Black History Month campaigns often feel performative, a checklist moment rather than a genuine expression of values. The challenge was creating something with enough creative ambition to feel meaningful, while working within the constraints of a large organization's approvals process and timelines.",
-    approach:
-      "We anchored the campaign in story, not statement. Rather than leading with data or slogans, we identified three individuals within CTC whose stories embodied the theme and built the entire campaign around them. The hero film used a documentary visual language: available light, observational framing, to create intimacy and authenticity. All assets were then built to feel cohesive across every channel.",
-    outcome:
-      "The campaign was the most-engaged piece of content CTC produced that quarter across all internal and external channels. The hero film received internal recognition and a commendation from leadership. The campaign framework has since been adopted as the model for future institutional moments.",
-    tags: ["Campaign", "Institutional", "Multi-format", "Cinematic"],
-    nextSlug: "corex-founder-series",
-    nextTitle: "Corex Founder Series",
-  },
   "corex-founder-series": {
-    id: "05",
+    id: "04",
     title: "Corex Founder Series",
     category: "Brand Film Series",
     year: "2024–2025",
@@ -123,29 +108,28 @@ const projects: Record<
     outcome:
       "17 episodes produced across two seasons. The series has become a pipeline driver for Corex Creative; multiple clients have engaged Corex after appearing in or watching the Founder Series. It is now the flagship content property for Corex's own brand.",
     tags: ["Brand Film", "Interviews", "Ongoing", "Documentary Style"],
+    nextSlug: "lcbo-spirit-of-sustainability",
+    nextTitle: "LCBO – Spirit of Sustainability",
+  },
+  "lcbo-spirit-of-sustainability": {
+    id: "05",
+    title: "LCBO – Spirit of Sustainability",
+    category: "Brand Film Series · Corporate",
+    year: "2021",
+    client: "LCBO",
+    role: "Director, Director of Photography",
+    overview:
+      "A three-part brand film series produced for LCBO, Ontario's provincial liquor authority, exploring the organization's commitment to environmental sustainability. Each film profiles a different dimension of the Spirit of Sustainability initiative, bringing LCBO's values to life through story rather than statement.",
+    challenge:
+      "Corporate sustainability content rarely inspires. Most of it reads like an annual report with a camera pointed at it: numbers, pledges, and talking points. LCBO needed something that would resonate emotionally with Ontarians and communicate genuine commitment, not just compliance. The challenge was making institutional values feel human.",
+    approach:
+      "We built each film around a person or a place, not a policy. By anchoring the series in specific, concrete stories, we gave the abstract idea of sustainability a face, a location, and a feeling. The visual language was clean and grounded, favouring natural environments and available light to reinforce the spirit of the initiative without over-designing the message.",
+    outcome:
+      "The three-film series delivered a cohesive brand narrative across LCBO's corporate and consumer channels, demonstrating that sustainability communications can carry the same creative ambition as brand advertising. The series stands as an example of how institutional storytelling can be both responsible and genuinely compelling.",
+    tags: ["Brand Film", "Corporate", "Sustainability", "LCBO"],
     nextSlug: "hodans-story",
     nextTitle: "Hodan's Story",
-  },
-  "hodans-story": {
-    id: "06",
-    title: "Hodan's Story",
-    category: "Documentary · CBC Short Docs",
-    year: "2019",
-    client: "CBC Short Docs",
-    role: "Director, Videographer",
-    overview:
-      "A short documentary following Somali-Canadian journalist, activist, and single mother of two, Hodan Nalayeh, as she returns to her birth country of Somalia 25 years after fleeing. Hodan founded Integration TV to share positive stories about the Somali diaspora and spent her life working to shift the narrative around a people the world had largely written off. This film chronicles her mission to spread light in places where many only see darkness.",
-    challenge:
-      "Hodan's story was one of extraordinary hope set against an equally extraordinary backdrop of trauma, displacement, and global misunderstanding. The challenge was honouring the weight of that context without letting it define her. She was not a refugee story. She was a leader, a mother, and a builder. The film had to hold that truth from frame one.",
-    approach:
-      "The visual approach was observational and intimate. We followed Hodan through her daily life, her conversations, her moments of quiet reflection and fierce advocacy. Rather than constructing a narrative through interview, we let the camera bear witness. Every editorial decision was made to amplify her voice, not interpret it. The result is a portrait built on presence.",
-    outcome:
-      "The film was released on CBC Gem and YouTube as part of CBC Short Docs. Hodan Nalayeh was killed in a hotel bombing in Kismayo, Somalia in July 2019, while pregnant, shortly after filming. The film has since become a tribute to her life, her work, and the communities she gave everything to serve. It remains one of the most personal and meaningful projects of my career.",
-    tags: ["Documentary", "CBC", "Human Interest", "Somali-Canadian"],
-    nextSlug: "infrastructure-of-influence",
-    nextTitle: "The Infrastructure of Influence",
-    youtubeIds: ["CqbUHMJmnfc"],
-    coverImage: "/images/Hodans_Story.png",
+    vimeoIds: ["601135120", "601135549", "601136003"],
   },
 };
 
@@ -176,7 +160,7 @@ export default async function WorkDetailPage({
   const project = projects[slug];
   if (!project) notFound();
 
-  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeIds, coverImage, links } = project;
+  const { id, title, category, year, client, role, overview, challenge, approach, outcome, tags, nextSlug, nextTitle, youtubeIds, vimeoIds, coverImage, links } = project;
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -280,7 +264,7 @@ export default async function WorkDetailPage({
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
           </div>
-        ) : (!youtubeIds || youtubeIds.length === 0) ? (
+        ) : (!youtubeIds || youtubeIds.length === 0) && (!vimeoIds || vimeoIds.length === 0) ? (
           <div
             style={{
               width: "100%",
@@ -305,6 +289,33 @@ export default async function WorkDetailPage({
             </span>
           </div>
         ) : null}
+
+        {/* Vimeo embeds */}
+        {vimeoIds && vimeoIds.length > 0 && (
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: vimeoIds.length === 3 ? "1fr 1fr 1fr" : vimeoIds.length > 1 ? "1fr 1fr" : "1fr",
+              gap: "1rem",
+              marginTop: "2rem",
+            }}
+          >
+            {vimeoIds.map((vid) => (
+              <div key={vid} style={{ width: "100%", aspectRatio: "16/9" }}>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://player.vimeo.com/video/${vid}`}
+                  title={title}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  style={{ display: "block" }}
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* YouTube embeds */}
         {youtubeIds && youtubeIds.length > 0 && (

@@ -6,25 +6,25 @@ import { motion, AnimatePresence } from "framer-motion";
 const projects = [
   {
     id: "01",
-    slug: "infrastructure-of-influence",
-    title: "The Infrastructure of Influence",
+    slug: "hodans-story",
+    title: "Hodan's Story",
     category: "Documentary",
-    year: "2025",
-    client: "Personal Project",
+    year: "2019",
+    client: "CBC Short Docs",
     description:
-      "A cinematic exploration of how founders build lasting authority in their industries. Shot over six months across Toronto, featuring entrepreneurs redefining what it means to lead.",
-    tags: ["Documentary", "Brand Film", "Self-directed"],
+      "A short documentary following Somali-Canadian journalist and activist Hodan Nalayeh as she returns to Somalia 25 years after fleeing, on a mission to spread light where many only see darkness.",
+    tags: ["Documentary", "CBC", "Human Interest"],
   },
   {
     id: "02",
-    slug: "luvbay-radio",
-    title: "Luvbay Radio",
-    category: "Content Series",
-    year: "2025",
-    client: "Luvbay",
+    slug: "historica-canada-the-blackburns",
+    title: "Historica Canada – The Blackburns",
+    category: "Heritage Film",
+    year: "2023",
+    client: "Historica Canada",
     description:
-      "A long-form social content series capturing authentic conversations at the intersection of culture, music, and entrepreneurship. 12-episode run.",
-    tags: ["Social Content", "Series", "Long-form"],
+      "A heritage documentary short telling the story of Thornton and Lucie Blackburn, freedom seekers who escaped enslavement and became Toronto's first Black cab operators.",
+    tags: ["Heritage Film", "Documentary", "Black Canadian History"],
   },
   {
     id: "03",
@@ -39,17 +39,6 @@ const projects = [
   },
   {
     id: "04",
-    slug: "ctc-black-history-month",
-    title: "CTC Black History Month",
-    category: "Institutional Campaign",
-    year: "2025",
-    client: "CTC",
-    description:
-      "A multi-format brand campaign honouring Black History Month with cinematic storytelling, social content, and event production.",
-    tags: ["Campaign", "Institutional", "Multi-format"],
-  },
-  {
-    id: "05",
     slug: "corex-founder-series",
     title: "Corex Founder Series",
     category: "Brand Film Series",
@@ -60,15 +49,15 @@ const projects = [
     tags: ["Brand Film", "Interviews", "Ongoing"],
   },
   {
-    id: "06",
-    slug: "hodans-story",
-    title: "Hodan's Story",
-    category: "Documentary",
-    year: "2019",
-    client: "CBC Short Docs",
+    id: "05",
+    slug: "lcbo-spirit-of-sustainability",
+    title: "LCBO – Spirit of Sustainability",
+    category: "Brand Film Series",
+    year: "2021",
+    client: "LCBO",
     description:
-      "A short documentary following Somali-Canadian journalist and activist Hodan Nalayeh as she returns to Somalia 25 years after fleeing, on a mission to spread light where many only see darkness.",
-    tags: ["Documentary", "CBC", "Human Interest"],
+      "A three-part brand film series for LCBO exploring their commitment to environmental sustainability through story rather than statement.",
+    tags: ["Brand Film", "Corporate", "Sustainability"],
   },
 ];
 

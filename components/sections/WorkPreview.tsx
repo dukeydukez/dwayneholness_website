@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: "01",
-    slug: "infrastructure-of-influence",
-    title: "The Infrastructure of Influence",
-    category: "Documentary · Brand Film",
+    slug: "hodans-story",
+    title: "Hodan's Story",
+    category: "Documentary · CBC Short Docs",
     description:
-      "A cinematic exploration of how founders build lasting authority in their industries.",
+      "A short documentary following Somali-Canadian journalist Hodan Nalayeh as she returns to Somalia, on a mission to spread light where many only see darkness.",
   },
   {
     id: "02",
-    slug: "luvbay-radio",
-    title: "Luvbay Radio",
-    category: "Social Content · Series",
+    slug: "historica-canada-the-blackburns",
+    title: "Historica Canada – The Blackburns",
+    category: "Heritage Film · Documentary",
     description:
-      "A long-form content series capturing authentic conversations at the intersection of culture and business.",
+      "A heritage documentary short telling the story of Thornton and Lucie Blackburn, freedom seekers who became Toronto's first Black cab operators.",
   },
   {
     id: "03",
@@ -26,14 +26,6 @@ const projects = [
     category: "Podcast · Community Platform",
     description:
       "A podcast shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step into the spotlight.",
-  },
-  {
-    id: "06",
-    slug: "hodans-story",
-    title: "Hodan's Story",
-    category: "Documentary · CBC Short Docs",
-    description:
-      "A short documentary following Somali-Canadian journalist Hodan Nalayeh as she returns to Somalia, on a mission to spread light where many only see darkness.",
   },
 ];
 
