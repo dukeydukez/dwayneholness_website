@@ -294,99 +294,93 @@ export default function SpeakingPage() {
       {/* Image Gallery */}
       <div
         style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
+          backgroundColor: "var(--charcoal)",
           padding: "5rem 2rem",
-          borderBottom: "1px solid rgba(200,194,180,0.1)",
+          borderTop: "1px solid rgba(200,194,180,0.08)",
+          borderBottom: "1px solid rgba(200,194,180,0.08)",
         }}
       >
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, ease }}
-          style={{
-            fontSize: "0.6875rem",
-            letterSpacing: "0.22em",
-            textTransform: "uppercase",
-            color: "var(--gold)",
-            fontWeight: 500,
-            marginBottom: "0.75rem",
-          }}
-        >
-          On Stage
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.7, delay: 0.1, ease }}
-          style={{
-            fontFamily: "var(--font-display), sans-serif",
-            fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
-            fontWeight: 700,
-            color: "var(--cream)",
-            letterSpacing: "-0.02em",
-            marginBottom: "3rem",
-            maxWidth: "20ch",
-          }}
-        >
-          In the room where it happens.
-        </motion.h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gridTemplateRows: "auto auto",
-            gap: "1rem",
-          }}
-          className="gallery-grid"
-        >
-          {galleryImages.map(({ src, label, aspect }, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: i * 0.07, ease }}
-              style={{
-                position: "relative",
-                aspectRatio: aspect === "landscape" ? "4/3" : "3/4",
-                backgroundColor: "var(--charcoal)",
-                overflow: "hidden",
-                gridColumn: i === 0 ? "span 2" : "span 1",
-              }}
-            >
-              <Image
-                src={src}
-                alt={label}
-                fill
-                style={{ objectFit: "cover", objectPosition: "center" }}
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  alignItems: "flex-end",
-                  padding: "1.25rem",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%)",
-                }}
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease }}
+            style={{
+              fontSize: "0.6875rem",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "var(--gold)",
+              fontWeight: 500,
+              marginBottom: "0.75rem",
+            }}
+          >
+            On Stage
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.1, ease }}
+            style={{
+              fontFamily: "var(--font-display), sans-serif",
+              fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
+              fontWeight: 700,
+              color: "var(--cream)",
+              letterSpacing: "-0.02em",
+              marginBottom: "3rem",
+              maxWidth: "20ch",
+            }}
+          >
+            In the room where it happens.
+          </motion.h2>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "1.5rem",
+            }}
+            className="gallery-grid"
+          >
+            {galleryImages.map(({ src, label }, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.07, ease }}
               >
+                <div
+                  style={{
+                    position: "relative",
+                    aspectRatio: "4/3",
+                    overflow: "hidden",
+                    border: "1px solid rgba(201,168,76,0.25)",
+                  }}
+                >
+                  <Image
+                    src={src}
+                    alt={label}
+                    fill
+                    style={{ objectFit: "cover", objectPosition: "center top" }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
                 <p
                   style={{
                     fontSize: "0.6875rem",
-                    letterSpacing: "0.08em",
+                    letterSpacing: "0.1em",
                     textTransform: "uppercase",
-                    color: "rgba(200,194,180,0.7)",
+                    color: "var(--cream-dim)",
+                    marginTop: "0.75rem",
+                    opacity: 0.7,
                   }}
                 >
                   {label}
                 </p>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
 

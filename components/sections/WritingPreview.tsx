@@ -2,34 +2,11 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import type { Article } from "@/lib/articles";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
-const posts = [
-  {
-    slug: "why-most-brand-films-fail",
-    date: "Feb 2026",
-    title: "Why Most Brand Films Fail Before They're Shot",
-    excerpt:
-      "Great brand filmmaking starts long before the camera turns on. It starts with clarity about what you're actually trying to say.",
-  },
-  {
-    slug: "founder-led-content",
-    date: "Jan 2026",
-    title: "The Case for Founder-Led Content in 2026",
-    excerpt:
-      "Audiences are exhausted by polished corporate content. The founders who win are the ones willing to be specific, human, and real.",
-  },
-  {
-    slug: "cinematic-positioning",
-    date: "Dec 2025",
-    title: "Cinematic Positioning: How Visual Language Builds Brands",
-    excerpt:
-      "Positioning isn't just messaging. The visual vocabulary you choose communicates who you are before you say a word.",
-  },
-];
-
-export default function WritingPreview() {
+export default function WritingPreview({ posts = [] }: { posts: Pick<Article, "slug" | "date" | "title" | "excerpt">[] }) {
   return (
     <section
       style={{
