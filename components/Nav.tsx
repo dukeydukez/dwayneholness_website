@@ -272,18 +272,16 @@ export default function Nav() {
                       letterSpacing: "-0.03em",
                       lineHeight: 1.0,
                       textTransform: "uppercase",
-                      color: pathname === href ? "var(--gold)" : "var(--cream)",
+                      color: "var(--cream)",
                       textDecoration: "none",
                       display: "block",
                       transition: "color 0.15s ease",
                     }}
                     onMouseEnter={(e) => {
-                      if (pathname !== href)
-                        (e.currentTarget as HTMLElement).style.color = "var(--gold)";
+                      (e.currentTarget as HTMLElement).style.color = "var(--gold)";
                     }}
                     onMouseLeave={(e) => {
-                      if (pathname !== href)
-                        (e.currentTarget as HTMLElement).style.color = "var(--cream)";
+                      (e.currentTarget as HTMLElement).style.color = "var(--cream)";
                     }}
                   >
                     {label}
@@ -310,21 +308,21 @@ export default function Nav() {
                   onClick={() => setMenuOpen(false)}
                   style={{
                     fontFamily: "var(--font-display), Georgia, serif",
-                    fontSize: "clamp(2.25rem, 9.5vw, 7rem)",
+                    fontSize: "clamp(3.5rem, 14vw, 7rem)",
                     fontWeight: 700,
                     letterSpacing: "-0.03em",
                     lineHeight: 1.0,
                     textTransform: "uppercase",
-                    color: "var(--gold)",
+                    color: "var(--cream)",
                     textDecoration: "none",
                     display: "block",
-                    transition: "opacity 0.15s ease",
+                    transition: "color 0.15s ease",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.opacity = "0.7";
+                    (e.currentTarget as HTMLElement).style.color = "var(--gold)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.opacity = "1";
+                    (e.currentTarget as HTMLElement).style.color = "var(--cream)";
                   }}
                 >
                   Book a Call
