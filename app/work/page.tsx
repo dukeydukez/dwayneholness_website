@@ -28,28 +28,6 @@ const projects = [
   },
   {
     id: "03",
-    slug: "creative-connect",
-    title: "Creative Connect",
-    category: "Podcast",
-    year: "2024",
-    client: "Corex Creative",
-    description:
-      "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
-    tags: ["Podcast", "Community", "Creative Industries"],
-  },
-  {
-    id: "04",
-    slug: "corex-founder-series",
-    title: "Corex Founder Series",
-    category: "Brand Film Series",
-    year: "2024–2025",
-    client: "Corex Creative",
-    description:
-      "An ongoing documentary-style interview series profiling founders and creatives building companies worth believing in.",
-    tags: ["Brand Film", "Interviews", "Ongoing"],
-  },
-  {
-    id: "05",
     slug: "lcbo-spirit-of-sustainability",
     title: "LCBO – Spirit of Sustainability",
     category: "Brand Film Series",
@@ -58,6 +36,17 @@ const projects = [
     description:
       "A three-part brand film series for LCBO exploring their commitment to environmental sustainability through story rather than statement.",
     tags: ["Brand Film", "Corporate", "Sustainability"],
+  },
+  {
+    id: "04",
+    slug: "creative-connect",
+    title: "Creative Connect",
+    category: "Podcast",
+    year: "2024",
+    client: "Corex Creative",
+    description:
+      "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
+    tags: ["Podcast", "Community", "Creative Industries"],
   },
 ];
 

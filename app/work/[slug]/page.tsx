@@ -61,58 +61,12 @@ const projects: Record<
     outcome:
       "The film was produced for Historica Canada, the organization behind Canada's beloved Heritage Minutes, and stands as a testament to the richness of Black Canadian history. It has been used in educational and public history contexts to bring the Blackburns' story to broader audiences across the country.",
     tags: ["Heritage Film", "Documentary", "Black Canadian History", "Historica Canada"],
-    nextSlug: "creative-connect",
-    nextTitle: "Creative Connect",
-    vimeoIds: ["801325699"],
-  },
-  "creative-connect": {
-    id: "03",
-    title: "Creative Connect",
-    category: "Podcast · Community Platform",
-    year: "2024",
-    client: "Corex Creative",
-    role: "Creator, Host, Executive Producer",
-    overview:
-      "Creative Connect is a podcast dedicated to shining a light on the often overlooked stars of the creative world. Artists, designers, filmmakers, musicians, and other creatives step out from behind the scenes and into the spotlight. Each episode offers an intimate look into the lives, passions, and processes of those who shape the art and culture we all consume.",
-    challenge:
-      "The creative industry is full of extraordinary talent that never gets the platform it deserves. Most media focuses on the finished product, not the person who made it, the process behind it, or the obstacles overcome to bring it to life. Creative Connect was built to close that gap: to give the makers the spotlight, not just the made.",
-    approach:
-      "Through open and honest conversations, each episode digs deep into the who, what, why, and how of our guests' creative journeys. We explore the motivations that drive them, the challenges they face, and the triumphs that define their careers. The format is intentionally intimate: no panels, no gimmicks, just two people going deep on craft, purpose, and the reality of building a creative life.",
-    outcome:
-      "Creative Connect has grown into a platform for revealing the untold stories behind the art, giving listeners a unique and inspiring glimpse into the world of creativity. Whether you're a seasoned professional, someone aspiring to break into the creative industries, or simply a fan of the arts, Creative Connect offers valuable insights, inspiration, and a genuine sense of community.",
-    tags: ["Podcast", "Community", "Creative Industries", "Toronto"],
-    nextSlug: "corex-founder-series",
-    nextTitle: "Corex Founder Series",
-    youtubeIds: ["LYPeCo5TsfE", "xAlwzsPEDlA"],
-    links: [
-      { label: "Listen Now", href: "https://corexcreative.com/listen/" },
-      { label: "Instagram", href: "https://www.instagram.com/corexcreativeinc/" },
-      { label: "Facebook", href: "https://www.facebook.com/corexcreative/" },
-      { label: "LinkedIn", href: "https://www.linkedin.com/company/corex-creative/" },
-      { label: "TikTok", href: "https://www.tiktok.com/@corexcreative" },
-    ],
-  },
-  "corex-founder-series": {
-    id: "04",
-    title: "Corex Founder Series",
-    category: "Brand Film Series",
-    year: "2024–2025",
-    client: "Corex Creative",
-    role: "Director, Executive Producer",
-    overview:
-      "An ongoing documentary-style interview series produced by Corex Creative, profiling founders, creatives, and executives building companies worth believing in. Each episode is a standalone portrait of a person, their company, and the principles that guide them.",
-    challenge:
-      "Most founder content is promotional by default: press releases with a camera pointed at them. We wanted to build something that felt like editorial journalism: curious, challenging, and genuinely interested in the person behind the company.",
-    approach:
-      "Each shoot begins with a pre-interview process to uncover the real story: the decisions that mattered, the moments of doubt, the unconventional beliefs. The visual language is consistent across episodes: deep backgrounds, practical lighting, minimal movement. The result is a series that feels authored, not produced.",
-    outcome:
-      "17 episodes produced across two seasons. The series has become a pipeline driver for Corex Creative; multiple clients have engaged Corex after appearing in or watching the Founder Series. It is now the flagship content property for Corex's own brand.",
-    tags: ["Brand Film", "Interviews", "Ongoing", "Documentary Style"],
     nextSlug: "lcbo-spirit-of-sustainability",
     nextTitle: "LCBO – Spirit of Sustainability",
+    vimeoIds: ["801325699"],
   },
   "lcbo-spirit-of-sustainability": {
-    id: "05",
+    id: "03",
     title: "LCBO – Spirit of Sustainability",
     category: "Brand Film Series · Corporate",
     year: "2021",
@@ -127,9 +81,36 @@ const projects: Record<
     outcome:
       "The three-film series delivered a cohesive brand narrative across LCBO's corporate and consumer channels, demonstrating that sustainability communications can carry the same creative ambition as brand advertising. The series stands as an example of how institutional storytelling can be both responsible and genuinely compelling.",
     tags: ["Brand Film", "Corporate", "Sustainability", "LCBO"],
+    nextSlug: "creative-connect",
+    nextTitle: "Creative Connect",
+    vimeoIds: ["601135120", "601135549", "601136003"],
+  },
+  "creative-connect": {
+    id: "04",
+    title: "Creative Connect",
+    category: "Podcast · Community Platform",
+    year: "2024",
+    client: "Corex Creative",
+    role: "Creator, Host, Executive Producer",
+    overview:
+      "Creative Connect is a podcast dedicated to shining a light on the often overlooked stars of the creative world. Artists, designers, filmmakers, musicians, and other creatives step out from behind the scenes and into the spotlight. Each episode offers an intimate look into the lives, passions, and processes of those who shape the art and culture we all consume.",
+    challenge:
+      "The creative industry is full of extraordinary talent that never gets the platform it deserves. Most media focuses on the finished product, not the person who made it, the process behind it, or the obstacles overcome to bring it to life. Creative Connect was built to close that gap: to give the makers the spotlight, not just the made.",
+    approach:
+      "Through open and honest conversations, each episode digs deep into the who, what, why, and how of our guests' creative journeys. We explore the motivations that drive them, the challenges they face, and the triumphs that define their careers. The format is intentionally intimate: no panels, no gimmicks, just two people going deep on craft, purpose, and the reality of building a creative life.",
+    outcome:
+      "Creative Connect has grown into a platform for revealing the untold stories behind the art, giving listeners a unique and inspiring glimpse into the world of creativity. Whether you're a seasoned professional, someone aspiring to break into the creative industries, or simply a fan of the arts, Creative Connect offers valuable insights, inspiration, and a genuine sense of community.",
+    tags: ["Podcast", "Community", "Creative Industries", "Toronto"],
     nextSlug: "hodans-story",
     nextTitle: "Hodan's Story",
-    vimeoIds: ["601135120", "601135549", "601136003"],
+    youtubeIds: ["LYPeCo5TsfE", "xAlwzsPEDlA"],
+    links: [
+      { label: "Listen Now", href: "https://corexcreative.com/listen/" },
+      { label: "Instagram", href: "https://www.instagram.com/corexcreativeinc/" },
+      { label: "Facebook", href: "https://www.facebook.com/corexcreative/" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/company/corex-creative/" },
+      { label: "TikTok", href: "https://www.tiktok.com/@corexcreative" },
+    ],
   },
 };
 

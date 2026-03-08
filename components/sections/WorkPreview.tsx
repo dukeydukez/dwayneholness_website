@@ -21,11 +21,11 @@ const projects = [
   },
   {
     id: "03",
-    slug: "creative-connect",
-    title: "Creative Connect",
-    category: "Podcast · Community Platform",
+    slug: "lcbo-spirit-of-sustainability",
+    title: "LCBO – Spirit of Sustainability",
+    category: "Brand Film Series · Corporate",
     description:
-      "A podcast shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step into the spotlight.",
+      "A three-part brand film series for LCBO exploring their commitment to environmental sustainability through story rather than statement.",
   },
 ];
 

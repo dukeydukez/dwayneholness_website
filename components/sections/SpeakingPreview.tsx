@@ -29,7 +29,7 @@ const topics = [
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
 export default function SpeakingPreview() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section
