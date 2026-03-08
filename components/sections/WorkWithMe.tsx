@@ -1,6 +1,6 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -27,7 +27,7 @@ const testimonials = [
 
 const tiers = [
   {
-    label: "Pick My Brain",
+    label: "Creative Strategy Session",
     price: "$247",
     priceNote: "1-hour session",
     features: [
@@ -72,6 +72,9 @@ const tiers = [
 
 export default function WorkWithMe() {
   const [active, setActive] = useState(0);
+  const gcalRef = useRef<HTMLDivElement>(null);
+  const gcalRef2 = useRef<HTMLDivElement>(null);
+  const gcalRef3 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -79,6 +82,67 @@ export default function WorkWithMe() {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+  // Load Google Calendar scheduling button for Creative Strategy Session
+  useEffect(() => {
+    if (!document.getElementById("gcal-css")) {
+      const link = document.createElement("link");
+      link.id = "gcal-css";
+      link.rel = "stylesheet";
+      link.href = "https://calendar.google.com/calendar/scheduling-button-script.css";
+      document.head.appendChild(link);
+    }
+
+    function initGcal() {
+      if (!gcalRef.current || gcalRef.current.dataset.gcalInit) return;
+      gcalRef.current.dataset.gcalInit = "1";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).calendar?.schedulingButton?.load({
+        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
+        color: "#C9A84C",
+        label: "BOOK A SESSION",
+        target: gcalRef.current,
+      });
+    }
+
+    function initGcal2() {
+      if (!gcalRef2.current || gcalRef2.current.dataset.gcalInit) return;
+      gcalRef2.current.dataset.gcalInit = "1";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).calendar?.schedulingButton?.load({
+        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
+        color: "#C9A84C",
+        label: "BOOK THIS SESSION",
+        target: gcalRef2.current,
+      });
+    }
+
+    function initGcal3() {
+      if (!gcalRef3.current || gcalRef3.current.dataset.gcalInit) return;
+      gcalRef3.current.dataset.gcalInit = "1";
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).calendar?.schedulingButton?.load({
+        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1RLqWdgiUkQWuGzyH_VFox5mTz7u0OqaNQcRvmgY5vFblcd8gwxP4BRvIuK-aC8bBdFuMOLmKh?gv=true",
+        color: "#C9A84C",
+        label: "START THE CONVERSATION",
+        target: gcalRef3.current,
+      });
+    }
+
+    if (!document.getElementById("gcal-js")) {
+      const script = document.createElement("script");
+      script.id = "gcal-js";
+      script.src = "https://calendar.google.com/calendar/scheduling-button-script.js";
+      script.async = true;
+      script.onload = () => { initGcal(); initGcal2(); initGcal3(); };
+      document.body.appendChild(script);
+    } else {
+      initGcal();
+      initGcal2();
+      initGcal3();
+    }
+  }, []);
+
 
   return (
     <section
@@ -286,7 +350,7 @@ export default function WorkWithMe() {
                 />
               )}
 
-              {/* Label */}
+              {/* Label — minHeight reserves space for 2 lines so price always starts at the same point */}
               <p
                 style={{
                   fontSize: "0.6875rem",
@@ -295,24 +359,21 @@ export default function WorkWithMe() {
                   color: "var(--cream-dim)",
                   fontWeight: 500,
                   marginBottom: "1.5rem",
+                  minHeight: "2.25rem",
                 }}
               >
                 {tier.label}
               </p>
 
-              {/* Price header — fixed minHeight so features align across both cards */}
+              {/* Price header */}
               <div style={{ minHeight: "5.5rem", marginBottom: "2.25rem" }}>
                 <p
                   style={{
                     fontFamily: "var(--font-display), sans-serif",
-                    fontSize:
-                      tier.price === "Contact for Quote"
-                        ? "1.625rem"
-                        : "clamp(2.25rem, 4vw, 3.25rem)",
+                    fontSize: "clamp(2.25rem, 4vw, 3.25rem)",
                     fontWeight: 700,
                     color: "var(--cream)",
-                    letterSpacing:
-                      tier.price === "Contact for Quote" ? "-0.01em" : "-0.03em",
+                    letterSpacing: "-0.03em",
                     lineHeight: 1,
                     marginBottom: tier.priceNote ? "0.375rem" : 0,
                   }}
@@ -375,28 +436,13 @@ export default function WorkWithMe() {
               <div style={{ flex: 1 }} />
 
               {/* CTA */}
-              <a
-                href={tier.href}
-                target={tier.external ? "_blank" : undefined}
-                rel={tier.external ? "noopener noreferrer" : undefined}
-                style={{
-                  display: "block",
-                  textAlign: "center",
-                  padding: "0.9375rem 2rem",
-                  backgroundColor: tier.highlight ? "var(--gold)" : "transparent",
-                  color: tier.highlight ? "var(--black)" : "var(--cream)",
-                  border: tier.highlight
-                    ? "none"
-                    : "1px solid rgba(200,194,180,0.25)",
-                  fontSize: "0.8125rem",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                }}
-              >
-                {tier.cta} <span aria-hidden>→</span>
-              </a>
+              {tier.label === "Creative Strategy Session" ? (
+                <div ref={gcalRef} />
+              ) : tier.label === "Strategic Brand & Growth Session" ? (
+                <div ref={gcalRef2} />
+              ) : (
+                <div ref={gcalRef3} />
+              )}
             </motion.div>
           ))}
         </div>
