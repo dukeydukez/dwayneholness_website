@@ -36,7 +36,7 @@ const offerings = [
   },
   {
     label: "Strategic Consulting",
-    body: "Deep-dive media infrastructure and ecosystem design engagements for founders and organisations ready to build systems that compound.",
+    body: "Deep-dive media infrastructure and ecosystem design engagements for founders and organizations ready to build systems that compound.",
   },
   {
     label: "Workshop",

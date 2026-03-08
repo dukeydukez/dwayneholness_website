@@ -68,11 +68,11 @@ const projects: Record<
     overview:
       "A full brand overhaul for Creative Connect, Toronto's leading community for creative entrepreneurs. The engagement covered brand positioning, visual identity, content strategy, and the narrative architecture underpinning all external communications.",
     challenge:
-      "Creative Connect had strong community loyalty but a brand that didn't reflect its ambition. The organisation was growing beyond its grassroots roots and needed positioning that would attract corporate partners and established founders, without alienating the community that built it.",
+      "Creative Connect had strong community loyalty but a brand that didn't reflect its ambition. The organization was growing beyond its grassroots roots and needed positioning that would attract corporate partners and established founders, without alienating the community that built it.",
     approach:
       "We started with a deep positioning workshop with the founder and core team, uncovering what made Creative Connect irreplaceable, not just useful. From that session, we derived a positioning statement and brand voice that sat at the intersection of access and excellence. The visual identity was built to feel premium without being exclusionary, grounded in deep tones, purposeful typography, and photography that centred real community members.",
     outcome:
-      "Creative Connect launched its new brand to its community of 4,000+ members to overwhelming positive reception. Within 90 days of the rebrand, the organisation secured two new corporate partnerships and saw a 60% increase in event registrations.",
+      "Creative Connect launched its new brand to its community of 4,000+ members to overwhelming positive reception. Within 90 days of the rebrand, the organization secured two new corporate partnerships and saw a 60% increase in event registrations.",
     tags: ["Brand Identity", "Community", "Strategy", "Toronto"],
     nextSlug: "ctc-black-history-month",
     nextTitle: "CTC Black History Month",
@@ -85,9 +85,9 @@ const projects: Record<
     client: "CTC",
     role: "Lead Creative Director, Campaign Producer",
     overview:
-      "A multi-format campaign for CTC honouring Black History Month, spanning cinematic hero films, a social content series, event production, and internal communications assets. The campaign centred authentic stories of Black leadership within the organisation and the broader community.",
+      "A multi-format campaign for CTC honouring Black History Month, spanning cinematic hero films, a social content series, event production, and internal communications assets. The campaign centred authentic stories of Black leadership within the organization and the broader community.",
     challenge:
-      "Institutional Black History Month campaigns often feel performative, a checklist moment rather than a genuine expression of values. The challenge was creating something with enough creative ambition to feel meaningful, while working within the constraints of a large organisation's approvals process and timelines.",
+      "Institutional Black History Month campaigns often feel performative, a checklist moment rather than a genuine expression of values. The challenge was creating something with enough creative ambition to feel meaningful, while working within the constraints of a large organization's approvals process and timelines.",
     approach:
       "We anchored the campaign in story, not statement. Rather than leading with data or slogans, we identified three individuals within CTC whose stories embodied the theme and built the entire campaign around them. The hero film used a documentary visual language: available light, observational framing, to create intimacy and authenticity. All assets were then built to feel cohesive across every channel.",
     outcome:

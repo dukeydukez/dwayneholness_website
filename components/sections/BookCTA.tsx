@@ -75,7 +75,7 @@ export default function BookCTA() {
           }}
         >
           Whether you&apos;re a founder ready to turn content into infrastructure,
-          a brand building thought leadership at scale, or an organisation
+          a brand building thought leadership at scale, or an organization
           designing a creative ecosystem. Let&apos;s talk about what that looks
           like together.
         </p>

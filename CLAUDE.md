@@ -55,7 +55,9 @@
 ## Canadian English & Grammar
 All copy on this site uses Canadian English. Enforce the following at all times:
 
-- **Spelling:** colour, favourite, honour, neighbour, recognise, organise, organiser, analyse, centre, theatre, travelling, fulfil, programme (but "program" for software)
+- **Spelling "-ize" not "-ise":** organize, organizer, recognize, analyze, realize, prioritize, utilize — NOT organise/recognise/analyse
+- **Spelling "-our":** colour, favourite, honour, neighbour, behaviour, flavour
+- **Other:** centre, theatre, travelling, fulfill, program (not programme), cheque (banking)
 - **Punctuation:** No Oxford comma in flowing prose (Canadian style). Use double quotation marks `"` for quotes, not single.
 - **No em dashes** (`—`) in visible copy. Use a comma, colon, or period instead.
 - **Dates:** Day Month Year format (7 March 2026), or Month YYYY for articles (March 2026). Never MM/DD/YYYY.
