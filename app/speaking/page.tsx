@@ -175,7 +175,7 @@ export default function SpeakingPage() {
             gridTemplateColumns: "1fr",
             gap: "2rem",
           }}
-          className="md:grid-cols-2"
+          className="md-grid-cols-2"
         >
           {offerings.map(({ label, body }, i) => (
             <motion.div
@@ -263,7 +263,7 @@ export default function SpeakingPage() {
                     ? "1px solid rgba(200,194,180,0.15)"
                     : "none",
               }}
-              className="md:grid-cols-2"
+              className="md-grid-cols-2"
             >
               <h2
                 style={{
@@ -415,7 +415,7 @@ export default function SpeakingPage() {
               gridTemplateColumns: "1fr",
               gap: "2.5rem",
             }}
-            className="md:grid-cols-3"
+            className="md-grid-cols-3"
           >
             {testimonials.map(({ quote, name, role }, i) => (
               <motion.div

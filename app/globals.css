@@ -12,6 +12,51 @@
   --font-display: var(--font-body);
 }
 
+/* Responsive visibility helpers */
+.desktop-only {
+  display: none !important;
+}
+.mobile-only {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: flex !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Responsive grid helpers */
+.md-grid-cols-2 {
+  grid-template-columns: 1fr;
+}
+.md-grid-cols-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .md-grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .md-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Hero content padding */
+.hero-content {
+  padding-left: 2rem !important;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding-left: 5rem !important;
+  }
+}
+
 /* About section layout */
 .about-grid {
   grid-template-columns: 1fr;

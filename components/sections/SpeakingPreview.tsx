@@ -64,7 +64,7 @@ export default function SpeakingPreview() {
           gap: "4rem",
           alignItems: "center",
         }}
-        className="md:grid-cols-2"
+        className="md-grid-cols-2"
       >
         {/* Left */}
         <motion.div

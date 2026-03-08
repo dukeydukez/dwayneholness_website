@@ -121,7 +121,7 @@ export default function Nav() {
             alignItems: "center",
             gap: "2.5rem",
           }}
-          className="hidden md:flex"
+          className="desktop-only"
         >
           {navLinks.map(({ href, label }) => (
             <Link
@@ -177,7 +177,7 @@ export default function Nav() {
         {/* Hamburger / Close toggle — mobile only */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden"
+          className="mobile-only"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           style={{
             background: "none",

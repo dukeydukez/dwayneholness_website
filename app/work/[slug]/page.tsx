@@ -340,7 +340,7 @@ export default async function WorkDetailPage({
             gridTemplateColumns: "1fr",
             gap: "5rem",
           }}
-          className="md:grid-cols-3"
+          className="md-grid-cols-3"
         >
           {/* Sidebar */}
           <div>

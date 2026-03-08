@@ -231,7 +231,7 @@ export default function WorkWithMe() {
             maxWidth: "860px",
             margin: "0 auto",
           }}
-          className="md:grid-cols-2"
+          className="md-grid-cols-2"
         >
           {tiers.map((tier, i) => (
             <motion.div

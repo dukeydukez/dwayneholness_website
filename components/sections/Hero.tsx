@@ -78,12 +78,12 @@ export default function Hero() {
 
       {/* Parallax content block */}
       <motion.div
+        className="hero-content"
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
           padding: "8rem 2rem 6rem",
           width: "100%",
-          paddingLeft: "5rem",
           y: contentY,
           opacity: contentOpacity,
         }}
@@ -110,7 +110,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
           style={{
             fontFamily: "var(--font-display), sans-serif",
-            fontSize: "clamp(3.5rem, 9vw, 8rem)",
+            fontSize: "clamp(2.5rem, 9vw, 8rem)",
             fontWeight: 700,
             lineHeight: 1.0,
             color: "var(--cream)",

@@ -77,7 +77,7 @@ export default function WritingPreview({ posts = [] }: { posts: Pick<Article, "s
         {/* Post grid — no inline gridTemplateColumns so md:grid-cols-3 class takes effect */}
         <div
           style={{ display: "grid", gap: "2rem" }}
-          className="md:grid-cols-3"
+          className="md-grid-cols-3"
         >
           {posts.map(({ slug, date, title, excerpt }, i) => (
             <motion.div
