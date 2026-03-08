@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const topics = [
@@ -66,15 +65,15 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  { src: "/images/BHMCorexCT-4621.jpeg", label: "Keynote, Creative Connect Summit 2025", aspect: "landscape" },
-  { src: "/images/BHMCorexCT-4626.jpeg", label: "Panel, Black Screen Office Forum 2024", aspect: "portrait" },
-  { src: "/images/BHMCorexCT-4673.jpeg", label: "Workshop, Corex Creative Labs 2025", aspect: "portrait" },
-  { src: "/images/BHMCorexCT-4870.jpeg", label: "Keynote, Toronto Founders Collective 2024", aspect: "landscape" },
-  { src: "/images/BHMCorexCT-4898.jpeg", label: "Moderation, CTC Annual Summit 2025", aspect: "landscape" },
-  { src: "/images/CorexRBC-5088.jpeg", label: "Masterclass, Creative Connect 2024", aspect: "portrait" },
-  { src: "/images/CorexRBC-5097.jpeg", label: "Panel, Media Infrastructure Summit 2025", aspect: "landscape" },
-  { src: "/images/CorexRBC-5110.jpeg", label: "Keynote, Founders Collective 2025", aspect: "landscape" },
-  { src: "/images/CorexRBC-5194.jpeg", label: "Workshop, Corex Labs 2024", aspect: "portrait" },
+  { src: "/images/CorexRBC-5194.jpg",    label: "IGNITE Conference 2026, Beyond the Breakthrough" },
+  { src: "/images/BHMCorexCT-4621.jpeg", label: "Canadian Tire, Black History Month" },
+  { src: "/images/CorexRBC-5097.jpeg",   label: "IGNITE Conference 2026, Beyond the Breakthrough" },
+  { src: "/images/BHMCorexCT-4673.jpeg", label: "Canadian Tire, Black History Month" },
+  { src: "/images/CorexRBC-5110.jpeg",   label: "IGNITE Conference 2026, Beyond the Breakthrough" },
+  { src: "/images/BHMCorexCT-4626.jpeg", label: "Canadian Tire, Black History Month" },
+  { src: "/images/CorexRBC-5088.jpeg",   label: "IGNITE Conference 2026, Beyond the Breakthrough" },
+  { src: "/images/BHMCorexCT-4870.jpeg", label: "Canadian Tire, Black History Month" },
+  { src: "/images/BHMCorexCT-4898.jpeg", label: "Canadian Tire, Black History Month" },
 ];
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
@@ -334,50 +333,52 @@ export default function SpeakingPage() {
           >
             In the room where it happens.
           </motion.h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: "1.5rem",
-            }}
-            className="gallery-grid"
-          >
+          <div style={{ columns: "3 260px", gap: "1rem" }}>
             {galleryImages.map(({ src, label }, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.6, delay: i * 0.07, ease }}
+                transition={{ duration: 0.65, delay: i * 0.06, ease }}
+                style={{ breakInside: "avoid", marginBottom: "1rem" }}
               >
                 <div
                   style={{
-                    position: "relative",
-                    aspectRatio: "4/3",
                     overflow: "hidden",
-                    border: "1px solid rgba(201,168,76,0.25)",
+                    border: "1px solid rgba(201,168,76,0.12)",
+                    lineHeight: 0,
                   }}
                 >
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={src}
                     alt={label}
-                    fill
-                    style={{ objectFit: "cover", objectPosition: "center top" }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      display: "block",
+                      transition: "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                    }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLImageElement).style.transform = "scale(1.04)"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLImageElement).style.transform = "scale(1)"; }}
                   />
                 </div>
-                <p
-                  style={{
-                    fontSize: "0.6875rem",
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    color: "var(--cream-dim)",
-                    marginTop: "0.75rem",
-                    opacity: 0.7,
-                  }}
-                >
-                  {label}
-                </p>
+                {label ? (
+                  <p
+                    style={{
+                      fontSize: "0.625rem",
+                      letterSpacing: "0.14em",
+                      textTransform: "uppercase",
+                      color: "var(--cream-dim)",
+                      marginTop: "0.5rem",
+                      opacity: 0.55,
+                      lineHeight: 0,
+                    }}
+                  >
+                    {label}
+                  </p>
+                ) : null}
               </motion.div>
             ))}
           </div>

@@ -113,25 +113,6 @@ export default function BookCTA() {
           >
             Book a Call <span aria-hidden>→</span>
           </a>
-          <a
-            href="mailto:dwayne@corexcreative.com"
-            onClick={(e) => { e.preventDefault(); window.open("mailto:dwayne@corexcreative.com", "_blank"); }}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              padding: "1rem 2.5rem",
-              border: "1px solid rgba(200,194,180,0.3)",
-              color: "var(--cream)",
-              fontSize: "0.875rem",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              fontWeight: 500,
-              textDecoration: "none",
-            }}
-          >
-            Send an Email
-          </a>
         </motion.div>
       </motion.div>
     </section>
