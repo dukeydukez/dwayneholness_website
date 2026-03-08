@@ -19,13 +19,15 @@ The fuller version starts earlier, in a chapter most people in my position keep 
 
 Nobody says it this way, but leadership has nothing to do with a title. You either know how to move people or you do not. How to read a room. How to build authority without a manual. How to hold a group together when the pressure is on.
 
-I learned all of this early. Organising people. Reading personalities, emotions, egos, the energy underneath what someone says. Thinking two moves ahead. Getting people to believe in something and move as a unit.
+I learned all of this early. Organizing people. Reading personalities, emotions, egos, the energy underneath what someone says. Thinking two moves ahead. Getting people to believe in something and move as a unit.
 
 The direction I was pointed in was wrong. The capability was real. And eventually, that distinction became everything.
 
+![High Class](/images/highclass.jpeg)
+
 ## High Class and the pivot
 
-In 2008, I built my first real organisation. Not a company yet. Not a brand. Something in between. I called it High Class.
+In 2008, I built my first real organization. Not a company yet. Not a brand. Something in between. I called it High Class.
 
 High Class was not about clothes, status, or image. It was about mindset. We worked with young creatives, and what we taught was simple: you are worth more than where you are. Choose better. Raise your standards. Surround yourself with people who pull you forward, not back.
 
@@ -45,7 +47,7 @@ Vision is the north star. Without it, you are managing. With it, you are buildin
 
 People are not logical. You have to navigate emotions, egos, and energy. The most brilliant strategy fails if the humans inside it do not feel seen.
 
-People need to belong. Not just to an organisation, but to something that gives them meaning. If you can provide that, they will go further than you expect.
+People need to belong. Not just to an organization, but to something that gives them meaning. If you can provide that, they will go further than you expect.
 
 > Leadership is neutral energy. It will amplify whatever direction you point it toward. The real work is not becoming a leader. It is choosing what you are willing to lead people into.
 
@@ -53,6 +55,6 @@ High Class was the seed. Corex Creative is the tree. The same foundation, the sa
 
 Full circle is not a metaphor. It is a methodology.
 
-The question is not whether you have leadership ability. Most people do. The question is what you have been pointing it at, and whether you are willing to be honest about the answer. If you recognise yourself in the early part of that story, the misdirected energy, the capability with no clean place to land yet, that recognition is not a warning. It is a resource.
+The question is not whether you have leadership ability. Most people do. The question is what you have been pointing it at, and whether you are willing to be honest about the answer. If you recognize yourself in the early part of that story, the misdirected energy, the capability with no clean place to land yet, that recognition is not a warning. It is a resource.
 
 The direction can change. The capability stays.

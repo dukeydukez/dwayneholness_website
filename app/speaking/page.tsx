@@ -529,29 +529,34 @@ export default function SpeakingPage() {
           Send an inquiry with details about your event, conference, or
           consulting need and we&apos;ll be in touch within 48 hours.
         </motion.p>
-        <motion.a
-          href="mailto:dwayne@corexcreative.com?subject=Speaking%20Inquiry"
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3, ease }}
-          whileHover={{ scale: 1.02 }}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            padding: "1rem 2.5rem",
-            backgroundColor: "var(--gold)",
-            color: "var(--black)",
-            fontSize: "0.875rem",
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            fontWeight: 600,
-            textDecoration: "none",
-          }}
         >
-          Send an Inquiry <span aria-hidden>→</span>
-        </motion.a>
+          <a
+            href="mailto:dwayne@corexcreative.com?subject=Speaking%20Inquiry"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              padding: "1rem 2.5rem",
+              backgroundColor: "var(--gold)",
+              color: "var(--black)",
+              fontSize: "0.875rem",
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              fontWeight: 600,
+              textDecoration: "none",
+              transition: "background-color 0.2s ease",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "var(--gold-light)"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "var(--gold)"; }}
+          >
+            Send an Inquiry <span aria-hidden>→</span>
+          </a>
+        </motion.div>
       </div>
     </div>
   );

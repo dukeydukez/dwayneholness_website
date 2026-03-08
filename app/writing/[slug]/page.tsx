@@ -156,6 +156,23 @@ export default async function WritingPostPage({
               </h2>
             );
           }
+          if (block.type === "image") {
+            return (
+              <div key={i} style={{ margin: "3rem 0" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={block.src}
+                  alt={block.text}
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+                {block.text && (
+                  <p style={{ fontSize: "0.75rem", color: "var(--cream-dim)", marginTop: "0.75rem", opacity: 0.6, letterSpacing: "0.08em" }}>
+                    {block.text}
+                  </p>
+                )}
+              </div>
+            );
+          }
           if (block.type === "blockquote") {
             return (
               <blockquote

@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/speaking", label: "Speaking" },
   { href: "/work", label: "Work" },
   { href: "/writing", label: "Thoughts" },
+  { href: "/packages", label: "Packages" },
 ];
 
 const socialLinks = [

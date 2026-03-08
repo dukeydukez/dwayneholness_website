@@ -37,12 +37,12 @@ const tiers = [
       "Enterprise media strategy",
     ],
     cta: "Start Project",
-    href: "/speaking#book",
+    href: "/packages",
     highlight: false,
   },
   {
-    label: "Discovery Session",
-    price: "$3,500",
+    label: "Strategic Brand & Growth Session",
+    price: "$3,497",
     priceNote: "one-time",
     features: [
       "90-min strategy deep dive",
@@ -50,7 +50,7 @@ const tiers = [
       "Founders & Brand leaders",
     ],
     cta: "Book Session",
-    href: "/speaking#book",
+    href: "/packages",
     highlight: true,
   },
 ];

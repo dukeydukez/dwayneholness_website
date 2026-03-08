@@ -15,7 +15,7 @@ The founder tells themselves it is just a growth phase. That it gets harder befo
 
 But the weight does not lift.
 
-I have seen this pattern enough times now to recognise it immediately. And almost every time, the problem is not effort. The problem is clarity.
+I have seen this pattern enough times now to recognize it immediately. And almost every time, the problem is not effort. The problem is clarity.
 
 ## When clarity slips as you scale
 

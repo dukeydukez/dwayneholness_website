@@ -29,7 +29,7 @@ The problem is not that you are behind. The problem is the benchmark you chose.
 
 Every path that looked like a detour built something. The industry you came from before this one. The culture you carry in how you communicate and lead. The faith that held you together through the chapters you do not talk about in pitch decks. The pivots that felt like failure at the time and now inform everything about how you think.
 
-That combination exists nowhere else. No one has your specific sequence of experience, your particular way of seeing a problem, your exact context. And in a world where everyone has access to the same frameworks, the same templates, the same advice, that specificity is worth more than most people realise.
+That combination exists nowhere else. No one has your specific sequence of experience, your particular way of seeing a problem, your exact context. And in a world where everyone has access to the same frameworks, the same templates, the same advice, that specificity is worth more than most people realize.
 
 > Your unique path is not a liability. It is your most valuable asset.
 
@@ -39,7 +39,7 @@ The 10,000 hours you put in were not wasted because they did not look like someo
 
 Here is what I have seen consistently in the work we do at Corex: the founders who resonate most deeply are not the ones with the cleanest story. They are the ones who own their story without apology.
 
-When you stop trying to sound like the people you admire and start speaking from the actual ground you have walked, something shifts. The right clients start to find you. Not because you positioned yourself perfectly, but because you became specific enough for the people who need exactly what you offer to recognise you.
+When you stop trying to sound like the people you admire and start speaking from the actual ground you have walked, something shifts. The right clients start to find you. Not because you positioned yourself perfectly, but because you became specific enough for the people who need exactly what you offer to recognize you.
 
 Authenticity compounds. The more you own the full arc of your path, including the unconventional parts, the parts that do not fit neatly into a case study, the more magnetic you become over time. People are not looking for a copy of someone who already exists. They are looking for someone who genuinely lived what they teach.
 

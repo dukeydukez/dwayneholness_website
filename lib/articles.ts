@@ -48,13 +48,14 @@ export function getArticleBySlug(slug: string): Article | null {
 
 export function parseMarkdownToBlocks(
   markdown: string
-): { type: "p" | "h2" | "blockquote"; text: string }[] {
+): { type: "p" | "h2" | "blockquote" | "image"; text: string; src?: string }[] {
   const lines = markdown.split("\n");
-  const blocks: { type: "p" | "h2" | "blockquote"; text: string }[] = [];
+  const blocks: { type: "p" | "h2" | "blockquote" | "image"; text: string; src?: string }[] = [];
   let paragraph = "";
 
   for (const line of lines) {
     const trimmed = line.trim();
+    const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
 
     if (trimmed.startsWith("## ")) {
       if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
@@ -62,6 +63,9 @@ export function parseMarkdownToBlocks(
     } else if (trimmed.startsWith("> ")) {
       if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
       blocks.push({ type: "blockquote", text: trimmed.slice(2) });
+    } else if (imageMatch) {
+      if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+      blocks.push({ type: "image", text: imageMatch[1], src: imageMatch[2] });
     } else if (trimmed === "") {
       if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
     } else {
