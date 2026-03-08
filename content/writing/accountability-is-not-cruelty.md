@@ -1,6 +1,6 @@
 ---
 title: "Accountability Is Not Cruelty"
-date: "March 2026"
+date: "8 March 2026, 10:00 AM"
 readTime: "4 min read"
 category: "Thought Leadership"
 tags: ["Thought Leadership", "Entrepreneurship", "Founder-Led Content"]

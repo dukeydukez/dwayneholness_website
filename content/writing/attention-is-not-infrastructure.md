@@ -1,6 +1,6 @@
 ---
 title: "Attention Is Not Infrastructure"
-date: "March 2026"
+date: "3 March 2026"
 readTime: "4 min read"
 category: "Media Infrastructure"
 tags: ["Media Infrastructure", "Content Systems", "Founder-Led Content"]

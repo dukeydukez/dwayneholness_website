@@ -1,6 +1,6 @@
 ---
 title: "If Growth Feels Hard, Something Is Unclear"
-date: "March 2026"
+date: "7 March 2026"
 readTime: "4 min read"
 category: "Brand Strategy"
 tags: ["Brand Strategy", "Positioning", "Founder-Led Content"]

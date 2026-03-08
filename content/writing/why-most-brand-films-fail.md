@@ -1,6 +1,6 @@
 ---
 title: "Why Most Brand Films Fail Before They're Shot"
-date: "February 2026"
+date: "1 February 2026"
 readTime: "6 min read"
 category: "Filmmaking"
 tags: ["Filmmaking", "Brand Strategy"]

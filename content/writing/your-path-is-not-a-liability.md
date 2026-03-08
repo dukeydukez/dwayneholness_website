@@ -1,6 +1,6 @@
 ---
 title: "Your Path Is Not a Liability"
-date: "March 2026"
+date: "8 March 2026, 9:00 AM"
 readTime: "4 min read"
 category: "Thought Leadership"
 tags: ["Thought Leadership", "Founder-Led Content", "Entrepreneurship"]

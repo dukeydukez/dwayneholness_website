@@ -1,6 +1,6 @@
 ---
 title: "Cinematic Positioning: How Visual Language Builds Brands"
-date: "December 2025"
+date: "1 December 2025"
 readTime: "7 min read"
 category: "Brand Strategy"
 tags: ["Brand Strategy", "Visual Identity"]

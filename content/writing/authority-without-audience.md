@@ -1,6 +1,6 @@
 ---
 title: "How to Build Authority Without a Mass Audience"
-date: "November 2025"
+date: "1 November 2025"
 readTime: "5 min read"
 category: "Authority Building"
 tags: ["Authority Building", "Strategy"]

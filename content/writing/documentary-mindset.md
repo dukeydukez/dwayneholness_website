@@ -1,6 +1,6 @@
 ---
 title: "The Documentary Mindset: What Every Brand Could Learn"
-date: "October 2025"
+date: "1 October 2025"
 readTime: "9 min read"
 category: "Filmmaking"
 tags: ["Filmmaking", "Brand Story"]

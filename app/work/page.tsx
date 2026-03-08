@@ -6,25 +6,25 @@ import { motion, AnimatePresence } from "framer-motion";
 const projects = [
   {
     id: "01",
+    slug: "creative-connect",
+    title: "Creative Connect",
+    category: "Podcast",
+    year: "2024",
+    client: "Corex Creative",
+    description:
+      "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
+    tags: ["Podcast", "Community", "Creative Industries"],
+  },
+  {
+    id: "02",
     slug: "hodans-story",
     title: "Hodan's Story",
     category: "Documentary",
-    year: "2019",
+    year: "2023",
     client: "CBC Short Docs",
     description:
       "A short documentary following Somali-Canadian journalist and activist Hodan Nalayeh as she returns to Somalia 25 years after fleeing, on a mission to spread light where many only see darkness.",
     tags: ["Documentary", "CBC", "Human Interest"],
-  },
-  {
-    id: "02",
-    slug: "historica-canada-the-blackburns",
-    title: "Historica Canada – The Blackburns",
-    category: "Heritage Film",
-    year: "2023",
-    client: "Historica Canada",
-    description:
-      "A heritage documentary short telling the story of Thornton and Lucie Blackburn, freedom seekers who escaped enslavement and became Toronto's first Black cab operators.",
-    tags: ["Heritage Film", "Documentary", "Black Canadian History"],
   },
   {
     id: "03",
@@ -39,27 +39,42 @@ const projects = [
   },
   {
     id: "04",
-    slug: "creative-connect",
-    title: "Creative Connect",
-    category: "Podcast",
-    year: "2024",
-    client: "Corex Creative",
+    slug: "historica-canada-the-blackburns",
+    title: "Historica Canada – The Blackburns",
+    category: "Heritage Film",
+    year: "2020",
+    client: "Historica Canada",
     description:
-      "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
-    tags: ["Podcast", "Community", "Creative Industries"],
+      "A heritage documentary short telling the story of Thornton and Lucie Blackburn, freedom seekers who escaped enslavement and became Toronto's first Black cab operators.",
+    tags: ["Heritage Film", "Documentary", "Black Canadian History"],
   },
 ];
 
 const allTags = Array.from(new Set(projects.flatMap((p) => p.tags)));
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
+const PAGE_SIZE = 3;
 
 export default function WorkPage() {
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
 
   const filtered = activeTag
     ? projects.filter((p) => p.tags.includes(activeTag))
     : projects;
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  function changePage(next: number) {
+    setPage(next);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function handleTagChange(tag: string | null) {
+    setActiveTag(tag);
+    setPage(1);
+  }
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -121,7 +136,7 @@ export default function WorkPage() {
         }}
       >
         <button
-          onClick={() => setActiveTag(null)}
+          onClick={() => handleTagChange(null)}
           style={{
             fontSize: "0.6875rem",
             letterSpacing: "0.14em",
@@ -141,7 +156,7 @@ export default function WorkPage() {
         {allTags.map((tag) => (
           <button
             key={tag}
-            onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+            onClick={() => handleTagChange(activeTag === tag ? null : tag)}
             style={{
               fontSize: "0.6875rem",
               letterSpacing: "0.14em",
@@ -164,7 +179,7 @@ export default function WorkPage() {
       {/* Project List */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem 7rem" }}>
         <AnimatePresence mode="popLayout">
-          {filtered.map(({ id, slug, title, category, year, client, description, tags }, i) => (
+          {paginated.map(({ id, slug, title, category, year, client, description, tags }, i) => (
             <motion.div
               key={slug}
               initial={{ opacity: 0, y: 16 }}
@@ -295,6 +310,82 @@ export default function WorkPage() {
             </motion.div>
           ))}
         </AnimatePresence>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              paddingTop: "3rem",
+              borderTop: "1px solid rgba(200,194,180,0.08)",
+            }}
+          >
+            <button
+              onClick={() => changePage(page - 1)}
+              disabled={page === 1}
+              style={{
+                fontSize: "0.6875rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                fontWeight: 600,
+                padding: "0.5rem 1.25rem",
+                border: "1px solid",
+                borderColor: page === 1 ? "rgba(200,194,180,0.1)" : "rgba(200,194,180,0.25)",
+                color: page === 1 ? "rgba(200,194,180,0.25)" : "var(--cream-dim)",
+                backgroundColor: "transparent",
+                cursor: page === 1 ? "default" : "pointer",
+                transition: "all 0.2s ease",
+              }}
+            >
+              ← Prev
+            </button>
+
+            <div style={{ display: "flex", gap: "0.5rem" }}>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                <button
+                  key={p}
+                  onClick={() => changePage(p)}
+                  style={{
+                    width: "2rem",
+                    height: "2rem",
+                    fontSize: "0.75rem",
+                    fontWeight: 600,
+                    border: "1px solid",
+                    borderColor: p === page ? "var(--gold)" : "rgba(200,194,180,0.15)",
+                    color: p === page ? "var(--gold)" : "var(--cream-dim)",
+                    backgroundColor: p === page ? "rgba(201,168,76,0.08)" : "transparent",
+                    cursor: "pointer",
+                    transition: "all 0.2s ease",
+                  }}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => changePage(page + 1)}
+              disabled={page === totalPages}
+              style={{
+                fontSize: "0.6875rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                fontWeight: 600,
+                padding: "0.5rem 1.25rem",
+                border: "1px solid",
+                borderColor: page === totalPages ? "rgba(200,194,180,0.1)" : "rgba(200,194,180,0.25)",
+                color: page === totalPages ? "rgba(200,194,180,0.25)" : "var(--cream-dim)",
+                backgroundColor: "transparent",
+                cursor: page === totalPages ? "default" : "pointer",
+                transition: "all 0.2s ease",
+              }}
+            >
+              Next →
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 ---
 title: "I Learned to Run a Business by Leading a Gang"
-date: "March 2026"
+date: "5 March 2026"
 readTime: "4 min read"
 category: "Entrepreneurship"
 tags: ["Thought Leadership", "Entrepreneurship", "Founder-Led Content"]

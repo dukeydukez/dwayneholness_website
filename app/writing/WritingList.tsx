@@ -6,14 +6,31 @@ import type { Article } from "@/lib/articles";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
+const PAGE_SIZE = 5;
+
 export default function WritingList({ articles = [] }: { articles: Article[] }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
 
   const allTags = Array.from(new Set(articles.flatMap((a) => a.tags)));
 
   const filtered = activeTag
     ? articles.filter((a) => a.tags.includes(activeTag))
     : articles;
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  function changePage(next: number) {
+    setPage(next);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Reset to page 1 when tag changes
+  function handleTagChange(tag: string | null) {
+    setActiveTag(tag);
+    setPage(1);
+  }
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -77,7 +94,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
         }}
       >
         <button
-          onClick={() => setActiveTag(null)}
+          onClick={() => handleTagChange(null)}
           style={{
             fontSize: "0.6875rem",
             letterSpacing: "0.14em",
@@ -97,7 +114,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
         {allTags.map((tag) => (
           <button
             key={tag}
-            onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+            onClick={() => handleTagChange(activeTag === tag ? null : tag)}
             style={{
               fontSize: "0.6875rem",
               letterSpacing: "0.14em",
@@ -120,7 +137,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
       {/* Post list */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem 7rem" }}>
         <AnimatePresence mode="popLayout">
-          {filtered.map(({ slug, category, date, readTime, title, excerpt, tags }, i) => (
+          {paginated.map(({ slug, category, date, readTime, title, excerpt, tags }, i) => (
             <motion.div
               key={slug}
               initial={{ opacity: 0, y: 16 }}
@@ -151,7 +168,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
                     opacity: 0.5,
                   }}
                 >
-                  {String(i + 1).padStart(2, "0")}
+                  {String((page - 1) * PAGE_SIZE + i + 1).padStart(2, "0")}
                 </div>
 
                 {/* Content */}
@@ -242,6 +259,82 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
             </motion.div>
           ))}
         </AnimatePresence>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              paddingTop: "3rem",
+              borderTop: "1px solid rgba(200,194,180,0.08)",
+            }}
+          >
+            <button
+              onClick={() => changePage(page - 1)}
+              disabled={page === 1}
+              style={{
+                fontSize: "0.6875rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                fontWeight: 600,
+                padding: "0.5rem 1.25rem",
+                border: "1px solid",
+                borderColor: page === 1 ? "rgba(200,194,180,0.1)" : "rgba(200,194,180,0.25)",
+                color: page === 1 ? "rgba(200,194,180,0.25)" : "var(--cream-dim)",
+                backgroundColor: "transparent",
+                cursor: page === 1 ? "default" : "pointer",
+                transition: "all 0.2s ease",
+              }}
+            >
+              ← Prev
+            </button>
+
+            <div style={{ display: "flex", gap: "0.5rem" }}>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                <button
+                  key={p}
+                  onClick={() => changePage(p)}
+                  style={{
+                    width: "2rem",
+                    height: "2rem",
+                    fontSize: "0.75rem",
+                    fontWeight: 600,
+                    border: "1px solid",
+                    borderColor: p === page ? "var(--gold)" : "rgba(200,194,180,0.15)",
+                    color: p === page ? "var(--gold)" : "var(--cream-dim)",
+                    backgroundColor: p === page ? "rgba(201,168,76,0.08)" : "transparent",
+                    cursor: "pointer",
+                    transition: "all 0.2s ease",
+                  }}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => changePage(page + 1)}
+              disabled={page === totalPages}
+              style={{
+                fontSize: "0.6875rem",
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                fontWeight: 600,
+                padding: "0.5rem 1.25rem",
+                border: "1px solid",
+                borderColor: page === totalPages ? "rgba(200,194,180,0.1)" : "rgba(200,194,180,0.25)",
+                color: page === totalPages ? "rgba(200,194,180,0.25)" : "var(--cream-dim)",
+                backgroundColor: "transparent",
+                cursor: page === totalPages ? "default" : "pointer",
+                transition: "all 0.2s ease",
+              }}
+            >
+              Next →
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
