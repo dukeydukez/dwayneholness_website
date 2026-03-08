@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
@@ -93,8 +92,10 @@ export default function BookCTA() {
             flexWrap: "wrap",
           }}
         >
-          <Link
-            href="/speaking#book"
+          <a
+            href="https://calendar.app.google/qeycC86WguwLnjt1A"
+            target="_blank"
+            rel="noopener noreferrer"
             id="book"
             style={{
               display: "inline-flex",
@@ -111,9 +112,10 @@ export default function BookCTA() {
             }}
           >
             Book a Call <span aria-hidden>→</span>
-          </Link>
+          </a>
           <a
             href="mailto:dwayne@corexcreative.com"
+            onClick={(e) => { e.preventDefault(); window.open("mailto:dwayne@corexcreative.com", "_blank"); }}
             style={{
               display: "inline-flex",
               alignItems: "center",

@@ -153,8 +153,10 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
           style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}
         >
-          <Link
-            href="/speaking#book"
+          <a
+            href="https://calendar.app.google/qeycC86WguwLnjt1A"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -178,7 +180,7 @@ export default function Hero() {
             }
           >
             Book a Call <span aria-hidden>→</span>
-          </Link>
+          </a>
           <Link
             href="/work"
             style={{

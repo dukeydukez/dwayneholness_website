@@ -9,10 +9,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://instagram.com/dwayneholness", label: "Instagram" },
-  { href: "https://facebook.com/dwayneholness", label: "Facebook" },
+  { href: "https://www.instagram.com/dukeydukez/", label: "Instagram" },
+  { href: "https://www.facebook.com/MrHolness", label: "Facebook" },
   { href: "https://linkedin.com/in/dwayneholness", label: "LinkedIn" },
-  { href: "https://twitter.com/dwayneholness", label: "Twitter" },
+  { href: "https://x.com/dukeydukez", label: "Twitter" },
 ];
 
 export default function Footer() {
@@ -55,7 +55,7 @@ export default function Footer() {
               lineHeight: 1.7,
             }}
           >
-            Speaker. Media Infrastructure. Thought Leader.
+            Speaker · Media Infrastructure · Strategist
             <br />
             Toronto, Canada.
           </p>

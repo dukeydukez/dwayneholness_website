@@ -11,22 +11,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dwayne Holness | Filmmaker. Strategist. Creative Director.",
+  title: "Dwayne Holness | Speaker · Media Infrastructure · Strategist",
   description:
-    "Dwayne Holness is a filmmaker, brand strategist, and creative director helping founders and thought leaders tell their stories with cinematic clarity.",
-  keywords: ["filmmaker", "brand strategist", "creative director", "documentary", "Toronto"],
+    "Dwayne Holness is a speaker, media infrastructure expert, and strategist helping founders and enterprise brands build media systems that compound authority over time.",
+  keywords: ["speaker", "media infrastructure", "brand strategist", "thought leadership", "Toronto"],
   openGraph: {
-    title: "Dwayne Holness | Filmmaker. Strategist. Creative Director.",
+    title: "Dwayne Holness | Speaker · Media Infrastructure · Strategist",
     description:
-      "Helping founders and thought leaders tell their stories with cinematic clarity.",
+      "Helping founders and enterprise brands build media systems that compound authority over time.",
     url: "https://dwayneholness.com",
     siteName: "Dwayne Holness",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dwayne Holness | Filmmaker. Strategist. Creative Director.",
-    description: "Helping founders and thought leaders tell their stories with cinematic clarity.",
+    title: "Dwayne Holness | Speaker · Media Infrastructure · Strategist",
+    description: "Helping founders and enterprise brands build media systems that compound authority over time.",
   },
 };
 

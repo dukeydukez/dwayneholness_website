@@ -46,6 +46,12 @@
 - **Spacing:** Use intentional, consistent spacing tokens — not random Tailwind steps.
 - **Depth:** Surfaces should have a layering system (base → elevated → floating), not all sit at the same z-plane.
 
+## Git & Deploy Workflow
+- **Test locally on `localhost:3000` by default** — never commit or push mid-session.
+- **Only commit/push to GitHub when Dwayne explicitly says to.**
+- Deploy pipeline: GitHub (`dukeydukez/dwayneholness_website`) → Vercel (auto-deploys on push).
+- Dev server: `npm run dev` from project root.
+
 ## Hard Rules
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it

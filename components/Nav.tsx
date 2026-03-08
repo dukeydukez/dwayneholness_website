@@ -89,8 +89,10 @@ export default function Nav() {
             {label}
           </Link>
         ))}
-        <Link
-          href="/speaking#book"
+        <a
+          href="https://calendar.app.google/qeycC86WguwLnjt1A"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             padding: "0.625rem 1.5rem",
             backgroundColor: "var(--gold)",
@@ -110,7 +112,7 @@ export default function Nav() {
           }
         >
           Book a Call
-        </Link>
+        </a>
       </nav>
 
       {/* Mobile toggle */}
@@ -227,8 +229,10 @@ export default function Nav() {
                 delay: links.length * 0.06,
               }}
             >
-              <Link
-                href="/speaking#book"
+              <a
+                href="https://calendar.app.google/qeycC86WguwLnjt1A"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 style={{
                   display: "inline-block",
@@ -245,7 +249,7 @@ export default function Nav() {
                 }}
               >
                 Book a Call
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         )}

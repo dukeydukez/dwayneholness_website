@@ -1,16 +1,17 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const topics = [
   {
     title: "Media Infrastructure for Founders",
     description:
-      "How to move beyond content creation into media systems — the architecture that turns attention into authority and compounds over time.",
+      "How to move beyond content creation into media systems: the architecture that turns attention into authority and compounds over time.",
   },
   {
     title: "Building Thought Leadership Systems",
     description:
-      "The frameworks founders use to establish category leadership — not through volume, but through strategic positioning and consistent point of view.",
+      "The frameworks founders use to establish category leadership, not through volume, but through strategic positioning and consistent point of view.",
   },
   {
     title: "The Architecture of Creative Ecosystems",
@@ -20,7 +21,7 @@ const topics = [
   {
     title: "From Content to Category Leader",
     description:
-      "What separates brands with content from brands with infrastructure — and the strategic decisions that determine which side you end up on.",
+      "What separates brands with content from brands with infrastructure, and the strategic decisions that determine which side you end up on.",
   },
 ];
 
@@ -58,19 +59,22 @@ const testimonials = [
   },
   {
     quote:
-      "What sets Dwayne apart is that he doesn't speak from theory — he speaks from the work. Every insight lands because it's earned.",
+      "What sets Dwayne apart is that he doesn't speak from theory. He speaks from the work. Every insight lands because it's earned.",
     name: "Marcus Reid",
     role: "Founder, Black Screen Office",
   },
 ];
 
 const galleryImages = [
-  { label: "Keynote, Creative Connect Summit 2025", aspect: "landscape" },
-  { label: "Panel, Black Screen Office Forum 2024", aspect: "portrait" },
-  { label: "Workshop, Corex Creative Labs 2025", aspect: "portrait" },
-  { label: "Keynote, Toronto Founders Collective 2024", aspect: "landscape" },
-  { label: "Moderation, CTC Annual Summit 2025", aspect: "landscape" },
-  { label: "Masterclass, Creative Connect 2024", aspect: "portrait" },
+  { src: "/images/BHMCorexCT-4621.jpeg", label: "Keynote, Creative Connect Summit 2025", aspect: "landscape" },
+  { src: "/images/BHMCorexCT-4626.jpeg", label: "Panel, Black Screen Office Forum 2024", aspect: "portrait" },
+  { src: "/images/BHMCorexCT-4673.jpeg", label: "Workshop, Corex Creative Labs 2025", aspect: "portrait" },
+  { src: "/images/BHMCorexCT-4870.jpeg", label: "Keynote, Toronto Founders Collective 2024", aspect: "landscape" },
+  { src: "/images/BHMCorexCT-4898.jpeg", label: "Moderation, CTC Annual Summit 2025", aspect: "landscape" },
+  { src: "/images/CorexRBC-5088.jpeg", label: "Masterclass, Creative Connect 2024", aspect: "portrait" },
+  { src: "/images/CorexRBC-5097.jpeg", label: "Panel, Media Infrastructure Summit 2025", aspect: "landscape" },
+  { src: "/images/CorexRBC-5110.jpeg", label: "Keynote, Founders Collective 2025", aspect: "landscape" },
+  { src: "/images/CorexRBC-5194.jpeg", label: "Workshop, Corex Labs 2024", aspect: "portrait" },
 ];
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
@@ -135,7 +139,7 @@ export default function SpeakingPage() {
           }}
         >
           Dwayne speaks on media infrastructure, thought leadership systems,
-          and the architecture of creative ecosystems — combining practitioner
+          and the architecture of creative ecosystems, combining practitioner
           depth with strategic clarity for founders and enterprise brands.
         </motion.p>
       </div>
@@ -338,7 +342,7 @@ export default function SpeakingPage() {
           }}
           className="gallery-grid"
         >
-          {galleryImages.map(({ label, aspect }, i) => (
+          {galleryImages.map(({ src, label, aspect }, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -349,13 +353,17 @@ export default function SpeakingPage() {
                 position: "relative",
                 aspectRatio: aspect === "landscape" ? "4/3" : "3/4",
                 backgroundColor: "var(--charcoal)",
-                backgroundImage: `radial-gradient(ellipse 80% 80% at ${30 + i * 15}% ${40 + i * 8}%, rgba(201,168,76,0.07) 0%, transparent 70%)`,
                 overflow: "hidden",
                 gridColumn: i === 0 ? "span 2" : "span 1",
-                gridRow: i === 0 ? "span 1" : "span 1",
               }}
             >
-              {/* Placeholder treatment — replace with real images */}
+              <Image
+                src={src}
+                alt={label}
+                fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
               <div
                 style={{
                   position: "absolute",
@@ -363,7 +371,7 @@ export default function SpeakingPage() {
                   display: "flex",
                   alignItems: "flex-end",
                   padding: "1.25rem",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%)",
+                  background: "linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%)",
                 }}
               >
                 <p
@@ -371,7 +379,7 @@ export default function SpeakingPage() {
                     fontSize: "0.6875rem",
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "rgba(200,194,180,0.5)",
+                    color: "rgba(200,194,180,0.7)",
                   }}
                 >
                   {label}

@@ -2,75 +2,18 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const posts = [
-  {
-    id: "01",
-    slug: "why-most-brand-films-fail",
-    category: "Filmmaking",
-    date: "February 2026",
-    readTime: "6 min read",
-    title: "Why Most Brand Films Fail Before They're Shot",
-    excerpt:
-      "Great brand filmmaking starts long before the camera turns on. It starts with clarity about what you're actually trying to say — and most brands never get there.",
-    tags: ["Filmmaking", "Brand Strategy"],
-  },
-  {
-    id: "02",
-    slug: "founder-led-content",
-    category: "Content Strategy",
-    date: "January 2026",
-    readTime: "8 min read",
-    title: "The Case for Founder-Led Content in 2026",
-    excerpt:
-      "Audiences are exhausted by polished corporate content. The founders who win in 2026 are the ones willing to be specific, human, and real — and the ones building a content system around that.",
-    tags: ["Content Strategy", "Founder Brand"],
-  },
-  {
-    id: "03",
-    slug: "cinematic-positioning",
-    category: "Brand Strategy",
-    date: "December 2025",
-    readTime: "7 min read",
-    title: "Cinematic Positioning: How Visual Language Builds Brands",
-    excerpt:
-      "Positioning isn't just messaging. The visual vocabulary you choose communicates who you are before you say a word. Here's how to think about it strategically.",
-    tags: ["Brand Strategy", "Visual Identity"],
-  },
-  {
-    id: "04",
-    slug: "authority-without-audience",
-    category: "Authority Building",
-    date: "November 2025",
-    readTime: "5 min read",
-    title: "How to Build Authority Without a Mass Audience",
-    excerpt:
-      "You don't need a million followers to be the most trusted voice in your category. You need precision, consistency, and a clear point of view.",
-    tags: ["Authority Building", "Strategy"],
-  },
-  {
-    id: "05",
-    slug: "documentary-mindset",
-    category: "Filmmaking",
-    date: "October 2025",
-    readTime: "9 min read",
-    title: "The Documentary Mindset: What Every Brand Could Learn",
-    excerpt:
-      "Documentarians don't make up stories — they find them. The best brand filmmakers I know operate the same way. Here's what that looks like in practice.",
-    tags: ["Filmmaking", "Brand Story"],
-  },
-];
-
-const allTags = Array.from(new Set(posts.flatMap((p) => p.tags)));
+import type { Article } from "@/lib/articles";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
-export default function WritingList() {
+export default function WritingList({ articles = [] }: { articles: Article[] }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
 
+  const allTags = Array.from(new Set(articles.flatMap((a) => a.tags)));
+
   const filtered = activeTag
-    ? posts.filter((p) => p.tags.includes(activeTag))
-    : posts;
+    ? articles.filter((a) => a.tags.includes(activeTag))
+    : articles;
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -177,7 +120,7 @@ export default function WritingList() {
       {/* Post list */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem 7rem" }}>
         <AnimatePresence mode="popLayout">
-          {filtered.map(({ id, slug, category, date, readTime, title, excerpt, tags }, i) => (
+          {filtered.map(({ slug, category, date, readTime, title, excerpt, tags }, i) => (
             <motion.div
               key={slug}
               initial={{ opacity: 0, y: 16 }}
@@ -208,7 +151,7 @@ export default function WritingList() {
                     opacity: 0.5,
                   }}
                 >
-                  {id}
+                  {String(i + 1).padStart(2, "0")}
                 </div>
 
                 {/* Content */}

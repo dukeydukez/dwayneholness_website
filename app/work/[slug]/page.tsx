@@ -28,11 +28,11 @@ const projects: Record<
     client: "Personal Project",
     role: "Director, Writer, Producer",
     overview:
-      "A feature-length documentary exploring how founders build lasting authority — not through hype, but through consistent presence, authentic narrative, and strategic positioning. Shot across Toronto over six months, the film profiles five entrepreneurs at different stages of their journeys.",
+      "A feature-length documentary exploring how founders build lasting authority, not through hype, but through consistent presence, authentic narrative, and strategic positioning. Shot across Toronto over six months, the film profiles five entrepreneurs at different stages of their journeys.",
     challenge:
-      "Authority is abstract. Most founders know they need it but don't understand how it's actually built over time. The challenge was making the invisible visible — capturing the habits, decisions, and long-game thinking that separate category leaders from everyone else.",
+      "Authority is abstract. Most founders know they need it but don't understand how it's actually built over time. The challenge was making the invisible visible: capturing the habits, decisions, and long-game thinking that separate category leaders from everyone else.",
     approach:
-      "Inspired by the observational style of Frederick Wiseman, the film eschews narration and talking-head interviews in favour of immersive, fly-on-the-wall sequences. We spent weeks embedded with each subject before filming, building the trust needed for genuine access. Each chapter is anchored by a single idea about authority — and the cinematography reinforces that idea visually.",
+      "Inspired by the observational style of Frederick Wiseman, the film eschews narration and talking-head interviews in favour of immersive, fly-on-the-wall sequences. We spent weeks embedded with each subject before filming, building the trust needed for genuine access. Each chapter is anchored by a single idea about authority, and the cinematography reinforces that idea visually.",
     outcome:
       "The film premiered at a private industry screening in Toronto to a room of 200 founders and creative leaders. It has since been used as a centrepiece content asset by two of its featured subjects to build their own authority positioning. A public digital release is in development.",
     tags: ["Documentary", "Brand Film", "Self-directed", "Toronto"],
@@ -47,11 +47,11 @@ const projects: Record<
     client: "Luvbay",
     role: "Creative Director, Director of Photography",
     overview:
-      "A 12-episode long-form social content series for Luvbay — a Toronto-based music and culture brand — capturing raw, unscripted conversations at the intersection of entrepreneurship, music, and identity. Each episode runs 20–40 minutes and is cut for both YouTube and short-form distribution.",
+      "A 12-episode long-form social content series for Luvbay, a Toronto-based music and culture brand, capturing raw, unscripted conversations at the intersection of entrepreneurship, music, and identity. Each episode runs 20–40 minutes and is cut for both YouTube and short-form distribution.",
     challenge:
-      "Luvbay had a clear voice and audience, but no consistent content presence. The challenge was building a repeatable content system that felt authentic to the culture while being sustainable to produce — without sacrificing quality for volume.",
+      "Luvbay had a clear voice and audience, but no consistent content presence. The challenge was building a repeatable content system that felt authentic to the culture while being sustainable to produce, without sacrificing quality for volume.",
     approach:
-      "We designed a minimal, controlled studio environment that could be set up in under two hours — allowing production agility without losing the cinematic look Luvbay needed to stand apart. Every episode followed a loose structural framework: origins, craft, vision. But the conversations were always allowed to breathe and go wherever they needed to.",
+      "We designed a minimal, controlled studio environment that could be set up in under two hours, allowing production agility without losing the cinematic look Luvbay needed to stand apart. Every episode followed a loose structural framework: origins, craft, vision. But the conversations were always allowed to breathe and go wherever they needed to.",
     outcome:
       "All 12 episodes were delivered on schedule over a 4-month production run. Average episode view count: 14K across platforms. Two episodes exceeded 30K views. The series established Luvbay as a serious editorial voice in Toronto's music and creative community.",
     tags: ["Social Content", "Series", "Long-form", "YouTube"],
@@ -66,11 +66,11 @@ const projects: Record<
     client: "Creative Connect",
     role: "Brand Strategist, Creative Director",
     overview:
-      "A full brand overhaul for Creative Connect — Toronto's leading community for creative entrepreneurs. The engagement covered brand positioning, visual identity, content strategy, and the narrative architecture underpinning all external communications.",
+      "A full brand overhaul for Creative Connect, Toronto's leading community for creative entrepreneurs. The engagement covered brand positioning, visual identity, content strategy, and the narrative architecture underpinning all external communications.",
     challenge:
-      "Creative Connect had strong community loyalty but a brand that didn't reflect its ambition. The organisation was growing beyond its grassroots roots and needed positioning that would attract corporate partners and established founders — without alienating the community that built it.",
+      "Creative Connect had strong community loyalty but a brand that didn't reflect its ambition. The organisation was growing beyond its grassroots roots and needed positioning that would attract corporate partners and established founders, without alienating the community that built it.",
     approach:
-      "We started with a deep positioning workshop with the founder and core team — uncovering what made Creative Connect irreplaceable, not just useful. From that session, we derived a positioning statement and brand voice that sat at the intersection of access and excellence. The visual identity was built to feel premium without being exclusionary — grounded in deep tones, purposeful typography, and photography that centred real community members.",
+      "We started with a deep positioning workshop with the founder and core team, uncovering what made Creative Connect irreplaceable, not just useful. From that session, we derived a positioning statement and brand voice that sat at the intersection of access and excellence. The visual identity was built to feel premium without being exclusionary, grounded in deep tones, purposeful typography, and photography that centred real community members.",
     outcome:
       "Creative Connect launched its new brand to its community of 4,000+ members to overwhelming positive reception. Within 90 days of the rebrand, the organisation secured two new corporate partnerships and saw a 60% increase in event registrations.",
     tags: ["Brand Identity", "Community", "Strategy", "Toronto"],
@@ -85,11 +85,11 @@ const projects: Record<
     client: "CTC",
     role: "Lead Creative Director, Campaign Producer",
     overview:
-      "A multi-format campaign for CTC honouring Black History Month — spanning cinematic hero films, a social content series, event production, and internal communications assets. The campaign centred authentic stories of Black leadership within the organisation and the broader community.",
+      "A multi-format campaign for CTC honouring Black History Month, spanning cinematic hero films, a social content series, event production, and internal communications assets. The campaign centred authentic stories of Black leadership within the organisation and the broader community.",
     challenge:
-      "Institutional Black History Month campaigns often feel performative — a checklist moment rather than a genuine expression of values. The challenge was creating something with enough creative ambition to feel meaningful, while working within the constraints of a large organisation's approvals process and timelines.",
+      "Institutional Black History Month campaigns often feel performative, a checklist moment rather than a genuine expression of values. The challenge was creating something with enough creative ambition to feel meaningful, while working within the constraints of a large organisation's approvals process and timelines.",
     approach:
-      "We anchored the campaign in story, not statement. Rather than leading with data or slogans, we identified three individuals within CTC whose stories embodied the theme and built the entire campaign around them. The hero film used a documentary visual language — available light, observational framing — to create intimacy and authenticity. All assets were then built to feel cohesive across every channel.",
+      "We anchored the campaign in story, not statement. Rather than leading with data or slogans, we identified three individuals within CTC whose stories embodied the theme and built the entire campaign around them. The hero film used a documentary visual language: available light, observational framing, to create intimacy and authenticity. All assets were then built to feel cohesive across every channel.",
     outcome:
       "The campaign was the most-engaged piece of content CTC produced that quarter across all internal and external channels. The hero film received internal recognition and a commendation from leadership. The campaign framework has since been adopted as the model for future institutional moments.",
     tags: ["Campaign", "Institutional", "Multi-format", "Cinematic"],
@@ -104,13 +104,13 @@ const projects: Record<
     client: "Corex Creative",
     role: "Director, Executive Producer",
     overview:
-      "An ongoing documentary-style interview series produced by Corex Creative — profiling founders, creatives, and executives building companies worth believing in. Each episode is a standalone portrait of a person, their company, and the principles that guide them.",
+      "An ongoing documentary-style interview series produced by Corex Creative, profiling founders, creatives, and executives building companies worth believing in. Each episode is a standalone portrait of a person, their company, and the principles that guide them.",
     challenge:
-      "Most founder content is promotional by default — press releases with a camera pointed at them. We wanted to build something that felt like editorial journalism: curious, challenging, and genuinely interested in the person behind the company.",
+      "Most founder content is promotional by default: press releases with a camera pointed at them. We wanted to build something that felt like editorial journalism: curious, challenging, and genuinely interested in the person behind the company.",
     approach:
-      "Each shoot begins with a pre-interview process to uncover the real story — the decisions that mattered, the moments of doubt, the unconventional beliefs. The visual language is consistent across episodes: deep backgrounds, practical lighting, minimal movement. The result is a series that feels authored, not produced.",
+      "Each shoot begins with a pre-interview process to uncover the real story: the decisions that mattered, the moments of doubt, the unconventional beliefs. The visual language is consistent across episodes: deep backgrounds, practical lighting, minimal movement. The result is a series that feels authored, not produced.",
     outcome:
-      "17 episodes produced across two seasons. The series has become a pipeline driver for Corex Creative — multiple clients have engaged Corex after appearing in or watching the Founder Series. It is now the flagship content property for Corex's own brand.",
+      "17 episodes produced across two seasons. The series has become a pipeline driver for Corex Creative; multiple clients have engaged Corex after appearing in or watching the Founder Series. It is now the flagship content property for Corex's own brand.",
     tags: ["Brand Film", "Interviews", "Ongoing", "Documentary Style"],
     nextSlug: "infrastructure-of-influence",
     nextTitle: "The Infrastructure of Influence",
@@ -130,7 +130,7 @@ export async function generateMetadata({
   const project = projects[slug];
   if (!project) return {};
   return {
-    title: `${project.title} — Dwayne Holness`,
+    title: `${project.title} | Dwayne Holness`,
     description: project.overview,
   };
 }
