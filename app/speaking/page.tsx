@@ -47,21 +47,21 @@ const offerings = [
 const testimonials = [
   {
     quote:
-      "Dwayne brought a level of clarity and creative confidence to our event that we hadn't seen before. Our audience was engaged from the first sentence.",
-    name: "Jordan McKenzie",
-    role: "Executive Director, Creative Connect",
+      "Dwayne has been an integral part of my success online. He created my entire online persona and helped me grow into the largest Real Estate Developer account in Canada. His filming is on a level unseen before and he has great vision. He also has tremendous patience and dedication.",
+    name: "Sherard McQueen",
+    role: "Real Estate Developer, M5V Developments Inc",
   },
   {
     quote:
-      "The frameworks Dwayne shared in his keynote became the foundation of how we now think about content across our entire organisation. Genuinely transformative.",
-    name: "Aisha Thompson",
-    role: "Head of Brand, Luvbay",
+      "With Dwayne, you never feel you are getting last year's cool trend but an authentic and relevant brand lens. He cares about relationships, the end product, and his own team. It shows in the work. And probably most important, he's fun to work with.",
+    name: "Leigh Himel",
+    role: "Entrepreneur, Writer & Brand Storyteller",
   },
   {
     quote:
-      "What sets Dwayne apart is that he doesn't speak from theory. He speaks from the work. Every insight lands because it's earned.",
-    name: "Marcus Reid",
-    role: "Founder, Black Screen Office",
+      "Dwayne is a gifted creative leader who has a unique ability to bring initiatives to life through powerful storytelling, photography, and videography. His team's work captured the essence of our programming, events, and milestones in ways that truly validated their impact — many of which are now featured in Canadian Tire's annual DIB Year in Review.",
+    name: "Letecia Rose",
+    role: "Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
   },
 ];
 

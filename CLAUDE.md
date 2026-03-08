@@ -52,6 +52,15 @@
 - Deploy pipeline: GitHub (`dukeydukez/dwayneholness_website`) → Vercel (auto-deploys on push).
 - Dev server: `npm run dev` from project root.
 
+## Canadian English & Grammar
+All copy on this site uses Canadian English. Enforce the following at all times:
+
+- **Spelling:** colour, favourite, honour, neighbour, recognise, organise, organiser, analyse, centre, theatre, travelling, fulfil, programme (but "program" for software)
+- **Punctuation:** No Oxford comma in flowing prose (Canadian style). Use double quotation marks `"` for quotes, not single.
+- **No em dashes** (`—`) in visible copy. Use a comma, colon, or period instead.
+- **Dates:** Day Month Year format (7 March 2026), or Month YYYY for articles (March 2026). Never MM/DD/YYYY.
+- When editing or writing any visible text, automatically apply Canadian spelling. Do not use American spellings (color, favorite, analyze, etc.).
+
 ## Hard Rules
 - Do not add sections, features, or content not in the reference
 - Do not "improve" a reference design — match it
