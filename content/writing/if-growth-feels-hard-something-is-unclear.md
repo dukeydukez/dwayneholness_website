@@ -39,11 +39,11 @@ The solution is not to add more. It is to strip back to what actually needs to b
 
 After working alongside founders for years, I keep coming back to the same three clarity questions. When a company can answer these without hesitation, everything downstream gets easier.
 
-**Who you are actually building for.** Not a broad category. A specific person, with a specific situation, at a specific moment in their business. The more precisely you can describe them, the more your message lands without explanation.
+**Who you are actually building for:** Not a broad category. A specific person, with a specific situation, at a specific moment in their business. The more precisely you can describe them, the more your message lands without explanation.
 
-**What problem you solve better than anyone else.** Not a list of services. One thing you do better than the alternatives. This is the answer that makes a prospect feel like you were made for them specifically, not just available to them generally.
+**What problem you solve better than anyone else:** Not a list of services. One thing you do better than the alternatives. This is the answer that makes a prospect feel like you were made for them specifically, not just available to them generally.
 
-**Why someone should trust you now, not later.** This is where most companies leave the most money on the table. The credibility signal, the proof, the story that closes the gap between interest and decision. If this is not clear, urgency dies every time.
+**Why someone should trust you now, not later:** This is where most companies leave the most money on the table. The credibility signal, the proof, the story that closes the gap between interest and decision. If this is not clear, urgency dies every time.
 
 When these three are locked in, the business changes texture. Conversations shorten because the right people self-select in. Momentum returns because the team has a direction they can actually move toward. Confidence comes back because everyone knows what they are building and who they are building it for.
 

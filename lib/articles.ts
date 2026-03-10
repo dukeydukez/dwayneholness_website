@@ -113,8 +113,8 @@ export function parseMarkdownToBlocks(markdown: string): ContentBlock[] {
   for (const line of lines) {
     const trimmed = line.trim();
     const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-    // Detect action/question/exercise/audit callouts: **The label:** body
-    const calloutMatch = trimmed.match(/^\*\*(The [^:*]+):\*\*\s*(.+)$/);
+    // Detect callouts: **Label:** body (e.g. "The action:", "Who you are building for:")
+    const calloutMatch = trimmed.match(/^\*\*([^:*]+):\*\*\s*(.+)$/);
 
     if (trimmed.startsWith("## ")) {
       flush();
