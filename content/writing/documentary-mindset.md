@@ -1,5 +1,5 @@
 ---
-title: "The Documentary Mindset: What Every Brand Could Learn"
+title: "The Documentary Mindset: What Every Brand *Could Learn*"
 date: "1 October 2025"
 readTime: "9 min read"
 category: "Filmmaking"

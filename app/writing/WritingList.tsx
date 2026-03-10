@@ -1,8 +1,24 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { Article } from "@/lib/articles";
+import { getInitialLikes } from "@/lib/likes";
+
+/** Render a title string that may contain *highlighted* segments. */
+function renderInlineTitle(text: string): React.ReactNode {
+  const parts = text.split(/(\*[^*]+\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("*") && part.endsWith("*") ? (
+      <em key={i} style={{ fontStyle: "italic", color: "var(--gold)" }}>
+        {part.slice(1, -1)}
+      </em>
+    ) : (
+      part
+    )
+  );
+}
+
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -11,8 +27,29 @@ const PAGE_SIZE = 5;
 export default function WritingList({ articles = [] }: { articles: Article[] }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [likeCounts, setLikeCounts] = useState<Record<string, number>>({});
 
-  const allTags = Array.from(new Set(articles.flatMap((a) => a.tags)));
+  useEffect(() => {
+    const counts: Record<string, number> = {};
+    for (const article of articles) {
+      const initial = getInitialLikes(article.slug);
+      const extra = parseInt(localStorage.getItem(`likes_extra:${article.slug}`) ?? "0", 10);
+      counts[article.slug] = initial + extra;
+    }
+    setLikeCounts(counts);
+  }, [articles]);
+
+  function handleListLike(slug: string, e: React.MouseEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    const initial = getInitialLikes(slug);
+    const extra = parseInt(localStorage.getItem(`likes_extra:${slug}`) ?? "0", 10) + 1;
+    localStorage.setItem(`likes_extra:${slug}`, String(extra));
+    setLikeCounts((prev) => ({ ...prev, [slug]: initial + extra }));
+  }
+
+  // Fixed set of 6 consistent filter tags
+  const allTags = ["Founder-Led Content", "Thought Leadership", "Entrepreneurship", "Brand Strategy", "Strategy", "Filmmaking"];
 
   const filtered = activeTag
     ? articles.filter((a) => a.tags.includes(activeTag))
@@ -137,7 +174,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
       {/* Post list */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem 7rem" }}>
         <AnimatePresence mode="popLayout">
-          {paginated.map(({ slug, category, date, readTime, title, excerpt, tags }, i) => (
+          {paginated.map(({ slug, category, date, readTime, title, excerpt }, i) => (
             <motion.div
               key={slug}
               initial={{ opacity: 0, y: 16 }}
@@ -146,15 +183,13 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
               transition={{ duration: 0.4, delay: i * 0.05, ease }}
               layout
             >
-              <Link
-                href={`/writing/${slug}`}
+              <div
                 style={{
                   display: "grid",
                   gridTemplateColumns: "4rem 1fr auto",
                   gap: "2rem",
                   padding: "3.5rem 0",
                   borderBottom: "1px solid rgba(200,194,180,0.08)",
-                  textDecoration: "none",
                   alignItems: "start",
                 }}
               >
@@ -192,70 +227,74 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
                       marginBottom: "0.875rem",
                     }}
                   >
-                    {date} · {readTime}
+                    {date.replace(/,.*$/, "")} · {readTime}
                   </p>
                   <h2
                     style={{
                       fontFamily: "var(--font-display), Georgia, serif",
                       fontSize: "clamp(1.375rem, 3vw, 2rem)",
                       fontWeight: 600,
-                      color: "var(--cream)",
                       lineHeight: 1.15,
                       marginBottom: "1rem",
                       letterSpacing: "-0.01em",
                     }}
                   >
-                    {title}
+                    <Link
+                      href={`/writing/${slug}`}
+                      style={{ color: "var(--cream)", textDecoration: "none" }}
+                    >
+                      {title.replace(/\*/g, "")}
+                    </Link>
                   </h2>
                   <p
                     style={{
                       fontSize: "0.9375rem",
                       color: "var(--cream-dim)",
                       lineHeight: 1.75,
-                      marginBottom: "1.25rem",
+                      marginBottom: "1.5rem",
                       maxWidth: "60ch",
                     }}
                   >
                     {excerpt}
                   </p>
-                  <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-                    {tags.map((tag) => (
-                      <span
-                        key={tag}
-                        style={{
-                          fontSize: "0.6875rem",
-                          letterSpacing: "0.1em",
-                          textTransform: "uppercase",
-                          color: activeTag === tag ? "var(--gold)" : "var(--cream-dim)",
-                          padding: "0.3rem 0.75rem",
-                          border: "1px solid",
-                          borderColor:
-                            activeTag === tag
-                              ? "rgba(201,168,76,0.4)"
-                              : "rgba(200,194,180,0.15)",
-                          backgroundColor:
-                            activeTag === tag ? "rgba(201,168,76,0.06)" : "transparent",
-                          transition: "all 0.2s ease",
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  {/* Like button */}
+                  <button
+                    onClick={(e) => handleListLike(slug, e)}
+                    aria-label="Like this article"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                      padding: "0.5rem 1rem",
+                      backgroundColor: "rgba(201,168,76,0.08)",
+                      border: "1px solid rgba(201,168,76,0.3)",
+                      color: "var(--gold)",
+                      fontSize: "0.9375rem",
+                      fontWeight: 700,
+                      cursor: "pointer",
+                      transition: "background-color 0.15s ease",
+                      lineHeight: 1,
+                    }}
+                  >
+                    <span style={{ fontSize: "1rem" }}>♥</span>
+                    <span>{likeCounts[slug] ?? getInitialLikes(slug)}</span>
+                  </button>
                 </div>
 
                 {/* Arrow */}
-                <div
+                <Link
+                  href={`/writing/${slug}`}
                   style={{
                     fontSize: "1.5rem",
                     color: "var(--gold)",
                     opacity: 0.6,
                     alignSelf: "center",
+                    textDecoration: "none",
                   }}
                 >
                   →
-                </div>
-              </Link>
+                </Link>
+              </div>
             </motion.div>
           ))}
         </AnimatePresence>

@@ -1,6 +1,6 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -36,9 +36,8 @@ const tiers = [
       "One follow-up email (7 days)",
     ],
     cta: "Book a Session",
-    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
+    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
     highlight: false,
-    external: true,
   },
   {
     label: "Strategic Brand & Growth Session",
@@ -50,9 +49,8 @@ const tiers = [
       "Prioritized 90-day roadmap",
     ],
     cta: "Book This Session",
-    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
+    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
     highlight: true,
-    external: true,
   },
   {
     label: "Production & Strategy",
@@ -66,81 +64,17 @@ const tiers = [
     cta: "Start the Conversation",
     href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
     highlight: false,
-    external: true,
   },
 ];
 
 export default function WorkWithMe() {
   const [active, setActive] = useState(0);
-  const gcalRef = useRef<HTMLDivElement>(null);
-  const gcalRef2 = useRef<HTMLDivElement>(null);
-  const gcalRef3 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setActive((i) => (i + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
-
-  // Load Google Calendar scheduling button for Creative Strategy Session
-  useEffect(() => {
-    if (!document.getElementById("gcal-css")) {
-      const link = document.createElement("link");
-      link.id = "gcal-css";
-      link.rel = "stylesheet";
-      link.href = "https://calendar.google.com/calendar/scheduling-button-script.css";
-      document.head.appendChild(link);
-    }
-
-    function initGcal() {
-      if (!gcalRef.current || gcalRef.current.dataset.gcalInit) return;
-      gcalRef.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
-        color: "#C9A84C",
-        label: "BOOK A SESSION",
-        target: gcalRef.current,
-      });
-    }
-
-    function initGcal2() {
-      if (!gcalRef2.current || gcalRef2.current.dataset.gcalInit) return;
-      gcalRef2.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
-        color: "#C9A84C",
-        label: "BOOK THIS SESSION",
-        target: gcalRef2.current,
-      });
-    }
-
-    function initGcal3() {
-      if (!gcalRef3.current || gcalRef3.current.dataset.gcalInit) return;
-      gcalRef3.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1RLqWdgiUkQWuGzyH_VFox5mTz7u0OqaNQcRvmgY5vFblcd8gwxP4BRvIuK-aC8bBdFuMOLmKh?gv=true",
-        color: "#C9A84C",
-        label: "START THE CONVERSATION",
-        target: gcalRef3.current,
-      });
-    }
-
-    if (!document.getElementById("gcal-js")) {
-      const script = document.createElement("script");
-      script.id = "gcal-js";
-      script.src = "https://calendar.google.com/calendar/scheduling-button-script.js";
-      script.async = true;
-      script.onload = () => { initGcal(); initGcal2(); initGcal3(); };
-      document.body.appendChild(script);
-    } else {
-      initGcal();
-      initGcal2();
-      initGcal3();
-    }
   }, []);
 
 
@@ -436,13 +370,30 @@ export default function WorkWithMe() {
               <div style={{ flex: 1 }} />
 
               {/* CTA */}
-              {tier.label === "Creative Strategy Session" ? (
-                <div ref={gcalRef} />
-              ) : tier.label === "Strategic Brand & Growth Session" ? (
-                <div ref={gcalRef2} />
-              ) : (
-                <div ref={gcalRef3} />
-              )}
+              <a
+                href={tier.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "block",
+                  width: "100%",
+                  padding: "0.9375rem",
+                  backgroundColor: tier.highlight ? "var(--gold)" : "transparent",
+                  color: tier.highlight ? "var(--black)" : "var(--cream-dim)",
+                  border: tier.highlight ? "1px solid var(--gold)" : "1px solid rgba(200,194,180,0.25)",
+                  fontSize: "0.6875rem",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  textAlign: "center",
+                  cursor: "pointer",
+                  transition: "opacity 0.2s ease",
+                  boxSizing: "border-box",
+                }}
+              >
+                {tier.cta.toUpperCase()}
+              </a>
             </motion.div>
           ))}
         </div>

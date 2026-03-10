@@ -1,5 +1,5 @@
 ---
-title: "If Growth Feels Hard, Something Is Unclear"
+title: "If Growth Feels Hard, Something Is *Unclear*"
 date: "7 March 2026"
 readTime: "4 min read"
 category: "Brand Strategy"

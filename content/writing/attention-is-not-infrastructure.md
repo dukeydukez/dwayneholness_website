@@ -1,5 +1,5 @@
 ---
-title: "Attention Is Not Infrastructure"
+title: "Attention Is Not *Infrastructure*"
 date: "3 March 2026"
 readTime: "4 min read"
 category: "Media Infrastructure"

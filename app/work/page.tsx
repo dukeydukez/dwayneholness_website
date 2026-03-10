@@ -13,7 +13,7 @@ const projects = [
     client: "Corex Creative",
     description:
       "A podcast platform dedicated to shining a light on the often overlooked stars of the creative world. Artists, filmmakers, musicians, and designers step out from behind the scenes and into the spotlight.",
-    tags: ["Podcast", "Community", "Creative Industries"],
+    tags: ["Podcast", "Community"],
   },
   {
     id: "02",
@@ -24,7 +24,7 @@ const projects = [
     client: "CBC Short Docs",
     description:
       "A short documentary following Somali-Canadian journalist and activist Hodan Nalayeh as she returns to Somalia 25 years after fleeing, on a mission to spread light where many only see darkness.",
-    tags: ["Documentary", "CBC", "Human Interest"],
+    tags: ["Documentary", "Human Interest"],
   },
   {
     id: "03",
@@ -35,7 +35,7 @@ const projects = [
     client: "LCBO",
     description:
       "A three-part brand film series for LCBO exploring their commitment to environmental sustainability through story rather than statement.",
-    tags: ["Brand Film", "Corporate", "Sustainability"],
+    tags: ["Brand Film", "Corporate"],
   },
   {
     id: "04",
@@ -46,7 +46,7 @@ const projects = [
     client: "Historica Canada",
     description:
       "A heritage documentary short telling the story of Thornton and Lucie Blackburn, freedom seekers who escaped enslavement and became Toronto's first Black cab operators.",
-    tags: ["Heritage Film", "Documentary", "Black Canadian History"],
+    tags: ["Heritage Film", "Documentary"],
   },
 ];
 

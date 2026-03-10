@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -21,9 +20,8 @@ const packages = [
       "One follow-up email for clarifying questions within 7 days",
     ],
     cta: "Book a Session",
-    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
+    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
     highlight: false,
-    external: true,
   },
   {
     id: "02",
@@ -44,9 +42,8 @@ const packages = [
       "30-day follow-up check-in call",
     ],
     cta: "Book This Session",
-    href: "https://calendar.app.google/qeycC86WguwLnjt1A",
+    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
     highlight: true,
-    external: true,
   },
   {
     id: "03",
@@ -68,7 +65,6 @@ const packages = [
     cta: "Start the Conversation",
     href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
     highlight: false,
-    external: true,
   },
 ];
 
@@ -96,82 +92,6 @@ const process = [
 ];
 
 export default function PackagesPage() {
-  const gcalRef = useRef<HTMLDivElement>(null);
-  const gcalRef2 = useRef<HTMLDivElement>(null);
-  const gcalRef3 = useRef<HTMLDivElement>(null);
-  const gcalRefCta = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!document.getElementById("gcal-css")) {
-      const link = document.createElement("link");
-      link.id = "gcal-css";
-      link.rel = "stylesheet";
-      link.href = "https://calendar.google.com/calendar/scheduling-button-script.css";
-      document.head.appendChild(link);
-    }
-
-    function initGcal() {
-      if (!gcalRef.current || gcalRef.current.dataset.gcalInit) return;
-      gcalRef.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
-        color: "#C9A84C",
-        label: "BOOK A SESSION",
-        target: gcalRef.current,
-      });
-    }
-
-    function initGcal2() {
-      if (!gcalRef2.current || gcalRef2.current.dataset.gcalInit) return;
-      gcalRef2.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
-        color: "#C9A84C",
-        label: "BOOK THIS SESSION",
-        target: gcalRef2.current,
-      });
-    }
-
-    function initGcal3() {
-      if (!gcalRef3.current || gcalRef3.current.dataset.gcalInit) return;
-      gcalRef3.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1RLqWdgiUkQWuGzyH_VFox5mTz7u0OqaNQcRvmgY5vFblcd8gwxP4BRvIuK-aC8bBdFuMOLmKh?gv=true",
-        color: "#C9A84C",
-        label: "START THE CONVERSATION",
-        target: gcalRef3.current,
-      });
-    }
-
-    function initGcalCta() {
-      if (!gcalRefCta.current || gcalRefCta.current.dataset.gcalInit) return;
-      gcalRefCta.current.dataset.gcalInit = "1";
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).calendar?.schedulingButton?.load({
-        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
-        color: "#C9A84C",
-        label: "BOOK A CALL",
-        target: gcalRefCta.current,
-      });
-    }
-
-    if (!document.getElementById("gcal-js")) {
-      const script = document.createElement("script");
-      script.id = "gcal-js";
-      script.src = "https://calendar.google.com/calendar/scheduling-button-script.js";
-      script.async = true;
-      script.onload = () => { initGcal(); initGcal2(); initGcal3(); initGcalCta(); };
-      document.body.appendChild(script);
-    } else {
-      initGcal();
-      initGcal2();
-      initGcal3();
-      initGcalCta();
-    }
-  }, []);
 
 
   return (
@@ -237,7 +157,7 @@ export default function PackagesPage() {
       {/* Packages */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "5rem 2rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {packages.map(({ id, label, price, priceNote, tagline, description, who, includes, cta, href, highlight, external }, i) => (
+          {packages.map(({ id, label, price, priceNote, tagline, description, who, includes, cta, href, highlight }, i) => (
             <motion.div
               key={id}
               initial={{ opacity: 0, y: 32 }}
@@ -419,13 +339,28 @@ export default function PackagesPage() {
                       </li>
                     ))}
                   </ul>
-                  {id === "01" ? (
-                    <div ref={gcalRef} />
-                  ) : id === "02" ? (
-                    <div ref={gcalRef2} />
-                  ) : (
-                    <div ref={gcalRef3} />
-                  )}
+                  <a
+                    href={href}
+                    target={href.startsWith("mailto") ? undefined : "_blank"}
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "block",
+                      padding: "1rem 2rem",
+                      backgroundColor: highlight ? "var(--gold)" : "transparent",
+                      color: highlight ? "var(--black)" : "var(--cream-dim)",
+                      border: highlight ? "1px solid var(--gold)" : "1px solid rgba(200,194,180,0.25)",
+                      fontSize: "0.6875rem",
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
+                      fontWeight: 700,
+                      textDecoration: "none",
+                      textAlign: "center",
+                      cursor: "pointer",
+                      transition: "opacity 0.2s ease",
+                    }}
+                  >
+                    {cta.toUpperCase()}
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -596,7 +531,27 @@ export default function PackagesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3, ease }}
         >
-          <div ref={gcalRefCta} />
+          <a
+            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              padding: "1rem 2.5rem",
+              backgroundColor: "var(--gold)",
+              color: "var(--black)",
+              border: "1px solid var(--gold)",
+              fontSize: "0.6875rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              fontWeight: 700,
+              textDecoration: "none",
+              cursor: "pointer",
+              transition: "opacity 0.2s ease",
+            }}
+          >
+            BOOK A CALL
+          </a>
         </motion.div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: "Producers vs. Consumers: The Real AI Divide"
+title: "Producers vs. *Consumers*: The Real AI Divide"
 date: "8 March 2026, 3:45 PM"
 readTime: "5 min read"
 category: "Entrepreneurship"

@@ -1,5 +1,5 @@
 ---
-title: "10 Frameworks Every Creative Needs to Build Something Real"
+title: "10 Frameworks Every Creative Needs to *Build Something Real*"
 date: "8 March 2026, 5:23 PM"
 readTime: "8 min read"
 category: "Entrepreneurship"

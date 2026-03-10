@@ -1,5 +1,5 @@
 ---
-title: "Cinematic Positioning: How Visual Language Builds Brands"
+title: "Cinematic Positioning: How *Visual Language* Builds Brands"
 date: "1 December 2025"
 readTime: "7 min read"
 category: "Brand Strategy"

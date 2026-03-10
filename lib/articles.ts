@@ -95,35 +95,51 @@ export function getArticleBySlug(slug: string): Article | null {
   return { slug, content, ...validateFrontmatter(data, slug) };
 }
 
-export function parseMarkdownToBlocks(
-  markdown: string
-): { type: "p" | "h2" | "blockquote" | "image"; text: string; src?: string }[] {
+export type ContentBlock =
+  | { type: "p" | "h2" | "blockquote"; text: string }
+  | { type: "image"; text: string; src?: string }
+  | { type: "callout"; label: string; text: string }
+  | { type: "hr" };
+
+export function parseMarkdownToBlocks(markdown: string): ContentBlock[] {
   const lines = markdown.split("\n");
-  const blocks: { type: "p" | "h2" | "blockquote" | "image"; text: string; src?: string }[] = [];
+  const blocks: ContentBlock[] = [];
   let paragraph = "";
+
+  const flush = () => {
+    if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+  };
 
   for (const line of lines) {
     const trimmed = line.trim();
     const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    // Detect action/question/exercise/audit callouts: **The label:** body
+    const calloutMatch = trimmed.match(/^\*\*(The [^:*]+):\*\*\s*(.+)$/);
 
     if (trimmed.startsWith("## ")) {
-      if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+      flush();
       blocks.push({ type: "h2", text: trimmed.slice(3) });
     } else if (trimmed.startsWith("> ")) {
-      if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+      flush();
       blocks.push({ type: "blockquote", text: trimmed.slice(2) });
     } else if (imageMatch) {
-      if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+      flush();
       const rawSrc = imageMatch[2];
       const safeSrc = /^https?:\/\/|^\//.test(rawSrc) ? rawSrc : undefined;
       blocks.push({ type: "image", text: imageMatch[1], src: safeSrc });
+    } else if (trimmed === "---") {
+      // Section dividers: flush paragraph but skip rendering
+      flush();
+    } else if (calloutMatch) {
+      flush();
+      blocks.push({ type: "callout", label: calloutMatch[1], text: calloutMatch[2] });
     } else if (trimmed === "") {
-      if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
+      flush();
     } else {
       paragraph += (paragraph ? " " : "") + trimmed;
     }
   }
 
-  if (paragraph) blocks.push({ type: "p", text: paragraph.trim() });
+  flush();
   return blocks;
 }

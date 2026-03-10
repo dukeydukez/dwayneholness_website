@@ -2,7 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllArticles, getArticleBySlug, parseMarkdownToBlocks } from "@/lib/articles";
+import type { ContentBlock } from "@/lib/articles";
+import LikeButton from "@/components/LikeButton";
 
+/** Render a title string that may contain *highlighted* segments. */
+function renderInlineTitle(text: string): React.ReactNode {
+  const parts = text.split(/(\*[^*]+\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("*") && part.endsWith("*") ? (
+      <em key={i} style={{ fontStyle: "italic", color: "var(--gold)" }}>
+        {part.slice(1, -1)}
+      </em>
+    ) : (
+      part
+    )
+  );
+}
 
 export async function generateStaticParams() {
   return getAllArticles().map(({ slug }) => ({ slug }));
@@ -17,7 +32,7 @@ export async function generateMetadata({
   const article = getArticleBySlug(slug);
   if (!article) return {};
   return {
-    title: `${article.title} | Dwayne Holness`,
+    title: `${article.title.replace(/\*/g, "")} | Dwayne Holness`,
     description: article.excerpt,
   };
 }
@@ -31,8 +46,14 @@ export default async function WritingPostPage({
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
-  const { date, readTime, title, excerpt: subtitle, tags, content: rawContent, nextSlug, nextTitle } = article;
-  const content = parseMarkdownToBlocks(rawContent);
+  // Auto-compute adjacent articles from the sorted list
+  const allArticles = getAllArticles();
+  const idx = allArticles.findIndex((a) => a.slug === slug);
+  const prevArticle = idx > 0 ? allArticles[idx - 1] : null;
+  const nextArticle = idx < allArticles.length - 1 ? allArticles[idx + 1] : null;
+
+  const { date, readTime, title, excerpt: subtitle, tags, content: rawContent } = article;
+  const content: ContentBlock[] = parseMarkdownToBlocks(rawContent);
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
@@ -71,7 +92,7 @@ export default async function WritingPostPage({
             alignItems: "center",
           }}
         >
-          <p style={{ fontSize: "0.8125rem", color: "var(--cream-dim)" }}>{date}</p>
+          <p style={{ fontSize: "0.8125rem", color: "var(--cream-dim)" }}>{date.replace(/,.*$/, "")}</p>
           <p
             style={{
               fontSize: "0.75rem",
@@ -83,7 +104,7 @@ export default async function WritingPostPage({
             {readTime}
           </p>
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            {tags.map((tag) => (
+            {tags.slice(0, 2).map((tag) => (
               <span
                 key={tag}
                 style={{
@@ -113,7 +134,7 @@ export default async function WritingPostPage({
             marginBottom: "1.75rem",
           }}
         >
-          {title}
+          {renderInlineTitle(title)}
         </h1>
         <p
           style={{
@@ -133,7 +154,7 @@ export default async function WritingPostPage({
         style={{
           maxWidth: "760px",
           margin: "0 auto",
-          padding: "5rem 2rem 7rem",
+          padding: "5rem 2rem 4rem",
         }}
       >
         {content.map((block, i) => {
@@ -161,7 +182,7 @@ export default async function WritingPostPage({
               <div key={i} style={{ margin: "3rem 0" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={block.src}
+                  src={(block as { type: "image"; text: string; src?: string }).src}
                   alt={block.text}
                   style={{ width: "100%", height: "auto", display: "block" }}
                 />
@@ -198,6 +219,44 @@ export default async function WritingPostPage({
               </blockquote>
             );
           }
+          if (block.type === "callout") {
+            const cb = block as { type: "callout"; label: string; text: string };
+            return (
+              <div
+                key={i}
+                style={{
+                  margin: "2.5rem 0",
+                  padding: "1.5rem 2rem",
+                  backgroundColor: "rgba(201,168,76,0.06)",
+                  borderLeft: "3px solid var(--gold)",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "0.625rem",
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    fontWeight: 700,
+                    marginBottom: "0.625rem",
+                  }}
+                >
+                  {cb.label}
+                </p>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    color: "var(--cream)",
+                    lineHeight: 1.75,
+                    fontStyle: "italic",
+                    margin: 0,
+                  }}
+                >
+                  {cb.text}
+                </p>
+              </div>
+            );
+          }
           return (
             <p
               key={i}
@@ -208,7 +267,7 @@ export default async function WritingPostPage({
                 marginBottom: "1.75rem",
               }}
             >
-              {block.text}
+              {(block as { type: "p"; text: string }).text}
             </p>
           );
         })}
@@ -216,7 +275,7 @@ export default async function WritingPostPage({
         {/* Author bio */}
         <div
           style={{
-            marginTop: "5rem",
+            marginTop: "4rem",
             paddingTop: "3rem",
             borderTop: "1px solid rgba(200,194,180,0.1)",
             display: "flex",
@@ -260,45 +319,86 @@ export default async function WritingPostPage({
             </p>
           </div>
         </div>
+
+        {/* Like button */}
+        <LikeButton slug={slug} />
       </div>
 
-      {/* Next article */}
-      <div
-        style={{
-          borderTop: "1px solid rgba(200,194,180,0.1)",
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "4rem 2rem",
-        }}
-      >
-        <p
+      {/* Article navigation — Previous & Next */}
+      {(prevArticle || nextArticle) && (
+        <div
           style={{
-            fontSize: "0.6875rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            color: "var(--cream-dim)",
-            marginBottom: "1rem",
+            borderTop: "1px solid rgba(200,194,180,0.1)",
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "4rem 2rem",
+            display: "grid",
+            gridTemplateColumns: prevArticle && nextArticle ? "1fr 1fr" : "1fr",
+            gap: "3rem",
           }}
         >
-          Next Essay
-        </p>
-        <Link
-          href={`/writing/${nextSlug}`}
-          style={{
-            fontFamily: "var(--font-display), sans-serif",
-            fontSize: "clamp(1.5rem, 3.5vw, 2.75rem)",
-            fontWeight: 700,
-            color: "var(--cream)",
-            textDecoration: "none",
-            letterSpacing: "-0.015em",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          {nextTitle} <span style={{ color: "var(--gold)" }}>→</span>
-        </Link>
-      </div>
+          {prevArticle && (
+            <div>
+              <p
+                style={{
+                  fontSize: "0.6875rem",
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "var(--cream-dim)",
+                  marginBottom: "0.875rem",
+                }}
+              >
+                ← Previous Thought
+              </p>
+              <Link
+                href={`/writing/${prevArticle.slug}`}
+                style={{
+                  fontFamily: "var(--font-display), sans-serif",
+                  fontSize: "clamp(1.125rem, 2.5vw, 1.625rem)",
+                  fontWeight: 700,
+                  color: "var(--cream)",
+                  textDecoration: "none",
+                  letterSpacing: "-0.015em",
+                  lineHeight: 1.2,
+                  display: "block",
+                }}
+              >
+                {prevArticle.title.replace(/\*/g, "")}
+              </Link>
+            </div>
+          )}
+          {nextArticle && (
+            <div style={{ textAlign: prevArticle ? "right" : "left" }}>
+              <p
+                style={{
+                  fontSize: "0.6875rem",
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  color: "var(--cream-dim)",
+                  marginBottom: "0.875rem",
+                }}
+              >
+                Next Thought →
+              </p>
+              <Link
+                href={`/writing/${nextArticle.slug}`}
+                style={{
+                  fontFamily: "var(--font-display), sans-serif",
+                  fontSize: "clamp(1.125rem, 2.5vw, 1.625rem)",
+                  fontWeight: 700,
+                  color: "var(--cream)",
+                  textDecoration: "none",
+                  letterSpacing: "-0.015em",
+                  lineHeight: 1.2,
+                  display: "block",
+                }}
+              >
+                {nextArticle.title.replace(/\*/g, "")}
+              </Link>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

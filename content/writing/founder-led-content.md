@@ -1,5 +1,5 @@
 ---
-title: "The Case for Founder-Led Content in 2026"
+title: "The Case for *Founder-Led Content* in 2026"
 date: "1 January 2026"
 readTime: "8 min read"
 category: "Content Strategy"
