@@ -114,6 +114,8 @@ const projects: Record<
   },
 };
 
+const SAFE_VIDEO_ID_RE = /^[a-zA-Z0-9_-]+$/;
+
 export async function generateStaticParams() {
   return Object.keys(projects).map((slug) => ({ slug }));
 }
@@ -281,7 +283,7 @@ export default async function WorkDetailPage({
               marginTop: "2rem",
             }}
           >
-            {vimeoIds.map((vid) => (
+            {vimeoIds.filter((vid) => SAFE_VIDEO_ID_RE.test(vid)).map((vid) => (
               <div key={vid} style={{ width: "100%", aspectRatio: "16/9" }}>
                 <iframe
                   width="100%"
@@ -308,7 +310,7 @@ export default async function WorkDetailPage({
               marginTop: "2rem",
             }}
           >
-            {youtubeIds.map((id) => (
+            {youtubeIds.filter((id) => SAFE_VIDEO_ID_RE.test(id)).map((id) => (
               <div key={id} style={{ width: "100%", aspectRatio: "16/9" }}>
                 <iframe
                   width="100%"

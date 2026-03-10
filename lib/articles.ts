@@ -20,6 +20,21 @@ export type Article = ArticleFrontmatter & {
   content: string;
 };
 
+const REQUIRED_FIELDS = ["title", "date", "readTime", "category", "tags", "excerpt"] as const;
+
+function validateFrontmatter(data: unknown, slug: string): ArticleFrontmatter {
+  const d = data as Record<string, unknown>;
+  for (const field of REQUIRED_FIELDS) {
+    if (d[field] === undefined || d[field] === null || d[field] === "") {
+      throw new Error(`Article "${slug}" is missing required frontmatter field: "${field}"`);
+    }
+  }
+  if (!Array.isArray(d.tags)) {
+    throw new Error(`Article "${slug}" has invalid "tags" — expected an array`);
+  }
+  return d as unknown as ArticleFrontmatter;
+}
+
 export function getAllArticles(): Article[] {
   const files = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md") && f !== "README.md");
 
@@ -27,7 +42,7 @@ export function getAllArticles(): Article[] {
     const slug = filename.replace(/\.md$/, "");
     const raw = fs.readFileSync(path.join(CONTENT_DIR, filename), "utf8");
     const { data, content } = matter(raw);
-    return { slug, content, ...(data as ArticleFrontmatter) };
+    return { slug, content, ...validateFrontmatter(data, slug) };
   });
 
   // Sort by date descending (most recent first)
@@ -67,12 +82,17 @@ export function getAllArticles(): Article[] {
   return articles.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
 }
 
+const SAFE_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
 export function getArticleBySlug(slug: string): Article | null {
+  if (!SAFE_SLUG_RE.test(slug)) return null;
   const filePath = path.join(CONTENT_DIR, `${slug}.md`);
+  // Guard against path traversal — resolved path must stay inside CONTENT_DIR
+  if (!filePath.startsWith(CONTENT_DIR + path.sep)) return null;
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(raw);
-  return { slug, content, ...(data as ArticleFrontmatter) };
+  return { slug, content, ...validateFrontmatter(data, slug) };
 }
 
 export function parseMarkdownToBlocks(
@@ -94,7 +114,9 @@ export function parseMarkdownToBlocks(
       blocks.push({ type: "blockquote", text: trimmed.slice(2) });
     } else if (imageMatch) {
       if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
-      blocks.push({ type: "image", text: imageMatch[1], src: imageMatch[2] });
+      const rawSrc = imageMatch[2];
+      const safeSrc = /^https?:\/\/|^\//.test(rawSrc) ? rawSrc : undefined;
+      blocks.push({ type: "image", text: imageMatch[1], src: safeSrc });
     } else if (trimmed === "") {
       if (paragraph) { blocks.push({ type: "p", text: paragraph.trim() }); paragraph = ""; }
     } else {
