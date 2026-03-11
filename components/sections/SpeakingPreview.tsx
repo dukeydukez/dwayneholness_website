@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const topics = [
   {
-    title: "Media Infrastructure for Founders",
+    title: "Brand Architecture for Founders",
     description:
       "Most founders build content. Few build infrastructure. This talk covers the systems, workflows, and distribution architecture that turn consistent output into compounding authority.",
   },
@@ -110,7 +110,7 @@ export default function SpeakingPreview() {
             }}
           >
             Available for keynotes, panels, and strategic consulting
-            engagements. I speak on media infrastructure, thought leadership
+            engagements. I speak on brand architecture, thought leadership
             systems, and the architecture of creative ecosystems for founders
             ready to own their category.
           </p>

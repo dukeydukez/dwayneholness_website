@@ -233,7 +233,7 @@ export default function Footer() {
               maxWidth: "32ch",
             }}
           >
-            Speaker, media infrastructure expert, and strategist helping founders build media systems that compound authority over time.
+            Speaker, brand architect, and strategist helping founders build media systems that compound authority over time.
           </p>
         </div>
 

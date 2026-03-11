@@ -101,7 +101,7 @@ export default function Hero() {
             marginBottom: "2rem",
           }}
         >
-          Speaker · Media Infrastructure · Strategist
+          Speaker · Brand Architect · Strategist
         </motion.p>
 
         <motion.h1

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const topics = [
   {
-    title: "Media Infrastructure for Founders",
+    title: "Brand Architecture for Founders",
     description:
       "How to move beyond content creation into media systems: the architecture that turns attention into authority and compounds over time.",
   },
@@ -35,11 +35,11 @@ const offerings = [
   },
   {
     label: "Strategic Consulting",
-    body: "Deep-dive media infrastructure and ecosystem design engagements for founders and organizations ready to build systems that compound.",
+    body: "Deep-dive brand architecture and ecosystem design engagements for founders and organizations ready to build systems that compound.",
   },
   {
     label: "Workshop",
-    body: "Half-day and full-day workshops on media infrastructure, thought leadership systems, and building creative ecosystems that scale.",
+    body: "Half-day and full-day workshops on brand architecture, thought leadership systems, and building creative ecosystems that scale.",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function SpeakingPage() {
             maxWidth: "56ch",
           }}
         >
-          Dwayne speaks on media infrastructure, thought leadership systems,
+          Dwayne speaks on brand architecture, thought leadership systems,
           and the architecture of creative ecosystems, combining practitioner
           depth with strategic clarity for founders and enterprise brands.
         </motion.p>

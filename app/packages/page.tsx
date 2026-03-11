@@ -52,7 +52,7 @@ const packages = [
     priceNote: "per engagement",
     tagline: "Bring a practitioner to your stage, not a motivational speaker.",
     description:
-      "Dwayne delivers keynotes, panels, and workshops on media infrastructure, thought leadership systems, and the architecture of creative ecosystems. Every talk is built around your audience, grounded in real experience building a multi-million dollar creative agency from the ground up.",
+      "Dwayne delivers keynotes, panels, and workshops on brand architecture, thought leadership systems, and the architecture of creative ecosystems. Every talk is built around your audience, grounded in real experience building a multi-million dollar creative agency from the ground up.",
     who: "Conference organizers, corporate event planners, and community leaders looking for a speaker who brings strategy and substance.",
     includes: [
       "45–90 minute keynote tailored to your audience",
@@ -80,7 +80,7 @@ const packages = [
       "Cinematic documentary-style content production",
       "Multi-platform content systems and distribution",
       "Thought leadership and founder content",
-      "Media infrastructure design and buildout",
+      "Brand architecture design and buildout",
       "Ongoing creative direction and strategic oversight",
     ],
     cta: "Start the Conversation",

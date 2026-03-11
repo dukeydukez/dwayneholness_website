@@ -79,8 +79,8 @@ export default function About() {
               marginBottom: "1.5rem",
             }}
           >
-            I&apos;m Dwayne Holness, a Toronto-based speaker, media
-            infrastructure expert, and Founder of Corex Creative Inc. For over a
+            I&apos;m Dwayne Holness, a Toronto-based speaker, brand
+            architect, and Founder of Corex Creative Inc. For over a
             decade, I&apos;ve helped founders and enterprise brands turn content
             into systems, building the kind of media infrastructure that
             generates authority, compounds attention, and creates category
