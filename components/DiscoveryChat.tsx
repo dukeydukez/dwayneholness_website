@@ -40,8 +40,18 @@ export default function DiscoveryChat() {
   const [loading, setLoading] = useState(false);
   const [insights, setInsights] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [navMenuOpen, setNavMenuOpen] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Hide when mobile nav menu opens
+  useEffect(() => {
+    const handler = (e: Event) => {
+      setNavMenuOpen((e as CustomEvent<{ open: boolean }>).detail.open);
+    };
+    document.addEventListener("nav-menu-toggle", handler);
+    return () => document.removeEventListener("nav-menu-toggle", handler);
+  }, []);
 
   const answersGiven = countAnswers(messages);
   const sessionComplete = answersGiven >= TOTAL_QUESTIONS;
@@ -178,6 +188,8 @@ export default function DiscoveryChat() {
   }
 
   const progressPercent = Math.min((answersGiven / TOTAL_QUESTIONS) * 100, 100);
+
+  if (navMenuOpen) return null;
 
   return (
     <>

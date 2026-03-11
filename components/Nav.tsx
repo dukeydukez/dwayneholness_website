@@ -69,9 +69,10 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll when menu open
+  // Lock body scroll when menu open + notify chatbot
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.dispatchEvent(new CustomEvent("nav-menu-toggle", { detail: { open: menuOpen } }));
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
@@ -292,6 +293,45 @@ export default function Nav() {
                 </motion.div>
               ))}
 
+              {/* Book a Call as a nav item */}
+              <motion.div
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 30,
+                  delay: navLinks.length * 0.07,
+                }}
+              >
+                <a
+                  href="https://calendar.app.google/qeycC86WguwLnjt1A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                  style={{
+                    fontFamily: "var(--font-display), Georgia, serif",
+                    fontSize: "clamp(3.5rem, 14vw, 7rem)",
+                    fontWeight: 700,
+                    letterSpacing: "-0.03em",
+                    lineHeight: 1.0,
+                    textTransform: "uppercase",
+                    color: "var(--cream)",
+                    textDecoration: "none",
+                    display: "block",
+                    transition: "color 0.15s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "var(--gold)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "var(--cream)";
+                  }}
+                >
+                  Book a Call
+                </a>
+              </motion.div>
             </nav>
 
             {/* Bottom bar: socials + CTA */}
