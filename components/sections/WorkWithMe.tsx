@@ -53,19 +53,6 @@ const tiers = [
     highlight: true,
   },
   {
-    label: "Production & Strategy",
-    price: "Custom",
-    priceNote: "project-based or retainer",
-    features: [
-      "Full-scale cinematic production",
-      "Multi-platform content systems",
-      "Ongoing creative direction",
-    ],
-    cta: "Start the Conversation",
-    href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
-    highlight: false,
-  },
-  {
     label: "Book Dwayne to Speak",
     price: "$1,500+",
     priceNote: "per engagement",
@@ -76,6 +63,19 @@ const tiers = [
     ],
     cta: "Send a Speaking Inquiry",
     href: "mailto:dwayne@corexcreative.com?subject=Speaking%20Inquiry",
+    highlight: false,
+  },
+  {
+    label: "Production & Strategy",
+    price: "Custom",
+    priceNote: "project-based or retainer",
+    features: [
+      "Full-scale cinematic production",
+      "Multi-platform content systems",
+      "Ongoing creative direction",
+    ],
+    cta: "Start the Conversation",
+    href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
     highlight: false,
   },
 ];
