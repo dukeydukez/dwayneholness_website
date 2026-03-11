@@ -141,7 +141,7 @@ export default function Hero() {
           }}
         >
           I build media infrastructure that turns founders and enterprise
-          brands into the undeniable authority in their market.
+          brands into the undeniable authority in your market.
         </motion.p>
 
         <motion.div
