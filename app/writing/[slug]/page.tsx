@@ -9,6 +9,7 @@ import ReadingProgressBar from "@/components/ReadingProgressBar";
 import ReadingProgress from "@/components/ReadingProgress";
 import ShareButtons from "@/components/ShareButtons";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import HighlightShare from "@/components/HighlightShare";
 
 /** Render a title string that may contain *highlighted* segments. */
 function renderInlineTitle(text: string): React.ReactNode {
@@ -63,6 +64,7 @@ export default async function WritingPostPage({
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
       <ReadingProgressBar />
+      <HighlightShare />
       {/* Header */}
       <div
         style={{

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { href: "/speaking", label: "Speaking" },
@@ -149,6 +150,7 @@ export default function Nav() {
               {label}
             </Link>
           ))}
+          <ThemeToggle />
           <a
             href="https://calendar.app.google/qeycC86WguwLnjt1A"
             target="_blank"
@@ -345,16 +347,20 @@ export default function Nav() {
                 paddingTop: "1.5rem",
               }}
             >
-              <p
-                style={{
-                  fontSize: "0.6875rem",
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "var(--cream-dim)",
-                }}
-              >
-                dwayneholness.com
-              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                <p
+                  style={{
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "var(--cream-dim)",
+                    margin: 0,
+                  }}
+                >
+                  dwayneholness.com
+                </p>
+                <ThemeToggle />
+              </div>
 
               <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
                 {socialLinks.map(({ href, label, icon }) => (

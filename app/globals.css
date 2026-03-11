@@ -12,6 +12,17 @@
   --font-display: var(--font-body);
 }
 
+/* Light mode overrides */
+[data-theme="light"] {
+  --black: #f5f2ed;
+  --charcoal: #eae5dd;
+  --charcoal-light: #e0dbd3;
+  --cream: #1a1612;
+  --cream-dim: #5a5347;
+  --gold: #a07d2e;
+  --gold-light: #c49a30;
+}
+
 /* Responsive visibility helpers */
 .desktop-only {
   display: none !important;
