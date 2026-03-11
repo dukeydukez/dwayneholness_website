@@ -1,12 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
+import SunCalc from "suncalc";
 
 type Theme = "dark" | "light";
-
-function getStoredTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
-  return (localStorage.getItem("theme") as Theme) ?? "dark";
-}
 
 function applyTheme(theme: Theme) {
   const root = document.documentElement;
@@ -17,13 +13,48 @@ function applyTheme(theme: Theme) {
   }
 }
 
+function themeFromSun(lat: number, lng: number): Theme {
+  const now = new Date();
+  const { sunrise, sunset } = SunCalc.getTimes(now, lat, lng);
+  return now >= sunrise && now <= sunset ? "light" : "dark";
+}
+
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    const stored = getStoredTheme();
-    setTheme(stored);
-    applyTheme(stored);
+    // If user has manually set a preference, always use it
+    const isManual = localStorage.getItem("theme-manual") === "1";
+    const stored = localStorage.getItem("theme") as Theme | null;
+
+    if (isManual && stored) {
+      setTheme(stored);
+      applyTheme(stored);
+      return;
+    }
+
+    // Auto: try to get location and set theme from sun position
+    if (!navigator.geolocation) {
+      const fallback: Theme = stored ?? "dark";
+      setTheme(fallback);
+      applyTheme(fallback);
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const auto = themeFromSun(pos.coords.latitude, pos.coords.longitude);
+        setTheme(auto);
+        applyTheme(auto);
+      },
+      () => {
+        // Location denied — fall back to stored or dark
+        const fallback: Theme = stored ?? "dark";
+        setTheme(fallback);
+        applyTheme(fallback);
+      },
+      { timeout: 5000 }
+    );
   }, []);
 
   function toggle() {
@@ -31,6 +62,7 @@ export default function ThemeToggle() {
     setTheme(next);
     applyTheme(next);
     localStorage.setItem("theme", next);
+    localStorage.setItem("theme-manual", "1");
   }
 
   // Sun icon for dark mode (click to go light), Moon icon for light mode (click to go dark)

@@ -12,13 +12,15 @@
     "watch": "node scripts/watch-drafts.mjs"
   },
   "dependencies": {
+    "@types/suncalc": "^1.9.2",
     "@upstash/redis": "^1.36.4",
     "framer-motion": "^12.35.1",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",
     "puppeteer": "^24.38.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "suncalc": "^1.9.0"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.78.0",
