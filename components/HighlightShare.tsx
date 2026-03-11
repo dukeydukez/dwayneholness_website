@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 export default function HighlightShare() {
   const [selection, setSelection] = useState<{
@@ -7,9 +7,10 @@ export default function HighlightShare() {
     x: number;
     y: number;
   } | null>(null);
+  const [copied, setCopied] = useState(false);
+  const popupRef = useRef<HTMLDivElement>(null);
 
   const handleMouseUp = useCallback(() => {
-    // Small delay to let the browser finalize the selection
     setTimeout(() => {
       const sel = window.getSelection();
       const text = sel?.toString().trim();
@@ -27,10 +28,13 @@ export default function HighlightShare() {
         x: rect.left + rect.width / 2,
         y: rect.top + window.scrollY - 12,
       });
+      setCopied(false);
     }, 10);
   }, []);
 
-  const handleMouseDown = useCallback(() => {
+  const handleMouseDown = useCallback((e: MouseEvent) => {
+    // Don't clear selection if clicking inside the popup
+    if (popupRef.current?.contains(e.target as Node)) return;
     setSelection(null);
   }, []);
 
@@ -45,30 +49,45 @@ export default function HighlightShare() {
 
   function shareOnX() {
     if (!selection) return;
-    const quote = selection.text.length > 240
-      ? selection.text.slice(0, 237) + "..."
+    const quote = selection.text.length > 200
+      ? selection.text.slice(0, 197) + "..."
       : selection.text;
     const url = window.location.href;
-    window.open(
-      `https://x.com/intent/tweet?text=${encodeURIComponent(`"${quote}"`)}&url=${encodeURIComponent(url)}`,
-      "_blank",
-      "noopener,noreferrer"
-    );
+    const tweetText = `"${quote}" — @dukeydukez`;
+    const tweetUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(url)}`;
+    window.open(tweetUrl, "_blank");
     setSelection(null);
     window.getSelection()?.removeAllRanges();
   }
 
-  function copyQuote() {
+  async function copyQuote() {
     if (!selection) return;
-    navigator.clipboard.writeText(`"${selection.text}"`);
-    setSelection(null);
-    window.getSelection()?.removeAllRanges();
+    const formatted = `"${selection.text}" — Dwayne Holness`;
+    try {
+      await navigator.clipboard.writeText(formatted);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = formatted;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    }
+    setCopied(true);
+    setTimeout(() => {
+      setSelection(null);
+      setCopied(false);
+      window.getSelection()?.removeAllRanges();
+    }, 1200);
   }
 
   if (!selection) return null;
 
   return (
     <div
+      ref={popupRef}
       style={{
         position: "absolute",
         top: selection.y,
@@ -84,6 +103,7 @@ export default function HighlightShare() {
       }}
     >
       <button
+        onMouseDown={(e) => e.preventDefault()}
         onClick={shareOnX}
         style={{
           display: "flex",
@@ -113,6 +133,7 @@ export default function HighlightShare() {
         Post
       </button>
       <button
+        onMouseDown={(e) => e.preventDefault()}
         onClick={copyQuote}
         style={{
           display: "flex",
@@ -121,13 +142,13 @@ export default function HighlightShare() {
           padding: "0.375rem 0.75rem",
           backgroundColor: "transparent",
           border: "none",
-          color: "var(--cream-dim)",
+          color: copied ? "var(--gold)" : "var(--cream-dim)",
           fontSize: "0.6875rem",
           fontWeight: 600,
           letterSpacing: "0.08em",
           textTransform: "uppercase",
           cursor: "pointer",
-          transition: "background-color 0.15s ease",
+          transition: "background-color 0.15s ease, color 0.15s ease",
         }}
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(200,194,180,0.08)";
@@ -136,11 +157,17 @@ export default function HighlightShare() {
           (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
         }}
       >
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-        </svg>
-        Copy
+        {copied ? (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        ) : (
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+        )}
+        {copied ? "Copied" : "Copy"}
       </button>
       {/* Arrow pointer */}
       <div
