@@ -1,8 +1,23 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Article } from "@/lib/articles";
+
+/** Render a title string that may contain *highlighted* segments. */
+function renderInlineTitle(text: string): React.ReactNode {
+  const parts = text.split(/(\*[^*]+\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("*") && part.endsWith("*") ? (
+      <em key={i} style={{ fontStyle: "italic", color: "var(--gold)" }}>
+        {part.slice(1, -1)}
+      </em>
+    ) : (
+      part
+    )
+  );
+}
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
 
@@ -133,7 +148,7 @@ export default function WritingPreview({ posts = [] }: { posts: Pick<Article, "s
                     letterSpacing: "-0.01em",
                   }}
                 >
-                  {title}
+                  {renderInlineTitle(title)}
                 </h3>
                 <p
                   style={{

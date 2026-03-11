@@ -2,12 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import { checkRateLimit } from "@/lib/rate-limit";
 
 // Route-specific limits. Add entries here as you create API routes.
+// For dynamic routes like /api/likes/[slug], match on the prefix.
 const ROUTE_LIMITS: Record<string, { limit: number; windowMs: number }> = {
-  "/api/contact": { limit: 5, windowMs: 60_000 },      // 5 req/min
-  "/api/newsletter": { limit: 3, windowMs: 60_000 },   // 3 req/min
+  "/api/contact": { limit: 5, windowMs: 60_000 },       // 5 req/min
+  "/api/newsletter": { limit: 3, windowMs: 60_000 },    // 3 req/min
+  "/api/reactions": { limit: 30, windowMs: 60_000 },    // 30 req/min
+  "/api/views": { limit: 60, windowMs: 60_000 },        // 60 req/min (page loads)
+  "/api/likes": { limit: 30, windowMs: 60_000 },        // legacy
 };
 
-const DEFAULT_LIMIT = { limit: 30, windowMs: 60_000 };  // 30 req/min fallback
+const DEFAULT_LIMIT = { limit: 30, windowMs: 60_000 };
 
 function getIp(req: NextRequest): string {
   return (
@@ -17,6 +21,16 @@ function getIp(req: NextRequest): string {
   );
 }
 
+/** Find the best matching route config by prefix */
+function findRouteConfig(pathname: string) {
+  // Try exact match first, then prefix match
+  if (ROUTE_LIMITS[pathname]) return ROUTE_LIMITS[pathname];
+  for (const [prefix, config] of Object.entries(ROUTE_LIMITS)) {
+    if (pathname.startsWith(prefix + "/") || pathname === prefix) return config;
+  }
+  return DEFAULT_LIMIT;
+}
+
 export function middleware(req: NextRequest): NextResponse {
   const { pathname } = req.nextUrl;
 
@@ -24,7 +38,7 @@ export function middleware(req: NextRequest): NextResponse {
     return NextResponse.next();
   }
 
-  const config = ROUTE_LIMITS[pathname] ?? DEFAULT_LIMIT;
+  const config = findRouteConfig(pathname);
   const ip = getIp(req);
   const key = `${pathname}:${ip}`;
 

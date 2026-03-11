@@ -12,6 +12,7 @@
     "watch": "node scripts/watch-drafts.mjs"
   },
   "dependencies": {
+    "@upstash/redis": "^1.36.4",
     "framer-motion": "^12.35.1",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",

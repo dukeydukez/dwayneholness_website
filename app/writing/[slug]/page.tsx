@@ -3,7 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllArticles, getArticleBySlug, parseMarkdownToBlocks } from "@/lib/articles";
 import type { ContentBlock } from "@/lib/articles";
-import LikeButton from "@/components/LikeButton";
+import ReactionBar from "@/components/ReactionBar";
+import ViewCounter from "@/components/ViewCounter";
+import ReadingProgressBar from "@/components/ReadingProgressBar";
+import ReadingProgress from "@/components/ReadingProgress";
+import ShareButtons from "@/components/ShareButtons";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 /** Render a title string that may contain *highlighted* segments. */
 function renderInlineTitle(text: string): React.ReactNode {
@@ -57,6 +62,7 @@ export default async function WritingPostPage({
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
+      <ReadingProgressBar />
       {/* Header */}
       <div
         style={{
@@ -92,17 +98,11 @@ export default async function WritingPostPage({
             alignItems: "center",
           }}
         >
-          <p style={{ fontSize: "0.8125rem", color: "var(--cream-dim)" }}>{date.replace(/,.*$/, "")}</p>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "var(--gold)",
-            }}
-          >
-            {readTime}
-          </p>
+          <span style={{ fontSize: "0.8125rem", color: "var(--cream-dim)" }}>{date}</span>
+          <span style={{ color: "rgba(200,194,180,0.3)", fontSize: "0.8125rem" }}>·</span>
+          <ReadingProgress readTime={readTime} />
+          <span style={{ color: "rgba(200,194,180,0.3)", fontSize: "0.8125rem" }}>·</span>
+          <ViewCounter slug={slug} />
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
             {tags.slice(0, 2).map((tag) => (
               <span
@@ -320,8 +320,14 @@ export default async function WritingPostPage({
           </div>
         </div>
 
-        {/* Like button */}
-        <LikeButton slug={slug} />
+        {/* Reactions */}
+        <ReactionBar slug={slug} />
+
+        {/* Share */}
+        <ShareButtons title={title} slug={slug} />
+
+        {/* Newsletter */}
+        <NewsletterSignup />
       </div>
 
       {/* Article navigation — Previous & Next */}

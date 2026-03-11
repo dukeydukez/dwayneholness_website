@@ -1,6 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { getInitialLikes } from "@/lib/likes";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 interface Particle {
   id: number;
@@ -11,21 +10,21 @@ interface Particle {
 }
 
 export default function LikeButton({ slug }: { slug: string }) {
-  const initial = getInitialLikes(slug);
-  const [count, setCount] = useState(initial);
-  const [mounted, setMounted] = useState(false);
+  const [count, setCount] = useState<number | null>(null);
   const [particles, setParticles] = useState<Particle[]>([]);
   const [bounce, setBounce] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
   const nextId = useRef(0);
 
+  // Fetch current count on mount
   useEffect(() => {
-    setMounted(true);
-    const extra = parseInt(localStorage.getItem(`likes_extra:${slug}`) ?? "0", 10);
-    setCount(initial + extra);
-  }, [slug, initial]);
+    fetch(`/api/likes/${encodeURIComponent(slug)}`)
+      .then((r) => r.json())
+      .then((data) => setCount(data.count ?? 0))
+      .catch(() => setCount(0));
+  }, [slug]);
 
-  function spawnParticles() {
+  const spawnParticles = useCallback(() => {
     const btn = btnRef.current;
     if (!btn) return;
     const cx = btn.offsetWidth / 2;
@@ -41,18 +40,30 @@ export default function LikeButton({ slug }: { slug: string }) {
     newParticles.forEach(({ id }) => {
       setTimeout(() => setParticles((p) => p.filter((q) => q.id !== id)), 900);
     });
-  }
+  }, []);
 
   function handleLike() {
-    const extra = parseInt(localStorage.getItem(`likes_extra:${slug}`) ?? "0", 10) + 1;
-    localStorage.setItem(`likes_extra:${slug}`, String(extra));
-    setCount((c) => c + 1);
+    // Optimistic update
+    setCount((c) => (c ?? 0) + 1);
     spawnParticles();
     setBounce(true);
     setTimeout(() => setBounce(false), 300);
+
+    // Persist to backend
+    fetch(`/api/likes/${encodeURIComponent(slug)}`, { method: "POST" })
+      .then((r) => r.json())
+      .then((data) => {
+        if (typeof data.count === "number") {
+          setCount(data.count);
+        }
+      })
+      .catch(() => {
+        // Revert on failure
+        setCount((c) => Math.max((c ?? 1) - 1, 0));
+      });
   }
 
-  if (!mounted) return null;
+  if (count === null) return null;
 
   return (
     <div
