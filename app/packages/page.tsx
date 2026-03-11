@@ -66,6 +66,27 @@ const packages = [
     href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
     highlight: false,
   },
+  {
+    id: "04",
+    label: "Book Dwayne to Speak",
+    price: "Custom",
+    priceNote: "per engagement",
+    tagline: "Bring a practitioner to your stage, not a motivational speaker.",
+    description:
+      "Dwayne delivers keynotes, panels, and workshops on media infrastructure, thought leadership systems, and the architecture of creative ecosystems. Every talk is built around your audience, grounded in real experience building a multi-million dollar creative agency from the ground up.",
+    who: "Conference organizers, corporate event planners, and community leaders looking for a speaker who brings strategy and substance.",
+    includes: [
+      "45–90 minute keynote tailored to your audience",
+      "Panel participation and moderation",
+      "Half-day or full-day workshop options",
+      "Pre-event call to align on audience and objectives",
+      "Custom slide deck and supporting materials",
+      "Post-event follow-up resources for attendees",
+    ],
+    cta: "Send a Speaking Inquiry",
+    href: "mailto:dwayne@corexcreative.com?subject=Speaking%20Inquiry",
+    highlight: false,
+  },
 ];
 
 const process = [

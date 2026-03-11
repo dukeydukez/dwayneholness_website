@@ -57,6 +57,18 @@
   }
 }
 
+/* Work With Me row — stack on mobile */
+.work-with-me-row {
+  grid-template-columns: 1fr !important;
+  gap: 1.25rem !important;
+}
+@media (min-width: 768px) {
+  .work-with-me-row {
+    grid-template-columns: 220px 1fr auto !important;
+    gap: 2.5rem !important;
+  }
+}
+
 /* Hero content padding */
 .hero-content {
   padding-left: 2rem !important;

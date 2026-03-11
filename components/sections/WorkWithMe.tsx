@@ -65,6 +65,19 @@ const tiers = [
     href: "mailto:dwayne@corexcreative.com?subject=Production%20%26%20Strategy%20Inquiry",
     highlight: false,
   },
+  {
+    label: "Book Dwayne to Speak",
+    price: "Custom",
+    priceNote: "per engagement",
+    features: [
+      "Keynotes, panels & workshops",
+      "Tailored to your audience",
+      "Post-event attendee resources",
+    ],
+    cta: "Send a Speaking Inquiry",
+    href: "mailto:dwayne@corexcreative.com?subject=Speaking%20Inquiry",
+    highlight: false,
+  },
 ];
 
 export default function WorkWithMe() {
@@ -236,80 +249,60 @@ export default function WorkWithMe() {
           </h2>
         </motion.div>
 
-        {/* Pricing cards */}
+        {/* Pricing rows */}
         <div
           style={{
-            display: "grid",
-            gap: "1.5rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0",
             maxWidth: "1100px",
             margin: "0 auto",
           }}
-          className="md-grid-cols-3"
         >
           {tiers.map((tier, i) => (
             <motion.div
               key={tier.label}
-              initial={{ opacity: 0, y: 32 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.7, delay: i * 0.12, ease }}
-              whileHover={{
-                y: -6,
-                transition: { type: "spring", stiffness: 400, damping: 22 },
-              }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.6, delay: i * 0.08, ease }}
               style={{
-                padding: "2.75rem",
-                backgroundColor: tier.highlight
-                  ? "rgba(201,168,76,0.06)"
-                  : "rgba(200,194,180,0.03)",
-                border: tier.highlight
-                  ? "1px solid rgba(201,168,76,0.4)"
-                  : "1px solid rgba(200,194,180,0.12)",
-                position: "relative",
-                display: "flex",
-                flexDirection: "column",
+                display: "grid",
+                gridTemplateColumns: "220px 1fr auto",
+                alignItems: "center",
+                gap: "2.5rem",
+                padding: "2rem 0",
+                borderTop: i === 0
+                  ? "1px solid rgba(200,194,180,0.15)"
+                  : "1px solid rgba(200,194,180,0.08)",
+                borderBottom: i === tiers.length - 1
+                  ? "1px solid rgba(200,194,180,0.15)"
+                  : "none",
               }}
+              className="work-with-me-row"
             >
-              {/* Gold top rule on highlighted card */}
-              {tier.highlight && (
-                <div
+              {/* Column 1: Label + Price */}
+              <div>
+                <p
                   style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    height: "2px",
-                    backgroundColor: "var(--gold)",
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    color: tier.highlight ? "var(--gold)" : "var(--cream-dim)",
+                    fontWeight: 500,
+                    marginBottom: "0.5rem",
                   }}
-                />
-              )}
-
-              {/* Label — minHeight reserves space for 2 lines so price always starts at the same point */}
-              <p
-                style={{
-                  fontSize: "0.6875rem",
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "var(--cream-dim)",
-                  fontWeight: 500,
-                  marginBottom: "1.5rem",
-                  minHeight: "2.25rem",
-                }}
-              >
-                {tier.label}
-              </p>
-
-              {/* Price header */}
-              <div style={{ minHeight: "5.5rem", marginBottom: "2.25rem" }}>
+                >
+                  {tier.label}
+                </p>
                 <p
                   style={{
                     fontFamily: "var(--font-display), sans-serif",
-                    fontSize: "clamp(2.25rem, 4vw, 3.25rem)",
+                    fontSize: "1.75rem",
                     fontWeight: 700,
                     color: "var(--cream)",
-                    letterSpacing: "-0.03em",
+                    letterSpacing: "-0.02em",
                     lineHeight: 1,
-                    marginBottom: tier.priceNote ? "0.375rem" : 0,
                   }}
                 >
                   {tier.price}
@@ -317,10 +310,10 @@ export default function WorkWithMe() {
                 {tier.priceNote && (
                   <p
                     style={{
-                      fontSize: "0.75rem",
+                      fontSize: "0.6875rem",
                       color: "var(--cream-dim)",
-                      letterSpacing: "0.06em",
-                      marginBottom: 0,
+                      letterSpacing: "0.04em",
+                      marginTop: "0.25rem",
                     }}
                   >
                     {tier.priceNote}
@@ -328,60 +321,42 @@ export default function WorkWithMe() {
                 )}
               </div>
 
-              {/* Features */}
-              <ul
+              {/* Column 2: Features (stacked vertically for alignment) */}
+              <div
                 style={{
-                  listStyle: "none",
-                  padding: 0,
-                  margin: "0 0 2.5rem",
                   display: "flex",
                   flexDirection: "column",
-                  gap: "0.875rem",
+                  gap: "0.5rem",
                 }}
               >
                 {tier.features.map((feat) => (
-                  <li
+                  <span
                     key={feat}
                     style={{
+                      fontSize: "0.8125rem",
+                      color: "var(--cream-dim)",
                       display: "flex",
                       alignItems: "center",
-                      gap: "0.875rem",
-                      fontSize: "0.9375rem",
-                      color: "var(--cream-dim)",
-                      lineHeight: 1.5,
+                      gap: "0.5rem",
                     }}
                   >
-                    <span
-                      style={{
-                        color: "var(--gold)",
-                        fontSize: "0.875rem",
-                        flexShrink: 0,
-                        fontWeight: 600,
-                      }}
-                    >
-                      ✓
-                    </span>
+                    <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: "0.75rem" }}>✓</span>
                     {feat}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
 
-              {/* Spacer — pushes CTA to the bottom of each card */}
-              <div style={{ flex: 1 }} />
-
-              {/* CTA */}
+              {/* Column 3: CTA */}
               <a
                 href={tier.href}
-                target="_blank"
+                target={tier.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
                 style={{
-                  display: "block",
-                  width: "100%",
-                  padding: "0.9375rem",
+                  padding: "0.75rem 1.75rem",
                   backgroundColor: tier.highlight ? "var(--gold)" : "transparent",
                   color: tier.highlight ? "var(--black)" : "var(--cream-dim)",
                   border: tier.highlight ? "1px solid var(--gold)" : "1px solid rgba(200,194,180,0.25)",
-                  fontSize: "0.6875rem",
+                  fontSize: "0.625rem",
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
                   fontWeight: 700,
@@ -389,7 +364,7 @@ export default function WorkWithMe() {
                   textAlign: "center",
                   cursor: "pointer",
                   transition: "opacity 0.2s ease",
-                  boxSizing: "border-box",
+                  whiteSpace: "nowrap",
                 }}
               >
                 {tier.cta.toUpperCase()}
