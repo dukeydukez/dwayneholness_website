@@ -195,7 +195,7 @@ export default function DiscoveryChat() {
             style={{
               position: "fixed",
               bottom: "2rem",
-              left: "2rem",
+              right: "2rem",
               zIndex: 50,
               display: "flex",
               alignItems: "center",
@@ -261,7 +261,7 @@ export default function DiscoveryChat() {
             style={{
               position: "fixed",
               bottom: "2rem",
-              left: "2rem",
+              right: "2rem",
               zIndex: 50,
               width: "min(400px, calc(100vw - 4rem))",
               height: "min(560px, calc(100vh - 6rem))",
