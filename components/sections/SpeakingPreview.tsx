@@ -109,10 +109,10 @@ export default function SpeakingPreview() {
               maxWidth: "48ch",
             }}
           >
-            Available for keynotes, panels, and strategic consulting
-            engagements. I speak on brand architecture, thought leadership
-            systems, and the architecture of creative ecosystems for founders
-            ready to own their category.
+            Accepting select keynotes, panels, and strategic consulting
+            engagements, schedule permitting. I speak on brand architecture,
+            thought leadership systems, and the architecture of creative
+            ecosystems for founders ready to own their category.
           </p>
           <Link
             href="/speaking"
