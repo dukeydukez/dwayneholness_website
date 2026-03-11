@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import NewsletterPopup from "@/components/NewsletterPopup";
 
 const inter = Inter({
   variable: "--font-body",
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <ScrollToTop />
+        <NewsletterPopup />
       </body>
     </html>
   );
