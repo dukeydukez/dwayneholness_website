@@ -140,8 +140,8 @@ export default function Hero() {
             fontWeight: 400,
           }}
         >
-          I build the media infrastructure that turns founders and enterprise
-          brands into the authority your market can&apos;t ignore.
+          I build media infrastructure that turns founders and enterprise
+          brands into the undeniable authority in their market.
         </motion.p>
 
         <motion.div
