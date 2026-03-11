@@ -178,8 +178,12 @@ export default function Hero() {
           >
             Book a Call <span aria-hidden>→</span>
           </a>
-          <Link
-            href="/work"
+          <a
+            href="#selected-work"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("selected-work")?.scrollIntoView({ behavior: "smooth" });
+            }}
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -193,6 +197,7 @@ export default function Hero() {
               fontWeight: 500,
               textDecoration: "none",
               transition: "box-shadow 0.3s ease, border-color 0.3s ease",
+              cursor: "pointer",
             }}
             onMouseEnter={(e) => {
               (e.currentTarget as HTMLElement).style.boxShadow =
@@ -207,7 +212,7 @@ export default function Hero() {
             }}
           >
             View Work
-          </Link>
+          </a>
         </motion.div>
 
         {/* Scroll cue */}
