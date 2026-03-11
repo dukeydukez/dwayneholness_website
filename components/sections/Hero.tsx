@@ -110,7 +110,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
           style={{
             fontFamily: "var(--font-display), sans-serif",
-            fontSize: "clamp(2.5rem, 9vw, 8rem)",
+            fontSize: "clamp(2.25rem, 6.5vw, 5.5rem)",
             fontWeight: 700,
             lineHeight: 1.0,
             color: "var(--cream)",
