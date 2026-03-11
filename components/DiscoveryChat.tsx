@@ -109,10 +109,12 @@ export default function DiscoveryChat() {
     setLoading(true);
 
     try {
+      // Filter out the static intro message — the API expects alternating user/assistant turns
+      const apiMessages = newMessages.filter((m) => m !== INTRO_MESSAGE);
       const res = await fetch("/api/discovery/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: newMessages }),
+        body: JSON.stringify({ messages: apiMessages }),
       });
       const data = await res.json();
       if (data.message) {
