@@ -119,9 +119,7 @@ export default function Hero() {
             marginBottom: "2.5rem",
           }}
         >
-          Most brands{" "}
-          <br />
-          have content.{" "}
+          Most brands have content.
           <br />
           Few have{" "}
           <em style={{ fontStyle: "italic", color: "var(--gold)" }}>
