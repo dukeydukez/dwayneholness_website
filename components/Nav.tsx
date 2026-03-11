@@ -308,29 +308,6 @@ export default function Nav() {
                 paddingTop: "1.5rem",
               }}
             >
-              {/* Book a Call CTA */}
-              <a
-                href="https://calendar.app.google/qeycC86WguwLnjt1A"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMenuOpen(false)}
-                style={{
-                  display: "block",
-                  textAlign: "center",
-                  padding: "0.875rem 1.5rem",
-                  backgroundColor: "var(--gold)",
-                  color: "var(--black)",
-                  fontSize: "0.75rem",
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  fontWeight: 700,
-                  textDecoration: "none",
-                  transition: "background-color 0.2s ease",
-                }}
-              >
-                Book a Call
-              </a>
-
               {/* Socials + toggle row */}
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
