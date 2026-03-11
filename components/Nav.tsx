@@ -334,7 +334,7 @@ export default function Nav() {
               </motion.div>
             </nav>
 
-            {/* Bottom bar: socials + CTA */}
+            {/* Bottom bar */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -343,28 +343,28 @@ export default function Nav() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "1.25rem",
+                gap: "1rem",
                 borderTop: "1px solid rgba(200,194,180,0.12)",
                 paddingTop: "1.5rem",
               }}
             >
-              {/* Socials + toggle row */}
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                  <p
-                    style={{
-                      fontSize: "0.6875rem",
-                      letterSpacing: "0.2em",
-                      textTransform: "uppercase",
-                      color: "var(--cream-dim)",
-                      margin: 0,
-                    }}
-                  >
-                    dwayneholness.com
-                  </p>
-                  <ThemeToggle />
-                </div>
+              {/* Expanded theme toggle */}
+              <ThemeToggle expanded />
 
+              {/* Socials row */}
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <p
+                  style={{
+                    fontSize: "0.6875rem",
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    color: "var(--cream-dim)",
+                    margin: 0,
+                    opacity: 0.5,
+                  }}
+                >
+                  dwayneholness.com
+                </p>
                 <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
                   {socialLinks.map(({ href, label, icon }) => (
                     <a
