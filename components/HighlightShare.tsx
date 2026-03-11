@@ -60,6 +60,31 @@ export default function HighlightShare() {
     window.getSelection()?.removeAllRanges();
   }
 
+  async function shareOnLinkedIn() {
+    if (!selection) return;
+    const url = window.location.href;
+    const formatted = `"${selection.text}" — Dwayne Holness\n\n${url}`;
+    // Copy quote to clipboard so user can paste into LinkedIn
+    try {
+      await navigator.clipboard.writeText(formatted);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = formatted;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    }
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+      "_blank"
+    );
+    setSelection(null);
+    window.getSelection()?.removeAllRanges();
+  }
+
   async function copyQuote() {
     if (!selection) return;
     const formatted = `"${selection.text}" — Dwayne Holness`;
@@ -132,6 +157,40 @@ export default function HighlightShare() {
         </svg>
         Post
       </button>
+      <button
+        onMouseDown={(e) => e.preventDefault()}
+        onClick={shareOnLinkedIn}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "0.375rem",
+          padding: "0.375rem 0.75rem",
+          backgroundColor: "transparent",
+          border: "none",
+          color: "var(--gold)",
+          fontSize: "0.6875rem",
+          fontWeight: 600,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          cursor: "pointer",
+          transition: "background-color 0.15s ease",
+        }}
+        onMouseEnter={(e) => {
+          (e.currentTarget as HTMLElement).style.backgroundColor = "rgba(201,168,76,0.1)";
+        }}
+        onMouseLeave={(e) => {
+          (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+        }}
+      >
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+        Share
+      </button>
+      {/* Divider */}
+      <div style={{ width: "1px", backgroundColor: "rgba(200,194,180,0.15)", margin: "2px 0" }} />
       <button
         onMouseDown={(e) => e.preventDefault()}
         onClick={copyQuote}
