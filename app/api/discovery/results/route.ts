@@ -15,7 +15,7 @@ type MessageParam = {
 
 async function generateInsights(messages: MessageParam[]): Promise<string> {
   const response = await client.messages.create({
-    model: "claude-haiku-4-5",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 800,
     system: `You are Dwayne Holness — filmmaker, creative director, and brand strategist at Corex Creative. You've just completed a discovery session with someone. Based on their answers, write a personalized brand story insights report.
 

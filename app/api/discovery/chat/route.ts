@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const response = await client.messages.create({
-      model: "claude-haiku-4-5",
+      model: "claude-haiku-4-5-20251001",
       max_tokens: 400,
       system: SYSTEM_PROMPT,
       messages,
@@ -60,10 +60,11 @@ export async function POST(req: NextRequest) {
       response.content.find((b) => b.type === "text")?.text ?? "";
 
     return NextResponse.json({ message: text });
-  } catch (error) {
-    console.error("Claude API error:", error);
+  } catch (error: unknown) {
+    const errMsg = error instanceof Error ? error.message : String(error);
+    console.error("Claude API error:", errMsg);
     return NextResponse.json(
-      { error: "Failed to generate response" },
+      { error: "Failed to generate response", detail: errMsg },
       { status: 500 }
     );
   }
