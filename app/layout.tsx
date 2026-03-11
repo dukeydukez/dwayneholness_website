@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import NewsletterPopup from "@/components/NewsletterPopup";
 import DiscoveryChat from "@/components/DiscoveryChat";
+import ReadingProgressBar from "@/components/ReadingProgressBar";
 
 const inter = Inter({
   variable: "--font-body",
@@ -55,6 +56,7 @@ export default function RootLayout({
           color: "var(--cream)",
         }}
       >
+        <ReadingProgressBar />
         <Nav />
         <main>{children}</main>
         <Footer />
