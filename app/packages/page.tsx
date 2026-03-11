@@ -69,7 +69,7 @@ const packages = [
   {
     id: "04",
     label: "Book Dwayne to Speak",
-    price: "Custom",
+    price: "$1,500+",
     priceNote: "per engagement",
     tagline: "Bring a practitioner to your stage, not a motivational speaker.",
     description:

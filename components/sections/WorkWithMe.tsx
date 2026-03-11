@@ -67,7 +67,7 @@ const tiers = [
   },
   {
     label: "Book Dwayne to Speak",
-    price: "Custom",
+    price: "$1,500+",
     priceNote: "per engagement",
     features: [
       "Keynotes, panels & workshops",
