@@ -1,5 +1,5 @@
 ---
-title: "Your Path Is Not a *Liability*"
+title: "Your Path Is\nNot a *Liability*"
 date: "8 March 2026, 9:00 AM"
 readTime: "4 min read"
 category: "Thought Leadership"

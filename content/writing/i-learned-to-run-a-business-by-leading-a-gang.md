@@ -1,5 +1,5 @@
 ---
-title: "I Learned to Run a Business by Leading a *Gang*"
+title: "I Learned to Run a Business\nby Leading a *Gang*"
 date: "5 March 2026"
 readTime: "4 min read"
 category: "Entrepreneurship"

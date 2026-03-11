@@ -1,5 +1,5 @@
 ---
-title: "Accountability Is Not *Cruelty*"
+title: "Accountability Is\nNot *Cruelty*"
 date: "8 March 2026, 10:00 AM"
 readTime: "4 min read"
 category: "Thought Leadership"

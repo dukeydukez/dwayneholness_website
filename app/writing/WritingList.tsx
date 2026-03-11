@@ -288,7 +288,7 @@ export default function WritingList({ articles = [] }: { articles: Article[] }) 
                       alignItems: "center",
                     }}
                   >
-                    <span>{date.replace(/,.*$/, "")} · {readTime}</span>
+                    <span>{date} · {readTime}</span>
                     {viewCounts[slug] > 0 && (
                       <span style={{ opacity: 0.6 }}>
                         · {viewCounts[slug].toLocaleString()} views

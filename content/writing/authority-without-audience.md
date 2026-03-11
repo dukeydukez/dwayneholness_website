@@ -1,5 +1,5 @@
 ---
-title: "How to Build *Authority* Without a Mass Audience"
+title: "How to Build *Authority*\nWithout a Mass Audience"
 date: "1 November 2025"
 readTime: "5 min read"
 category: "Authority Building"

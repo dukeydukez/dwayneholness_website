@@ -292,48 +292,9 @@ export default function Nav() {
                 </motion.div>
               ))}
 
-              {/* Book a Call as a nav item */}
-              <motion.div
-                initial={{ opacity: 0, x: -40 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 300,
-                  damping: 30,
-                  delay: navLinks.length * 0.07,
-                }}
-              >
-                <a
-                  href="https://calendar.app.google/qeycC86WguwLnjt1A"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                  style={{
-                    fontFamily: "var(--font-display), Georgia, serif",
-                    fontSize: "clamp(3.5rem, 14vw, 7rem)",
-                    fontWeight: 700,
-                    letterSpacing: "-0.03em",
-                    lineHeight: 1.0,
-                    textTransform: "uppercase",
-                    color: "var(--cream)",
-                    textDecoration: "none",
-                    display: "block",
-                    transition: "color 0.15s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.color = "var(--gold)";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.color = "var(--cream)";
-                  }}
-                >
-                  Book a Call
-                </a>
-              </motion.div>
             </nav>
 
-            {/* Bottom bar: socials */}
+            {/* Bottom bar: socials + CTA */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -341,51 +302,77 @@ export default function Nav() {
               transition={{ duration: 0.4, delay: 0.3, ease }}
               style={{
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
+                flexDirection: "column",
+                gap: "1.25rem",
                 borderTop: "1px solid rgba(200,194,180,0.12)",
                 paddingTop: "1.5rem",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                <p
-                  style={{
-                    fontSize: "0.6875rem",
-                    letterSpacing: "0.2em",
-                    textTransform: "uppercase",
-                    color: "var(--cream-dim)",
-                    margin: 0,
-                  }}
-                >
-                  dwayneholness.com
-                </p>
-                <ThemeToggle />
-              </div>
+              {/* Book a Call CTA */}
+              <a
+                href="https://calendar.app.google/qeycC86WguwLnjt1A"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  display: "block",
+                  textAlign: "center",
+                  padding: "0.875rem 1.5rem",
+                  backgroundColor: "var(--gold)",
+                  color: "var(--black)",
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  transition: "background-color 0.2s ease",
+                }}
+              >
+                Book a Call
+              </a>
 
-              <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
-                {socialLinks.map(({ href, label, icon }) => (
-                  <a
-                    key={href}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
+              {/* Socials + toggle row */}
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                  <p
                     style={{
+                      fontSize: "0.6875rem",
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
                       color: "var(--cream-dim)",
-                      display: "flex",
-                      alignItems: "center",
-                      transition: "color 0.15s ease",
-                    }}
-                    onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = "var(--gold)";
-                    }}
-                    onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = "var(--cream-dim)";
+                      margin: 0,
                     }}
                   >
-                    {icon}
-                  </a>
-                ))}
+                    dwayneholness.com
+                  </p>
+                  <ThemeToggle />
+                </div>
+
+                <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+                  {socialLinks.map(({ href, label, icon }) => (
+                    <a
+                      key={href}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      style={{
+                        color: "var(--cream-dim)",
+                        display: "flex",
+                        alignItems: "center",
+                        transition: "color 0.15s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLElement).style.color = "var(--gold)";
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLElement).style.color = "var(--cream-dim)";
+                      }}
+                    >
+                      {icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </motion.div>
