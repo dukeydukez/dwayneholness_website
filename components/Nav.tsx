@@ -92,7 +92,7 @@ export default function Nav() {
           backgroundColor: menuOpen
             ? "transparent"
             : scrolled
-            ? "rgba(10,10,10,0.92)"
+            ? "var(--nav-bg-scrolled)"
             : "transparent",
           backdropFilter: scrolled && !menuOpen ? "blur(12px)" : "none",
           borderBottom: scrolled && !menuOpen ? "1px solid rgba(201,168,76,0.15)" : "1px solid transparent",
