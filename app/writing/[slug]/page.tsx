@@ -11,18 +11,23 @@ import ShareButtons from "@/components/ShareButtons";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import HighlightShare from "@/components/HighlightShare";
 
-/** Render a title string that may contain *highlighted* segments. */
+/** Render a title string that may contain *highlighted* segments and \n line breaks. */
 function renderInlineTitle(text: string): React.ReactNode {
-  const parts = text.split(/(\*[^*]+\*)/g);
-  return parts.map((part, i) =>
-    part.startsWith("*") && part.endsWith("*") ? (
-      <em key={i} style={{ fontStyle: "italic", color: "var(--gold)" }}>
-        {part.slice(1, -1)}
-      </em>
-    ) : (
-      part
-    )
-  );
+  const lines = text.split("\n");
+  return lines.flatMap((line, lineIdx) => {
+    const parts = line.split(/(\*[^*]+\*)/g);
+    const rendered: React.ReactNode[] = parts.map((part, i) =>
+      part.startsWith("*") && part.endsWith("*") ? (
+        <em key={`${lineIdx}-${i}`} style={{ fontStyle: "italic", color: "var(--gold)" }}>
+          {part.slice(1, -1)}
+        </em>
+      ) : (
+        part
+      )
+    );
+    if (lineIdx < lines.length - 1) rendered.push(<br key={`br-${lineIdx}`} />);
+    return rendered;
+  });
 }
 
 export async function generateStaticParams() {

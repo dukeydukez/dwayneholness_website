@@ -5,18 +5,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { Article } from "@/lib/articles";
 import { INITIAL_LIKES } from "@/lib/likes";
 
-/** Render a title string that may contain *highlighted* segments. */
+/** Render a title string that may contain *highlighted* segments and \n line breaks. */
 function renderInlineTitle(text: string): React.ReactNode {
-  const parts = text.split(/(\*[^*]+\*)/g);
-  return parts.map((part, i) =>
-    part.startsWith("*") && part.endsWith("*") ? (
-      <em key={i} style={{ fontStyle: "italic", color: "var(--gold)" }}>
-        {part.slice(1, -1)}
-      </em>
-    ) : (
-      part
-    )
-  );
+  const lines = text.split("\n");
+  return lines.flatMap((line, lineIdx) => {
+    const parts = line.split(/(\*[^*]+\*)/g);
+    const rendered: React.ReactNode[] = parts.map((part, i) =>
+      part.startsWith("*") && part.endsWith("*") ? (
+        <em key={`${lineIdx}-${i}`} style={{ fontStyle: "italic", color: "var(--gold)" }}>
+          {part.slice(1, -1)}
+        </em>
+      ) : (
+        part
+      )
+    );
+    if (lineIdx < lines.length - 1) rendered.push(<br key={`br-${lineIdx}`} />);
+    return rendered;
+  });
 }
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
