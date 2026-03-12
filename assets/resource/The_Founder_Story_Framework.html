@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Founder Story Framework — Dwayne Holness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --charcoal: #111111;
+      --charcoal-light: #1a1a1a;
+      --cream: #f0ebe0;
+      --cream-dim: #c8c2b4;
+      --gold: #c9a84c;
+      --gold-light: #e0bf72;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.7;
+      font-size: 10.5pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Page structure ── */
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.75in 0.9in;
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      background: var(--black);
+    }
+
+    .page::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(201, 168, 76, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(201, 168, 76, 0.04) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    /* ── Cover page ── */
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1in 0.9in;
+    }
+
+    .cover-label {
+      font-family: var(--sans);
+      font-size: 7.5pt;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+    }
+
+    .cover-title {
+      font-family: var(--serif);
+      font-size: 42pt;
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--cream);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      max-width: 5.5in;
+    }
+
+    .cover-title em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .cover-subtitle {
+      font-family: var(--serif);
+      font-size: 14pt;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--cream-dim);
+      line-height: 1.5;
+      max-width: 4.8in;
+      margin-bottom: 3rem;
+    }
+
+    .cover-rule {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    .cover-author {
+      font-family: var(--sans);
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--cream-dim);
+      letter-spacing: 0.05em;
+    }
+
+    .cover-author strong {
+      color: var(--cream);
+      font-weight: 500;
+    }
+
+    .cover-footer {
+      position: absolute;
+      bottom: 0.75in;
+      left: 0.9in;
+      right: 0.9in;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .cover-brand {
+      font-family: var(--sans);
+      font-size: 7pt;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      opacity: 0.6;
+    }
+
+    .cover-url {
+      font-family: var(--sans);
+      font-size: 7.5pt;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+    }
+
+    /* ── Typography ── */
+    h2 {
+      font-family: var(--serif);
+      font-size: 22pt;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    h3 {
+      font-family: var(--serif);
+      font-size: 14pt;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+
+    h4 {
+      font-family: var(--sans);
+      font-size: 8pt;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      margin-bottom: 0.85rem;
+      color: var(--cream);
+      opacity: 0.88;
+    }
+
+    .lead {
+      font-family: var(--serif);
+      font-size: 12pt;
+      font-style: italic;
+      color: var(--cream-dim);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 5.5in;
+    }
+
+    /* ── Section intro ── */
+    .section-intro {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    /* ── Act blocks ── */
+    .act {
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.1rem;
+      background: rgba(255, 255, 255, 0.025);
+      border-left: 2px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .act-number {
+      font-family: var(--sans);
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+
+    .act h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .act p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Prompt boxes ── */
+    .prompt-box {
+      background: rgba(201, 168, 76, 0.08);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .prompt-box-label {
+      font-family: var(--sans);
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .prompt-box p {
+      font-size: 9.5pt;
+      margin-bottom: 0.4rem;
+      opacity: 0.9;
+    }
+
+    .prompt-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Comparison layout ── */
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0 1.25rem;
+    }
+
+    .comparison-col {
+      padding: 0.75rem 0.9rem;
+      border-radius: 5px;
+      font-size: 9.5pt;
+    }
+
+    .comparison-col.weak {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .comparison-col.strong {
+      background: rgba(201, 168, 76, 0.06);
+      border: 1px solid rgba(201, 168, 76, 0.18);
+    }
+
+    .comparison-col h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .comparison-col p {
+      font-size: 9.5pt;
+      line-height: 1.55;
+      margin-bottom: 0.35rem;
+    }
+
+    /* ── Numbered list ── */
+    .numbered-list {
+      list-style: none;
+      counter-reset: steps;
+      padding: 0;
+    }
+
+    .numbered-list li {
+      counter-increment: steps;
+      padding: 0.45rem 0 0.45rem 2.2rem;
+      position: relative;
+      font-size: 10pt;
+      line-height: 1.55;
+      color: var(--cream);
+      opacity: 0.88;
+    }
+
+    .numbered-list li::before {
+      content: counter(steps, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      font-family: var(--sans);
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      top: 0.5rem;
+    }
+
+    /* ── Blockquote ── */
+    blockquote {
+      border-left: 2px solid var(--gold);
+      padding: 0.5rem 0 0.5rem 1rem;
+      margin: 1rem 0 1.25rem;
+    }
+
+    blockquote p {
+      font-family: var(--serif);
+      font-size: 12pt;
+      font-style: italic;
+      color: var(--cream);
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    /* ── Page footer ── */
+    .page-footer {
+      position: absolute;
+      bottom: 0.6in;
+      left: 0.9in;
+      right: 0.9in;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+    }
+
+    .page-footer span {
+      font-family: var(--sans);
+      font-size: 7pt;
+      color: var(--cream-dim);
+      opacity: 0.5;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── CTA page ── */
+    .cta-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1in 0.9in;
+    }
+
+    .cta-page h2 {
+      font-size: 26pt;
+      margin-bottom: 1rem;
+    }
+
+    .cta-page .lead {
+      max-width: 5in;
+      margin-bottom: 2rem;
+    }
+
+    .cta-steps {
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-step-num {
+      font-family: var(--serif);
+      font-size: 18pt;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 1.5rem;
+    }
+
+    .cta-step-text {
+      font-size: 10pt;
+      line-height: 1.55;
+      color: var(--cream);
+      opacity: 0.88;
+      padding-top: 0.15rem;
+    }
+
+    .cta-email {
+      font-family: var(--sans);
+      font-size: 11pt;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    .cta-website {
+      font-family: var(--sans);
+      font-size: 9pt;
+      color: var(--cream-dim);
+      margin-top: 0.35rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Worksheet ── */
+    .worksheet-field {
+      margin-bottom: 1.25rem;
+    }
+
+    .worksheet-field label {
+      display: block;
+      font-family: var(--sans);
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    .worksheet-field .lines {
+      border-bottom: 1px solid rgba(240, 235, 224, 0.12);
+      height: 1.4rem;
+    }
+
+    .worksheet-field .lines + .lines {
+      margin-top: 0.15rem;
+    }
+
+    .worksheet-field .lines-tall {
+      border-bottom: 1px solid rgba(240, 235, 224, 0.12);
+      height: 1.4rem;
+    }
+
+    .worksheet-field .lines-tall + .lines-tall {
+      margin-top: 0.15rem;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: var(--black); }
+      .page {
+        page-break-after: always;
+        margin: 0;
+        padding: 0.75in 0.9in;
+      }
+      .page:last-child { page-break-after: avoid; }
+    }
+
+    /* ── Screen preview ── */
+    @media screen {
+      body {
+        padding: 2rem 0;
+        background: #050505;
+      }
+      .page {
+        margin: 0 auto 2rem;
+        box-shadow:
+          0 4px 24px rgba(0, 0, 0, 0.4),
+          0 0 0 1px rgba(201, 168, 76, 0.08);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 1: COVER -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page cover">
+  <div class="cover-label">A Framework by Dwayne Holness</div>
+  <h1 class="cover-title">The Founder<br>Story <em>Framework</em></h1>
+  <p class="cover-subtitle">How to structure the origin story behind your brand so it moves people, builds trust, and turns attention into business.</p>
+  <div class="cover-rule"></div>
+  <p class="cover-author"><strong>Dwayne Holness</strong> &nbsp;·&nbsp; Founder &amp; Creative Director, Corex Creative</p>
+  <div class="cover-footer">
+    <span class="cover-brand">Corex Creative Inc.</span>
+    <span class="cover-url">dwayneholness.com</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 2: WHY YOUR STORY MATTERS -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-intro">
+    <h4>Introduction</h4>
+    <h2>Your story is not a <em>biography.</em><br>It is a business asset.</h2>
+  </div>
+
+  <p>Every founder has a story. Very few know how to tell it in a way that actually moves people. Most default to a timeline: where they grew up, what they studied, when they launched. That is a biography. It is not a story.</p>
+
+  <p>A founder story, when structured correctly, does three things at once. It builds trust before a single meeting. It differentiates the brand in a market full of similar services. And it creates emotional resonance that no amount of features and benefits can replicate.</p>
+
+  <p>The problem is not that founders lack interesting material. It is that no one has given them a structure for deciding what to include, what to leave out, and how to sequence the pieces so the story lands with weight.</p>
+
+  <p>That is what this framework does.</p>
+
+  <blockquote>
+    <p>People do not buy what you do. They buy why you did it, what it cost you, and whether they believe you will do it for them.</p>
+  </blockquote>
+
+  <p>The framework has five acts. Each act serves a specific narrative function. Together, they form a complete founder story that works across every medium: a brand film, a keynote, an about page, a podcast interview, a pitch deck.</p>
+
+  <p>The structure is the same regardless of where the story appears. Only the length changes.</p>
+
+  <p>This is not a creative writing exercise. It is a strategic tool. Every founder who has gone through this process with us has walked away with a story that converts. Not because we made anything up, but because we gave the truth a shape.</p>
+
+  <div class="page-footer">
+    <span>The Founder Story Framework</span>
+    <span>02</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 3: THE FIVE ACTS -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-intro">
+    <h4>The Framework</h4>
+    <h2>Five acts. One <em>complete</em> story.</h2>
+    <p class="lead">Each act does a specific job. Skip one and the story collapses. Nail all five and it becomes the most powerful asset in your brand.</p>
+  </div>
+
+  <div class="act">
+    <div class="act-number">Act 01</div>
+    <h3>The World Before</h3>
+    <p>Set the scene. What was life like before the business existed? This is not childhood nostalgia. It is the context that makes everything after it meaningful. Paint the environment, the constraints, the expectations that were placed on you, the version of success you were handed.</p>
+    <p>The audience needs to see where you started so they can feel the distance you have travelled. Without the "before," the transformation has no weight.</p>
+    <div class="prompt-box">
+      <div class="prompt-box-label">Founder Prompt</div>
+      <p>What was the default path laid out for you? What did success look like in the world you came from, and why did that definition feel incomplete?</p>
+    </div>
+  </div>
+
+  <div class="act">
+    <div class="act-number">Act 02</div>
+    <h3>The Fracture</h3>
+    <p>Something broke. A moment, a conversation, a loss, a realization. This is the inciting incident. The fracture is the point where the old path stopped making sense and the new one became unavoidable.</p>
+    <p>This is the most important act. If the audience does not feel the fracture, they will not believe the transformation. Be specific. Name the moment. Ground it in a real time and place.</p>
+    <div class="prompt-box">
+      <div class="prompt-box-label">Founder Prompt</div>
+      <p>What was the specific moment when you knew the old path was no longer an option? What did it feel like? What did you do in the 48 hours after?</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>The Founder Story Framework</span>
+    <span>03</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 4: ACTS 3, 4, 5 -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page">
+
+  <div class="act">
+    <div class="act-number">Act 03</div>
+    <h3>The Wilderness</h3>
+    <p>The middle is where credibility lives. This is the stretch where nothing worked yet, where the learning was expensive, and where most people would have turned back. The wilderness is not a highlight reel. It is the proof that the founder earned the right to lead.</p>
+    <p>Name the real cost. The financial sacrifice. The relationships that were strained. The doubt that showed up at 2 a.m. The audience is not looking for perfection. They are looking for evidence that this person can endure what they are asking clients to trust them with.</p>
+    <div class="prompt-box">
+      <div class="prompt-box-label">Founder Prompt</div>
+      <p>What was the hardest season of building this? What did you almost lose? What kept you going when quitting would have been the easier choice?</p>
+    </div>
+  </div>
+
+  <div class="act">
+    <div class="act-number">Act 04</div>
+    <h3>The Turning Point</h3>
+    <p>This is the first real win. Not the one that looked good on paper, but the one that confirmed the vision was right. A client result that proved the model. A moment of recognition from someone you respected. A number that validated the sacrifice.</p>
+    <p>The turning point is the payoff the audience has been waiting for. Keep it grounded and specific. One clear moment is stronger than a list of accomplishments.</p>
+    <div class="prompt-box">
+      <div class="prompt-box-label">Founder Prompt</div>
+      <p>What was the first moment that made you think, "this is going to work"? Who was involved? What made that moment different from every win before it?</p>
+    </div>
+  </div>
+
+  <div class="act">
+    <div class="act-number">Act 05</div>
+    <h3>The Mission Now</h3>
+    <p>This is where the story meets the business. Everything before this act builds the emotional foundation. Act five converts that emotion into action. It answers the question the audience has been holding: "So what does this mean for me?"</p>
+    <p>Connect the journey directly to the work being done today. The mission is not a mission statement. It is the living reason the business exists, spoken in the founder's voice, with the weight of the full story behind it.</p>
+    <div class="prompt-box">
+      <div class="prompt-box-label">Founder Prompt</div>
+      <p>Knowing everything you have been through, what is the one thing you are now building, and who specifically are you building it for? Why does it have to be you?</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>The Founder Story Framework</span>
+    <span>04</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 5: COMMON MISTAKES -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-intro">
+    <h4>The Craft</h4>
+    <h2>What separates a good story<br>from one that <em>converts</em></h2>
+  </div>
+
+  <p>The five acts give you the structure. But structure alone does not make a story land. These are the patterns that separate founder stories that get polite nods from the ones that generate inbound leads, speaking invitations, and investor interest.</p>
+
+  <div class="comparison">
+    <div class="comparison-col weak">
+      <h4>What most founders do</h4>
+      <p>Tell the story chronologically, starting with birth or education</p>
+      <p>Include every milestone, afraid to leave anything out</p>
+      <p>Stay abstract: "I always had a passion for helping people"</p>
+      <p>End with a list of services or credentials</p>
+      <p>Use the same version everywhere, regardless of context</p>
+    </div>
+    <div class="comparison-col strong">
+      <h4>What converts</h4>
+      <p>Open with the fracture. Drop the audience into tension immediately</p>
+      <p>Cut ruthlessly. One story, five acts, no detours</p>
+      <p>Ground every beat in a specific moment, person, or number</p>
+      <p>End with a mission that makes the audience see themselves in it</p>
+      <p>Adapt the depth and emphasis to the medium and audience</p>
+    </div>
+  </div>
+
+  <h3>Three rules for the edit</h3>
+  <ol class="numbered-list">
+    <li><strong>Specificity is trust.</strong> Replace "I struggled" with "I had $212 in my account and a lease renewal due in nine days." Every concrete detail is an act of generosity toward the audience. It signals that this is not rehearsed. It is real.</li>
+    <li><strong>Vulnerability is not weakness.</strong> The fracture and the wilderness require honesty. Not therapy-session honesty, but the kind that says, "I did not have it figured out, and here is what it cost me." This is the material that makes a founder relatable to someone who is deciding whether to trust them.</li>
+    <li><strong>The mission must be selfless.</strong> Act five cannot be about revenue, recognition, or personal success. It must be about the person on the other side. If your mission does not make your ideal client feel seen, rewrite it until it does.</li>
+  </ol>
+
+  <blockquote>
+    <p>A founder story is not about impressing people. It is about making them feel something true, and then showing them where to go next.</p>
+  </blockquote>
+
+  <div class="page-footer">
+    <span>The Founder Story Framework</span>
+    <span>05</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 6: WORKSHEET -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-intro">
+    <h4>Worksheet</h4>
+    <h2>Map your <em>five acts</em></h2>
+    <p class="lead">Use this page to draft the raw material for each act. Do not edit yet. Write fast, write honestly, and write more than you think you need. The edit comes later.</p>
+  </div>
+
+  <div class="worksheet-field">
+    <label>Act 01 — The World Before</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="worksheet-field">
+    <label>Act 02 — The Fracture</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="worksheet-field">
+    <label>Act 03 — The Wilderness</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="worksheet-field">
+    <label>Act 04 — The Turning Point</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="worksheet-field">
+    <label>Act 05 — The Mission Now</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="worksheet-field">
+    <label>The one sentence that ties all five acts together</label>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </div>
+
+  <div class="page-footer">
+    <span>The Founder Story Framework</span>
+    <span>06</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PAGE 7: CTA -->
+<!-- ════════════════════════════════════════════════════ -->
+<div class="page cta-page">
+  <h4>Next Step</h4>
+  <h2>Ready to tell your story<br>the way it <em>deserves</em> to be told?</h2>
+  <p class="lead">Most founders can fill in the five acts on their own. Very few can turn that raw material into a cinematic brand story that moves an audience and drives business. That is what we do.</p>
+
+  <div class="cta-steps">
+    <div class="cta-step">
+      <div class="cta-step-num">1</div>
+      <div class="cta-step-text">Complete the worksheet on the previous page. Write more than you think you need.</div>
+    </div>
+    <div class="cta-step">
+      <div class="cta-step-num">2</div>
+      <div class="cta-step-text">Send your completed worksheet to the email below with the subject line "Founder Story."</div>
+    </div>
+    <div class="cta-step">
+      <div class="cta-step-num">3</div>
+      <div class="cta-step-text">We will review it and schedule a 30-minute story session to map your brand narrative.</div>
+    </div>
+  </div>
+
+  <div class="cover-rule"></div>
+  <p class="cta-email">dwayne@corexcreative.com</p>
+  <p class="cta-website">dwayneholness.com &nbsp;·&nbsp; corexcreative.com</p>
+
+  <div class="cover-footer">
+    <span class="cover-brand">© 2026 Corex Creative Inc.</span>
+    <span class="cover-url">Toronto, Canada</span>
+  </div>
+</div>
+
+</body>
+</html>

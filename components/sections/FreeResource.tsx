@@ -99,9 +99,9 @@ export default function FreeResource() {
               marginBottom: "1.5rem",
             }}
           >
-            10 Frameworks for{" "}
+            The Founder Story{" "}
             <em style={{ fontStyle: "italic", color: "var(--gold)" }}>
-              Creative Ownership.
+              Framework.
             </em>
           </h2>
           <p
@@ -113,9 +113,9 @@ export default function FreeResource() {
               maxWidth: "48ch",
             }}
           >
-            The playbook I use to help founders and brands take full ownership of
-            their creative output. Ten frameworks for building media that
-            compounds, not content that expires.
+            The five-act structure I use to help founders turn their origin story
+            into the most powerful asset in their brand. A strategic framework,
+            not a creative writing exercise.
           </p>
           <div
             style={{
@@ -126,10 +126,10 @@ export default function FreeResource() {
             }}
           >
             {[
-              "Brand positioning and narrative architecture",
-              "Content infrastructure that scales",
-              "Systems for thought leadership",
-              "Distribution that compounds over time",
+              "Five acts that structure any founder story",
+              "Prompts to surface the moments that matter",
+              "Side-by-side: what most founders do vs. what converts",
+              "Fillable worksheet to map your narrative",
             ].map((item) => (
               <div
                 key={item}
@@ -201,7 +201,7 @@ export default function FreeResource() {
                 Your download is ready.
               </p>
               <a
-                href="/resources/10_Frameworks_Creative_Ownership.pdf"
+                href="/resources/The_Founder_Story_Framework.pdf"
                 download
                 style={{
                   display: "inline-flex",
@@ -252,7 +252,7 @@ export default function FreeResource() {
                   lineHeight: 1.3,
                 }}
               >
-                Get the 10 frameworks that power every brand we build.
+                Get the framework for telling your founder story.
               </p>
               <p
                 style={{
@@ -262,7 +262,7 @@ export default function FreeResource() {
                   marginBottom: "2rem",
                 }}
               >
-                Drop your email and get instant access to the PDF.
+                Drop your email and get instant access to the 7-page guide.
               </p>
               <form onSubmit={handleSubmit}>
                 <input
