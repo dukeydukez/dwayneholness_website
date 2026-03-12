@@ -19,7 +19,7 @@ export default function LogoBar() {
   return (
     <section
       style={{
-        backgroundColor: "var(--black)",
+        backgroundColor: "#0a0a0a",
         padding: "2rem 2rem",
         borderTop: "1px solid rgba(200,194,180,0.06)",
         borderBottom: "1px solid rgba(200,194,180,0.06)",
