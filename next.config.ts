@@ -18,14 +18,14 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Next.js requires unsafe-inline for its inline scripts/styles
-      "script-src 'self' 'unsafe-inline' https://calendar.google.com",
+      "script-src 'self' 'unsafe-inline' https://calendar.google.com https://plausible.io",
       "style-src 'self' 'unsafe-inline'",
       // Allow images from self, data URIs (Next.js), and https sources (article images)
       "img-src 'self' data: https:",
       // iframes: YouTube, Vimeo, Google Calendar scheduling
       "frame-src https://www.youtube.com https://player.vimeo.com https://calendar.google.com",
       "font-src 'self'",
-      "connect-src 'self'",
+      "connect-src 'self' https://plausible.io",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",

@@ -48,6 +48,26 @@ export async function generateMetadata({
   };
 }
 
+function buildArticleJsonLd(article: { title: string; date: string; excerpt: string; slug: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title.replace(/\*/g, ""),
+    description: article.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Dwayne Holness",
+      url: "https://dwayneholness.com",
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Dwayne Holness",
+    },
+    url: `https://dwayneholness.com/writing/${article.slug}`,
+    mainEntityOfPage: `https://dwayneholness.com/writing/${article.slug}`,
+  };
+}
+
 export default async function WritingPostPage({
   params,
 }: {
@@ -56,6 +76,8 @@ export default async function WritingPostPage({
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) notFound();
+
+  const articleJsonLd = buildArticleJsonLd(article);
 
   // Auto-compute adjacent articles from the sorted list
   const allArticles = getAllArticles();
@@ -68,6 +90,10 @@ export default async function WritingPostPage({
 
   return (
     <div style={{ backgroundColor: "var(--black)", minHeight: "100vh", paddingTop: "6rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <ReadingProgressBar />
       <HighlightShare />
       {/* Header */}
