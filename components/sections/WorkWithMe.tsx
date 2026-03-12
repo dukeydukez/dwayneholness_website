@@ -41,8 +41,8 @@ const tiers = [
   },
   {
     label: "Strategic Brand & Growth Session",
-    price: "$3,497",
-    priceNote: "one-time investment",
+    price: "$3,500+",
+    priceNote: "flexible payment plans available",
     features: [
       "90-min strategy deep dive",
       "Positioning & messaging framework",

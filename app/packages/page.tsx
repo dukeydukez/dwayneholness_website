@@ -26,8 +26,8 @@ const packages = [
   {
     id: "02",
     label: "Strategic Brand & Growth Session",
-    price: "$3,497",
-    priceNote: "one-time investment",
+    price: "$3,500+",
+    priceNote: "flexible payment plans available",
     tagline: "90 minutes to diagnose, position, and build your roadmap.",
     description:
       "This is the session where the real work begins. A deep-dive strategy engagement that covers your brand positioning, content infrastructure, audience architecture, and revenue clarity. You walk away with a concrete roadmap built around your business model and goals, not a generic template.",

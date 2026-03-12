@@ -20,10 +20,10 @@ export default function Home() {
       <About />
       <WorkPreview />
       <MidPageCTA />
+      <FreeResource />
       <SpeakingPreview />
       <WhoIWorkWith />
       <WorkWithMe />
-      <FreeResource />
       <WritingPreview posts={latestPosts} />
       <BookCTA />
     </>
