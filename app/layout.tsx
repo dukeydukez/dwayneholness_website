@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import NewsletterPopup from "@/components/NewsletterPopup";
 import DiscoveryChat from "@/components/DiscoveryChat";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
+import { PostHogProvider } from "./providers";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -117,13 +118,15 @@ export default function RootLayout({
           color: "var(--cream)",
         }}
       >
-        <ReadingProgressBar />
-        <Nav />
-        <main>{children}</main>
-        <Footer />
-        <ScrollToTop />
-        <NewsletterPopup />
-        <DiscoveryChat />
+        <PostHogProvider>
+          <ReadingProgressBar />
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+          <ScrollToTop />
+          <NewsletterPopup />
+          <DiscoveryChat />
+        </PostHogProvider>
       </body>
     </html>
   );

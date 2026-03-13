@@ -17,6 +17,8 @@
     "framer-motion": "^12.35.1",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",
+    "posthog-js": "^1.360.1",
+    "posthog-node": "^5.28.1",
     "puppeteer": "^24.38.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -32,6 +34,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "mammoth": "^1.11.0",
+    "pdf-parse": "^2.4.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
