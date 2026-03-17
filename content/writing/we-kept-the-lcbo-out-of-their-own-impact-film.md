@@ -1,6 +1,6 @@
 ---
-title: "We kept the LCBO out of their own impact film. It reached 11 million people."
-date: "March 2026"
+title: "We kept the LCBO out.\nIt reached *11 million people.*"
+date: "14 March 2026, 8:30 AM"
 readTime: "5 min read"
 category: "Thought Leadership"
 tags: ["Thought Leadership", "Brand Strategy", "Filmmaking"]
