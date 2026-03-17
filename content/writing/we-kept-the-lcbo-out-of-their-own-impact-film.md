@@ -9,7 +9,7 @@ nextSlug: ""
 nextTitle: ""
 ---
 
-The brief arrived in June 2021. The LCBO needed an impact video for their Spirit of Sustainability platform. Years of real work: responsible retail programmes, community fundraising across Ontario, environmental commitments they'd actually kept. Over $12 million raised for MADD Canada, Women's College Hospital, United Way.
+The brief arrived in June 2021. The LCBO needed an impact video for their Spirit of Sustainability platform. Years of real work: responsible retail programmes, community fundraising across Ontario, environmental commitments they'd actually kept. Over $12 million raised for CEE Toronto, Women's College Hospital, and Spirit of Inclusivity Initiative.
 
 They had the story. They just needed someone to tell it correctly.
 
