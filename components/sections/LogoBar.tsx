@@ -11,10 +11,6 @@ const logos = [
   { src: "/images/logos/6.png", alt: "Rotary", width: 115 },
   { src: "/images/logos/7.png", alt: "CBC", width: 130 },
   { src: "/images/logos/8.png", alt: "Canadian Tire", width: 110 },
-  { src: "/images/logos/9.png", alt: "Academy of Canadian Cinema & Television", width: 130 },
-  { src: "/images/logos/12.png", alt: "Historica Canada", width: 120 },
-  { src: "/images/logos/13.png", alt: "Rogers", width: 120 },
-  { src: "/images/logos/14.png", alt: "BNI", width: 120 },
 ];
 
 const ease = [0.25, 0.46, 0.45, 0.94] as const;
