@@ -69,12 +69,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
   description:
-    "Dwayne Holness is a speaker, brand architect, and strategist helping founders and enterprise brands build media systems that compound authority over time.",
+    "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
   keywords: ["speaker", "brand architect", "brand strategist", "thought leadership", "Toronto"],
   openGraph: {
     title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
     description:
-      "Helping founders and enterprise brands build media systems that compound authority over time.",
+      "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
     url: "https://dwayneholness.com",
     siteName: "Dwayne Holness",
     type: "website",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
-    description: "Helping founders and enterprise brands build media systems that compound authority over time.",
+    description: "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
     images: ["https://dwayneholness.com/images/DH1.png"],
   },
 };
