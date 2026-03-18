@@ -78,11 +78,20 @@ export const metadata: Metadata = {
     url: "https://dwayneholness.com",
     siteName: "Dwayne Holness",
     type: "website",
+    images: [
+      {
+        url: "https://dwayneholness.com/images/DH1.png",
+        width: 360,
+        height: 540,
+        alt: "Dwayne Holness",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
     description: "Helping founders and enterprise brands build media systems that compound authority over time.",
+    images: ["https://dwayneholness.com/images/DH1.png"],
   },
 };
 
