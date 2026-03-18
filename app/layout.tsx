@@ -80,10 +80,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dwayneholness.com/images/DH1.png",
-        width: 360,
-        height: 540,
-        alt: "Dwayne Holness",
+        url: "https://dwayneholness.com/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dwayne Holness | Speaker · Brand Architect · Strategist",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
     description: "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
-    images: ["https://dwayneholness.com/images/DH1.png"],
+    images: ["https://dwayneholness.com/images/og-image.png"],
   },
 };
 
