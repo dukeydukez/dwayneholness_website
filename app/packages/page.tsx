@@ -26,7 +26,7 @@ const packages = [
   {
     id: "02",
     label: "Strategic Brand & Growth Session",
-    price: "$6,500",
+    price: "$8,500",
     priceNote: "flexible payment plans available",
     tagline: "Diagnose, position, and build your executive roadmap.",
     description:

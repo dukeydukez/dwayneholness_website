@@ -41,7 +41,7 @@ const tiers = [
   },
   {
     label: "Strategic Brand & Growth Session",
-    price: "$6,500",
+    price: "$8,500",
     priceNote: "flexible payment plans available",
     features: [
       "Executive strategy intensive",
