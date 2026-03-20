@@ -7,7 +7,7 @@ const packages = [
   {
     id: "01",
     label: "Creative Strategy Session",
-    price: "$247",
+    price: "$500",
     priceNote: "1-hour session",
     tagline: "Come with your questions. Leave with a clear strategy.",
     description:
@@ -26,14 +26,14 @@ const packages = [
   {
     id: "02",
     label: "Strategic Brand & Growth Session",
-    price: "$3,500+",
+    price: "$6,500",
     priceNote: "flexible payment plans available",
-    tagline: "90 minutes to diagnose, position, and build your roadmap.",
+    tagline: "Diagnose, position, and build your executive roadmap.",
     description:
-      "This is the session where the real work begins. A deep-dive strategy engagement that covers your brand positioning, content infrastructure, audience architecture, and revenue clarity. You walk away with a concrete roadmap built around your business model and goals, not a generic template.",
+      "This is the session where the real work begins. A comprehensive strategy engagement that covers your brand positioning, content infrastructure, audience architecture, and revenue clarity. You walk away with a concrete roadmap built around your business model and goals, not a generic template.",
     who: "Founders and brand leaders who are serious about building a media presence that compounds over time.",
     includes: [
-      "90-minute strategic deep dive session",
+      "Executive strategy intensive",
       "Pre-session brand and positioning audit",
       "Positioning statement and messaging framework",
       "Content infrastructure blueprint",
@@ -48,7 +48,7 @@ const packages = [
   {
     id: "03",
     label: "Book Dwayne to Speak",
-    price: "$1,500+",
+    price: "$5,000+",
     priceNote: "per engagement",
     tagline: "Bring a practitioner to your stage, not a motivational speaker.",
     description:

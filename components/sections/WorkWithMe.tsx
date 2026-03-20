@@ -28,7 +28,7 @@ const testimonials = [
 const tiers = [
   {
     label: "Creative Strategy Session",
-    price: "$247",
+    price: "$500",
     priceNote: "1-hour session",
     features: [
       "60-minute video session",
@@ -41,10 +41,10 @@ const tiers = [
   },
   {
     label: "Strategic Brand & Growth Session",
-    price: "$3,500+",
+    price: "$6,500",
     priceNote: "flexible payment plans available",
     features: [
-      "90-min strategy deep dive",
+      "Executive strategy intensive",
       "Positioning & messaging framework",
       "Prioritized 90-day roadmap",
     ],
@@ -54,7 +54,7 @@ const tiers = [
   },
   {
     label: "Book Dwayne to Speak",
-    price: "$1,500+",
+    price: "$5,000+",
     priceNote: "per engagement",
     features: [
       "Keynotes, panels & workshops",
