@@ -1,5 +1,5 @@
 ---
-title: "$140 a Month Saved My Company Over $200,000"
+title: "$140 a Month Saved My Company\nOver *$200,000*"
 date: "26 March 2026, 12:00 AM"
 readTime: "7 min read"
 category: "Entrepreneurship"
