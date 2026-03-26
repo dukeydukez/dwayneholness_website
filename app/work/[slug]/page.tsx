@@ -278,10 +278,11 @@ export default async function WorkDetailPage({
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: vimeoIds.length === 3 ? "1fr 1fr 1fr" : vimeoIds.length > 1 ? "1fr 1fr" : "1fr",
+              gridTemplateColumns: "1fr",
               gap: "1rem",
               marginTop: "2rem",
             }}
+            className={vimeoIds.length === 3 ? "md-grid-cols-3" : vimeoIds.length > 1 ? "md-grid-cols-2" : undefined}
           >
             {vimeoIds.filter((vid) => SAFE_VIDEO_ID_RE.test(vid)).map((vid) => (
               <div key={vid} style={{ width: "100%", aspectRatio: "16/9" }}>

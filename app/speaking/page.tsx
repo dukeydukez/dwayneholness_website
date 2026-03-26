@@ -1,6 +1,45 @@
 "use client";
 import { motion } from "framer-motion";
 
+const latestEvent = {
+  title: "Media: The Infrastructure of Influence",
+  show: "Business Weekly with Miss Jay",
+  platform: "LuvBay Afrobeat Music Talk Radio",
+  date: "March 2026",
+  videoId: "QZEVtNomfVg",
+  description:
+    "A deep conversation on why visibility without systems is a trap, and how founders can build media infrastructure that converts attention into scale.",
+  highlights: [
+    {
+      quote: "If social media went down today, where would your clients live?",
+      context: "On platform independence and true ownership",
+    },
+    {
+      quote: "Attention is loud. Infrastructure brings that into a door.",
+      context: "The core distinction most founders miss",
+    },
+    {
+      quote:
+        "I scaled one client from $500 to almost half a million dollars. One client.",
+      context: "Proof that systems beat volume",
+    },
+    {
+      quote: "Be the architect, not the operator.",
+      context: "The goal of media infrastructure",
+    },
+    {
+      quote:
+        "One great piece of content can do the job of a hundred that someone is just throwing out.",
+      context: "Quality over quantity",
+    },
+    {
+      quote:
+        "Don't give away your discovery process for free. Your process is your framework, and that can be packaged and sold.",
+      context: "On valuing your expertise",
+    },
+  ],
+};
+
 const topics = [
   {
     title: "Brand Architecture for Founders",
@@ -141,6 +180,182 @@ export default function SpeakingPage() {
           and the architecture of creative ecosystems, combining practitioner
           depth with strategic clarity for founders and enterprise brands.
         </motion.p>
+      </div>
+
+      {/* Latest Event */}
+      <div
+        style={{
+          backgroundColor: "var(--charcoal)",
+          borderBottom: "1px solid rgba(200,194,180,0.1)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "5rem 2rem",
+          }}
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease }}
+            style={{
+              fontSize: "0.6875rem",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "var(--gold)",
+              fontWeight: 500,
+              marginBottom: "0.75rem",
+            }}
+          >
+            Latest Event
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.1, ease }}
+            style={{
+              fontFamily: "var(--font-display), sans-serif",
+              fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)",
+              fontWeight: 700,
+              color: "var(--cream)",
+              letterSpacing: "-0.02em",
+              marginBottom: "0.5rem",
+              maxWidth: "24ch",
+            }}
+          >
+            {latestEvent.title}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, delay: 0.15, ease }}
+            style={{
+              fontSize: "0.8125rem",
+              color: "var(--cream-dim)",
+              marginBottom: "2.5rem",
+              lineHeight: 1.6,
+            }}
+          >
+            {latestEvent.show} · {latestEvent.platform} · {latestEvent.date}
+          </motion.p>
+
+          {/* Video Embed */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease }}
+            style={{
+              position: "relative",
+              width: "100%",
+              paddingBottom: "56.25%",
+              marginBottom: "3rem",
+              border: "1px solid rgba(201,168,76,0.15)",
+              overflow: "hidden",
+            }}
+          >
+            <iframe
+              src={`https://www.youtube.com/embed/${latestEvent.videoId}`}
+              title={latestEvent.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "none",
+              }}
+            />
+          </motion.div>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, delay: 0.1, ease }}
+            style={{
+              fontSize: "1.0625rem",
+              color: "var(--cream)",
+              lineHeight: 1.75,
+              maxWidth: "56ch",
+              marginBottom: "3rem",
+            }}
+          >
+            {latestEvent.description}
+          </motion.p>
+
+          {/* Key Highlights */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, ease }}
+            style={{
+              fontSize: "0.6875rem",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--gold)",
+              fontWeight: 500,
+              marginBottom: "2rem",
+            }}
+          >
+            Key Highlights
+          </motion.p>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr",
+              gap: "1.5rem",
+            }}
+            className="md-grid-cols-2"
+          >
+            {latestEvent.highlights.map(({ quote, context }, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.07, ease }}
+                style={{
+                  padding: "1.75rem",
+                  backgroundColor: "var(--charcoal-light)",
+                  borderLeft: "3px solid rgba(201,168,76,0.4)",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    color: "var(--cream)",
+                    lineHeight: 1.7,
+                    fontStyle: "italic",
+                    marginBottom: "0.75rem",
+                  }}
+                >
+                  &ldquo;{quote}&rdquo;
+                </p>
+                <p
+                  style={{
+                    fontSize: "0.75rem",
+                    color: "var(--cream-dim)",
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    fontWeight: 500,
+                  }}
+                >
+                  {context}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Offerings */}
