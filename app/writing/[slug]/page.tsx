@@ -11,6 +11,32 @@ import ShareButtons from "@/components/ShareButtons";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import HighlightShare from "@/components/HighlightShare";
 
+/** Render inline markdown: [links](url) and **bold** within text. */
+function renderInlineText(text: string): React.ReactNode {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      return (
+        <a
+          key={i}
+          href={linkMatch[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}
+        >
+          {linkMatch[1]}
+        </a>
+      );
+    }
+    const boldMatch = part.match(/^\*\*(.+)\*\*$/);
+    if (boldMatch) {
+      return <strong key={i} style={{ color: "var(--cream)", fontWeight: 600 }}>{boldMatch[1]}</strong>;
+    }
+    return part;
+  });
+}
+
 /** Render a title string that may contain *highlighted* segments and \n line breaks. */
 function renderInlineTitle(text: string): React.ReactNode {
   const lines = text.split("\n");
@@ -300,7 +326,7 @@ export default async function WritingPostPage({
                 marginBottom: "1.75rem",
               }}
             >
-              {(block as { type: "p"; text: string }).text}
+              {renderInlineText((block as { type: "p"; text: string }).text)}
             </p>
           );
         })}
