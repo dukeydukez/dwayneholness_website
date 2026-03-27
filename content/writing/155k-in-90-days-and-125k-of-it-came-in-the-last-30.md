@@ -1,10 +1,10 @@
 ---
-title: "$130K in 90 Days, and\n*$100K of It Came in the Last 30*"
+title: "$155K in 90 Days, and\n*$125K of It Came in the Last 30*"
 date: "24 March 2026, 9:30 PM"
 readTime: "8 min read"
 category: "Entrepreneurship"
 tags: ["Entrepreneurship", "Thought Leadership", "Content Systems"]
-excerpt: "January was slow. February was worse. Then March happened. Here's what 15 years of entrepreneurship taught me about the gap between planting and harvesting, and the systems that made a $130K quarter possible."
+excerpt: "January was slow. February was worse. Then March happened. Here's what 15 years of entrepreneurship taught me about the gap between planting and harvesting, and the systems that made a $155K quarter possible."
 nextSlug: ""
 nextTitle: ""
 ---
@@ -13,7 +13,7 @@ January was fine. Not great. Fine. The kind of month where you check your number
 
 Then March happened.
 
-One phone call. Then another. Then a client we'd worked with last year came back, not with the same scope, but with more. More trust. More budget. More ambition. By the time the quarter closed, Corex Creative had generated $130,000 in Q1. Over $100,000 of that landed in March alone.
+One phone call. Then another. Then a client we'd worked with last year came back, not with the same scope, but with more. More trust. More budget. More ambition. By the time the quarter closed, Corex Creative had generated $155,000 in Q1. Over $125,000 of that landed in March alone.
 
 I'm not telling you this to celebrate a number. I'm telling you because two months earlier, I couldn't see it. And if you're in that season right now, the one where you can't see it, I need you to hear this.
 
@@ -37,7 +37,7 @@ There's a period in every quarter, every project, every entrepreneurial season w
 
 **Plant seeds you can't see the harvest for:** Every relationship you build, every conversation you have, every piece of value you put into the world without knowing if it'll come back, that's a seed. I've had deals close in March that started as a casual conversation nine months earlier. You can't connect the dots forward. You just have to keep planting.
 
-**Build systems, not just hustle:** There was a time when $100,000 was my annual target. Now we're clearing that in a single quarter. The difference isn't that I'm working harder. The difference is infrastructure. Automated workflows. AI-assisted production. Client onboarding systems that don't require me to be in every meeting. Systems compound. Hustle doesn't.
+**Build systems, not just hustle:** There was a time when $100,000 was my annual target. Now we're clearing more than that in a single month. The difference isn't that I'm working harder. The difference is infrastructure. Automated workflows. AI-assisted production. Client onboarding systems that don't require me to be in every meeting. Systems compound. Hustle doesn't.
 
 **Steward what you have before asking for more:** The client who came back this year with a bigger budget didn't do that because I pitched them harder. They came back because we treated last year's project like it was the most important thing on our desk. We over-delivered. We communicated well. We made their vision better than they imagined it. Handle what you've been given with excellence, and the next thing finds you.
 
@@ -61,7 +61,7 @@ And I think that's the piece most business content leaves out. The spiritual dim
 
 If your Q1 didn't go the way you planned, hear me clearly: it's not over. Your January might have been shaky. Your February might have been brutal. But your March hasn't been written yet.
 
-I used to chase $100,000 for a whole year. Now we closed more than that in a single month. That didn't happen because the market got easier. It happened because over 15 years, I kept building. Kept showing up. Kept refining the systems. Kept adding value to people around me even when I couldn't see what it would return.
+I used to chase $100,000 for a whole year. Now we closed $125,000 in a single month. That didn't happen because the market got easier. It happened because over 15 years, I kept building. Kept showing up. Kept refining the systems. Kept adding value to people around me even when I couldn't see what it would return.
 
 The seeds you're planting right now, the proposals you're sending, the relationships you're nurturing, the calls you're making, you might not see the return for weeks or months. But the return is coming. It always does for the ones who keep moving.
 
