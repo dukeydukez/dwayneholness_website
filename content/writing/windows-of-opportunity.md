@@ -29,7 +29,7 @@ Around 2009, Beenie Man came to Toronto for a music video. I got invited to the 
 
 But I wasn't just watching. I was connecting. I ended up talking to Beenie Man himself. He had an artist named Versatile who needed a video. I had the resource to give him one. Versatile only had a couple days in Canada.
 
-The next morning, I drove to their hotel. We crammed into a Ben's SUV, not enough seats for everybody. It reminded me of Jamaica, the essence of family and community. We drove to Jane and Finch and the whole community was outside. Waiting. Welcoming them. We shot in Driftwood. Everybody wore High Class t-shirts. Beenie Man wore one. Versatile wore one. International artists supporting what we were building locally.
+The next morning, I drove to their hotel. We crammed into a Benz SUV, not enough seats for everybody. It reminded me of Jamaica, the essence of family and community. We drove to Jane and Finch and the whole community was outside. Waiting. Welcoming them. We shot in Driftwood. Everybody wore High Class t-shirts. Beenie Man wore one. Versatile wore one. International artists supporting what we were building locally.
 
 After so many times the news would paint us as a bad community, this was a moment that showed what Jane and Finch is made of.
 
