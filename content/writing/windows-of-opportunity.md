@@ -1,5 +1,5 @@
 ---
-title: "Windows of Opportunity"
+title: "The Doors That Changed My Life\nWere *Windows of Opportunity*"
 date: "31 March 2026"
 readTime: "8 min read"
 category: "Entrepreneurship"
