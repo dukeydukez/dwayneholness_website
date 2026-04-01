@@ -25,6 +25,12 @@
   --gold-light: #c49a30;
 }
 
+/* Themed article images — swap dark/light based on data-theme */
+.themed-img-dark { display: block !important; }
+.themed-img-light { display: none !important; }
+[data-theme="light"] .themed-img-dark { display: none !important; }
+[data-theme="light"] .themed-img-light { display: block !important; }
+
 /* Responsive visibility helpers */
 .desktop-only {
   display: none !important;

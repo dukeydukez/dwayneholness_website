@@ -1,10 +1,10 @@
 ---
-title: "$155K in 90 Days, and\n*$125K of It Came in the Last 30*"
+title: "$153K in 90 Days, and\n*$140K of It Came in the Last 30*"
 date: "24 March 2026, 9:30 PM"
 readTime: "8 min read"
 category: "Entrepreneurship"
 tags: ["Entrepreneurship", "Thought Leadership", "Content Systems"]
-excerpt: "January was slow. February was worse. Then March happened. Here's what 15 years of entrepreneurship taught me about the gap between planting and harvesting, and the systems that made a $155K quarter possible."
+excerpt: "January was slow. February was worse. Then March happened. Here's what 15 years of entrepreneurship taught me about the gap between planting and harvesting, and the systems that made a $153K quarter possible."
 nextSlug: ""
 nextTitle: ""
 ---
@@ -13,7 +13,9 @@ January was fine. Not great. Fine. The kind of month where you check your number
 
 Then March happened.
 
-One phone call. Then another. Then a client we'd worked with last year came back, not with the same scope, but with more. More trust. More budget. More ambition. By the time the quarter closed, Corex Creative had generated $155,000 in Q1. Over $125,000 of that landed in March alone.
+One phone call. Then another. Then a client we'd worked with last year came back, not with the same scope, but with more. More trust. More budget. More ambition. By the time the quarter closed, Corex Creative had generated $153,000 in Q1. Over $140,000 of that landed in March alone.
+
+![Corex Creative Q1 2026 revenue, $153K in 90 days](/images/writing/153k-in-90-days-dark.png)
 
 I'm not telling you this to celebrate a number. I'm telling you because two months earlier, I couldn't see it. And if you're in that season right now, the one where you can't see it, I need you to hear this.
 
@@ -61,7 +63,7 @@ And I think that's the piece most business content leaves out. The spiritual dim
 
 If your Q1 didn't go the way you planned, hear me clearly: it's not over. Your January might have been shaky. Your February might have been brutal. But your March hasn't been written yet.
 
-I used to chase $100,000 for a whole year. Now we closed $125,000 in a single month. That didn't happen because the market got easier. It happened because over 15 years, I kept building. Kept showing up. Kept refining the systems. Kept adding value to people around me even when I couldn't see what it would return.
+I used to chase $100,000 for a whole year. Now we closed $140,000 in a single month. That didn't happen because the market got easier. It happened because over 15 years, I kept building. Kept showing up. Kept refining the systems. Kept adding value to people around me even when I couldn't see what it would return.
 
 The seeds you're planting right now, the proposals you're sending, the relationships you're nurturing, the calls you're making, you might not see the return for weeks or months. But the return is coming. It always does for the ones who keep moving.
 

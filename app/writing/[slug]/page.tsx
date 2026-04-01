@@ -237,14 +237,35 @@ export default async function WritingPostPage({
             );
           }
           if (block.type === "image") {
+            const imgSrc = (block as { type: "image"; text: string; src?: string }).src;
+            const lightSrc = imgSrc?.includes("-dark.") ? imgSrc.replace("-dark.", "-light.") : null;
             return (
               <div key={i} style={{ margin: "3rem 0" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={(block as { type: "image"; text: string; src?: string }).src}
-                  alt={block.text}
-                  style={{ width: "100%", height: "auto", display: "block" }}
-                />
+                {lightSrc ? (
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={imgSrc}
+                      alt={block.text}
+                      className="themed-img-dark"
+                      style={{ width: "100%", height: "auto", display: "block", borderRadius: "12px" }}
+                    />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={lightSrc}
+                      alt={block.text}
+                      className="themed-img-light"
+                      style={{ width: "100%", height: "auto", display: "none", borderRadius: "12px" }}
+                    />
+                  </>
+                ) : (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={imgSrc}
+                    alt={block.text}
+                    style={{ width: "100%", height: "auto", display: "block" }}
+                  />
+                )}
                 {block.text && (
                   <p style={{ fontSize: "0.75rem", color: "var(--cream-dim)", marginTop: "0.75rem", opacity: 0.6, letterSpacing: "0.08em" }}>
                     {block.text}
