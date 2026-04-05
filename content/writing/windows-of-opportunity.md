@@ -1,6 +1,6 @@
 ---
 title: "The Doors That Changed My Life\nWere *Windows of Opportunity*"
-date: "31 March 2026"
+date: "31 March 2026, 9:00 AM"
 readTime: "8 min read"
 category: "Entrepreneurship"
 tags: ["Entrepreneurship", "Thought Leadership", "Founder-Led Content"]
