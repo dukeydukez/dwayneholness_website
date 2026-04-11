@@ -1,5 +1,5 @@
 ---
-title: "The 9-to-5 Is the Riskiest Bet You Can Make"
+title: "The 9-to-5 is the\n*Riskiest Bet You Can Make*"
 date: "10 April 2026, 9:00 AM"
 readTime: "6 min read"
 category: "Entrepreneurship"
