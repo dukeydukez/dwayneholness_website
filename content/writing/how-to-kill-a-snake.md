@@ -1,5 +1,5 @@
 ---
-title: "How to Kill a Snake"
+title: "How to Kill a *Snake*"
 date: "2 May 2026, 1:08pm"
 readTime: "4 min read"
 category: "Entrepreneurship"
