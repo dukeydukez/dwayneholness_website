@@ -83,11 +83,19 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2007, date: "29 August", lane: "build", title: "Starts Humber College", body: "The Multimedia Design and Production Technician program. He is nineteen." },
   
+  { year: 2007, date: "16 October", lane: "build", title: "Dukez and Bullet Productions", tag: "His first company, a year before HighClass",
+    body: "With Femi Lawson. Artist development, crewed properly from the start: a post that month credits camera and director to Dukez, actor to Bullet, with lighting and clean-up named too. Music followed within the week, a track and an interview both posted on the twenty-second. It ran into 2009 and it is the first thing he ever put a name on.",
+    quote: "Making it happen. Live from the Red Room." },
+
+  { year: 2007, date: "14 November", lane: "build", title: "Advertises himself as an editor", tag: "The first solicitation",
+    body: "A video posted with a credit block. Editor, Dukez. Location, the Red Room. Then the line that starts everything commercial. He is nineteen, two months into Humber, and HighClass is a year from being registered.",
+    quote: "If you're looking for a video editor or someone to shoot your video, holla at me." },
+
   { year: 2008, lane: "life", title: "Meets Redway", tag: "Best friend, first client",
     body: "Shane Redway. They found each other online, met once, and clicked immediately. He moved into the house, they shared a room, and for the next few years Dwayne managed him: photoshoots, graphic design, video shoots, booking the shows. Redway is the reason he picked up a video camera at all, and one of the reasons HighClass existed. Everything that came after, the client work, the agency, the whole discipline of making somebody else look like the thing they already were, was learned on his best friend first." },
 
-  { year: 2008, lane: "build", title: "The Red Room", tag: "Where all of it starts",
-    body: "His bedroom in his mother's house, painted red, which is all the name ever meant. He and Femi Lawson would put a beat on and freestyle into a webcam, and it turned into somewhere people came from across the city to spit on camera. Redway moved in. They could not afford studio time so he taught himself to engineer, and the drive still holds 5,753 files from it: 2,611 WAV takes and the Audition sessions they were cut in. He picked up a video camera because Redway needed someone to shoot his videos, and then started shooting for other people free, to see what he could do. His mother worked seven in the morning to eleven at night and let a house full of strangers happen anyway.",
+  { year: 2008, lane: "build", title: "The Red Room", tag: "On the record from 2007",
+    body: "His bedroom in his mother's house, painted red, which is all the name ever meant. He is naming it in posts from November 2007 and still crediting it as a location in 2008. He and Femi Lawson would put a beat on and freestyle into a webcam, and it turned into somewhere people came from across the city to spit on camera. Redway moved in. They could not afford studio time so he taught himself to engineer, and the drive still holds 5,753 files from it: 2,611 WAV takes and the Audition sessions they were cut in. He picked up a video camera because Redway needed someone to shoot his videos, and then started shooting for other people free, to see what he could do. His mother worked seven in the morning to eleven at night and let a house full of strangers happen anyway.",
     quote: "It was a creative hub because no one else's parents would have let them do that." },
 
   { year: 2008, lane: "film", title: "Twelve productions", tag: "Background performer",
@@ -166,9 +174,6 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
-
-  { year: 2011, lane: "build", title: "Dukez and Bullet Productions", tag: "With Femi Lawson",
-    body: "He and Femi put a name on what they were already doing: artist development. Shooting the videos, building the packaging, moving acts forward. Redway was the proof of concept, and the same instincts turn into Corex two years later." },
 
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
@@ -702,7 +707,7 @@ export const VENTURES: Venture[] = [
   { name: "CREATIVE Capsoul", role: "Founder", span: "2016", note: "Apparel brand for creatives. Over 2,000 caps distributed worldwide.", live: false },
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
   { name: "106 and York", role: "Co-founder", span: "2009 to 2013", note: "Urban arts festival run under HighClass. Six editions, North York Arts Centre to Yorkwoods Library.", live: false },
-  { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2010s", note: "With Femi Lawson. Artist development: shooting, packaging and building acts from the ground up.", live: false },
+  { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2007 to 2009", note: "With Femi Lawson. Artist development out of the Red Room: shooting, editing, music and interviews. His first venture, a year before HighClass.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
   { name: "NISE Collective", role: "Co-Founder", span: "2006", note: "The earliest one, before Corex existed by name.", live: false },
 ];
