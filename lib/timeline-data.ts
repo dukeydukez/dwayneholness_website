@@ -611,6 +611,7 @@ export const DETAILS: Detail[] = [
   { label: "Two weeks", body: "The longest he has ever lasted in a nine to five." },
   { label: "Organized and calculated", body: "His own words for how he moves, and the reason the book is called what it is." },
   { label: "Jamaica", body: "The favourite place to travel, which is really just a way of saying home." },
+  { label: "Rice and chicken", body: "The favourite dish. No elaboration offered, none needed." },
   { label: "Braids, once", body: "There is photographic evidence on this page." },
   { label: "Tonsils and four wisdom teeth", body: "All out, all young." },
   { label: "Two hundred thousand", body: "One project, one cheque, and the number that permanently changed how he thinks about what work is worth." },
