@@ -385,12 +385,21 @@ export const EVENTS: TimelineEvent[] = [
     body: "His highest-profile artist engagement. Nine days and four venues: Westbury on Long Island, The VETS in Providence, the Capitol Theatre in Port Chester, and the United Palace in New York City. Every show ran past midnight, so the files land on two dates each. He came home with more than nine hundred frames. The dates after these were cancelled as COVID closed the touring industry, three weeks before the shutdown reached everyone else.",
     plate: { src: "/images/lauryn-hill-2020.jpg", w: 2000, h: 1333, alt: "The view from the wings of a packed theatre during a Lauryn Hill show, a performer lit green at the microphone with the balcony full behind them.", caption: "From the wings, 20 February 2020." } },
 
+  { year: 2020, date: "October", lane: "film", title: "Ofuur", tag: "Eight hundred files",
+    body: "A sustained engagement through the autumn, cut and delivered across three export rounds in late September and October." },
+
   { year: 2021, lane: "film", title: "LCBO, Spirit of Sustainability", tag: "Two hundred thousand dollars", body: "Director on the largest campaign of the decade, and the one that reset what he thought work was worth. A single project at two hundred thousand dollars, thirteen years after a company that started with a Nikon D60 and forty-six dollars for eight hours on a film set. He also edits Chronixx, Safe N Sound that year.",
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
 
   { year: 2021, date: "29 April", lane: "life", title: "Joins the Rotary Club of Innisfil", tag: "Service above self",
     body: "His member account is created the same week. Food drives in Sandy Cove Acres, Quiet Santa for kids who cannot manage a mall Santa, bottle drives. He had moved his life north to Simcoe County, and this is where the local roots go in." },
+
+  { year: 2021, date: "May", lane: "film", title: "Monumental Projects and CEE", tag: "Youth arts",
+    body: "Work for the CEE Centre for Young Black Professionals alongside Monumental Projects, including the All Out films and a colour-graded Getaway cut." },
+
+  { year: 2021, date: "September", lane: "film", title: "UPlift Black", tag: "Simcoe County",
+    body: "His first work with the Barrie organisation, five years before the regional network around it turns into the DMZ Innisfil cohort and the CreaTech seat." },
 
   { year: 2021, date: "21 October", lane: "stage", title: "President's Panel, Xcelerate Summit", tag: "Invited as a president",
     body: "Georgian College's Henry Bernick Entrepreneurship Centre put him on a panel of company presidents, alongside heads of a plastics manufacturer and a travel company. Virtual, run over Zoom. The director who invited him wrote afterward that it was the best one they had done.",
@@ -402,6 +411,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2022, lane: "film", title: "Canadian Screen Awards, Academy commercial", body: "Director. He also directs The Answer for Mount Kailash featuring Chronixx." },
   { year: 2022, lane: "film", title: "The Blackburn Story for Historica Canada",
     body: "Director and editor. The couple who escaped enslavement in Kentucky and built Toronto's first taxi company." },
+  { year: 2022, date: "February", lane: "film", title: "AFP, Ideas For Change", tag: "Full campaign",
+    body: "A complete campaign build for the Association of Fundraising Professionals: films, logo work and flyers in every size, three hundred and twenty-six files in all." },
+
   { year: 2022, date: "8 October", lane: "film", title: "Hodan's Story premieres on CBC", tag: "Written and directed",
     body: "A portrait of the friend and mentor he met at FEVA TV, which he both wrote and directed. His CBC debut. Three years after her death, he puts her on national television himself.",
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/2-hodan.jpg", w: 1600, h: 1067, alt: "A packed room watching a Hodan\u2019s Story screening, the CBC Docs poster on the screen behind two speakers.", caption: "A screening and question and answer for Hodan\u2019s Story." } },
@@ -411,9 +423,18 @@ export const EVENTS: TimelineEvent[] = [
     body: "Sara Bentham, who runs the Henry Bernick Entrepreneurship Centre and had put him on the President's Panel two years earlier, invited him into her class. No set topic. Just tell them how you got here. She wrote the next morning to say the students had voted him their favourite speaker and offered to introduce him to speaking agencies. He wrote back that stepping further into speaking was exactly what he was aiming at that year. Everything after this is that decision compounding.",
     quote: "They shared that you have been their favourite speaker. They were engaged, inspired and felt included." },
 
+  { year: 2023, date: "March", lane: "film", title: "Jack.org", tag: "National youth mental health",
+    body: "Five hundred and seventy-five files, all inside a single month, for one of the country's largest youth mental health charities." },
+
+  { year: 2023, date: "April", lane: "film", title: "Destiny Villa", tag: "The largest client folder",
+    body: "Nine and a half thousand files, more than any other client on the drive, running from late 2018 to late 2023. The longest single engagement Corex has on record." },
+
   { year: 2023, date: "26 October", lane: "stage", title: "Speaks at the Xcelerate Summit",
     body: "Back a third year, this time on a panel billed From Rocks to Resilience at Georgian College's downtown Barrie campus. He had done the President's Panel in 2021 and a filmed pop-up talk, What's Your Brand Story, in 2022.",
     plate: { src: "/images/xcelerate-2023.jpg", w: 1600, h: 2000, alt: "Dwayne in a black leather jacket standing in front of an Xcelerate Summit step and repeat banner.", caption: "Xcelerate Summit, 26 October 2023." } },
+
+  { year: 2023, date: "December", lane: "film", title: "Wifeys Kitchen", tag: "Product films",
+    body: "A flavour-by-flavour shoot: Asian Red, Citrus Tango, Mango Chipotle, Just Peachy, Bomb Purpose. Food work, which the agency had not done before." },
 
   { year: 2024, lane: "stage", title: "TIFF Next Wave, Thriving as an Artist",
     body: "A panel at the Toronto International Film Festival's youth program, presented with Toronto Film School.",
@@ -433,6 +454,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2024, date: "29 May", lane: "life", title: "Films the Hodan Nalayeh Legacy Day", tag: "First year covering it",
     body: "The Changemaker Awards at Hodan Nalayeh Secondary School in Vaughan, the school renamed for her. The Nalayeh family brought Corex in to shoot it. He has been back every year since.",
     plate: { src: "/images/legacy-day-2024.jpg", w: 2000, h: 1333, alt: "An overhead view of the school atrium during the Changemaker Awards, a Be A Changemaker banner above the stage and students seated across the floor.", caption: "Changemaker Awards, 29 May 2024." } },
+
+  { year: 2024, date: "June", lane: "film", title: "Grillz by Mazz", tag: "Two-day shoot",
+    body: "Fourteen hundred files across two shoot days, with a news segment and sound design in the build." },
 
   { year: 2024, date: "10 July", lane: "stage", title: "Speaks at Success Beyond Limits",
     body: "A youth program he returns to. He would be back the following July.",
@@ -459,6 +483,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2024, date: "30 November", lane: "life", title: "Marries Tracy", tag: "Eight weeks later",
     body: "Fifty-six days after the question. He wore a white dinner jacket, she wore a birdcage veil, and the photographs are the only ones in this record where he is the subject rather than the author.",
     plate: { src: "/images/wedding-2024.jpg", w: 1333, h: 2000, alt: "Dwayne in a white dinner jacket and black bow tie laughing beside Tracy in a white gown and birdcage veil holding a bouquet of white roses.", caption: "Dwayne and Tracy, 30 November 2024." } },
+
+  { year: 2024, date: "December", lane: "film", title: "Juice Comedy", tag: "Two live shows",
+    body: "A thousand files across two live comedy shows. Multi-camera event coverage, which becomes the shape of the Melamoon tour work two years later." },
 
   { year: 2024, date: "4 December", lane: "film", title: "Co-directs Dexta Daps, Lockdown", tag: "With Louis Mensah",
     body: "A music video directed jointly with Louis Mensah.",
@@ -711,4 +738,4 @@ export const CLIENT_LOGOS = [
 ];
 
 export const CLIENTS_MORE =
-  "Lauryn Hill · Rogers Communications · Historica Canada · Academy of Canadian Cinema and Television · Ontario Centre for Workforce Innovation · City of Toronto · Ontario Works · Manifesto · South Riverdale Community Health Centre · FACE Coalition · BNI";
+  "Lauryn Hill · Rogers Communications · Historica Canada · Academy of Canadian Cinema and Television · Ontario Centre for Workforce Innovation · City of Toronto · Ontario Works · Manifesto · South Riverdale Community Health Centre · FACE Coalition · BNI · Destiny Villa · Jack.org · Ofuur · AFP · Grillz by Mazz · Juice Comedy · Wifeys Kitchen · UPlift Black · Monumental Projects · CEE Centre for Young Black Professionals · Supply Ontario · RE/MAX · Taibu Community Health Centre · Nia Centre · M5V Development · Accerta · Baskin Robbins · Brad Lamb · Precious Homes · Segovia · Splash Luxe · Maaz Jewelry · Diamond Bros · Millennial 2 Millionaire · Laura J Photography · SHINE for Women · iTribe";
