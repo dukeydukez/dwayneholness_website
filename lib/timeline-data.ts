@@ -132,8 +132,8 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2010, lane: "stage", title: "YMCA Community Award", tag: "Age 22",
     body: "Recognition for the community work coming out of HighClass. Separate from The Bigger Picture, and separate from the grant." },
   { year: 2010, lane: "film", title: "Flown to Cuba to shoot for G-Swag", tag: "Someone bet on him",
-    body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip. At twenty-two, someone had decided his eye was worth an international plane ticket.",
-    plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "A man in a red cap driving a horse-drawn blue cart down a colonial street in Cuba, pastel buildings and iron railings behind.", caption: "Cuba, 2010." } },
+    body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip, shot around Santiago de Cuba. At twenty-two, someone had decided his eye was worth an international plane ticket.",
+    plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "The artist standing alone on an empty Cuban highway holding a motorcycle helmet, under a road gantry signed Santiago de Cuba and Aeropuerto, storm cloud above and the road running off behind him.", caption: "On the autopista outside Santiago de Cuba, 2010." } },
 
   { year: 2010, date: "1 June", lane: "film", title: "Shoots the Stylus Awards", tag: "dukeydukez.com",
     body: "Toronto's urban music awards, covered as the event photographer. Drake accepted an award at the podium that night, two weeks before Thank Me Later came out, and Dwayne shot it. Every frame is watermarked Dukey Dukez Photographer with a web address, so he had a named photography business online two years before Corexmedia.com existed.",
