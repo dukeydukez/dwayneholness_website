@@ -13,6 +13,8 @@ import {
   STATS,
   THROUGH_LINES,
   VENTURES,
+  DETAILS,
+  AMBITIONS,
   type Lane,
   type TimelineEvent,
 } from "@/lib/timeline-data";
@@ -495,6 +497,38 @@ export default function TimelineExperience() {
             ))}
           </div>
           <p className="tl-clients-more">{CLIENTS_MORE}</p>
+        </section>
+
+        {/* ── The small print ── */}
+        <section className="tl-close">
+          <h2>The small print</h2>
+          <p className="tl-close-lede">
+            Things that do not belong on a timeline but are true anyway.
+          </p>
+          <dl className="tl-details">
+            {DETAILS.map((d) => (
+              <div className="tl-detail" key={d.label}>
+                <dt>{d.label}</dt>
+                <dd>{d.body}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
+        {/* ── Still to come ── */}
+        <section className="tl-close">
+          <h2>Not done yet</h2>
+          <p className="tl-close-lede">
+            Three things that have not happened.
+          </p>
+          <div className="tl-lines">
+            {AMBITIONS.map((a) => (
+              <div className="tl-line" key={a.title}>
+                <h3>{a.title}</h3>
+                <p>{a.body}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* ── Close ── */}

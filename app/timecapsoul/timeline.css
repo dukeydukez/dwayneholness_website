@@ -723,3 +723,33 @@ html:has(.tl) .discovery-trigger { display: none !important; }
   color: var(--txt-dim);
   opacity: 0.75;
 }
+
+/* ── The small print: a definition list, two columns on wide screens ──── */
+.tl-details {
+  margin: 0;
+  columns: 2;
+  column-gap: 3.5rem;
+}
+@media (max-width: 760px) { .tl-details { columns: 1; } }
+
+.tl-detail {
+  break-inside: avoid;
+  margin: 0 0 1.6rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--hair);
+}
+.tl-detail dt {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--era);
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+.tl-detail dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--txt-dim);
+  max-width: 42ch;
+}

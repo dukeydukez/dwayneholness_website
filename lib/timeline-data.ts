@@ -42,7 +42,7 @@ export const LANES: Record<Lane, { label: string; short: string }> = {
 };
 
 export const EVENTS: TimelineEvent[] = [
-  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", body: "The starting point for everything that follows." },
+  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows." },
   { year: 1993, lane: "life", title: "His mother moves them to Canada", tag: "The original risk",
     body: "Yvonne Robinson leaves Kingston with her son. He is five. Jane and Finch becomes home.",
     quote: "My biggest risk was taken by my mother when she decided to move to Canada from Jamaica." },
@@ -600,6 +600,28 @@ export const VENTURES: Venture[] = [
   { name: "Almost Famous", role: "Founder", span: "2009", note: "A nightclub event series.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography, youth employment.", live: false },
   { name: "NISE Collective", role: "Co-Founder", span: "2006", note: "The earliest one, before Corex existed by name.", live: false },
+];
+
+export type Detail = { label: string; body: string };
+
+export const DETAILS: Detail[] = [
+  { label: "Sweaty palms", body: "Since he was a kid. Still shakes your hand anyway." },
+  { label: "Red", body: "The favourite colour, and the colour of the room where all of it started." },
+  { label: "Same number, always", body: "He has had one phone number since his first phone. It has never changed. Call it and say hi." },
+  { label: "Two weeks", body: "The longest he has ever lasted in a nine to five." },
+  { label: "Organized and calculated", body: "His own words for how he moves, and the reason the book is called what it is." },
+  { label: "Jamaica", body: "The favourite place to travel, which is really just a way of saying home." },
+  { label: "Braids, once", body: "There is photographic evidence on this page." },
+  { label: "Tonsils and four wisdom teeth", body: "All out, all young." },
+  { label: "Two hundred thousand", body: "One project, one cheque, and the number that permanently changed how he thinks about what work is worth." },
+];
+
+export type Ambition = { title: string; body: string };
+
+export const AMBITIONS: Ambition[] = [
+  { title: "Star in a film", body: "He has been on sixty-six of other people's productions, in the background of nearly all of them. One principal role, at fourteen, playing himself. He wants the front of the frame properly, once." },
+  { title: "Open a school for creatives", body: "The through-line of the Bigger Picture in 2009, POV 3rd Street, the mentoring, the CreaTech work. A building instead of a program." },
+  { title: "Be remembered for the impact", body: "Not the credits, not the revenue. What he wants said afterwards is what changed in other people's lives because he was here." },
 ];
 
 export const CLIENT_LOGOS = [
