@@ -30,7 +30,7 @@ const projects: Record<
     category: "Documentary · CBC Short Docs",
     year: "2019",
     client: "CBC Short Docs",
-    role: "Director, Videographer",
+    role: "Writer, Director, Videographer",
     overview:
       "A short documentary following Somali-Canadian journalist, activist, and single mother of two, Hodan Nalayeh, as she returns to her birth country of Somalia 25 years after fleeing. Hodan founded Integration TV to share positive stories about the Somali diaspora and spent her life working to shift the narrative around a people the world had largely written off. This film chronicles her mission to spread light in places where many only see darkness.",
     challenge:
