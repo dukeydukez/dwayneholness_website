@@ -450,15 +450,27 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, date: "April", lane: "film", title: "The Other Canada, season five", tag: "Second season running",
     body: "Six episodes split between Montreal and Toronto. The second season Corex has produced for the FACE Coalition." },
   { year: 2026, date: "7 April", lane: "build", title: "Black Screen Office Symposium, year three", body: "Advisory board and symposium advisory." },
+  { year: 2026, date: "23 May", lane: "film", title: "Melamoon tour begins in Montreal", tag: "Five cities, solo shooter",
+    body: "FACE Coalition's Black founder launchpad went on the road, and Corex went with it. Twenty-five thousand plus HST, paid up front, for a five-minute film and a social cut out of every city, shot solo. Montreal opened it at The Nucleus over Grand Prix weekend, and he came home with more than twelve hundred files from two days." },
+
   { year: 2026, date: "28 May", lane: "life", title: "Legacy Day, third year", tag: "Three for three",
     body: "Three years running, all of them his. The friend who walked into FEVA TV in 2014 now has a school named after her, and he is the one who films the day it holds in her name. He cut the 2026 video overnight so the family could share it while the day was still fresh.",
     plate: { src: "/images/legacy-day-2026.jpg", w: 1333, h: 2000, alt: "A Corex crew member in a company shirt and headphones standing in the school atrium facing the Be A Changemaker banner.", caption: "Changemaker Awards, 28 May 2026." } },
+  { year: 2026, date: "13 June", lane: "film", title: "Melamoon, Halifax", tag: "City two",
+    body: "The east coast pop-up. Four hundred and seventy-three files in a day, and the edit that came out of it set the six-act structure every city after it followed." },
+
   { year: 2026, date: "27 June", lane: "stage", title: "GODfidence Conference", tag: "Toronto Pavilion",
     body: "Lekan Olawoye's inaugural faith and leadership conference at the Toronto Pavilion. He sat on a panel with Nneka Ezu and Mo Ekujumi, convened by Leading Ladies Connect, then took the conference recordings and cut the highlight film while travelling. Speaking and producing the same event. He was later offered a place in the inaugural GODfidence Leadership Cohort.",
     plate: { src: "/images/godfidence-2026.jpg", w: 1333, h: 2000, alt: "Dwayne on the GODfidence stage in a blue check suit, seated in a white armchair mid-answer, the conference hashtag lit on the screen behind him.", caption: "GODfidence Conference, 27 June 2026." } },
 
+  { year: 2026, date: "4 July", lane: "film", title: "Melamoon, Vancouver", tag: "City three",
+    body: "Across the country for the third pop-up, four thousand kilometres from the last one." },
+
   { year: 2026, date: "17 July", lane: "build", title: "Mentor, CreaTech Incubator", tag: "Kingston, Jamaica",
     body: "A volunteer mentor with Kingston Creative, paired with a Jamaican founder for a full incubation cycle." },
+  { year: 2026, date: "18 July", lane: "film", title: "Melamoon, Edmonton", tag: "City four",
+    body: "Three hundred and eighty files on the day. Four cities in eight weeks, all of them shot by one person." },
+
   { year: 2026, date: "23 July", lane: "build", title: "Backs CTRL+ALT+BEAT", tag: "Mentor and sponsor",
     body: "Corex Creative sponsors the show and Dwayne mentors its two founders, Tisania Smith and Chelsi Campbell. Each one teach one, with a cheque attached.",
     plate: { src: "/images/ctrl-alt-beat-2026.jpg", w: 1333, h: 2000, alt: "Dwayne between the two CTRL+ALT+BEAT founders at the episode three live taping, all three laughing and posing for the camera.", caption: "At the CTRL+ALT+BEAT episode three taping, 23 July 2026." } },
