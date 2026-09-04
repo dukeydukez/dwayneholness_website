@@ -50,10 +50,8 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2001, lane: "film", title: "First set. Forty-six dollars for eight hours.", tag: "Age 13",
     body: "A non-union background role on Soul Food. He nearly walks away from the whole idea after the first few sets.",
     quote: "This can't be real. At that age, I knew that this was peanuts." },
-  { year: 2001, lane: "film", title: "Street Time, and an eight hundred dollar cheque", tag: "The one principal role",
-    body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six to eight hundred becomes the founding pricing philosophy of Corex." },
-  { year: 2002, date: "27 June", lane: "film", title: "Entered into the ACTRA system", tag: "Age 14",
-    body: "Recorded as a performer six years before full membership. Non-members work under ACTRA agreements first." },
+  { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
+    body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
 
   { year: 2003, lane: "life", title: "High school, and the record goes quiet", tag: "A gap, not a blank",
     body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. This stretch is the part of the story still to be recovered." },
