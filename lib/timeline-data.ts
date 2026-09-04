@@ -156,17 +156,22 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2010, date: "25 June", lane: "build", title: "Star Struck, edition two", tag: "HighClass night",
     body: "Chic Lounge on King West, with iPull Numbers and Platinum Touch." },
 
+  { year: 2010, date: "6 October", lane: "film", title: "Redway, Close Enough", tag: "Hosted on his own site",
+    body: "Directed for his best friend and posted to dukeydukez.com. HipHopCanada ran it that January, and it reached number two on WBLK's Unsigned Hype chart the month after." },
+
+  { year: 2010, date: "18 October", lane: "film", title: "drewFLYs, directed by Dukez", body: "Another directing credit out of the Toronto scene." },
+
   { year: 2010, date: "22 October", lane: "build", title: "Star Struck, edition three", tag: "Femi's birthday",
     body: "Empire Lounge, doubling as Femi Lawson's birthday. Third room in seven months, same brand on the door." },
 
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
 
-  { year: 2011, date: "3 January", lane: "film", title: "Redway, Close Enough", tag: "Picked up by HipHopCanada",
-    body: "Directed for his best friend. HipHopCanada ran it, and two more Redway videos followed that month, Doin Me with Rich Dolarz and a live performance cut with Notice. He was managing him, shooting him, and getting him placed, all at once." },
-
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
+
+  { year: 2011, date: "31 January", lane: "film", title: "Richie Blackz, Left Lane", tag: "World premiere",
+    body: "Premiered on The Come Up Show, five years before he sat down for an interview with them himself." },
 
   { year: 2011, date: "February to May", lane: "film", title: "Shooting for Junior Reid in Jamaica", tag: "Flown back and forth",
     body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work.",
@@ -176,8 +181,19 @@ export const EVENTS: TimelineEvent[] = [
     body: "A week on the island photographing what he captioned the real Jamaica: street corners, a football pitch, Marcus Garvey Drive. Eighteen years after his mother took him off it, and there are HighClass shirts in the frames.",
     plate: { src: "/images/jamaica-2011.jpg", w: 1440, h: 960, alt: "A man in an I Am HighClass t-shirt and sunglasses seated on a wall at night in Jamaica, lit against dark foliage.", caption: "Jamaica, February 2011. HighClass on the ground." } },
 
+  { year: 2011, date: "6 February", lane: "film", title: "Close Enough reaches number two", tag: "WBLK Unsigned Hype",
+    body: "The Redway video he directed climbs to second on WBLK's Unsigned Hype chart, a month after HipHopCanada ran it. He was managing him, shooting him and getting him placed, all at once." },
+
   { year: 2011, date: "15 February", lane: "film", title: "Directs Sad Streets for Calado in Jamaica", tag: "First on television",
     body: "His first music video shot on the island, and the first of his to reach broadcast. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, which put his work on television two years after his first video. He was twenty-three." },
+
+  { year: 2011, date: "25 February", lane: "film", title: "Redway, The Auction", body: "Another video for Redway, three weeks after Close Enough charted." },
+
+  { year: 2011, date: "5 March", lane: "film", title: "Sad Streets goes out", tag: "Shot in Jamaica",
+    body: "Three weeks after the shoot, the Calado video is released and starts airing on local channels across the island." },
+
+  { year: 2011, date: "11 March", lane: "film", title: "Junior Reid, Nah Bow Fi Money", tag: "On HYPE TV Jamaica",
+    body: "Released as an exclusive and put into rotation on HYPE TV, Jamaica's music channel. Rich Dolarz, Blow My High goes out the same day. Twenty-three years old, with a video on Jamaican television." },
 
   { year: 2011, date: "30 July", lane: "build", title: "Blame It On The Alcohol", tag: "Caribana, with Tory Lanez",
     body: "Vola Lounge on Caribana weekend, with Bullet, DJ Pnutt, MC Breezyy and Tory Lanez on the bill. Lanez was not yet Lanez." },
