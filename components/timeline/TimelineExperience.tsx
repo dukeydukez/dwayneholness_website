@@ -18,7 +18,7 @@ import {
   type Lane,
   type TimelineEvent,
 } from "@/lib/timeline-data";
-import { ContactSheet, IndexView, MapView } from "./TimelineViews";
+import { IndexView } from "./TimelineViews";
 
 const FIRST = ERAS[0].from;
 const LAST = ERAS[ERAS.length - 1].to;
@@ -121,17 +121,20 @@ export default function TimelineExperience() {
   const [railUp, setRailUp] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [lanes, setLanes] = useState<Set<Lane>>(new Set());
-  const [view, setView] = useState<"timeline" | "sheet" | "index" | "map">("timeline");
+  const [view, setView] = useState<"timeline" | "index">("timeline");
+  // The toggle hides on the way down so it never covers the record, and comes
+  // back the moment the reader scrolls up looking for it.
+  const [navHid, setNavHid] = useState(false);
 
   // Remember the reader's choice, but never let a bad stored value break render.
   useEffect(() => {
     try {
       const v = localStorage.getItem("tl-view");
-      if (v === "sheet" || v === "index" || v === "map") setView(v);
+      if (v === "index") setView(v);
     } catch {}
   }, []);
 
-  const chooseView = useCallback((v: "timeline" | "sheet" | "index" | "map") => {
+  const chooseView = useCallback((v: "timeline" | "index") => {
     setView(v);
     try { localStorage.setItem("tl-view", v); } catch {}
     if (v !== "timeline") window.scrollTo({ top: 0, behavior: "auto" });
@@ -182,7 +185,13 @@ export default function TimelineExperience() {
       });
       if (bestYear > 0) setActiveYear(bestYear);
     };
+    let lastY = window.scrollY;
     const onScroll = () => {
+      const y = window.scrollY;
+      // Near the top it always shows. Past that, direction decides.
+      if (y < 140) setNavHid(false);
+      else if (Math.abs(y - lastY) > 6) setNavHid(y > lastY);
+      lastY = y;
       if (!frame) frame = window.requestAnimationFrame(read);
     };
     read();
@@ -284,8 +293,8 @@ export default function TimelineExperience() {
 
       <div className="tl-inner">
         {/* ── View toggle ── */}
-        <nav className="tl-views" aria-label="How to view the record">
-          {([["timeline","Timeline"],["sheet","Contact sheet"],["map","Map"],["index","Index"]] as const).map(
+        <nav className={`tl-views${navHid ? " is-hid" : ""}`} aria-label="How to view the record">
+          {([["timeline","Timeline"],["index","Index"]] as const).map(
             ([v, label]) => (
               <button
                 type="button"
@@ -300,9 +309,7 @@ export default function TimelineExperience() {
           )}
         </nav>
 
-        {view === "sheet" && <ContactSheet onJump={jumpToYear} />}
         {view === "index" && <IndexView onJump={jumpToYear} />}
-        {view === "map" && <MapView />}
 
         {view !== "timeline" ? null : (
         <>
