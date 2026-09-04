@@ -53,9 +53,11 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
     body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
 
-  { year: 2004, lane: "life", title: "Expelled from Western Tech, and sent to Emery", tag: "Grade 10",
-    body: "He was running with a group they called the Wolfpack, walking downtown fifty deep, and it ended his time at Western Technical-Commercial School partway through Grade 10. He finished Grades 10 through 12 at Emery Collegiate instead, back in his own neighbourhood. He has told this story himself, on the record, without softening it.",
-    quote: "I ended up getting expelled from school. It was way too much wash, the bad wash." },
+  { year: 2003, lane: "life", title: "Starts a dance crew called Bad Newz", tag: "The dance era",
+    body: "Everybody had a crew. His was Bad Newz. It is the first thing he ever built and put a name on, five years before he registered a company." },
+
+  { year: 2004, lane: "life", title: "Captain of the team, leader of the Wolfpack, expelled", tag: "Grade 10",
+    body: "At Western Technical-Commercial School he made the basketball team and became its captain. He tried football too and did not last, having decided he had no interest in playing through a Canadian winter. He was also leading the Wolfpack, a group that moved fifty deep through downtown, and that is what ended his time there partway through Grade 10. He finished Grades 10 to 12 at Emery Collegiate instead, back in his own neighbourhood. He is direct about what the Wolfpack taught him, and it is the uncomfortable part of the story: leadership and responsibility, learned first in the wrong room. Captain of a team and head of a crew in the same year, at sixteen." },
 
   { year: 2005, lane: "life", title: "First tattoo, for his grandmother", tag: "Age 17",
     body: "Edith Brown, 25 February 1952 to 2 October 2004, his mother's mother. She died the year before, at fifty-two, when he was sixteen. He was the grandchild who felt safest around her. The first thing he ever put on his body permanently was her, and he was seventeen when he did it. It is the only event on record from the years the archive goes quiet." },
