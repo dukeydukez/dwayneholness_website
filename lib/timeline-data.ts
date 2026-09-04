@@ -412,7 +412,7 @@ export const CREDITS: CreditGroup[] = [
     note: "",
     credits: [
       { year: "2019", title: "Lauryn Hill, tour", role: "Creative Director" },
-      { year: "2018", title: "Chronixx, tour", role: "Director, Videographer" },
+      { year: "2018", title: "Chronixx, tour", role: "Creative Director" },
     ],
   },
   {
