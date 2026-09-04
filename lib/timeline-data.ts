@@ -162,6 +162,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
 
+  { year: 2011, date: "3 January", lane: "film", title: "Redway, Close Enough", tag: "Picked up by HipHopCanada",
+    body: "Directed for his best friend. HipHopCanada ran it, and two more Redway videos followed that month, Doin Me with Rich Dolarz and a live performance cut with Notice. He was managing him, shooting him, and getting him placed, all at once." },
+
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
 
@@ -189,6 +192,11 @@ export const EVENTS: TimelineEvent[] = [
     body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so his first three directing credits all predate the brand entirely.",
     quote: "That's a nice birthday present to myself." },
 
+  { year: 2012, date: "15 January", lane: "film", title: "Charlie Black, Last Night", body: "Another directing credit out of the Toronto scene." },
+
+  { year: 2012, date: "22 May", lane: "film", title: "itzDubb, Church In The Wild", tag: "Made WorldStar",
+    body: "Directed by him, and WorldStarHipHop picked it up. The first time his work reached that audience." },
+
   { year: 2012, date: "August", lane: "stage", title: "Certificate of Appreciation from the Hon. Judy Sgro, M.P.", body: "For meaningful contribution to the people and communities of York West." },
   { year: 2012, date: "September", lane: "film", title: "Co-directs a national commercial for ParticipACTION", tag: "First national spot",
     body: "The Bring Back Play campaign, thirty seconds, shot for JWT and produced by Radke Films. It was the graduating project of POV 3rd Street, the program he had come through the year before, and it worked the way the program intends: industry mentors stood on set while the alumni directed. He shared the chair with Kobi Ntiri. They cast it themselves, sitting through more than a hundred kids and parents that July. The client's own behind-the-scenes film puts his credit on screen: Co-Director, POV Alumni.",
@@ -196,6 +204,9 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
+
+  { year: 2013, date: "27 January", lane: "film", title: "Neza, Wish Is My Command", tag: "Awards nominee",
+    body: "Directed, with Jyeoram as DP. It went on to be nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
@@ -205,6 +216,11 @@ export const EVENTS: TimelineEvent[] = [
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches." },
   { year: 2013, date: "September", lane: "build", title: "FEVA launches its platform",
     body: "He is on staff through the launch, leading creative and production direction for original programming." },
+
+  { year: 2013, date: "28 September", lane: "film", title: "Corey Fila ft. Ty Craig, You", body: "Another directing credit, and a commercial for Ehiwogun Autos follows in October." },
+
+  { year: 2013, date: "17 October", lane: "stage", title: "Speaks to a hundred youth", tag: "The speaking starts here",
+    body: "His own note that day: living my dreams, had the opportunity to speak and share my story in front of over a hundred youth. Nine years before he would tell an interviewer he wanted to step properly into speaking." },
 
   { year: 2013, date: "21 November", lane: "stage", title: "Back at Emery Collegiate, speaking to the Grade 9s", tag: "Nine years later",
     body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room." },
@@ -576,7 +592,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Sixteen on record, from 2009.",
+    note: "Twenty-one on record, from 2009.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -594,6 +610,11 @@ export const CREDITS: CreditGroup[] = [
       { year: "2011", title: "Calado, Sad Streets", role: "Director", client: "Jamaica, aired on local television" },
       { year: "2009", title: "Versatile, Just Like Kingston", role: "Director", client: "Jane and Finch, feat. Beenie Man" },
       { year: "2010", title: "G-Swag, Lavish", role: "Director", client: "Shot in Cuba" },
+      { year: "2013", title: "Corey Fila ft. Ty Craig, You", role: "Director" },
+      { year: "2013", title: "Neza, Wish Is My Command", role: "Director", client: "AE Awards nominee, Best Music Video" },
+      { year: "2012", title: "itzDubb, Church In The Wild", role: "Director", client: "Featured on WorldStarHipHop" },
+      { year: "2012", title: "Charlie Black, Last Night", role: "Director" },
+      { year: "2011", title: "Redway, Close Enough", role: "Director", client: "Featured on HipHopCanada" },
     ],
   },
   {
