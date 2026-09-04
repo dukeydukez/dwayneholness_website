@@ -133,7 +133,7 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
-    plate: { src: "/images/whitehorse-2013.jpg", w: 2000, h: 1333, alt: "Dwayne in a red cap and a fur-hooded parka standing in a snowbound sled dog yard, a husky on a kennel box marked Sirius behind him, boreal forest and mountains beyond.", caption: "Sled dog yard outside Whitehorse, 21 April 2013." } },
+    plate: { src: "/images/whitehorse-2013.jpg", w: 2000, h: 1333, alt: "Dwayne in a black cap and fur-hooded parka standing alone in a snowbound sled dog yard, huskies on their kennel boxes around him, boreal forest and a snow-capped mountain behind.", caption: "Sled dog yard outside Whitehorse, 21 April 2013." } },
 
   { year: 2013, date: "August", lane: "build", title: "Producer and Creative Director at FEVA TV", tag: "Hired pre-launch",
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches." },
