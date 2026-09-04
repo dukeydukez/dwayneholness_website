@@ -115,7 +115,18 @@ export const EVENTS: TimelineEvent[] = [
     body: "He directed Just Like Kingston for Versatile, an artist signed to Beenie Man, and got Beenie Man himself onto a Jane and Finch block to do it. His first music video, five months into HighClass, with the crowd in the footage wearing I Am HighClass shirts. One of the biggest names in dancehall, standing in front of the towers.",
     plate: { src: "/images/beenie-man-2009.jpg", w: 1280, h: 720, alt: "Beenie Man in sunglasses and a black blazer speaking into a microphone outdoors, an apartment tower and low-rise block behind him in Jane and Finch.", caption: "Beenie Man in Jane and Finch, April 2009. Footage by Jane-Finch.com." } },
 
-  { year: 2009, date: "June", lane: "build", title: "Starts Almost Famous", body: "A nightclub event series. He is twenty-one." },
+  { year: 2009, date: "8 May", lane: "build", title: "Infatuation at Level", tag: "HighClass night",
+    body: "A colour-themed party. Ten dollars advance, and the question on the flyer was what colour will you be wearing." },
+
+  { year: 2009, date: "12 June", lane: "build", title: "Almost Famous at Level", tag: "HighClass night",
+    body: "HighClass with Kamakacci, ten dollars advance, DJs Ill Kidz, Legacy and Fire Kid Steenie. It became a recurring night and seventy-six photographs survive, every one watermarked ALMOST FAMOUS. He is twenty-one." },
+  { year: 2009, date: "30 July", lane: "build", title: "Maino Live at Nava", tag: "Seven hundred expected",
+    body: "HighClass with Legacy, booking a New York rapper into a Toronto bar. The biggest room the company had put a name in front of." },
+
+  { year: 2009, date: "19 September", lane: "build", title: "The first 106 and York", tag: "Urban arts festival",
+    body: "HighClass with Rated Inc and Manifesto at the North York Arts Centre. Redway headlined, alongside Famous, Kim Davis and A-Game. It ran annually for at least six editions, reaching the Yorkwoods Library in 2013, and it is the piece of HighClass that outlasted the parties.",
+    plate: { src: "/images/106-york-2010.jpg", w: 2000, h: 1500, alt: "A group of young performers posing together at a 106 and York showcase, one holding a gold medallion.", caption: "106 and York." } },
+
   { year: 2009, date: "October", lane: "film", title: "A Rogers television commercial",
     body: "Booked through Publicis Toronto. He is in front of a Rogers camera six years before he directs and cuts a campaign for them." },
 
@@ -135,16 +146,24 @@ export const EVENTS: TimelineEvent[] = [
     body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip, shot around Santiago de Cuba. At twenty-two, someone had decided his eye was worth an international plane ticket.",
     plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "G-Swag standing alone on an empty Cuban highway holding a motorcycle helmet, under a road gantry signed Santiago de Cuba and Aeropuerto, storm cloud above and the road running off behind him.", caption: "On the autopista outside Santiago de Cuba, 2010." } },
 
-  { year: 2010, lane: "build", title: "Founding member of 106 and York",
-    body: "A talent showcase that started at York University and became a staple of the GTA circuit. Each one teach one, operating years before Corex.",
-    plate: { src: "/images/106-york-2010.jpg", w: 2000, h: 1500, alt: "A group of young performers posing together at a 106 and York showcase, one holding a gold medallion.", caption: "106 and York." } },
+  { year: 2010, date: "26 March", lane: "build", title: "Star Struck, the first edition", tag: "Where Classy Meets Elegance",
+    body: "Loft Nightclub. HighClass's flagship recurring night, and the start of a residency that moved rooms without losing its name." },
 
   { year: 2010, date: "1 June", lane: "film", title: "Shoots the Stylus Awards", tag: "dukeydukez.com",
     body: "Toronto's urban music awards, covered as the event photographer. Drake accepted an award at the podium that night, two weeks before Thank Me Later came out, and Dwayne shot it. Every frame is watermarked Dukey Dukez Photographer with a web address, so he had a named photography business online two years before Corexmedia.com existed.",
     plate: { src: "/images/stylus-awards-2010.jpg", w: 1440, h: 960, alt: "Drake in a yellow jacket at a clear podium on the Stylus Awards stage, award in hand, speaking into a microphone.", caption: "Drake at the podium, Stylus Awards, 1 June 2010. Watermark bottom right: dukeydukez.com." } },
 
+  { year: 2010, date: "25 June", lane: "build", title: "Star Struck, edition two", tag: "HighClass night",
+    body: "Chic Lounge on King West, with iPull Numbers and Platinum Touch." },
+
+  { year: 2010, date: "22 October", lane: "build", title: "Star Struck, edition three", tag: "Femi's birthday",
+    body: "Empire Lounge, doubling as Femi Lawson's birthday. Third room in seven months, same brand on the door." },
+
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
+
+  { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
+    body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
 
   { year: 2011, date: "February to May", lane: "film", title: "Shooting for Junior Reid in Jamaica", tag: "Flown back and forth",
     body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work.",
@@ -156,6 +175,9 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2011, date: "15 February", lane: "film", title: "Directs Sad Streets for Calado in Jamaica", tag: "First on television",
     body: "His first music video shot on the island, and the first of his to reach broadcast. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, which put his work on television two years after his first video. He was twenty-three." },
+
+  { year: 2011, date: "30 July", lane: "build", title: "Blame It On The Alcohol", tag: "Caribana, with Tory Lanez",
+    body: "Vola Lounge on Caribana weekend, with Bullet, DJ Pnutt, MC Breezyy and Tory Lanez on the bill. Lanez was not yet Lanez." },
 
   { year: 2011, date: "22 October", lane: "film", title: "Goes through POV 3rd Street as a participant", tag: "Class of '11",
     body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. The graduating project put him on a national commercial for ParticipACTION the next year. Five years later he was running the program himself, as Program Manager and Facilitator. Take the seat, then teach the room.",
@@ -597,9 +619,8 @@ export const VENTURES: Venture[] = [
   { name: "Calculated Steps", role: "Author", span: "2015 to now", note: "Began as a poem released 3 February 2016. Nineteen chapters, print ready, publishing 2027.", live: true },
   { name: "CREATIVE Capsoul", role: "Founder", span: "2016", note: "Apparel brand for creatives. Over 2,000 caps distributed worldwide.", live: false },
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
-  { name: "106 and York", role: "Founding member", span: "2010 to 2011", note: "A talent showcase that started at York University.", live: false },
-  { name: "Almost Famous", role: "Founder", span: "2009", note: "A nightclub event series.", live: false },
-  { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography, youth employment.", live: false },
+  { name: "106 and York", role: "Co-founder", span: "2009 to 2013", note: "Urban arts festival run under HighClass. Six editions, North York Arts Centre to Yorkwoods Library.", live: false },
+  { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
   { name: "NISE Collective", role: "Co-Founder", span: "2006", note: "The earliest one, before Corex existed by name.", live: false },
 ];
 
