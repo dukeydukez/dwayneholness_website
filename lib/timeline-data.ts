@@ -53,8 +53,11 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
     body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
 
+  { year: 2005, lane: "life", title: "First tattoo, for his grandmother", tag: "Age 17",
+    body: "Edith Brown, 25 February 1952 to 2 October 2004, his mother's mother. She died the year before, at fifty-two, when he was sixteen. He was the grandchild who felt safest around her. The first thing he ever put on his body permanently was her, and he was seventeen when he did it. It is the only event on record from the years the archive goes quiet." },
+
   { year: 2003, lane: "life", title: "High school, and the record goes quiet", tag: "A gap, not a blank",
-    body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. This stretch is the part of the story still to be recovered." },
+    body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. One thing does survive from inside it, and it is not paperwork: the tattoo he got at seventeen for his grandmother. The rest of this stretch is still to be recovered." },
 
   { year: 2006, lane: "build", title: "Co-founds the NISE collective", tag: "Age 18",
     body: "His earliest creative collective, six years before the Corex name exists. By this year NISE is already staging a fashion show at Captain John's." },
