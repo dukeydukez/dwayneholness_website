@@ -223,6 +223,10 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2016, date: "3 February", lane: "life", title: "Releases the Calculated Steps poem", tag: "Where the book begins",
     body: "Six months after burying his best friend, he wrote it, recorded it, and put it on YouTube. Everything that carries the name since has come out of this: the daily livestreams in 2018, the podcast in 2020, the nineteen chapters finished in 2026. It started as a poem." },
 
+  { year: 2016, lane: "build", title: "Starts CREATIVE Capsoul", tag: "Two thousand hats",
+    body: "A brand for creatives, built around one object: a cap with CREATIVE embroidered on the front and a lightning bolt on the side, made in fourteen colourways with its own pop-art packaging and a printed cloth to match. More than two thousand of them went out to creatives around the world. The name is the one he came back to years later for this page.",
+    plate: { src: "/images/creative-capsoul-2016.jpg", w: 1439, h: 1439, alt: "Fourteen baseball caps in different colours, each embroidered CREATIVE in gold, arranged on a pool table with pop-art printed boxes and a matching printed cloth.", caption: "CREATIVE Capsoul, the full colourway run." } },
+
   { year: 2016, date: "4 April", lane: "stage", title: "Men of Honour Award", tag: "BBPA",
     body: "From the Black Business and Professional Association, for outstanding contribution to the Black community. He was twenty-eight, and it is the anchor for the Legacy in Motion chapter of the book." },
 
@@ -575,6 +579,7 @@ export const VENTURES: Venture[] = [
   { name: "Jamaica Strong", role: "Co-Founder", span: "2025", note: "Hurricane Melissa relief. Ninety-eight donors in nine days.", live: true },
   { name: "Creative Connect", role: "Founder and Host", span: "2020", note: "A community for creative entrepreneurs.", live: true },
   { name: "Calculated Steps", role: "Author", span: "2015 to now", note: "Began as a poem released 3 February 2016. Nineteen chapters, print ready, publishing 2027.", live: true },
+  { name: "CREATIVE Capsoul", role: "Founder", span: "2016", note: "Apparel brand for creatives. Over 2,000 caps distributed worldwide.", live: false },
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
   { name: "106 and York", role: "Founding member", span: "2010 to 2011", note: "A talent showcase that started at York University.", live: false },
   { name: "Almost Famous", role: "Founder", span: "2009", note: "A nightclub event series.", live: false },
