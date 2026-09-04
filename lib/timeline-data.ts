@@ -131,12 +131,17 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/humber-2010.jpg", w: 1280, h: 960, alt: "A young Dwayne in a striped sweater on stage at a Humber College ceremony, shaking hands with a faculty member holding an award envelope, seated guests behind them.", caption: "Humber College, 2010." } },
   { year: 2010, lane: "stage", title: "YMCA Community Award", tag: "Age 22",
     body: "Recognition for the community work coming out of HighClass. Separate from The Bigger Picture, and separate from the grant." },
+  { year: 2010, lane: "film", title: "Flown to Cuba to shoot for G-Swag", tag: "Someone bet on him",
+    body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip. At twenty-two, someone had decided his eye was worth an international plane ticket.",
+    plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "A man in a red cap driving a horse-drawn blue cart down a colonial street in Cuba, pastel buildings and iron railings behind.", caption: "Cuba, 2010." } },
+
   { year: 2010, date: "1 June", lane: "film", title: "Shoots the Stylus Awards", tag: "dukeydukez.com",
     body: "Toronto's urban music awards, covered as the event photographer. Drake accepted an award at the podium that night, two weeks before Thank Me Later came out, and Dwayne shot it. Every frame is watermarked Dukey Dukez Photographer with a web address, so he had a named photography business online two years before Corexmedia.com existed.",
     plate: { src: "/images/stylus-awards-2010.jpg", w: 1440, h: 960, alt: "Drake in a yellow jacket at a clear podium on the Stylus Awards stage, award in hand, speaking into a microphone.", caption: "Drake at the podium, Stylus Awards, 1 June 2010. Watermark bottom right: dukeydukez.com." } },
 
   { year: 2010, lane: "build", title: "Founding member of 106 and York",
-    body: "A talent showcase that started at York University and became a staple of the GTA circuit. Each one teach one, operating years before Corex." },
+    body: "A talent showcase that started at York University and became a staple of the GTA circuit. Each one teach one, operating years before Corex.",
+    plate: { src: "/images/106-york-2010.jpg", w: 2000, h: 1500, alt: "A group of young performers posing together at a 106 and York showcase, one holding a gold medallion.", caption: "106 and York." } },
 
   { year: 2011, date: "22 October", lane: "film", title: "Goes through POV 3rd Street as a participant", tag: "Class of '11",
     body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. The graduating project put him on a national commercial for ParticipACTION the next year. Five years later he was running the program himself, as Program Manager and Facilitator. Take the seat, then teach the room.",
@@ -183,7 +188,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "He is on staff through the launch, leading creative and production direction for original programming." },
 
   { year: 2014, date: "28 August", lane: "build", title: "FEVA launches as a television channel", tag: "Bell and Rogers",
-    body: "Carriage on Bell and Rogers, which is what turns a platform into an actual channel in Canadian homes. A year into the role and still there. On staff for both launches." },
+    body: "Carriage on Bell and Rogers, which is what turns a platform into an actual channel in Canadian homes. A year into the role and still there. On staff for both launches.",
+    plate: { src: "/images/feva-channel-2014.jpg", w: 1350, h: 1950, alt: "FEVA TV subscribe flyer listing Rogers channel 470 and Bell Fibe channel 2662 with a call to subscribe.", caption: "The carriage, in print. Rogers 470, Bell Fibe 2662." } },
   { year: 2014, lane: "life", title: "Hodan Nalayeh walks in", tag: "The meeting",
     body: "She comes to FEVA to pitch a home for Integration TV. On her way out she stops at his room. The pitch never closes and Integration TV never airs, which is what kept her building the channel herself. The professional door shuts and the personal one opens in the same afternoon.",
     quote: "I've heard about you." },
@@ -521,7 +527,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Fifteen on record, from 2009.",
+    note: "Sixteen on record, from 2009.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -538,6 +544,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2017", title: "Just Chase, Ego", role: "Director", client: "Los Angeles" },
       { year: "2011", title: "Calado, Sad Streets", role: "Director", client: "Jamaica, aired on local television" },
       { year: "2009", title: "Versatile, Just Like Kingston", role: "Director", client: "Jane and Finch, feat. Beenie Man" },
+      { year: "2010", title: "G-Swag, Lavish", role: "Director", client: "Shot in Cuba" },
     ],
   },
   {
