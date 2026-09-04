@@ -53,11 +53,15 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
     body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
 
+  { year: 2004, lane: "life", title: "Expelled from Western Tech, and sent to Emery", tag: "Grade 10",
+    body: "He was running with a group they called the Wolfpack, walking downtown fifty deep, and it ended his time at Western Technical-Commercial School partway through Grade 10. He finished Grades 10 through 12 at Emery Collegiate instead, back in his own neighbourhood. He has told this story himself, on the record, without softening it.",
+    quote: "I ended up getting expelled from school. It was way too much wash, the bad wash." },
+
   { year: 2005, lane: "life", title: "First tattoo, for his grandmother", tag: "Age 17",
     body: "Edith Brown, 25 February 1952 to 2 October 2004, his mother's mother. She died the year before, at fifty-two, when he was sixteen. He was the grandchild who felt safest around her. The first thing he ever put on his body permanently was her, and he was seventeen when he did it. It is the only event on record from the years the archive goes quiet." },
 
   { year: 2003, lane: "life", title: "High school, and the record goes quiet", tag: "A gap, not a blank",
-    body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. One thing does survive from inside it, and it is not paperwork: the tattoo he got at seventeen for his grandmother. The rest of this stretch is still to be recovered." },
+    body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. Two things survive from inside it, and neither is paperwork: the expulsion from Western Tech in Grade 10, and the tattoo he got at seventeen for his grandmother. The rest of this stretch is still to be recovered." },
 
   { year: 2006, lane: "build", title: "Co-founds the NISE collective", tag: "Age 18",
     body: "His earliest creative collective, six years before the Corex name exists. By this year NISE is already staging a fashion show at Captain John's." },
@@ -137,6 +141,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
+
+  { year: 2013, date: "21 November", lane: "stage", title: "Back at Emery Collegiate, speaking to the Grade 9s", tag: "Nine years later",
+    body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room." },
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
