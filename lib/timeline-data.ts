@@ -202,6 +202,9 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2016, date: "November", lane: "stage", title: "First long-form podcast appearances", body: "The Come Up Show, then Making It In Toronto." },
 
+  { year: 2017, date: "4 June", lane: "film", title: "Shoots Ego in Los Angeles", tag: "His biggest music video",
+    body: "For Just Chase, and about forty thousand dollars of production. Call time was ten in the morning at 5610 Soto Street in Huntington Park, with Department 4 running the floor and a second unit picking up aerials of the LA skyline and night driving under the palms. He cut it himself through June. Six weeks later he was on a plane to Somalia." },
+
   { year: 2017, date: "15 to 30 July", lane: "life", title: "Somalia, Tanzania, Kenya, then Istanbul", tag: "Four countries, sixteen days",
     body: "The longest of the six trips and the one that reached furthest. Nine days across Somalia, then down to Tanzania, a day in Kenya, and Turkey on the way home. The whole itinerary was recovered from phone GPS, because no folder on the drive records it." },
 
@@ -484,7 +487,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Twelve on record, from 2012.",
+    note: "Thirteen on record, from 2012.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -498,6 +501,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2015", title: "Modo, Beard Gang", role: "Director, Editor" },
       { year: "2014", title: "Corey Fila, You", role: "Director, Editor" },
       { year: "2012", title: "Joe Budden", role: "Co-Director" },
+      { year: "2017", title: "Just Chase, Ego", role: "Director", client: "Los Angeles" },
     ],
   },
   {
