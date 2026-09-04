@@ -206,7 +206,7 @@ export default function DiscoveryChat() {
             className="discovery-trigger"
             style={{
               position: "fixed",
-              bottom: "2rem",
+              bottom: "var(--floating-offset, 2rem)",
               right: "2rem",
               zIndex: 50,
               display: "flex",
@@ -272,7 +272,7 @@ export default function DiscoveryChat() {
             transition={{ duration: 0.35, ease }}
             style={{
               position: "fixed",
-              bottom: "2rem",
+              bottom: "var(--floating-offset, 2rem)",
               right: "2rem",
               zIndex: 50,
               width: "min(400px, calc(100vw - 4rem))",

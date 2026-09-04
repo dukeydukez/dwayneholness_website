@@ -28,7 +28,10 @@ function setDismissed(): void {
 
 export default function NewsletterPopup() {
   const pathname = usePathname();
-  const isArticlePage = pathname.startsWith("/writing/") && pathname !== "/writing";
+  // Immersive reading routes run their own experience and are not interrupted.
+  const suppressed =
+    (pathname.startsWith("/writing/") && pathname !== "/writing") ||
+    pathname.startsWith("/timecapsoul");
 
   const [visible, setVisible] = useState(false);
   const [closing, setClosing] = useState(false);
@@ -36,8 +39,8 @@ export default function NewsletterPopup() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   useEffect(() => {
-    // Don't show on article pages or mobile (<768px)
-    if (isArticlePage) return;
+    // Don't show on suppressed routes or mobile (<768px)
+    if (suppressed) return;
     if (window.innerWidth < 768) return;
     if (isDismissed()) return;
 
@@ -52,7 +55,7 @@ export default function NewsletterPopup() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isArticlePage]);
+  }, [suppressed]);
 
   function handleClose() {
     setClosing(true);
