@@ -133,7 +133,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "Recognition for the community work coming out of HighClass. Separate from The Bigger Picture, and separate from the grant." },
   { year: 2010, lane: "film", title: "Flown to Cuba to shoot for G-Swag", tag: "Someone bet on him",
     body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip, shot around Santiago de Cuba. At twenty-two, someone had decided his eye was worth an international plane ticket.",
-    plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "The artist standing alone on an empty Cuban highway holding a motorcycle helmet, under a road gantry signed Santiago de Cuba and Aeropuerto, storm cloud above and the road running off behind him.", caption: "On the autopista outside Santiago de Cuba, 2010." } },
+    plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "G-Swag standing alone on an empty Cuban highway holding a motorcycle helmet, under a road gantry signed Santiago de Cuba and Aeropuerto, storm cloud above and the road running off behind him.", caption: "On the autopista outside Santiago de Cuba, 2010." } },
 
   { year: 2010, lane: "build", title: "Founding member of 106 and York",
     body: "A talent showcase that started at York University and became a staple of the GTA circuit. Each one teach one, operating years before Corex.",
@@ -220,8 +220,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "A brand for creatives, built around one object: a cap with CREATIVE embroidered on the front and a lightning bolt on the side, made in fourteen colourways with its own pop-art packaging and a printed cloth to match. More than two thousand of them went out to creatives around the world. The name is the one he came back to years later for this page.",
     plate: { src: "/images/creative-capsoul-2016.jpg", w: 1439, h: 1439, alt: "Fourteen baseball caps in different colours, each embroidered CREATIVE in gold, arranged on a pool table with pop-art printed boxes and a matching printed cloth.", caption: "CREATIVE Capsoul, the full colourway run." } },
 
-  { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia, Kenya and Ethiopia", tag: "Second trip",
-    body: "Five weeks after the first one ended he went again, this time adding Ethiopia. Seventy-three geotagged photographs place him across three countries in six days." },
+  { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia and Kenya", tag: "Second trip",
+    body: "Five weeks after the first trip ended he went again. Seventy-three geotagged photographs place the route: Somalia, then Addis Ababa to change planes, then Kenya, all inside six days." },
 
   { year: 2016, date: "February", lane: "stage", title: "Back at Beverly Heights for Black History Month", tag: "His middle school",
     body: "The school he went to as a kid, the one he was attending when he joined the theatre program and signed with an agent. He came back to speak to the whole student body for Black History Month, in a Corex Creative cap, in the gym he used to sit in.",
@@ -278,8 +278,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
 
-  { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya again, and Ethiopia", tag: "Sixth and last",
-    body: "Three weeks after getting home from Somalia he was back on the continent. A hundred and nine geotagged frames across Kenya and Ethiopia. It is the last of the trips before she was killed." },
+  { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya, one last time", tag: "The last trip",
+    body: "Three weeks after getting home from Somalia he was back on the continent, through Addis again and on to Kenya. A hundred and nine geotagged frames. It is the last trip the two of them made before she was killed." },
 
   { year: 2018, date: "24 to 27 December", lane: "film", title: "Christmas in Spain, then Gambia", tag: "The 2am show",
     body: "Spain on Christmas Eve, then straight to Gambia for Christmas. He shot the show there from the stage at two in the morning on the twenty-seventh. The Chronixx Gambia film came out of these three days.",
