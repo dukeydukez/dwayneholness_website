@@ -81,6 +81,9 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2008, date: "26 June", lane: "film", title: "Becomes a full member of ACTRA", tag: "Age 20",
     body: "Six years less a day after entering the system. Three days later his engagements begin carrying benefit remittances." },
+  { year: 2008, lane: "life", title: "Meets Redway", tag: "Best friend, first client",
+    body: "Shane Redway. They found each other online, met once, and clicked immediately. He moved into the house, they shared a room, and for the next few years Dwayne managed him: photoshoots, graphic design, video shoots, booking the shows. Redway is the reason he picked up a video camera at all, and one of the reasons HighClass existed. Everything that came after, the client work, the agency, the whole discipline of making somebody else look like the thing they already were, was learned on his best friend first." },
+
   { year: 2008, lane: "build", title: "The Red Room", tag: "Where all of it starts",
     body: "His bedroom in his mother's house, painted red, which is all the name ever meant. He and Femi Lawson would put a beat on and freestyle into a webcam, and it turned into somewhere people came from across the city to spit on camera. Redway moved in. They could not afford studio time so he taught himself to engineer, and the drive still holds 5,753 files from it: 2,611 WAV takes and the Audition sessions they were cut in. He picked up a video camera because Redway needed someone to shoot his videos, and then started shooting for other people free, to see what he could do. His mother worked seven in the morning to eleven at night and let a house full of strangers happen anyway.",
     quote: "It was a creative hub because no one else's parents would have let them do that." },
