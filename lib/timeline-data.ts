@@ -128,7 +128,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
-    body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him." },
+    body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
+    plate: { src: "/images/whitehorse-2013.jpg", w: 2000, h: 1333, alt: "Dwayne in a red cap and a fur-hooded parka standing in a snowbound sled dog yard, a husky on a kennel box marked Sirius behind him, boreal forest and mountains beyond.", caption: "Sled dog yard outside Whitehorse, 21 April 2013." } },
 
   { year: 2013, date: "August", lane: "build", title: "Producer and Creative Director at FEVA TV", tag: "Hired pre-launch",
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches." },
@@ -188,7 +189,7 @@ export const EVENTS: TimelineEvent[] = [
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
   { year: 2018, date: "27 December", lane: "film", title: "On tour with Chronixx", tag: "Late show",
-    body: "Shot from the stage at two in the morning. The Gambia film came out of the same year.",
+    body: "Shot from the stage at two in the morning. The run stretched from June 2018 to December 2019 and took him to Germany, Uganda, Jamaica, Colombia, Mexico, Belize, Spain, the UK and St. Lucia, shooting sound checks as well as shows. The Gambia film came out of the same year.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
 
   { year: 2019, date: "12 July", lane: "life", title: "Hodan Nalayeh is killed in Kismayo", tag: "The turn",
@@ -222,6 +223,9 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/2-hodan.jpg", w: 1600, h: 1067, alt: "A packed room watching a Hodan\u2019s Story screening, the CBC Docs poster on the screen behind two speakers.", caption: "A screening and question and answer for Hodan\u2019s Story." } },
 
   { year: 2023, lane: "stage", title: "The Business Anecdote interview", body: "Founder and chief executive, long form." },
+  { year: 2021, date: "29 April", lane: "life", title: "Joins the Rotary Club of Innisfil", tag: "Service above self",
+    body: "His member account is created the same week. Food drives in Sandy Cove Acres, Quiet Santa for kids who cannot manage a mall Santa, bottle drives. He had moved his life north to Simcoe County, and this is where the local roots go in." },
+
   { year: 2021, date: "21 October", lane: "stage", title: "President's Panel, Xcelerate Summit", tag: "Invited as a president",
     body: "Georgian College's Henry Bernick Entrepreneurship Centre put him on a panel of company presidents, alongside heads of a plastics manufacturer and a travel company. Virtual, run over Zoom. The director who invited him wrote afterward that it was the best one they had done.",
     quote: "It was so amazing to have you on our President's Panel. You were out of this World, I truly believe it was our best." },
@@ -415,7 +419,7 @@ export const CREDITS: CreditGroup[] = [
     note: "",
     credits: [
       { year: "2019", title: "Lauryn Hill, tour", role: "Creative Director" },
-      { year: "2018", title: "Chronixx, tour", role: "Creative Director" },
+      { year: "2018 to 2019", title: "Chronixx, tour", role: "Creative Director" },
     ],
   },
   {
