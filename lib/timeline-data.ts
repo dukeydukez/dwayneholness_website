@@ -227,16 +227,13 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
   { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
     body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
-    plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "A camera operator in a mustard shirt filming beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
-
-  { year: 2018, date: "June", lane: "film", title: "First leg with Chronixx: Germany and Uganda", tag: "Creative Director",
-    body: "The run opens in Germany and carries on to Uganda, where he shoots the Nile River alongside the show. Sound checks as well as sets, which is the pattern for the whole tour." },
+    plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
 
   { year: 2018, date: "July", lane: "film", title: "Reggae Sumfest, Jamaica", tag: "Chronixx tour",
     body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work." },
 
-  { year: 2018, date: "27 December", lane: "film", title: "On tour with Chronixx", tag: "Late show",
-    body: "Shot from the stage at two in the morning. The Gambia film came out of the same year.",
+  { year: 2018, date: "24 to 27 December", lane: "film", title: "Christmas in Spain, then Gambia", tag: "The 2am show",
+    body: "Spain on Christmas Eve, then straight to Gambia for Christmas. He shot the show there from the stage at two in the morning on the twenty-seventh. The Chronixx Gambia film came out of these three days.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
 
   { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya again, and Ethiopia", tag: "Sixth and last",
@@ -259,6 +256,9 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2019, date: "March", lane: "film", title: "Jamaica again, for LWTF", tag: "Chronixx tour",
     body: "His second Jamaican leg in eight months." },
+
+  { year: 2019, date: "21 to 30 June", lane: "film", title: "Germany, then Uganda", tag: "Chronixx tour",
+    body: "Three days in Germany and then five in Uganda, where he shot the Nile River alongside the show. The camera he used was running a year behind, which is why this leg sat in the archive dated 2018 until his phone corrected it." },
 
   { year: 2019, date: "August", lane: "film", title: "Belize, Spain and the UK", tag: "The biggest leg",
     body: "Three countries. In the UK it is Boomtown, the O2 Warehouse and O2 Leeds, and this leg leaves behind more frames than any other on the tour." },
