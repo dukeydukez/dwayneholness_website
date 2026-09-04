@@ -84,7 +84,7 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2007, date: "29 August", lane: "build", title: "Starts Humber College", body: "The Multimedia Design and Production Technician program. He is nineteen." },
   
   { year: 2007, date: "16 October", lane: "build", title: "Dukez and Bullet Productions", tag: "His first company, a year before HighClass",
-    body: "With Femi Lawson. Artist development, crewed properly from the start: a post that month credits camera and director to Dukez, actor to Bullet, with lighting and clean-up named too. Music followed within the week, a track and an interview both posted on the twenty-second. It ran into 2009 and it is the first thing he ever put a name on.",
+    body: "With Femi Lawson. Artist development, crewed properly from the start: a post that month credits camera and director to Dukez, actor to Bullet, with lighting and clean-up named too. Music followed within the week, a track and an interview both posted on the twenty-second. It ran into 2009 and it is the first thing he ever put a name on. Lawson is also the longest-running name in this whole stretch: still there for the Red Room, still there to help name HighClass a year later, and still there in 2013, back at Emery with him.",
     quote: "Making it happen. Live from the Red Room." },
 
   { year: 2007, date: "14 November", lane: "build", title: "Advertises himself as an editor", tag: "The first solicitation",
@@ -247,7 +247,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "His own note that day: living my dreams, had the opportunity to speak and share my story in front of over a hundred youth. Nine years before he would tell an interviewer he wanted to step properly into speaking." },
 
   { year: 2013, date: "21 November", lane: "stage", title: "Back at Emery Collegiate, speaking to the Grade 9s", tag: "Nine years later",
-    body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room." },
+    body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room. Six years on from Dukez and Bullet, and Lawson is still the person standing next to him." },
 
   { year: 2013, date: "22 December", lane: "film", title: "Neza, Only God Knows", body: "His second video for Neza that year." },
 
@@ -537,7 +537,7 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, lane: "build", title: "Awarded a Toronto Arts Council mentorship", tag: "As the mentor",
     body: "The Newcomer and Refugee Artist Mentorship, mentoring filmmaker Doyinsola Ajayi on her short film If Not You. Each one teach one, now with an arts council behind it." },
   { year: 2026, date: "1 January", lane: "life", title: "Chapter 38, Chosen, Tested, Trusted", body: "His birthday reflection, and the best performing post of his year." },
-  { year: 2026, date: "February", lane: "film", title: "Canadian Tire Black History Month", body: "Event coverage. Randell Adjei keynote, eight hundred attendees.",
+  { year: 2026, date: "February", lane: "film", title: "Canadian Tire Black History Month", body: "Event coverage. Randell Adjei keynote, eight hundred attendees. Adjei had been a guest on his Instagram Live in 2018, when the show was the platform and Dwayne was the one holding it. Eight years later Dwayne is behind the camera and Adjei is on the stage.",
     plate: { src: "/images/BHMCorexCT-4870.jpeg", w: 863, h: 1293, alt: "Dwayne in conversation with an attendee at the Canadian Tire Black History Month event.", caption: "Between sessions at the Canadian Tire Black History Month event." } },
   { year: 2026, date: "25 February", lane: "stage", title: "IGNITE Toronto, Beyond the Breakthrough", tag: "From Jane and Finch to the IGNITE stage",
     body: "A panel for the Black Talent Initiative, alongside Deanne Gage of The Globe and Mail and Thomas Cumberbatch.", quote: "Your story is your strategy. Own it.",
@@ -595,6 +595,7 @@ export const THROUGH_LINES: ThroughLine[] = [
   { title: "Jane and Finch as edge", body: "Not a footnote, a foundation. The neighbourhood gave him the eye and the ear to tell stories other people could not hear." },
   { title: "Each one teach one", body: "From a talent showcase at York University in 2010 to a mentorship seat in Kingston in 2026. Mentorship as a business model and a moral obligation.", img: { src: "/images/lcbo/lcbo-full-crew.jpg", alt: "Around thirty cast and crew gathered in a dance studio, hands raised, posing together at the end of a shoot day.", w: 6720, h: 4480, caption: "Cast and crew, LCBO Spirit of Sustainability, 2021." } },
   { title: "Hodan", body: "She believed in him at times he did not believe in himself. The through-line that runs from FEVA TV to the CBC to the first chapter of the book.", img: { src: "/images/hodan-dwayne.jpg", alt: "Dwayne and Hodan Nalayeh laughing together on a hillside road, green forested hills behind them, she in a pink headscarf and a brightly patterned dress.", w: 2000, h: 1825, caption: "Dwayne and Hodan Nalayeh." } },
+  { title: "The ones who came back", body: "Shane Redway, from the day they met online in 2008 until he died in 2015. Femi Lawson, from Dukez and Bullet in 2007 to a Grade 9 classroom at Emery in 2013. Jordan Oram, who co-directed with him in 2012 and came back to shoot for him in 2013. Randell Adjei, a guest on his Instagram Live in 2018 and the keynote he was hired to cover in 2026. The record is mostly one project and then the next one. These are the people who turn up in it twice." },
   { title: "Faith as operating system", body: "Baptized at Kingsway Community Life Centre on 15 September 2024. He talks about surrender as the point his life changed direction." },
   { title: "Ownership as legacy", body: "Building something he owns, something he can leave. The reason the background years matter and the reason they ended.", img: { src: "/images/book-writing.jpg", alt: "Pages of the Calculated Steps manuscript spread across a table beside a spiral-bound copy, the printed title page reading draft, March 31st 2026.", w: 1500, h: 2000, caption: "The Calculated Steps manuscript, draft dated 31 March 2026." } },
 ];
