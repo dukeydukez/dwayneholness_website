@@ -225,9 +225,13 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2013, date: "21 November", lane: "stage", title: "Back at Emery Collegiate, speaking to the Grade 9s", tag: "Nine years later",
     body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room." },
 
+  { year: 2013, date: "22 December", lane: "film", title: "Neza, Only God Knows", body: "His second video for Neza that year." },
+
   { year: 2014, lane: "life", title: "Hodan Nalayeh walks in", tag: "The meeting",
     body: "She comes to FEVA to pitch a home for Integration TV. On her way out she stops at his room. The pitch never closes and Integration TV never airs, which is what kept her building the channel herself. The professional door shuts and the personal one opens in the same afternoon.",
     quote: "I've heard about you." },
+  { year: 2014, date: "11 August", lane: "film", title: "Tamara Madison, Journey", body: "Directed and co-directed. The last of the independent music video run before Corex incorporates." },
+
   { year: 2014, date: "28 August", lane: "build", title: "FEVA launches as a television channel", tag: "Bell and Rogers",
     body: "Carriage on Bell and Rogers, which is what turns a platform into an actual channel in Canadian homes. A year into the role and still there. On staff for both launches.",
     plate: { src: "/images/feva-channel-2014.jpg", w: 1350, h: 1950, alt: "FEVA TV subscribe flyer listing Rogers channel 470 and Bell Fibe channel 2662 with a call to subscribe.", caption: "The carriage, in print. Rogers 470, Bell Fibe 2662." } },
@@ -241,6 +245,11 @@ export const EVENTS: TimelineEvent[] = [
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year." },
 
   { year: 2015, date: "31 January", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Official" },
+  { year: 2015, date: "17 March", lane: "film", title: "Interviews Exco Levi", tag: "Four-time Juno winner",
+    body: "Shot at FEVA TV. One of the biggest reggae artists in the country, sitting for him." },
+
+  { year: 2015, date: "28 March", lane: "film", title: "Shoots for Vulkan Magazine and Kalado", body: "A fashion magazine and a Jamaican dancehall artist in the same week, the latter cut at RD Studios in Jamaica." },
+
   { year: 2015, date: "June", lane: "build", title: "Leaves FEVA TV after two years",
     body: "He worked on most of the early FEVA originals. Co-founder Lonzo Nzekwe later writes that he is a consummate professional with great leadership skills." },
   { year: 2015, date: "21 July", lane: "life", title: "First use of the words Calculated Steps", tag: "The book starts here",
@@ -592,7 +601,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Twenty-one on record, from 2009.",
+    note: "Twenty-nine on record, from 2009.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -615,6 +624,15 @@ export const CREDITS: CreditGroup[] = [
       { year: "2012", title: "itzDubb, Church In The Wild", role: "Director", client: "Featured on WorldStarHipHop" },
       { year: "2012", title: "Charlie Black, Last Night", role: "Director" },
       { year: "2011", title: "Redway, Close Enough", role: "Director", client: "Featured on HipHopCanada" },
+      { year: "2015", title: "Kalado", role: "Director", client: "RD Studios, Jamaica" },
+      { year: "2014", title: "Tamara Madison, Journey", role: "Director, Co-Director" },
+      { year: "2013", title: "Neza, Only God Knows", role: "Director" },
+      { year: "2011", title: "Junior Reid, Nah Bow Fi Money", role: "Director", client: "Aired on HYPE TV Jamaica" },
+      { year: "2011", title: "Rich Dolarz, Blow My High", role: "Director" },
+      { year: "2011", title: "Redway, The Auction", role: "Director" },
+      { year: "2011", title: "Richie Blackz, Left Lane", role: "Director", client: "Premiered on The Come Up Show" },
+      { year: "2010", title: "Redway, Close Enough", role: "Director", client: "HipHopCanada, No.2 on WBLK Unsigned Hype" },
+      { year: "2010", title: "drewFLYs", role: "Director" },
     ],
   },
   {
