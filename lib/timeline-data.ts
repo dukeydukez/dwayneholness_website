@@ -134,6 +134,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2011, date: "15 February", lane: "film", title: "Directs Sad Streets for Calado in Jamaica", tag: "First on television",
     body: "His first music video shot on the island, and the first of his to reach broadcast. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, which put his work on television two years after his first video. He was twenty-three." },
 
+  { year: 2011, date: "February to May", lane: "film", title: "Shooting for Junior Reid in Jamaica", tag: "Flown back and forth",
+    body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work." },
+
   { year: 2011, date: "February", lane: "life", title: "Back to Jamaica", tag: "The REAL Jamaica",
     body: "A week on the island photographing what he captioned the real Jamaica: street corners, a football pitch, Marcus Garvey Drive. Eighteen years after his mother took him off it, and there are HighClass shirts in the frames.",
     plate: { src: "/images/jamaica-2011.jpg", w: 1440, h: 960, alt: "A man in an I Am HighClass t-shirt and sunglasses seated on a wall at night in Jamaica, lit against dark foliage.", caption: "Jamaica, February 2011. HighClass on the ground." } },
@@ -234,6 +237,10 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
     body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
+
+  { year: 2018, date: "29 July", lane: "stage", title: "The Calculated Steps Brunch", tag: "All white",
+    body: "He put on his own event under the name: a brunch and networking room, all-white dress code, long banquet tables, two photographers and 244 photographs. Two and a half years after the poem went up, Calculated Steps had become something people showed up for in person.",
+    plate: { src: "/images/cs-brunch-2018.jpg", w: 2000, h: 1333, alt: "Dwayne in a white suit with black lapels, black hat and sunglasses, arms spread at the head of a long banquet table packed with guests applauding.", caption: "Calculated Steps Brunch, 29 July 2018." } },
 
   { year: 2018, date: "July", lane: "film", title: "Reggae Sumfest, Jamaica", tag: "Chronixx tour",
     body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work." },
