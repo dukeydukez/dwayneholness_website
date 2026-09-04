@@ -127,6 +127,10 @@ export const EVENTS: TimelineEvent[] = [
     body: "The Bring Back Play campaign, thirty seconds, shot for JWT and produced by Radke Films. It was the graduating project of POV 3rd Street, the program he had come through the year before, and it worked the way the program intends: industry mentors stood on set while the alumni directed. He shared the chair with Kobi Ntiri. They cast it themselves, sitting through more than a hundred kids and parents that July. The client's own behind-the-scenes film puts his credit on screen: Co-Director, POV Alumni.",
     plate: { src: "/images/participaction-2012.jpg", w: 1280, h: 720, alt: "Dwayne in a plaid shirt beside the camera and monitor on the ParticipACTION set, the operator working the rig beside him and crew behind.", caption: "On set, ParticipACTION Bring Back Play, summer 2012." } },
 
+  { year: 2012, date: "8 January", lane: "film", title: "Co-directs a Joe Budden music video with Jordan Oram", tag: "A week after his birthday",
+    body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so the earliest directing credit predates the brand entirely.",
+    quote: "That's a nice birthday present to myself." },
+
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
@@ -192,8 +196,14 @@ export const EVENTS: TimelineEvent[] = [
     body: "She calls him in excitement. He journals it that night.",
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
+  { year: 2018, date: "June", lane: "film", title: "First leg with Chronixx: Germany and Uganda", tag: "Creative Director",
+    body: "The run opens in Germany and carries on to Uganda, where he shoots the Nile River alongside the show. Sound checks as well as sets, which is the pattern for the whole tour." },
+
+  { year: 2018, date: "July", lane: "film", title: "Reggae Sumfest, Jamaica", tag: "Chronixx tour",
+    body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work." },
+
   { year: 2018, date: "27 December", lane: "film", title: "On tour with Chronixx", tag: "Late show",
-    body: "Shot from the stage at two in the morning. The run stretched from June 2018 to December 2019 and took him to Germany, Uganda, Jamaica, Colombia, Mexico, Belize, Spain, the UK and St. Lucia, shooting sound checks as well as shows. The Gambia film came out of the same year.",
+    body: "Shot from the stage at two in the morning. The Gambia film came out of the same year.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
 
   { year: 2019, date: "12 July", lane: "life", title: "Hodan Nalayeh is killed in Kismayo", tag: "The turn",
@@ -207,6 +217,18 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2020, lane: "life", title: "Buys his mother a house", tag: "Twenty-seven years later",
     body: "Yvonne Robinson left Kingston in 1993 with a five-year-old and no plan beyond a belief that the other side of the ocean held something better. Twenty-seven years later her son bought her a house. This record opens with her risk. This is where it lands.",
     plate: { src: "/images/mother-house-2020.jpg", w: 1331, h: 2000, alt: "Dwayne and his mother Yvonne Robinson standing together in the driveway, the house behind them, both laughing.", caption: "Yvonne Robinson outside the house, 2020." } },
+
+  { year: 2019, date: "February", lane: "film", title: "Colombia and Mexico", tag: "Chronixx tour",
+    body: "Two countries in a month, with a Super 8 roll shot in Colombia alongside the digital." },
+
+  { year: 2019, date: "March", lane: "film", title: "Jamaica again, for LWTF", tag: "Chronixx tour",
+    body: "His second Jamaican leg in eight months." },
+
+  { year: 2019, date: "August", lane: "film", title: "Belize, Spain and the UK", tag: "The biggest leg",
+    body: "Three countries. In the UK it is Boomtown, the O2 Warehouse and O2 Leeds, and this leg leaves behind more frames than any other on the tour." },
+
+  { year: 2019, date: "December", lane: "film", title: "Negril and St. Lucia", tag: "Last leg",
+    body: "The run closes where it feels like it should, back in Jamaica at Negril and then across to St. Lucia, where he shoots from a boat. Eighteen months and nine countries after Germany." },
 
   { year: 2020, lane: "film", title: "Chronixx, Soul Circle Writing Camp",
     body: "Director and editor. The camp itself was shot in September 2019, in a house turned into a studio. He also shoots the Bring Back Play campaign for South Riverdale CHC.",
@@ -429,7 +451,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Eleven on record, from 2014.",
+    note: "Twelve on record, from 2012.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -442,6 +464,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2017", title: "Friyie, Don't Worry", role: "Director, Editor" },
       { year: "2015", title: "Modo, Beard Gang", role: "Director, Editor" },
       { year: "2014", title: "Corey Fila, You", role: "Director, Editor" },
+      { year: "2012", title: "Joe Budden", role: "Co-Director" },
     ],
   },
   {
