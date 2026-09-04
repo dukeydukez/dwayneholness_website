@@ -225,6 +225,10 @@ export const EVENTS: TimelineEvent[] = [
     body: "Georgian College's Henry Bernick Entrepreneurship Centre put him on a panel of company presidents, alongside heads of a plastics manufacturer and a travel company. Virtual, run over Zoom. The director who invited him wrote afterward that it was the best one they had done.",
     quote: "It was so amazing to have you on our President's Panel. You were out of this World, I truly believe it was our best." },
 
+  { year: 2023, date: "6 February", lane: "stage", title: "Speaks to the entrepreneurship class at Georgian College", tag: "Where speaking becomes the plan",
+    body: "Sara Bentham, who runs the Henry Bernick Entrepreneurship Centre and had put him on the President's Panel two years earlier, invited him into her class. No set topic. Just tell them how you got here. She wrote the next morning to say the students had voted him their favourite speaker and offered to introduce him to speaking agencies. He wrote back that stepping further into speaking was exactly what he was aiming at that year. Everything after this is that decision compounding.",
+    quote: "They shared that you have been their favourite speaker. They were engaged, inspired and felt included." },
+
   { year: 2023, date: "26 October", lane: "stage", title: "Speaks at the Xcelerate Summit",
     body: "Back a third year, this time on a panel billed From Rocks to Resilience at Georgian College's downtown Barrie campus. He had done the President's Panel in 2021 and a filmed pop-up talk, What's Your Brand Story, in 2022.",
     plate: { src: "/images/xcelerate-2023.jpg", w: 1600, h: 2000, alt: "Dwayne in a black leather jacket standing in front of an Xcelerate Summit step and repeat banner.", caption: "Xcelerate Summit, 26 October 2023." } },
