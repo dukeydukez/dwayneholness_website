@@ -46,15 +46,17 @@ function buildYears(): YearBlock[] {
 
 /* Film grain, drawn once to a canvas rather than shipped as an image. */
 function Grain() {
-  const ref = useRef<HTMLCanvasElement>(null);
+  const [tile, setTile] = useState<string | null>(null);
   useEffect(() => {
-    const cvs = ref.current;
-    if (!cvs) return;
-    const ctx = cvs.getContext("2d");
-    if (!ctx) return;
-    const S = 180;
+    // Render the noise once at its natural size and tile it. Stretching a small
+    // canvas across the viewport turns the grain into visible mosaic blocks,
+    // which the light theme exposes badly.
+    const S = 160;
+    const cvs = document.createElement("canvas");
     cvs.width = S;
     cvs.height = S;
+    const ctx = cvs.getContext("2d");
+    if (!ctx) return;
     const img = ctx.createImageData(S, S);
     for (let i = 0; i < img.data.length; i += 4) {
       const v = 128 + (Math.random() - 0.5) * 190;
@@ -62,14 +64,15 @@ function Grain() {
       img.data[i + 3] = 255;
     }
     ctx.putImageData(img, 0, 0);
+    setTile(cvs.toDataURL("image/png"));
   }, []);
+  if (!tile) return null;
   return (
-    <div className="tl-grain" aria-hidden="true">
-      <canvas
-        ref={ref}
-        style={{ width: "100%", height: "100%", imageRendering: "pixelated" }}
-      />
-    </div>
+    <div
+      className="tl-grain"
+      aria-hidden="true"
+      style={{ backgroundImage: `url(${tile})`, backgroundRepeat: "repeat", backgroundSize: "160px 160px" }}
+    />
   );
 }
 

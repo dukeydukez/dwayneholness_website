@@ -39,10 +39,12 @@
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.16;
+  opacity: 0.14;
   mix-blend-mode: overlay;
 }
-[data-theme="light"] .tl-grain { opacity: 0.3; mix-blend-mode: multiply; }
+/* Multiply over a pale ground reads far heavier than overlay over a dark one,
+   so the light theme needs a fraction of the strength, not double it. */
+[data-theme="light"] .tl-grain { opacity: 0.05; mix-blend-mode: multiply; }
 
 .tl-inner { position: relative; z-index: 2; }
 
