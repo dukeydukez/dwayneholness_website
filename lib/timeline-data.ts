@@ -213,7 +213,7 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2012, lane: "stage", title: "Youth Arts Award, ArtReach Toronto", body: "For creating arts opportunities for youth and promoting equity and social justice." },
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
   { year: 2012, date: "8 January", lane: "film", title: "Co-directs a Joe Budden music video with Jordan Oram", tag: "A week after his birthday",
-    body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so his first three directing credits all predate the brand entirely.",
+    body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so his first three directing credits all predate the brand entirely. It was not a one-off either: Oram came back a year later to shoot Neza's Wish Is My Command for him, and went on to shoot for Drake.",
     quote: "That's a nice birthday present to myself." },
 
   { year: 2012, date: "15 January", lane: "film", title: "Charlie Black, Last Night", body: "Another directing credit out of the Toronto scene." },
@@ -230,7 +230,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
 
   { year: 2013, date: "27 January", lane: "film", title: "Neza, Wish Is My Command", tag: "Awards nominee",
-    body: "Directed, with Jordan Oram, then credited as Jyeoram, shooting it. The same Jordan Oram he had co-directed the Joe Budden video with a year earlier, and who would go on to shoot for Drake. It was nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
+    body: "Directed, with Jordan Oram, then credited as Jyeoram, shooting it. The same Jordan Oram he had co-directed the Joe Budden video with a year earlier, back now on his shoot as DP. It was nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
