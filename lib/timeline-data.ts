@@ -167,6 +167,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
 
+  { year: 2011, lane: "build", title: "Dukez and Bullet Productions", tag: "With Femi Lawson",
+    body: "He and Femi put a name on what they were already doing: artist development. Shooting the videos, building the packaging, moving acts forward. Redway was the proof of concept, and the same instincts turn into Corex two years later." },
+
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
 
@@ -699,6 +702,7 @@ export const VENTURES: Venture[] = [
   { name: "CREATIVE Capsoul", role: "Founder", span: "2016", note: "Apparel brand for creatives. Over 2,000 caps distributed worldwide.", live: false },
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
   { name: "106 and York", role: "Co-founder", span: "2009 to 2013", note: "Urban arts festival run under HighClass. Six editions, North York Arts Centre to Yorkwoods Library.", live: false },
+  { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2010s", note: "With Femi Lawson. Artist development: shooting, packaging and building acts from the ground up.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
   { name: "NISE Collective", role: "Co-Founder", span: "2006", note: "The earliest one, before Corex existed by name.", live: false },
 ];

@@ -18,6 +18,7 @@ import {
   type Lane,
   type TimelineEvent,
 } from "@/lib/timeline-data";
+import { ContactSheet, IndexView } from "./TimelineViews";
 
 const FIRST = ERAS[0].from;
 const LAST = ERAS[ERAS.length - 1].to;
@@ -120,6 +121,31 @@ export default function TimelineExperience() {
   const [railUp, setRailUp] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [lanes, setLanes] = useState<Set<Lane>>(new Set());
+  const [view, setView] = useState<"timeline" | "sheet" | "index">("timeline");
+
+  // Remember the reader's choice, but never let a bad stored value break render.
+  useEffect(() => {
+    try {
+      const v = localStorage.getItem("tl-view");
+      if (v === "sheet" || v === "index") setView(v);
+    } catch {}
+  }, []);
+
+  const chooseView = useCallback((v: "timeline" | "sheet" | "index") => {
+    setView(v);
+    try { localStorage.setItem("tl-view", v); } catch {}
+    if (v !== "timeline") window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
+
+  // Jumping from a grid cell or an index row lands on that year in the timeline.
+  const jumpToYear = useCallback((y: number) => {
+    setView("timeline");
+    try { localStorage.setItem("tl-view", "timeline"); } catch {}
+    window.requestAnimationFrame(() => {
+      const el = yearRefs.current.get(y);
+      if (el) el.scrollIntoView({ behavior: "auto", block: "start" });
+    });
+  }, []);
 
   const heroRef = useRef<HTMLElement>(null);
   const yearRefs = useRef(new Map<number, HTMLElement>());
@@ -257,6 +283,28 @@ export default function TimelineExperience() {
       <Grain />
 
       <div className="tl-inner">
+        {/* ── View toggle ── */}
+        <nav className="tl-views" aria-label="How to view the record">
+          {([["timeline","Timeline"],["sheet","Contact sheet"],["index","Index"]] as const).map(
+            ([v, label]) => (
+              <button
+                type="button"
+                key={v}
+                className={`tl-view-btn${view === v ? " is-on" : ""}`}
+                onClick={() => chooseView(v)}
+                aria-current={view === v ? "true" : undefined}
+              >
+                {label}
+              </button>
+            )
+          )}
+        </nav>
+
+        {view === "sheet" && <ContactSheet onJump={jumpToYear} />}
+        {view === "index" && <IndexView onJump={jumpToYear} />}
+
+        {view !== "timeline" ? null : (
+        <>
         {/* ── Hero ── */}
         <header className="tl-hero" ref={heroRef}>
           <motion.div
@@ -554,9 +602,12 @@ export default function TimelineExperience() {
           </span>
           <span>{EVENTS.length} entries across {years.length} years.</span>
         </footer>
+        </>
+        )}
       </div>
 
       {/* ── Scrub rail ── */}
+      {view === "timeline" && (
       <div className={`tl-rail${railUp ? " is-up" : ""}`}>
         <div className="tl-rail-year">{activeYear}</div>
 
@@ -628,6 +679,7 @@ export default function TimelineExperience() {
           {playing ? "Pause" : "Play"}
         </button>
       </div>
+      )}
     </div>
   );
 }
