@@ -127,6 +127,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
 
+  { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
+    body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him." },
+
   { year: 2013, date: "August", lane: "build", title: "Producer and Creative Director at FEVA TV", tag: "Hired pre-launch",
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches." },
   { year: 2013, date: "September", lane: "build", title: "FEVA launches its platform",
