@@ -131,6 +131,9 @@ export const EVENTS: TimelineEvent[] = [
     body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. The graduating project put him on a national commercial for ParticipACTION the next year. Five years later he was running the program himself, as Program Manager and Facilitator. Take the seat, then teach the room.",
     plate: { src: "/images/pov-2011.jpg", w: 2000, h: 1333, alt: "Eight members of the POV cohort crouched and sprawled together, mugging for the camera in a bright loft kitchen.", caption: "The POV class of '11, 22 October 2011." } },
 
+  { year: 2011, date: "15 February", lane: "film", title: "Directs Sad Streets for Calado in Jamaica", tag: "First music video",
+    body: "His first music video, and he shot it on the island. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, so his first video went to broadcast rather than to YouTube. He was twenty-three." },
+
   { year: 2011, date: "February", lane: "life", title: "Back to Jamaica", tag: "The REAL Jamaica",
     body: "A week on the island photographing what he captioned the real Jamaica: street corners, a football pitch, Marcus Garvey Drive. Eighteen years after his mother took him off it, and there are HighClass shirts in the frames.",
     plate: { src: "/images/jamaica-2011.jpg", w: 1440, h: 960, alt: "A man in an I Am HighClass t-shirt and sunglasses seated on a wall at night in Jamaica, lit against dark foliage.", caption: "Jamaica, February 2011. HighClass on the ground." } },
@@ -145,7 +148,7 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/participaction-2012.jpg", w: 1280, h: 720, alt: "Dwayne in a plaid shirt beside the camera and monitor on the ParticipACTION set, the operator working the rig beside him and crew behind.", caption: "On set, ParticipACTION Bring Back Play, summer 2012." } },
 
   { year: 2012, date: "8 January", lane: "film", title: "Co-directs a Joe Budden music video with Jordan Oram", tag: "A week after his birthday",
-    body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so the earliest directing credit predates the brand entirely.",
+    body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so both of his first two directing credits predate the brand entirely.",
     quote: "That's a nice birthday present to myself." },
 
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
@@ -487,7 +490,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Thirteen on record, from 2012.",
+    note: "Fourteen on record, from 2011.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
@@ -502,6 +505,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2014", title: "Corey Fila, You", role: "Director, Editor" },
       { year: "2012", title: "Joe Budden", role: "Co-Director" },
       { year: "2017", title: "Just Chase, Ego", role: "Director", client: "Los Angeles" },
+      { year: "2011", title: "Calado, Sad Streets", role: "Director", client: "Jamaica, aired on local television" },
     ],
   },
   {
