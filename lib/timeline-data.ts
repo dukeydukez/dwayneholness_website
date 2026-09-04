@@ -182,7 +182,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year." },
 
   { year: 2015, date: "9 December", lane: "life", title: "First time in Africa", tag: "Somalia, with Hodan",
-    body: "Six months after leaving FEVA TV, where she had walked in to pitch him. Two and a half weeks across Somaliland and Somalia, then Nairobi, mapped by the GPS in 283 photographs. The first of five or six trips they would make together.",
+    body: "Six months after leaving FEVA TV, where she had walked in to pitch him. Two and a half weeks across Somaliland and Somalia, then Nairobi, mapped by the GPS in 283 photographs. The first of five or six trips they would make together. Over the years that followed they covered many more cities across Somalia, plus Kenya, Tanzania and Turkey.",
     plate: { src: "/images/somalia-2015.jpg", w: 2000, h: 1333, alt: "Dwayne holding a phone up for a selfie in the Somali countryside with Hodan Nalayeh in a teal headscarf beside him and camels in the background.", caption: "Somalia, 9 December 2015." } },
 
   { year: 2016, date: "3 April", lane: "life", title: "His father's funeral", tag: "Jamaica",
@@ -214,6 +214,10 @@ export const EVENTS: TimelineEvent[] = [
     body: "She calls him in excitement. He journals it that night.",
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
+  { year: 2018, date: "October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
+    body: "A working trip, 190 photographs on a Sony A7 II. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
+    plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "A camera operator in a mustard shirt filming beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
+
   { year: 2018, date: "June", lane: "film", title: "First leg with Chronixx: Germany and Uganda", tag: "Creative Director",
     body: "The run opens in Germany and carries on to Uganda, where he shoots the Nile River alongside the show. Sound checks as well as sets, which is the pattern for the whole tour." },
 
