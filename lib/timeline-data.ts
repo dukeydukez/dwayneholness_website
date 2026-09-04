@@ -469,11 +469,14 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, date: "17 July", lane: "build", title: "Mentor, CreaTech Incubator", tag: "Kingston, Jamaica",
     body: "A volunteer mentor with Kingston Creative, paired with a Jamaican founder for a full incubation cycle." },
   { year: 2026, date: "18 July", lane: "film", title: "Melamoon, Edmonton", tag: "City four",
-    body: "Three hundred and eighty files on the day. Four cities in eight weeks, all of them shot by one person." },
+    body: "Three hundred and eighty files on the day. Four down, one to go, all of them shot by one person." },
 
   { year: 2026, date: "23 July", lane: "build", title: "Backs CTRL+ALT+BEAT", tag: "Mentor and sponsor",
     body: "Corex Creative sponsors the show and Dwayne mentors its two founders, Tisania Smith and Chelsi Campbell. Each one teach one, with a cheque attached.",
     plate: { src: "/images/ctrl-alt-beat-2026.jpg", w: 1333, h: 2000, alt: "Dwayne between the two CTRL+ALT+BEAT founders at the episode three live taping, all three laughing and posing for the camera.", caption: "At the CTRL+ALT+BEAT episode three taping, 23 July 2026." } },
+
+  { year: 2026, date: "14 August", lane: "film", title: "Melamoon, Toronto", tag: "City five",
+    body: "The last of the five pop-ups, and the biggest haul of the tour at eight hundred files. Five cities since May, every one of them shot alone. The Culmination at Steam Whistle in October closes the contract." },
 
   { year: 2026, date: "14 August", lane: "build", title: "Accepted into DMZ Innisfil", tag: "Fall 2026 cohort",
     body: "Toronto Metropolitan University's startup incubator. Still building." },
