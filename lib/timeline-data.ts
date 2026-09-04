@@ -94,7 +94,8 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2009, date: "June", lane: "build", title: "Starts Almost Famous", body: "A nightclub event series. He is twenty-one." },
   { year: 2009, date: "24 January", lane: "build", title: "The I Am HighClass shoot", tag: "Fifty-plus in the studio",
-    body: "He was a Humber student with studio access, so he used it. Over fifty people turned up in I Am HighClass tees and 120 photographs came out of it across two sets, shot with four photographers including Maxwell Bonsu. D-Pryde was there, and he cut a HighClass freeverse. Marlon Palmer and Femi Lawson were part of the same movement. Two weeks later the Humber Daily Planet ran a profile of him as CEO of High Class Corp, three months into the company, with more than a thousand people already following it." },
+    body: "He was a Humber student with studio access, so he used it. Over fifty people turned up in I Am HighClass tees and 120 photographs came out of it across two sets, shot with four photographers including Maxwell Bonsu. D-Pryde was there, and he cut a HighClass freeverse. Marlon Palmer and Femi Lawson were part of the same movement. Two weeks later the Humber Daily Planet ran a profile of him as CEO of High Class Corp, three months into the company, with more than a thousand people already following it.",
+    plate: { src: "/images/highclass-shoot-2009.jpg", w: 1208, h: 802, alt: "Around forty people crowded together on a white studio backdrop, every one of them in an I Am HighClass t-shirt, studio lights and gear visible at the edges of the frame.", caption: "The I Am HighClass shoot, 24 January 2009." } },
 
   { year: 2009, date: "5 February", lane: "build", title: "The Humber Daily Planet profiles him", tag: "First press",
     body: "Jennifer Conley's piece calls him a multimedia design and production technician student who started his own company and is running it on what he learns in class. He is twenty-one.",
