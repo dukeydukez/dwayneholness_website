@@ -18,7 +18,7 @@ import {
   type Lane,
   type TimelineEvent,
 } from "@/lib/timeline-data";
-import { ContactSheet, IndexView } from "./TimelineViews";
+import { ContactSheet, IndexView, MapView } from "./TimelineViews";
 
 const FIRST = ERAS[0].from;
 const LAST = ERAS[ERAS.length - 1].to;
@@ -121,17 +121,17 @@ export default function TimelineExperience() {
   const [railUp, setRailUp] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [lanes, setLanes] = useState<Set<Lane>>(new Set());
-  const [view, setView] = useState<"timeline" | "sheet" | "index">("timeline");
+  const [view, setView] = useState<"timeline" | "sheet" | "index" | "map">("timeline");
 
   // Remember the reader's choice, but never let a bad stored value break render.
   useEffect(() => {
     try {
       const v = localStorage.getItem("tl-view");
-      if (v === "sheet" || v === "index") setView(v);
+      if (v === "sheet" || v === "index" || v === "map") setView(v);
     } catch {}
   }, []);
 
-  const chooseView = useCallback((v: "timeline" | "sheet" | "index") => {
+  const chooseView = useCallback((v: "timeline" | "sheet" | "index" | "map") => {
     setView(v);
     try { localStorage.setItem("tl-view", v); } catch {}
     if (v !== "timeline") window.scrollTo({ top: 0, behavior: "auto" });
@@ -285,7 +285,7 @@ export default function TimelineExperience() {
       <div className="tl-inner">
         {/* ── View toggle ── */}
         <nav className="tl-views" aria-label="How to view the record">
-          {([["timeline","Timeline"],["sheet","Contact sheet"],["index","Index"]] as const).map(
+          {([["timeline","Timeline"],["sheet","Contact sheet"],["map","Map"],["index","Index"]] as const).map(
             ([v, label]) => (
               <button
                 type="button"
@@ -302,6 +302,7 @@ export default function TimelineExperience() {
 
         {view === "sheet" && <ContactSheet onJump={jumpToYear} />}
         {view === "index" && <IndexView onJump={jumpToYear} />}
+        {view === "map" && <MapView />}
 
         {view !== "timeline" ? null : (
         <>

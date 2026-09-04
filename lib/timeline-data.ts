@@ -735,6 +735,77 @@ export const AMBITIONS: Ambition[] = [
   { title: "Be remembered for the impact", body: "Not the credits, not the revenue. What he wants said afterwards is what changed in other people's lives because he was here." },
 ];
 
+export type Place = {
+  name: string;
+  region: string;
+  lat: number;
+  lon: number;
+  years: string;
+  note: string;
+  weight: 1 | 2 | 3;
+};
+
+/* Everywhere the record actually places him, with dates. Coordinates are the
+   city or the nearest named point; weight is how much work came out of it. */
+export const PLACES: Place[] = [
+  { name: "Jamaica", region: "Kingston, Negril, Montego Bay", lat: 18.15, lon: -77.35, years: "1988 to 2019", weight: 3,
+    note: "Born in Kingston, left at five, and back for work ever since: Sad Streets and the Junior Reid videos in 2011, Reggae Sumfest in 2018, and Negril closing the Chronixx run in 2019." },
+  { name: "Toronto", region: "Ontario", lat: 43.653, lon: -79.383, years: "1993 to now", weight: 3,
+    note: "Jane and Finch, the Red Room, HighClass, FEVA TV, Corex. Where nearly all of it happened. Hamilton an hour west gave Street Time and the ACTRA card the same day in 2002; Barrie and Innisfil an hour north gave Xcelerate, UPlift Black, the Chamber and the DMZ cohort from 2021 on." },
+  { name: "Santiago de Cuba", region: "Cuba", lat: 20.025, lon: -75.822, years: "2010", weight: 2,
+    note: "Flown out by G-Swag to shoot Lavish. 442 photographs came home." },
+  { name: "Whitehorse", region: "Yukon", lat: 60.721, lon: -135.057, years: "2013", weight: 1,
+    note: "Mentoring filmmakers for Coca-Cola. The furthest north the record goes." },
+  { name: "New York", region: "USA", lat: 40.713, lon: -74.006, years: "2010, 2014, 2020", weight: 2,
+    note: "The largest photo album in the archive, 184 frames. The Lauryn Hill tour opened out at Westbury on Long Island in 2020: 394 frames in two nights." },
+  { name: "Los Angeles", region: "USA", lat: 34.052, lon: -118.244, years: "2017", weight: 2,
+    note: "Ego for Just Chase. His largest music video." },
+  { name: "Hargeisa", region: "Somaliland", lat: 9.562, lon: 44.077, years: "2015", weight: 2,
+    note: "The first trip to the continent, with Hodan Nalayeh." },
+  { name: "Mogadishu", region: "Somalia", lat: 2.047, lon: 45.318, years: "2015 to 2018", weight: 3,
+    note: "Five trips across four years. 575 geotagged frames." },
+  { name: "Kismayo", region: "Somalia", lat: -0.359, lon: 42.545, years: "2019", weight: 3,
+    note: "Where Hodan was killed, 12 July 2019." },
+  { name: "Nairobi", region: "Kenya", lat: -1.286, lon: 36.817, years: "2015 to 2018", weight: 2,
+    note: "On four of the six trips. 202 geotagged frames." },
+  { name: "Addis Ababa", region: "Ethiopia", lat: 9.032, lon: 38.747, years: "2016, 2018", weight: 1,
+    note: "Changing planes, twice. Never a destination." },
+  { name: "Dar es Salaam", region: "Tanzania", lat: -6.792, lon: 39.208, years: "2017", weight: 1,
+    note: "Three days in July, on the longest trip." },
+  { name: "Istanbul", region: "Turkey", lat: 41.008, lon: 28.978, years: "2017", weight: 1,
+    note: "The way home from Somalia and Tanzania." },
+  { name: "Kampala", region: "Uganda", lat: 0.347, lon: 32.582, years: "2019", weight: 2,
+    note: "With Chronixx. He shot the Nile alongside the show." },
+  { name: "Banjul", region: "Gambia", lat: 13.454, lon: -16.579, years: "2018", weight: 2,
+    note: "Christmas with the tour. The 2am show, and the Chronixx Gambia film." },
+  { name: "London", region: "United Kingdom", lat: 51.507, lon: -0.128, years: "2016, 2019", weight: 2,
+    note: "Notting Hill Carnival, then Boomtown and the O2 Warehouse." },
+  { name: "Leeds", region: "United Kingdom", lat: 53.801, lon: -1.549, years: "2019", weight: 1,
+    note: "O2 Leeds on the Chronixx run." },
+  { name: "Berlin", region: "Germany", lat: 52.520, lon: 13.405, years: "2019", weight: 1,
+    note: "Three days in June, opening the last tour leg." },
+  { name: "Madrid", region: "Spain", lat: 40.417, lon: -3.704, years: "2018, 2019", weight: 1,
+    note: "Christmas Eve, then back the following August." },
+  { name: "Bogota", region: "Colombia", lat: 4.711, lon: -74.072, years: "2019", weight: 1,
+    note: "Shot on Super 8 alongside the digital." },
+  { name: "Mexico City", region: "Mexico", lat: 19.433, lon: -99.133, years: "2019", weight: 1,
+    note: "The same February as Colombia." },
+  { name: "Belize City", region: "Belize", lat: 17.504, lon: -88.197, years: "2019", weight: 1,
+    note: "August, on the biggest leg of the tour." },
+  { name: "Castries", region: "St. Lucia", lat: 14.011, lon: -60.987, years: "2019", weight: 2,
+    note: "December, shooting from a boat. Where the run ended." },
+  { name: "Providence", region: "Rhode Island", lat: 41.824, lon: -71.413, years: "2020", weight: 1,
+    note: "The VETS, on the Lauryn Hill run." },
+  { name: "Montreal", region: "Canada", lat: 45.502, lon: -73.567, years: "2026", weight: 2,
+    note: "Melamoon opened here, Grand Prix weekend." },
+  { name: "Halifax", region: "Canada", lat: 44.649, lon: -63.575, years: "2026", weight: 1,
+    note: "Melamoon, city two." },
+  { name: "Vancouver", region: "Canada", lat: 49.283, lon: -123.121, years: "2026", weight: 1,
+    note: "Melamoon, city three." },
+  { name: "Edmonton", region: "Canada", lat: 53.546, lon: -113.494, years: "2026", weight: 1,
+    note: "Melamoon, city four." },
+];
+
 export const CLIENT_LOGOS = [
   { src: "/images/logos/8.png", alt: "Canadian Tire", w: 110 },
   { src: "/images/logos/4.png", alt: "TD Bank", w: 145 },
