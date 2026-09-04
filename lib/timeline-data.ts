@@ -245,9 +245,9 @@ export const EVENTS: TimelineEvent[] = [
     body: "A full episode on storytelling as a business function. Partners on the season: RBC, UPS and Xero.",
     plate: { src: "/images/sme-podcast-2024.jpg", w: 2000, h: 981, alt: "Dwayne mid-gesture in a tan blazer and white turtleneck in the CanadianSME podcast studio, magazine covers on the wall behind him.", caption: "Visionary Storytelling in Business, CanadianSME Small Business Podcast, 2024." } },
 
-  { year: 2024, date: "1 June", lane: "life", title: "Hodan Nalayeh Legacy Day, second year",
-    body: "The Changemaker Awards at Hodan Nalayeh Secondary School, the school renamed for her. He has covered it every year since it started.",
-    plate: { src: "/images/legacy-day-2024.jpg", w: 2000, h: 1333, alt: "An overhead view of the school atrium during the Changemaker Awards, a Be A Changemaker banner above the stage and students seated across the floor.", caption: "Changemaker Awards, 1 June 2024." } },
+  { year: 2024, date: "29 May", lane: "life", title: "Films the Hodan Nalayeh Legacy Day", tag: "First year covering it",
+    body: "The Changemaker Awards at Hodan Nalayeh Secondary School in Vaughan, the school renamed for her. The Nalayeh family brought Corex in to shoot it. He has been back every year since.",
+    plate: { src: "/images/legacy-day-2024.jpg", w: 2000, h: 1333, alt: "An overhead view of the school atrium during the Changemaker Awards, a Be A Changemaker banner above the stage and students seated across the floor.", caption: "Changemaker Awards, 29 May 2024." } },
 
   { year: 2024, date: "20 March", lane: "life", title: "Buys his own first place", tag: "Four years after his mother\'s",
     body: "Signing the pre-delivery inspection on a new build, on a bare counter in an empty unit. He bought his mother a house in 2020 and his own four years later. That order was not an accident.",
@@ -304,8 +304,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "The Shift: Changing of the Times, hosted by Storhouse. A free event for a room of up to four hundred, and he took it without an honorarium.",
     plate: { src: "/images/the-shift-2025.jpg", w: 2000, h: 1333, alt: "Six panellists standing together in front of a lit Storhouse sign after The Shift Tradeshow session.", caption: "The Shift Tradeshow, 10 August 2025." } },
 
-  { year: 2025, date: "28 May", lane: "life", title: "Hodan Nalayeh Legacy Day, third year",
-    body: "Same school, same week in the calendar, third year running.",
+  { year: 2025, date: "28 May", lane: "life", title: "Legacy Day, second year", tag: "Asked back",
+    body: "Same school, same week in the calendar. Barwako Nalayeh asked him back directly: you did an amazing job last year.",
     plate: { src: "/images/legacy-day-2025.jpg", w: 2000, h: 1333, alt: "Students packed into the school atrium watching the Changemaker Awards, camera operators working in the foreground.", caption: "Changemaker Awards, 28 May 2025." } },
 
   { year: 2025, date: "23 July", lane: "stage", title: "Success Beyond Limits, second year", tag: "He came back",
@@ -330,9 +330,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, date: "April", lane: "film", title: "The Other Canada, season five", tag: "Second season running",
     body: "Six episodes split between Montreal and Toronto. The second season Corex has produced for the FACE Coalition." },
   { year: 2026, date: "7 April", lane: "build", title: "Black Screen Office Symposium, year three", body: "Advisory board and symposium advisory." },
-  { year: 2026, date: "1 June", lane: "life", title: "Hodan Nalayeh Legacy Day, fourth year", tag: "Four for four",
-    body: "Four years, every one of them covered. The friend who walked into FEVA TV in 2014 now has a school named after her, and he is the one who films it.",
-    plate: { src: "/images/legacy-day-2026.jpg", w: 1333, h: 2000, alt: "A Corex crew member in a company shirt and headphones standing in the school atrium facing the Be A Changemaker banner.", caption: "Changemaker Awards, 1 June 2026." } },
+  { year: 2026, date: "28 May", lane: "life", title: "Legacy Day, third year", tag: "Three for three",
+    body: "Three years running, all of them his. The friend who walked into FEVA TV in 2014 now has a school named after her, and he is the one who films the day it holds in her name. He cut the 2026 video overnight so the family could share it while the day was still fresh.",
+    plate: { src: "/images/legacy-day-2026.jpg", w: 1333, h: 2000, alt: "A Corex crew member in a company shirt and headphones standing in the school atrium facing the Be A Changemaker banner.", caption: "Changemaker Awards, 28 May 2026." } },
   { year: 2026, lane: "build", title: "Awarded a Toronto Arts Council mentorship", tag: "As the mentor",
     body: "The Newcomer and Refugee Artist Mentorship, mentoring filmmaker Doyinsola Ajayi on her short film If Not You. Each one teach one, now with an arts council behind it." },
   { year: 2026, date: "27 June", lane: "stage", title: "GODfidence Conference", tag: "Toronto Pavilion",
