@@ -111,7 +111,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "A talent showcase that started at York University and became a staple of the GTA circuit. Each one teach one, operating years before Corex." },
 
   { year: 2011, date: "22 October", lane: "film", title: "Goes through POV 3rd Street as a participant", tag: "Class of '11",
-    body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. Five years later he was running it, as Program Manager and Facilitator. Take the seat, then teach the room.",
+    body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. The graduating project put him on a national commercial for ParticipACTION the next year. Five years later he was running the program himself, as Program Manager and Facilitator. Take the seat, then teach the room.",
     plate: { src: "/images/pov-2011.jpg", w: 2000, h: 1333, alt: "Eight members of the POV cohort crouched and sprawled together, mugging for the camera in a bright loft kitchen.", caption: "The POV class of '11, 22 October 2011." } },
 
   { year: 2011, date: "February", lane: "life", title: "Back to Jamaica", tag: "The REAL Jamaica",
@@ -123,6 +123,10 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2012, lane: "stage", title: "Youth Arts Award, ArtReach Toronto", body: "For creating arts opportunities for youth and promoting equity and social justice." },
   { year: 2012, date: "August", lane: "stage", title: "Certificate of Appreciation from the Hon. Judy Sgro, M.P.", body: "For meaningful contribution to the people and communities of York West." },
+  { year: 2012, date: "September", lane: "film", title: "Co-directs a national commercial for ParticipACTION", tag: "First national spot",
+    body: "The Bring Back Play campaign, thirty seconds, shot for JWT and produced by Radke Films. It was the graduating project of POV 3rd Street, the program he had come through the year before, and it worked the way the program intends: industry mentors stood on set while the alumni directed. He shared the chair with Kobi Ntiri. They cast it themselves, sitting through more than a hundred kids and parents that July. The client's own behind-the-scenes film puts his credit on screen: Co-Director, POV Alumni.",
+    plate: { src: "/images/participaction-2012.jpg", w: 1280, h: 720, alt: "Dwayne in a plaid shirt beside the camera and monitor on the ParticipACTION set, the operator working the rig beside him and crew behind.", caption: "On set, ParticipACTION Bring Back Play, summer 2012." } },
+
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
@@ -412,6 +416,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2017", title: "Afro Chic", role: "Director, Editor", client: "Afro Chic" },
       { year: "2017", title: "Take Back The Tap", role: "Director", client: "South Riverdale CHC" },
       { year: "2015", title: "Outrank", role: "Director, Editor", client: "Rogers Communications" },
+      { year: "2012", title: "Bring Back Play", role: "Co-Director", client: "ParticipACTION" },
     ],
   },
   {
