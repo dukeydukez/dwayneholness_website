@@ -200,8 +200,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "He had been invited on the trip that became her last.",
     quote: "I was supposed to be there with her but by the grace of God, my mission wasn't done yet." },
 
-  { year: 2020, date: "20 February", lane: "film", title: "On tour with Ms. Lauryn Hill", tag: "Creative Director",
-    body: "His highest-profile artist engagement. The tour ran across 2019 and 2020, and ended weeks before the world shut down.",
+  { year: 2020, date: "15 to 23 February", lane: "film", title: "On tour with Ms. Lauryn Hill", tag: "Creative Director",
+    body: "His highest-profile artist engagement. Nine days and four venues: Westbury on Long Island, The VETS in Providence, the Capitol Theatre in Port Chester, and the United Palace in New York City. Every show ran past midnight, so the files land on two dates each. He came home with more than nine hundred frames. The dates after these were cancelled as COVID closed the touring industry, three weeks before the shutdown reached everyone else.",
     plate: { src: "/images/lauryn-hill-2020.jpg", w: 2000, h: 1333, alt: "The view from the wings of a packed theatre during a Lauryn Hill show, a performer lit green at the microphone with the balcony full behind them.", caption: "From the wings, 20 February 2020." } },
 
   { year: 2020, lane: "life", title: "Buys his mother a house", tag: "Twenty-seven years later",
