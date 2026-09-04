@@ -184,7 +184,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year." },
 
   { year: 2015, date: "9 December", lane: "life", title: "First time in Africa", tag: "Somalia, with Hodan",
-    body: "Six months after leaving FEVA TV, where she had walked in to pitch him. Two and a half weeks across Somaliland and Somalia, then Nairobi, mapped by the GPS in 283 photographs. The first of five or six trips they would make together. Over the years that followed they covered many more cities across Somalia, plus Kenya, Tanzania and Turkey.",
+    body: "Six months after leaving FEVA TV, where she had walked in to pitch him. Two and a half weeks across Somaliland and Somalia, then Nairobi, mapped by the GPS in 283 photographs. The first of six trips to the region, all of them now mapped from the GPS in his phone archive.",
     plate: { src: "/images/somalia-2015.jpg", w: 2000, h: 1333, alt: "Dwayne holding a phone up for a selfie in the Somali countryside with Hodan Nalayeh in a teal headscarf beside him and camels in the background.", caption: "Somalia, 9 December 2015." } },
 
   { year: 2016, date: "3 April", lane: "life", title: "His father's funeral", tag: "Jamaica",
@@ -193,11 +193,17 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2016, lane: "film", title: "Mogadishu Rising", tag: "With Hodan",
     body: "Filmed with Hodan Nalayeh, on one of the trips they made to Somalia together." },
+  { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia, Kenya and Ethiopia", tag: "Second trip",
+    body: "Five weeks after the first one ended he went again, this time adding Ethiopia. Seventy-three geotagged photographs place him across three countries in six days." },
+
   { year: 2016, date: "October", lane: "build", title: "Returns to POV 3rd Street as Program Manager and Facilitator", tag: "Participant to manager",
     body: "The same program he had come through as a student in 2011, now his to run. A workforce development program putting people into content production, taught in weekly cohorts. He was Program Manager and Facilitator for two years and kept mentoring its participants long after he left, giving notes on their edits and writing their reference letters.",
     plate: { src: "/images/pov-2017.jpg", w: 2000, h: 1333, alt: "Dwayne in a black jacket mid-explanation beside two cinema cameras on tripods, nine POV participants gathered around him in a bright loft studio.", caption: "POV 3rd Street, week seven, 25 February 2017." } },
 
   { year: 2016, date: "November", lane: "stage", title: "First long-form podcast appearances", body: "The Come Up Show, then Making It In Toronto." },
+
+  { year: 2017, date: "15 to 30 July", lane: "life", title: "Somalia, Tanzania, Kenya, then Istanbul", tag: "Four countries, sixteen days",
+    body: "The longest of the six trips and the one that reached furthest. Nine days across Somalia, then down to Tanzania, a day in Kenya, and Turkey on the way home. The whole itinerary was recovered from phone GPS, because no folder on the drive records it." },
 
   { year: 2017, date: "24 January", lane: "stage", title: "Toronto Tastemakers panel", body: "YMCA Grosvenor. His first major in-person panel." },
   { year: 2017, date: "16 November", lane: "stage", title: "Featured in 6ix Rising", tag: "Credited on screen",
@@ -216,8 +222,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "She calls him in excitement. He journals it that night.",
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
-  { year: 2018, date: "October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
-    body: "A working trip, 190 photographs on a Sony A7 II. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
+  { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
+    body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "A camera operator in a mustard shirt filming beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
 
   { year: 2018, date: "June", lane: "film", title: "First leg with Chronixx: Germany and Uganda", tag: "Creative Director",
@@ -229,6 +235,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2018, date: "27 December", lane: "film", title: "On tour with Chronixx", tag: "Late show",
     body: "Shot from the stage at two in the morning. The Gambia film came out of the same year.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
+
+  { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya again, and Ethiopia", tag: "Sixth and last",
+    body: "Three weeks after getting home from Somalia he was back on the continent. A hundred and nine geotagged frames across Kenya and Ethiopia. It is the last of the trips before she was killed." },
 
   { year: 2019, date: "12 July", lane: "life", title: "Hodan Nalayeh is killed in Kismayo", tag: "The turn",
     body: "He had been invited on the trip that became her last.",
