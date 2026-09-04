@@ -230,7 +230,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated." },
 
   { year: 2013, date: "27 January", lane: "film", title: "Neza, Wish Is My Command", tag: "Awards nominee",
-    body: "Directed, with Jyeoram as DP. It went on to be nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
+    body: "Directed, with Jordan Oram, then credited as Jyeoram, shooting it. The same Jordan Oram he had co-directed the Joe Budden video with a year earlier, and who would go on to shoot for Drake. It was nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
 
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
