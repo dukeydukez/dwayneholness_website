@@ -47,11 +47,15 @@ export const EVENTS: TimelineEvent[] = [
     body: "Yvonne Robinson leaves Kingston with her son. He is five. Jane and Finch becomes home.",
     quote: "My biggest risk was taken by my mother when she decided to move to Canada from Jamaica." },
 
+  { year: 2000, lane: "stage", title: "SuiteLife Arts for Youth", tag: "Before any of the screen work",
+    body: "A theatre program run by Denese Matthews, joined in middle school. He was cast as the lead and had to hold a script of seventy-odd pages in his head, then perform it to a live audience. This is the first performing he ever did, a year before he set foot on a film set, and it is where he learned the thing that mattered most later.",
+    quote: "Theatre is no joke. Once you're on stage, there's no script. You gotta learn how to improv." },
+
   { year: 2001, lane: "film", title: "First set. Forty-six dollars for eight hours.", tag: "Age 13",
     body: "A non-union background role on Soul Food. He nearly walks away from the whole idea after the first few sets.",
     quote: "This can't be real. At that age, I knew that this was peanuts." },
   { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
-    body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
+    body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The improvising came from the theatre program two years earlier. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
 
   { year: 2003, lane: "life", title: "Starts a dance crew called Bad Newz", tag: "The dance era",
     body: "Everybody had a crew. His was Bad Newz. It is the first thing he ever built and put a name on, five years before he registered a company." },
