@@ -93,6 +93,13 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/beenie-man-2009.jpg", w: 1280, h: 720, alt: "Beenie Man in sunglasses and a black blazer speaking into a microphone outdoors, an apartment tower and low-rise block behind him in Jane and Finch.", caption: "Beenie Man in Jane and Finch, April 2009. Footage by Jane-Finch.com." } },
 
   { year: 2009, date: "June", lane: "build", title: "Starts Almost Famous", body: "A nightclub event series. He is twenty-one." },
+  { year: 2009, date: "24 January", lane: "build", title: "The I Am HighClass shoot", tag: "Fifty-plus in the studio",
+    body: "He was a Humber student with studio access, so he used it. Over fifty people turned up in I Am HighClass tees and 120 photographs came out of it across two sets, shot with four photographers including Maxwell Bonsu. D-Pryde was there, and he cut a HighClass freeverse. Marlon Palmer and Femi Lawson were part of the same movement. Two weeks later the Humber Daily Planet ran a profile of him as CEO of High Class Corp, three months into the company, with more than a thousand people already following it." },
+
+  { year: 2009, date: "5 February", lane: "build", title: "The Humber Daily Planet profiles him", tag: "First press",
+    body: "Jennifer Conley's piece calls him a multimedia design and production technician student who started his own company and is running it on what he learns in class. He is twenty-one.",
+    quote: "I'm learning branding while I am actually branding in my business." },
+
   { year: 2009, date: "6 October", lane: "build", title: "The Bigger Picture", tag: "First $10,000 grant",
     body: "A photography and graphic design workshop for youth aged fourteen to eighteen, run under HighClass Corp. at the Rexdale Pro Media Tech Centre at Finch and Albion. The first grant the company ever landed, ten thousand dollars, and it went into teaching. He had picked up his own first camera twelve months earlier and called himself a beginner. It ran again for young entrepreneurs in 2012.",
     plate: { src: "/images/writing/how-to-kill-a-snake/5-highclass.jpg", w: 1600, h: 1083, alt: "A group of young people in I Am HighClass shirts holding certificates of completion.", caption: "The Bigger Picture, certificates of completion in hand." } },
