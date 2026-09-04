@@ -191,8 +191,11 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2015, date: "June", lane: "build", title: "Leaves FEVA TV after two years",
     body: "He worked on most of the early FEVA originals. Co-founder Lonzo Nzekwe later writes that he is a consummate professional with great leadership skills." },
   { year: 2015, date: "21 July", lane: "life", title: "First use of the words Calculated Steps", tag: "The book starts here",
-    body: "A tweet, six months before he recorded the poem that gave the words their shape. Chapter drafts surface on the drive three months after this.",
+    body: "A tweet. Eleven days later Redway died, and the chapter drafts surface on the drive three months after that. The words arrive just before the loss that shapes what they end up meaning.",
     quote: "Today is going to be a special day. Today I'm going to make history." },
+  { year: 2015, date: "1 August", lane: "life", title: "Redway dies", tag: "Aged thirty",
+    body: "Shane Redway. The city felt it: Drake and Kardinal Offishall both posted. He was the best friend, the roommate, the artist Dwayne had managed and shot and built for since 2008, and the reason he had picked up a camera in the first place. Eleven days earlier Dwayne had used the words Calculated Steps in public for the first time. The poem came six months after this." },
+
   { year: 2015, lane: "film", title: "Directs and edits the Rogers Outrank campaign", tag: "Rogers Communications",
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year." },
 
@@ -207,7 +210,7 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2016, lane: "film", title: "Mogadishu Rising", tag: "With Hodan",
     body: "Filmed with Hodan Nalayeh, on one of the trips they made to Somalia together." },
   { year: 2016, date: "3 February", lane: "life", title: "Releases the Calculated Steps poem", tag: "Where the book begins",
-    body: "He wrote it and recorded it, and put it on YouTube. Everything that carries the name since has come out of this: the daily livestreams in 2018, the podcast in 2020, the nineteen chapters finished in 2026. It started as a poem." },
+    body: "Six months after burying his best friend, he wrote it, recorded it, and put it on YouTube. Everything that carries the name since has come out of this: the daily livestreams in 2018, the podcast in 2020, the nineteen chapters finished in 2026. It started as a poem." },
 
   { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia, Kenya and Ethiopia", tag: "Second trip",
     body: "Five weeks after the first one ended he went again, this time adding Ethiopia. Seventy-three geotagged photographs place him across three countries in six days." },
