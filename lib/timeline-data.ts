@@ -142,7 +142,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "His first music video shot on the island, and the first of his to reach broadcast. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, which put his work on television two years after his first video. He was twenty-three." },
 
   { year: 2011, date: "February to May", lane: "film", title: "Shooting for Junior Reid in Jamaica", tag: "Flown back and forth",
-    body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work." },
+    body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work.",
+    plate: { src: "/images/junior-reid-2011.jpg", w: 2000, h: 1333, alt: "Junior Reid in a green polo and red tam standing with both arms flung wide on a hillside above the Jamaican countryside.", caption: "Junior Reid, Jamaica, 2011." } },
 
   { year: 2011, date: "February", lane: "life", title: "Back to Jamaica", tag: "The REAL Jamaica",
     body: "A week on the island photographing what he captioned the real Jamaica: street corners, a football pitch, Marcus Garvey Drive. Eighteen years after his mother took him off it, and there are HighClass shirts in the frames.",
@@ -253,7 +254,8 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/cs-brunch-2018.jpg", w: 2000, h: 1333, alt: "Dwayne in a white suit with black lapels, black hat and sunglasses, arms spread at the head of a long banquet table packed with guests applauding.", caption: "Calculated Steps Brunch, 29 July 2018." } },
 
   { year: 2018, date: "July", lane: "film", title: "Reggae Sumfest, Jamaica", tag: "Chronixx tour",
-    body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work." },
+    body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work.",
+    plate: { src: "/images/sumfest-2018.jpg", w: 2000, h: 1333, alt: "Chronixx and another performer on stage at dusk at Reggae Sumfest, arms raised over a crowd stretching to the horizon.", caption: "Reggae Sumfest, Montego Bay, July 2018." } },
 
   { year: 2018, date: "24 to 27 December", lane: "film", title: "Christmas in Spain, then Gambia", tag: "The 2am show",
     body: "Spain on Christmas Eve, then straight to Gambia for Christmas. He shot the show there from the stage at two in the morning on the twenty-seventh. The Chronixx Gambia film came out of these three days.",
@@ -275,19 +277,24 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/mother-house-2020.jpg", w: 1331, h: 2000, alt: "Dwayne and his mother Yvonne Robinson standing together in the driveway, the house behind them, both laughing.", caption: "Yvonne Robinson outside the house, 2020." } },
 
   { year: 2019, date: "February", lane: "film", title: "Colombia and Mexico", tag: "Chronixx tour",
-    body: "Two countries in a month, with a Super 8 roll shot in Colombia alongside the digital." },
+    body: "Two countries in a month, with a Super 8 roll shot in Colombia alongside the digital.",
+    plate: { src: "/images/colombia-2019.jpg", w: 2000, h: 1125, alt: "The view from the back of the stage over a festival crowd of many thousands in Colombia, a lone figure at the front of the stage with an arm raised.", caption: "Colombia, February 2019." } },
 
   { year: 2019, date: "March", lane: "film", title: "Jamaica again, for LWTF", tag: "Chronixx tour",
-    body: "His second Jamaican leg in eight months." },
+    body: "His second Jamaican leg in eight months.",
+    plate: { src: "/images/lwtf-2019.jpg", w: 2000, h: 1335, alt: "Chronixx and his band in low stage light during the LWTF show in Jamaica, drums and stage rigging around them.", caption: "LWTF, Jamaica, March 2019." } },
 
   { year: 2019, date: "21 to 30 June", lane: "film", title: "Germany, then Uganda", tag: "Chronixx tour",
-    body: "Three days in Germany and then five in Uganda, where he shot the Nile River alongside the show. The camera he used was running a year behind, which is why this leg sat in the archive dated 2018 until his phone corrected it." },
+    body: "Three days in Germany and then five in Uganda, where he shot the Nile River alongside the show. The camera he used was running a year behind, which is why this leg sat in the archive dated 2018 until his phone corrected it.",
+    plate: { src: "/images/uganda-2019.jpg", w: 2000, h: 1333, alt: "Black and white photograph of Chronixx singing into a microphone stand inside a shaft of stage light and smoke.", caption: "Uganda, June 2019." } },
 
   { year: 2019, date: "August", lane: "film", title: "Belize, Spain and the UK", tag: "The biggest leg",
-    body: "Three countries. In the UK it is Boomtown, the O2 Warehouse and O2 Leeds, and this leg leaves behind more frames than any other on the tour." },
+    body: "Three countries. In the UK it is Boomtown, the O2 Warehouse and O2 Leeds, and this leg leaves behind more frames than any other on the tour.",
+    plate: { src: "/images/uk-2019.jpg", w: 2000, h: 1333, alt: "Chronixx at the microphone inside a fan of blue stage beams at the O2 Warehouse.", caption: "O2 Warehouse, London, August 2019." } },
 
   { year: 2019, date: "December", lane: "film", title: "Negril and St. Lucia", tag: "Last leg",
-    body: "The run closes where it feels like it should, back in Jamaica at Negril and then across to St. Lucia, where he shoots from a boat. Eighteen months and nine countries after Germany." },
+    body: "The run closes where it feels like it should, back in Jamaica at Negril and then across to St. Lucia, where he shoots from a boat. Eighteen months and nine countries after Germany.",
+    plate: { src: "/images/negril-2019.jpg", w: 2000, h: 1333, alt: "A man in a number eleven jersey leaning on a railing looking out at turquoise Caribbean water with a catamaran anchored offshore.", caption: "Negril, December 2019." } },
 
   { year: 2020, lane: "film", title: "Chronixx, Soul Circle Writing Camp",
     body: "Director and editor. The camp itself was shot in September 2019, in a house turned into a studio. He also shoots the Bring Back Play campaign for South Riverdale CHC.",
