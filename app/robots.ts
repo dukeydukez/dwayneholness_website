@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/timecapsoul"],
       },
     ],
     sitemap: "https://dwayneholness.com/sitemap.xml",
