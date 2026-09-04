@@ -223,6 +223,13 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2016, date: "3 February", lane: "life", title: "Releases the Calculated Steps poem", tag: "Where the book begins",
     body: "Six months after burying his best friend, he wrote it, recorded it, and put it on YouTube. Everything that carries the name since has come out of this: the daily livestreams in 2018, the podcast in 2020, the nineteen chapters finished in 2026. It started as a poem." },
 
+  { year: 2016, date: "4 April", lane: "stage", title: "Men of Honour Award", tag: "BBPA",
+    body: "From the Black Business and Professional Association, for outstanding contribution to the Black community. He was twenty-eight, and it is the anchor for the Legacy in Motion chapter of the book." },
+
+  { year: 2016, date: "February", lane: "stage", title: "Back at Beverly Heights for Black History Month", tag: "His middle school",
+    body: "The school he went to as a kid, the one he was attending when he joined the theatre program and signed with an agent. He came back to speak to the whole student body for Black History Month, in a Corex Creative cap, in the gym he used to sit in.",
+    plate: { src: "/images/beverly-heights-2016.jpg", w: 1080, h: 718, alt: "Dwayne in a red Corex Creative cap and a patched jacket, arms spread wide, standing in a school gym in front of hundreds of students seated across the floor.", caption: "Beverly Heights Middle School, February 2016." } },
+
   { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia, Kenya and Ethiopia", tag: "Second trip",
     body: "Five weeks after the first one ended he went again, this time adding Ethiopia. Seventy-three geotagged photographs place him across three countries in six days." },
 
