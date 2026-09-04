@@ -321,7 +321,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "His highest-profile artist engagement. Nine days and four venues: Westbury on Long Island, The VETS in Providence, the Capitol Theatre in Port Chester, and the United Palace in New York City. Every show ran past midnight, so the files land on two dates each. He came home with more than nine hundred frames. The dates after these were cancelled as COVID closed the touring industry, three weeks before the shutdown reached everyone else.",
     plate: { src: "/images/lauryn-hill-2020.jpg", w: 2000, h: 1333, alt: "The view from the wings of a packed theatre during a Lauryn Hill show, a performer lit green at the microphone with the balcony full behind them.", caption: "From the wings, 20 February 2020." } },
 
-  { year: 2021, lane: "film", title: "LCBO, Spirit of Sustainability", tag: "Largest campaign of the decade", body: "Director. He also edits Chronixx, Safe N Sound.",
+  { year: 2021, lane: "film", title: "LCBO, Spirit of Sustainability", tag: "Two hundred thousand dollars", body: "Director on the largest campaign of the decade, and the one that reset what he thought work was worth. A single project at two hundred thousand dollars, thirteen years after a company that started with a Nikon D60 and forty-six dollars for eight hours on a film set. He also edits Chronixx, Safe N Sound that year.",
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
 
@@ -614,7 +614,7 @@ export const DETAILS: Detail[] = [
   { label: "Rice and chicken", body: "The favourite dish. No elaboration offered, none needed." },
   { label: "Braids, once", body: "There is photographic evidence on this page." },
   { label: "Tonsils and four wisdom teeth", body: "All out, all young." },
-  { label: "Two hundred thousand", body: "One project, one cheque, and the number that permanently changed how he thinks about what work is worth." },
+  { label: "Two hundred thousand", body: "One project, the LCBO campaign in 2021, and the number that permanently changed how he thinks about what work is worth." },
 ];
 
 export type Ambition = { title: string; body: string };
