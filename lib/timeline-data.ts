@@ -81,12 +81,16 @@ export const EVENTS: TimelineEvent[] = [
 
   { year: 2008, date: "26 June", lane: "film", title: "Becomes a full member of ACTRA", tag: "Age 20",
     body: "Six years less a day after entering the system. Three days later his engagements begin carrying benefit remittances." },
+  { year: 2008, lane: "build", title: "The Red Room", tag: "Where all of it starts",
+    body: "His bedroom in his mother's house, painted red, which is all the name ever meant. He and Femi Lawson would put a beat on and freestyle into a webcam, and it turned into somewhere people came from across the city to spit on camera. Redway moved in. They could not afford studio time so he taught himself to engineer, and the drive still holds 5,753 files from it: 2,611 WAV takes and the Audition sessions they were cut in. He picked up a video camera because Redway needed someone to shoot his videos, and then started shooting for other people free, to see what he could do. His mother worked seven in the morning to eleven at night and let a house full of strangers happen anyway.",
+    quote: "It was a creative hub because no one else's parents would have let them do that." },
+
   { year: 2008, date: "October", lane: "film", title: "Buys a Nikon D60", tag: "The first camera",
     body: "His first photographs are posted that month under the name Dukez Photography, with a caption calling himself a beginner and asking people to bear with him. Street portraits, mostly. He registers HighClass five weeks later." },
 
-  { year: 2008, date: "7 November", lane: "build", title: "Registers HighClass", tag: "First company",
+  { year: 2008, date: "7 November", lane: "build", title: "Registers HighClass", tag: "Named in the Red Room",
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/3-first-cheques.jpg", w: 1600, h: 1200, alt: "Two HighClass Corporation cheques dated July 2009 beside a HighClass logo card.", caption: "HighClass cheques from July 2009. Nine thousand dollars on the 22nd, three thousand on the 24th." },
-    body: "An Ontario general partnership in talent management, photography and sales. The t-shirt line and the youth employment work run under it." },
+    body: "An Ontario general partnership in talent management, photography and sales. The t-shirt line and the youth employment work run under it. The name was decided in the Red Room by the three of them, him, Femi Lawson and Redway, and it never meant money. It meant the mentality: wanting better and being willing to work for it. He was doing graphic design at the time, so he drew the logo himself." },
   { year: 2008, lane: "film", title: "Twelve productions", tag: "Background performer",
     body: "Degrassi, Aaron Stone, Victoria Day, 'Da Kink in My Hair, The Latest Buzz." },
 
