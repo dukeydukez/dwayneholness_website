@@ -286,7 +286,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "RoyaltyRadio. The earliest audio reference to Corex Creative Group anywhere." },
 
   { year: 2014, date: "23 December", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Corporation 1928743",
-    body: "The name becomes a company, two days before Christmas. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed.",
+    body: "The name becomes a company, two days before Christmas. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed. This corporation does not survive: he closes it in 2018 and starts again in 2019.",
     voice: { text: "Someone we worked with made an error on a project we had been hired to do. I asked if he wanted me to find someone more experienced. I expected she might be fired. He laughed and told me to ask her when she was free: invite her to my house, we'll have dinner, and I can show her how to do it correctly.", who: "Sasha Henry", role: "on how he runs a set", when: "2018" }
   },
   { year: 2015, lane: "film", title: "Directs and edits the Rogers Outrank campaign", tag: "Rogers Communications",
@@ -363,6 +363,10 @@ export const EVENTS: TimelineEvent[] = [
     body: "Shawney Cohen's seventy-seven minute documentary on Toronto's rap scene, released by Noisey. The film credits him on screen as Dukey Dukez, Video Director. He directed Friyie's Don't Worry that same year, and Friyie is one of the artists the film follows. Five days after it dropped he posted about it without mentioning that he was in it: go watch this, it is a big look for the city.",
     plate: { src: "/images/6ix-rising-2017.jpg", w: 2000, h: 1120, alt: "Dwayne laughing outdoors in a camo t-shirt and gold chain in a still from 6ix Rising, the on-screen caption reading Dukey Dukez, Video Director, with the Noisey logo in the corner.", caption: "6ix Rising, Noisey, 2017. His on-screen credit." } },
 
+  { year: 2018, lane: "build", title: "Dissolves Corex Creative Ltd", tag: "On his accountant's advice",
+    body: "His accountant at the time told him to close the company, because it was not earning enough that year to justify keeping it open. He did it. The money it saved was small and the thing it cost was not money at all: four years of continuous corporate history, the kind banks and bonding companies and grant panels ask you to prove. He reopened the following year and started that clock at zero.",
+    quote: "I wish I kept it to keep the years of business history, but I didn't know better." },
+
   { year: 2018, lane: "life", title: "One hundred and forty-three days of daily Instagram Live", tag: "Calculated Steps",
     body: "One hundred and forty-nine episodes archived, seventy-nine of them with guests including Randell Adjei, Hodan Nalayeh and Sasha Exeter. The method proven in public, daily." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
@@ -390,6 +394,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2018, date: "24 to 27 December", lane: "film", title: "Christmas in Spain, then Gambia", tag: "The 2am show",
     body: "Spain on Christmas Eve, then straight to Gambia for Christmas. He shot the show there from the stage at two in the morning on the twenty-seventh. The Chronixx Gambia film came out of these three days.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
+
+  { year: 2019, lane: "build", title: "Re-incorporates Corex Creative", tag: "Year one, again",
+    body: "A new corporation, one year after closing the first. The work had never stopped, only the paperwork, which is why the company is accurately described as starting in 2014 and as incorporated in 2019 without either being wrong. Both dates are true and they belong to two different companies." },
 
   { year: 2019, date: "February", lane: "film", title: "Colombia and Mexico", tag: "Chronixx tour",
     body: "Two countries in a month, with a Super 8 roll shot in Colombia alongside the digital.",
