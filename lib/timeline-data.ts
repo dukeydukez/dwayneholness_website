@@ -450,8 +450,8 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2021, date: "29 April", lane: "life", title: "Joins the Rotary Club of Innisfil", tag: "Service above self",
     body: "His member account is created the same week. Food drives in Sandy Cove Acres, Quiet Santa for kids who cannot manage a mall Santa, bottle drives. He had moved his life north to Simcoe County, and this is where the local roots go in." },
 
-  { year: 2021, date: "May", lane: "film", title: "Monumental Projects and CEE", tag: "Youth arts",
-    body: "Work for the CEE Centre for Young Black Professionals alongside Monumental Projects, including the All Out films and a colour-graded Getaway cut." },
+  { year: 2021, date: "May", lane: "film", title: "Becomes the employer of record for forty-eight young Black creatives", tag: "CEE and the YESS Program",
+    body: "The part of that year nobody sees. Corex ran the payroll for the CEE Centre for Young Black Professionals' YESS Program, which put young Black people into paid creative work, with the LCBO supporting the wider partnership. Forty-eight went on his payroll. Forty-five made it to the end and qualified for a completion bonus, thirty-six thousand dollars paid out in one go in March 2022, and CEE's own list of their names runs to four columns. Across the year he moved more than three hundred and fifty thousand dollars to Black creatives. He also made the films: the All Out work, a colour-graded Getaway cut, and later CEE's ten-year impact video." },
 
   { year: 2021, date: "31 August", lane: "build", title: "Mentors at upstART", tag: "Artscape Weston Common",
     body: "A creative entrepreneurship mentor on upstART, Artscape's youth accelerator at Weston Common, invoiced at eight hundred and fifty dollars for the season. The programme coordinator's closing note to the mentors puts it plainly: gaining the participation of experts was critical, and they were asked to share time and expertise rather than deliver a curriculum. Two people came out of that room and into his work. Lauren Eden, who wrote him a reference for it a fortnight later, and Alicia Reid, who was editing for Corex within five months.",
