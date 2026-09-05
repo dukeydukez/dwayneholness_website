@@ -175,6 +175,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
 
+  { year: 2011, lane: "build", title: "The media room upstairs at Driftwood", tag: "Digital Media Coordinator",
+    body: "A part-time job with the City of Toronto running the media program out of a room upstairs at the Driftwood Community Centre, in the neighbourhood he grew up in. He held it for seven years, to October 2018, while everything else was being built around it. It is the room where Idil Mohamed met him, eleven years old at the time, and she is only the one the paper trail happens to prove. This is where the mentorship starts, before it had a name or a budget line." },
+
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
 
@@ -310,7 +313,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "From the Black Business and Professional Association, for outstanding contribution to the Black community. He was twenty-eight, and it is the anchor for the Legacy in Motion chapter of the book." },
 
   { year: 2016, date: "October", lane: "build", title: "Returns to POV 3rd Street as Program Manager and Facilitator", tag: "Participant to manager",
-    body: "The same program he had come through as a student in 2011, now his to run. A workforce development program putting people into content production, taught in weekly cohorts. He was Program Manager and Facilitator for two years and kept mentoring its participants long after he left, giving notes on their edits and writing their reference letters.",
+    body: "The same program he had come through as a student in 2011, now his to run, and Idil Mohamed followed him into it from the Driftwood media room. A workforce development program putting people into content production, taught in weekly cohorts. He was Program Manager and Facilitator for two years and kept mentoring its participants long after he left, giving notes on their edits and writing their reference letters.",
     plate: { src: "/images/pov-2017.jpg", w: 2000, h: 1333, alt: "Dwayne in a black jacket mid-explanation beside two cinema cameras on tripods, nine POV participants gathered around him in a bright loft studio.", caption: "POV 3rd Street, week seven, 25 February 2017." } },
 
   { year: 2016, date: "November", lane: "stage", title: "First long-form podcast appearances", body: "The Come Up Show, then Making It In Toronto." },
@@ -321,6 +324,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2017, date: "24 January", lane: "stage", title: "Toronto Tastemakers panel", body: "YMCA Grosvenor. His first major in-person panel." },
   { year: 2017, date: "4 June", lane: "film", title: "Shoots Ego in Los Angeles", tag: "His biggest music video",
     body: "For Just Chase, and about forty thousand dollars of production. Call time was ten in the morning at 5610 Soto Street in Huntington Park, with Department 4 running the floor and a second unit picking up aerials of the LA skyline and night driving under the palms. He cut it himself through June. Six weeks later he was on a plane to Somalia." },
+
+  { year: 2017, date: "10 June", lane: "build", title: "Sends a sixteen-year-old his invoice template", tag: "Idil Mohamed",
+    body: "He books Idil Mohamed as an official photographer on the AfroChic Cultural Arts Exhibit, six years after she walked into the Driftwood media room at eleven. Three weeks later he forwards her his own invoice template and tells her to fill in the blanks. Teaching her to shoot was the workshop. Teaching her to invoice was the point. She joined his POV 3rd Street cohort that January, came out an alumna in August, and by November 2019 he was introducing her to his own clients as the photographer on the job." },
 
   { year: 2017, date: "15 to 30 July", lane: "life", title: "Somalia, Tanzania, Kenya, then Istanbul", tag: "Four countries, sixteen days",
     body: "The longest of the six trips and the one that reached furthest. Nine days across Somalia, then down to Tanzania, a day in Kenya, and Turkey on the way home. The whole itinerary was recovered from phone GPS, because no folder on the drive records it." },
@@ -595,7 +601,7 @@ export const THROUGH_LINES: ThroughLine[] = [
   { title: "Jane and Finch as edge", body: "Not a footnote, a foundation. The neighbourhood gave him the eye and the ear to tell stories other people could not hear." },
   { title: "Each one teach one", body: "From a talent showcase at York University in 2010 to a mentorship seat in Kingston in 2026. Mentorship as a business model and a moral obligation.", img: { src: "/images/lcbo/lcbo-full-crew.jpg", alt: "Around thirty cast and crew gathered in a dance studio, hands raised, posing together at the end of a shoot day.", w: 6720, h: 4480, caption: "Cast and crew, LCBO Spirit of Sustainability, 2021." } },
   { title: "Hodan", body: "She believed in him at times he did not believe in himself. The through-line that runs from FEVA TV to the CBC to the first chapter of the book.", img: { src: "/images/hodan-dwayne.jpg", alt: "Dwayne and Hodan Nalayeh laughing together on a hillside road, green forested hills behind them, she in a pink headscarf and a brightly patterned dress.", w: 2000, h: 1825, caption: "Dwayne and Hodan Nalayeh." } },
-  { title: "The ones who came back", body: "Shane Redway, from the day they met online in 2008 until he died in 2015. Femi Lawson, from Dukez and Bullet in 2007 to a Grade 9 classroom at Emery in 2013. Jordan Oram, who co-directed with him in 2012 and came back to shoot for him in 2013. Randell Adjei, a guest on his Instagram Live in 2018 and the keynote he was hired to cover in 2026. The record is mostly one project and then the next one. These are the people who turn up in it twice." },
+  { title: "The ones who came back", body: "Shane Redway, from the day they met online in 2008 until he died in 2015. Femi Lawson, from Dukez and Bullet in 2007 to a Grade 9 classroom at Emery in 2013. Jordan Oram, who co-directed with him in 2012 and came back to shoot for him in 2013. Randell Adjei, a guest on his Instagram Live in 2018 and the keynote he was hired to cover in 2026. Idil Mohamed, eleven when she found the Driftwood media room in 2011 and shooting for his clients by 2019. The record is mostly one project and then the next one. These are the people who turn up in it twice." },
   { title: "Faith as operating system", body: "Baptized at Kingsway Community Life Centre on 15 September 2024. He talks about surrender as the point his life changed direction." },
   { title: "Ownership as legacy", body: "Building something he owns, something he can leave. The reason the background years matter and the reason they ended.", img: { src: "/images/book-writing.jpg", alt: "Pages of the Calculated Steps manuscript spread across a table beside a spiral-bound copy, the printed title page reading draft, March 31st 2026.", w: 1500, h: 2000, caption: "The Calculated Steps manuscript, draft dated 31 March 2026." } },
 ];
