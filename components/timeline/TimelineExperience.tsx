@@ -438,6 +438,20 @@ export default function TimelineExperience() {
                             &ldquo;{ev.quote}&rdquo;
                           </blockquote>
                         )}
+                        {ev.voice && (
+                          <figure className="tl-voice">
+                            <blockquote>{ev.voice.text}</blockquote>
+                            <figcaption>
+                              <span className="tl-voice-who">{ev.voice.who}</span>
+                              {ev.voice.role && (
+                                <span className="tl-voice-role">{ev.voice.role}</span>
+                              )}
+                              {ev.voice.when && (
+                                <span className="tl-voice-when">{ev.voice.when}</span>
+                              )}
+                            </figcaption>
+                          </figure>
+                        )}
                         {ev.plate && <Plate plate={ev.plate} />}
                         {ev.embargo && (
                           <p className="tl-embargo">Embargoed &middot; {ev.embargo}</p>
