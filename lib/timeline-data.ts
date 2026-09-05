@@ -299,7 +299,7 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
     body: "Just Chase, EGO and Friyie, Don't Worry, plus cinematography on Rich Africans." },
   { year: 2017, date: "24 January", lane: "stage", title: "Toronto Tastemakers panel", body: "YMCA Grosvenor. His first major in-person panel." },
   { year: 2017, date: "4 June", lane: "film", title: "Shoots Ego in Los Angeles", tag: "His biggest music video",
-    body: "For Just Chase, and about forty thousand dollars of production. Call time was ten in the morning at 5610 Soto Street in Huntington Park, with Department 4 running the floor and a second unit picking up aerials of the LA skyline and night driving under the palms. He cut it himself through June. Six weeks later he was on a plane to Somalia." },
+    body: "For Just Chase, and about forty thousand dollars of production. Call time was ten in the morning at 5610 Soto Street in Huntington Park, with Department 4 running the floor and a second unit picking up aerials of the LA skyline and night driving under the palms. He cut it himself through June. Six weeks later he was on a plane to Somalia. The video came out on 14 September, three months after the shoot, and Complex ran a piece on it the same day. The track behind it was produced by WondaGurl. It has since passed 1.7 million views, about ten times any other music video he has directed." },
   { year: 2017, date: "10 June", lane: "build", title: "Sends a sixteen-year-old his invoice template", tag: "Idil Mohamed",
     body: "He books Idil Mohamed as an official photographer on the AfroChic Cultural Arts Exhibit, six years after she walked into the Driftwood media room at eleven. Three weeks later he forwards her his own invoice template and tells her to fill in the blanks. Teaching her to shoot was the workshop. Teaching her to invoice was the point. She joined his POV 3rd Street cohort that January, came out an alumna in August, and by November 2019 he was introducing her to his own clients as the photographer on the job.",
     voice: { text: "Hiring Dwayne as lead Creative Director for AfroChic was a no-brainer and he certainly did not disappoint. Dwayne is a man on a mission.", who: "Amoye Henry", role: "AfroChic", when: "2018" }
@@ -738,7 +738,7 @@ export const PLACES: Place[] = [
   { name: "New York", region: "USA", lat: 40.713, lon: -74.006, years: "2010, 2014, 2020", weight: 2,
     note: "The largest photo album in the archive, 184 frames. The Lauryn Hill tour opened out at Westbury on Long Island in 2020: 394 frames in two nights." },
   { name: "Los Angeles", region: "USA", lat: 34.052, lon: -118.244, years: "2017", weight: 2,
-    note: "Ego for Just Chase. His largest music video." },
+    note: "Ego for Just Chase. His largest music video, and at 1.7 million views his most watched." },
   { name: "Hargeisa", region: "Somaliland", lat: 9.562, lon: 44.077, years: "2015", weight: 2,
     note: "The first trip to the continent, with Hodan Nalayeh." },
   { name: "Mogadishu", region: "Somalia", lat: 2.047, lon: 45.318, years: "2015 to 2018", weight: 3,
