@@ -464,6 +464,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2022, date: "February", lane: "film", title: "AFP, Ideas For Change", tag: "Full campaign",
     body: "A complete campaign build for the Association of Fundraising Professionals: films, logo work and flyers in every size, three hundred and twenty-six files in all." },
 
+  { year: 2022, date: "15 March", lane: "build", title: "The year the books catch up with him", tag: "After the LCBO",
+    body: "The biggest campaign of his career landed in 2021 and the money moved faster than the systems around it. By March he is emailing his financial adviser asking how to get out of the mess. The corporate return for 2021 comes back at twenty-one thousand five hundred, personal tax at nine thousand more, and by his own account the total he ends up paying back runs past a hundred thousand dollars. Nothing was hidden and nothing was stolen. The books were being kept after the fact, and the CRA taxes what actually moved rather than what was planned. He changed accountants that year. The lesson he keeps from it is that growth is a systems problem before it is a money problem: revenue can outrun the infrastructure underneath it, and the bill arrives later, with interest.",
+    quote: "How can we get out of this mess?" },
   { year: 2022, date: "8 October", lane: "film", title: "Hodan's Story premieres on CBC", tag: "Written and directed",
     body: "A portrait of the friend and mentor he met at FEVA TV, which he both wrote and directed. His CBC debut. Three years after her death, he puts her on national television himself.",
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/2-hodan.jpg", w: 1600, h: 1067, alt: "A packed room watching a Hodan\u2019s Story screening, the CBC Docs poster on the screen behind two speakers.", caption: "A screening and question and answer for Hodan\u2019s Story." } },
