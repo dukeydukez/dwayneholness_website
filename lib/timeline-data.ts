@@ -44,73 +44,58 @@ export const LANES: Record<Lane, { label: string; short: string }> = {
   life: { label: "Life and legacy", short: "Life" },
 };
 
-export const EVENTS: TimelineEvent[] = [
-  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows." },
+export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows." },
   { year: 1993, lane: "life", title: "His mother moves them to Canada", tag: "The original risk",
     body: "Yvonne Robinson leaves Kingston with her son. He is five. Jane and Finch becomes home.",
-    quote: "My biggest risk was taken by my mother when she decided to move to Canada from Jamaica." },
-
+    quote: "My biggest risk was taken by my mother when she decided to move to Canada from Jamaica.",
+    plate: { src: "/images/early/firgrove-school.jpg", w: 800, h: 1159, alt: "Dwayne as a boy in an elementary school portrait.", caption: "Firgrove Public School, Jane and Finch. Home was 5 Needle Firway." } },
   { year: 2000, lane: "stage", title: "SuiteLife Arts for Youth", tag: "Before any of the screen work",
     body: "A theatre program run by Denese Matthews, joined in middle school. He was cast as the lead and had to hold a script of seventy-odd pages in his head, then perform it to a live audience. This is the first performing he ever did, a year before he set foot on a film set, and it is where he learned the thing that mattered most later.",
     quote: "Theatre is no joke. Once you're on stage, there's no script. You gotta learn how to improv." },
-
   { year: 2001, lane: "film", title: "First set. Forty-six dollars for eight hours.", tag: "Age 13",
     body: "A non-union background role on Soul Food. He nearly walks away from the whole idea after the first few sets.",
     quote: "This can't be real. At that age, I knew that this was peanuts." },
   { year: 2002, date: "27 June", lane: "film", title: "Street Time, an eight hundred dollar cheque, and the ACTRA card", tag: "Age 14",
     body: "On the HBO and Showtime series shooting in Hamilton, he improvises his way into a speaking part, playing himself. The improvising came from the theatre program two years earlier. The role and the union card arrive the same day: a principal part is what puts a performer into ACTRA's system, and 27 June 2002 is his input date. It stays the only principal role of his entire performing career, and the only time his own name was the character. The jump from forty-six dollars to eight hundred becomes the founding pricing philosophy of Corex." },
-
   { year: 2003, lane: "life", title: "Starts a dance crew called Bad Newz", tag: "The dance era",
     body: "Everybody had a crew. His was Bad Newz. It is the first thing he ever built and put a name on, five years before he registered a company." },
-
   { year: 2003, lane: "life", title: "The archive goes quiet, the years do not", tag: "A gap, not a blank",
     body: "Between the Street Time era and March 2006 there is almost nothing on file. His ACTRA work history begins in 2006. So does his own archive, across nearly three million files. The one paper thread running through is an ACTRA minors trust paying out monthly until September 2005, months before he turned eighteen, which means money earned as a minor was still being held. Everything else in these years, the dance crew, the basketball captaincy, the Wolfpack, the expulsion, the tattoo, is here because he remembers it, not because anything was kept. That is the difference between a gap and a blank. The files are still missing; the years are not." },
-
   { year: 2004, lane: "life", title: "Captain of the team, leader of the Wolfpack, expelled", tag: "Grade 10",
     body: "At Western Technical-Commercial School he made the basketball team and became its captain. He tried football too and did not last, having decided he had no interest in playing through a Canadian winter. He was also leading the Wolfpack, a group that moved fifty deep through downtown, and that is what ended his time there partway through Grade 10. He finished Grades 10 to 12 at Emery Collegiate instead, back in his own neighbourhood. He is direct about what the Wolfpack taught him, and it is the uncomfortable part of the story: leadership and responsibility, learned first in the wrong room. Captain of a team and head of a crew in the same year, at sixteen." },
-
   { year: 2005, lane: "life", title: "First tattoo, for his grandmother", tag: "Age 17",
     body: "Edith Brown, 25 February 1952 to 2 October 2004, his mother's mother. She died the year before, at fifty-two, when he was sixteen. He was the grandchild who felt safest around her. The first thing he ever put on his body permanently was her, and he was seventeen when he did it. It sits in the years the archive holds nothing, and it is the one that left a mark you can still see." },
-
   { year: 2006, lane: "build", title: "Ambassador and model for NISE", tag: "Age 18",
-    body: "The clothing line was Michael Webb's, known as Klipz. Dwayne wore it, modelled it and carried it, which is the first time he is out front of a brand that is not his own. NISE ran through the same rooms he did: a lot of the Wolfpack wore it, so the crew that got him expelled from Western Tech two years earlier and the label he was fronting were the same set of people in different clothes. By this year NISE is staging a fashion show at Captain John's." },
-
+    body: "The clothing line was Michael Webb's, known as Klipz. Dwayne wore it, modelled it and carried it, which is the first time he is out front of a brand that is not his own. NISE ran through the same rooms he did: a lot of the Wolfpack wore it, so the crew that got him expelled from Western Tech two years earlier and the label he was fronting were the same set of people in different clothes. By this year NISE is staging a fashion show at Captain John's.",
+    plate: { src: "/images/early/nise-city-hall-2007.jpg", w: 1800, h: 1200, alt: "Around twenty-five young people in NISE clothing standing together outside Toronto City Hall, the curved towers behind them.", caption: "The NISE crew at Toronto City Hall, 2007." } },
   { year: 2006, lane: "film", title: "Already shooting", tag: "It starts with photography",
     body: "His own archive opens here, with 589 photographs across seven folders: the NISE fashion show, a jam night, behind the scenes from a shoot. Every file is a JPG. The first documented year of his creative work is photography, a year before he starts at Humber." },
-
   { year: 2006, date: "6 March", lane: "film", title: "First engagement on the union record", tag: "Age 18",
     body: "Step, later retitled How She Move, for Sienna Films. The Toronto dance film that premiered at Sundance." },
-
   { year: 2007, lane: "film", title: "Nine productions in one year", tag: "Age 19",
     body: "Background performer on all of them: The Incredible Hulk, Traitor, Little Mosque on the Prairie, and the first of five Degrassi seasons." },
-
   { year: 2007, date: "29 August", lane: "build", title: "Starts Humber College", body: "The Multimedia Design and Production Technician program. He is nineteen." },
   
   { year: 2007, date: "16 October", lane: "build", title: "Dukez and Bullet Productions", tag: "His first company, a year before HighClass",
     body: "With Femi Lawson. Artist development, crewed properly from the start: a post that month credits camera and director to Dukez, actor to Bullet, with lighting and clean-up named too. Music followed within the week, a track and an interview both posted on the twenty-second. It ran into 2009 and it is the first thing he ever put a name on. Lawson is also the longest-running name in this whole stretch: still there for the Red Room, still there to help name HighClass a year later, and still there in 2013, back at Emery with him.",
     quote: "Making it happen. Live from the Red Room.",
-    voice: { text: "Dwayne Holness is one of those rare creative minds who just gets it. I credit him for helping me find my visual identity.", who: "Femi Lawson", role: "co-founder, Dukez and Bullet", when: "2025" }
+    voice: { text: "Dwayne Holness is one of those rare creative minds who just gets it. I credit him for helping me find my visual identity.", who: "Femi Lawson", role: "co-founder, Dukez and Bullet", when: "2025" },
+    plate: { src: "/images/early/dukez-and-bullet-2008.jpg", w: 1350, h: 1800, alt: "Two young men on a staircase, one in a Blue Jays cap pointing at the camera, the other in a red hoodie leaning back against the banister.", caption: "The main Dukez and Bullet image, 4 March 2008." }
   },
-
   { year: 2007, date: "14 November", lane: "build", title: "Advertises himself as an editor", tag: "The first solicitation",
     body: "A video posted with a credit block. Editor, Dukez. Location, the Red Room. Then the line that starts everything commercial. He is nineteen, two months into Humber, and HighClass is a year from being registered.",
     quote: "If you're looking for a video editor or someone to shoot your video, holla at me." },
-
   { year: 2008, lane: "life", title: "Meets Redway", tag: "Best friend, first client",
     body: "Shane Redway. They found each other online, met once, and clicked immediately. He moved into the house, they shared a room, and for the next few years Dwayne managed him: photoshoots, graphic design, video shoots, booking the shows. Redway is the reason he picked up a video camera at all, and one of the reasons HighClass existed. Everything that came after, the client work, the agency, the whole discipline of making somebody else look like the thing they already were, was learned on his best friend first." },
-
   { year: 2008, lane: "build", title: "The Red Room", tag: "On the record from 2007",
     body: "His bedroom in his mother's house, painted red, which is all the name ever meant. He is naming it in posts from November 2007 and still crediting it as a location in 2008. He and Femi Lawson would put a beat on and freestyle into a webcam, and it turned into somewhere people came from across the city to spit on camera. Redway moved in. They could not afford studio time so he taught himself to engineer, and the drive still holds 5,753 files from it: 2,611 WAV takes and the Audition sessions they were cut in. He picked up a video camera because Redway needed someone to shoot his videos, and then started shooting for other people free, to see what he could do. His mother worked seven in the morning to eleven at night and let a house full of strangers happen anyway.",
     quote: "It was a creative hub because no one else's parents would have let them do that." },
-
   { year: 2008, lane: "film", title: "Twelve productions", tag: "Background performer",
     body: "Degrassi, Aaron Stone, Victoria Day, 'Da Kink in My Hair, The Latest Buzz." },
-
   { year: 2008, date: "26 June", lane: "film", title: "Becomes a full member of ACTRA", tag: "Age 20",
     body: "Six years less a day after entering the system. Three days later his engagements begin carrying benefit remittances." },
   { year: 2008, date: "October", lane: "film", title: "Buys a Nikon D60", tag: "The first camera",
     body: "His first photographs are posted that month under the name Dukez Photography, with a caption calling himself a beginner and asking people to bear with him. Street portraits, mostly. He registers HighClass five weeks later." },
-
   { year: 2008, date: "7 November", lane: "build", title: "Registers HighClass", tag: "Named in the Red Room",
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/3-first-cheques.jpg", w: 1600, h: 1200, alt: "Two HighClass Corporation cheques dated July 2009 beside a HighClass logo card.", caption: "HighClass cheques from July 2009. Nine thousand dollars on the 22nd, three thousand on the 24th." },
     body: "An Ontario general partnership in talent management, photography and sales. The t-shirt line and the youth employment work run under it. The name was decided in the Red Room by the three of them, him, Femi Lawson and Redway, and it never meant money. It meant the mentality: wanting better and being willing to work for it. He was doing graphic design at the time, so he drew the logo himself.",
@@ -118,40 +103,34 @@ export const EVENTS: TimelineEvent[] = [
   },
   { year: 2009, lane: "film", title: "Fourteen productions, including Scott Pilgrim", tag: "Busiest year on record",
     body: "Background performer throughout: Scott Pilgrim vs. the World, Flashpoint, Copper, Harriet the Spy, Coin Flip." },
+  { year: 2009, lane: "stage", title: "HighClass at a middle-school career fair", tag: "Humber Summit",
+    body: "A careers table at Humber Summit Middle School, run by a company that was a year old. The shirts do the talking: one reads I Am HighClass, another reads Star Struck. He was twenty-one and telling twelve-year-olds in his own neighbourhood that this was a job you could have.",
+    plate: { src: "/images/early/career-fair-2009.jpg", w: 604, h: 453, alt: "Young men in I Am HighClass and Star Struck t-shirts with name badges, talking to students across a table at a school career fair.", caption: "Career fair at Humber Summit Middle School, 2009." } },
   { year: 2009, date: "24 January", lane: "build", title: "The I Am HighClass shoot", tag: "Fifty-plus in the studio",
     body: "He was a Humber student with studio access, so he used it. Over fifty people turned up in I Am HighClass tees and 120 photographs came out of it across two sets, shot with four photographers including Maxwell Bonsu. D-Pryde was there, and he cut a HighClass freeverse. Marlon Palmer and Femi Lawson were part of the same movement. Two weeks later the Humber Daily Planet ran a profile of him as CEO of High Class Corp, three months into the company, with more than a thousand people already following it.",
     plate: { src: "/images/highclass-shoot-2009.jpg", w: 1208, h: 802, alt: "Around forty people crowded together on a white studio backdrop, every one of them in an I Am HighClass t-shirt, studio lights and gear visible at the edges of the frame.", caption: "The I Am HighClass shoot, 24 January 2009." } },
-
   { year: 2009, date: "5 February", lane: "build", title: "The Humber Daily Planet profiles him", tag: "First press",
     body: "Jennifer Conley's piece calls him a multimedia design and production technician student who started his own company and is running it on what he learns in class. He is twenty-one.",
     quote: "I'm learning branding while I am actually branding in my business." },
-
   { year: 2009, date: "April", lane: "film", title: "Directs his first music video, and brings Beenie Man to Jane and Finch", tag: "Age 21",
     body: "He directed Just Like Kingston for Versatile, an artist signed to Beenie Man, and got Beenie Man himself onto a Jane and Finch block to do it. His first music video, five months into HighClass, with the crowd in the footage wearing I Am HighClass shirts. One of the biggest names in dancehall, standing in front of the towers.",
     plate: { src: "/images/beenie-man-2009.jpg", w: 1280, h: 720, alt: "Beenie Man in sunglasses and a black blazer speaking into a microphone outdoors, an apartment tower and low-rise block behind him in Jane and Finch.", caption: "Beenie Man in Jane and Finch, April 2009. Footage by Jane-Finch.com." } },
-
   { year: 2009, date: "8 May", lane: "build", title: "Infatuation at Level", tag: "HighClass night",
     body: "A colour-themed party. Ten dollars advance, and the question on the flyer was what colour will you be wearing." },
-
   { year: 2009, date: "12 June", lane: "build", title: "Almost Famous at Level", tag: "HighClass night",
     body: "HighClass with Kamakacci, ten dollars advance, DJs Ill Kidz, Legacy and Fire Kid Steenie. It became a recurring night and seventy-six photographs survive, every one watermarked ALMOST FAMOUS. He is twenty-one." },
   { year: 2009, date: "30 July", lane: "build", title: "Maino Live at Nava", tag: "Seven hundred expected",
     body: "HighClass with Legacy, booking a New York rapper into a Toronto bar. The biggest room the company had put a name in front of." },
-
   { year: 2009, date: "19 September", lane: "build", title: "The first 106 and York", tag: "Urban arts festival",
     body: "HighClass with Rated Inc and Manifesto at the North York Arts Centre. Redway headlined, alongside Famous, Kim Davis and A-Game. It ran annually for at least six editions, reaching the Yorkwoods Library in 2013, and it is the piece of HighClass that outlasted the parties.",
     plate: { src: "/images/106-york-2010.jpg", w: 2000, h: 1500, alt: "A group of young performers posing together at a 106 and York showcase, one holding a gold medallion.", caption: "106 and York." } },
-
   { year: 2009, date: "October", lane: "film", title: "A Rogers television commercial",
     body: "Booked through Publicis Toronto. He is in front of a Rogers camera six years before he directs and cuts a campaign for them." },
-
   { year: 2009, date: "6 October", lane: "build", title: "The Bigger Picture", tag: "First $10,000 grant",
-    body: "A photography and graphic design workshop for youth aged fourteen to eighteen, run under HighClass Corp. at the Rexdale Pro Media Tech Centre at Finch and Albion. The first grant the company ever landed, ten thousand dollars, and it went into teaching. He had picked up his own first camera twelve months earlier and called himself a beginner. It ran again for young entrepreneurs in 2012.",
+    body: "A photography and graphic design workshop for youth aged fourteen to eighteen, run under HighClass Corp. at the Rexdale Pro Media Tech Centre at Finch and Albion. The first grant the company ever landed, ten thousand dollars, and it went into teaching. He had picked up his own first camera twelve months earlier and called himself a beginner. It ran again for young entrepreneurs in 2012, by then out of the media room at Driftwood, which is where the programme and the day job became the same thing.",
     plate: { src: "/images/writing/how-to-kill-a-snake/5-highclass.jpg", w: 1600, h: 1083, alt: "A group of young people in I Am HighClass shirts holding certificates of completion.", caption: "The Bigger Picture, certificates of completion in hand." } },
-
   { year: 2009, date: "19 November", lane: "build", title: "HighClass presents YouNightED", tag: "His own event",
     body: "A branded night staged under his own company, and he shot it himself. Five hundred and thirty-two photographs survive across two albums, every one carrying the YouNightED logo." },
-
   { year: 2010, lane: "stage", title: "Graduates Humber with honours", tag: "Top student",
     body: "Multimedia Design and Production Technician.",
     plate: { src: "/images/humber-2010.jpg", w: 1280, h: 960, alt: "A young Dwayne in a striped sweater on stage at a Humber College ceremony, shaking hands with a faculty member holding an award envelope, seated guests behind them.", caption: "Humber College, 2010." } },
@@ -160,122 +139,105 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2010, lane: "film", title: "Flown to Cuba to shoot for G-Swag", tag: "Someone bet on him",
     body: "Lavish, for G-Swag out of Jane and Finch. He was one of the first artists to put real money behind Dwayne rather than just belief, and he paid to fly him to Cuba to shoot it. Four hundred and forty-two photographs came home from the trip, shot around Santiago de Cuba. At twenty-two, someone had decided his eye was worth an international plane ticket.",
     plate: { src: "/images/cuba-2010.jpg", w: 2000, h: 1333, alt: "G-Swag standing alone on an empty Cuban highway holding a motorcycle helmet, under a road gantry signed Santiago de Cuba and Aeropuerto, storm cloud above and the road running off behind him.", caption: "On the autopista outside Santiago de Cuba, 2010." } },
-
+  { year: 2010, lane: "build", title: "The Bowlers Club", tag: "HighClass and iPull Numbers",
+    body: "A bowling night run with iPull Numbers, the same crew HighClass shared a bill with at Star Struck edition two. The flyer graphic is burned into the corner of the photograph: iPull Numbers and High Class present The Bowlers Club. Not a nightclub and not a showcase, just an alley, a scoring console and everybody in their own shirts.",
+    plate: { src: "/images/early/bowlers-club-2010.jpg", w: 560, h: 840, alt: "Two young men in I Am HighClass t-shirts at a bowling alley scoring console, one holding a Canon EOS 7D, with a graphic in the corner reading iPull Numbers and High Class Presents The Bowlers Club.", caption: "The Bowlers Club, 2010." } },
   { year: 2010, date: "26 March", lane: "build", title: "Star Struck, the first edition", tag: "Where Classy Meets Elegance",
     body: "Loft Nightclub. HighClass's flagship recurring night, and the start of a residency that moved rooms without losing its name." },
-
+  { year: 2010, date: "7 April", lane: "build", title: "Think Wear at Ryerson", tag: "Teaching Photoshop",
+    body: "A HighClass programme teaching young people to design their own t-shirts in Photoshop, run at Ryerson with Femi Lawson. He taught the tools: how to build an image, how to get it onto a garment. Fifty-one frames survive from the first run, and the drive shows a second one the following year. This is the through-line running early, a year before Driftwood and eight before the invoice template.",
+    plate: { src: "/images/early/thinkwear-2010.jpg", w: 1800, h: 1205, alt: "A Think Wear workshop session, young people working at computers designing t-shirt graphics.", caption: "Think Wear at Ryerson, 7 April 2010." } },
   { year: 2010, date: "1 June", lane: "film", title: "Shoots the Stylus Awards", tag: "dukeydukez.com",
     body: "Toronto's urban music awards, covered as the event photographer. Drake accepted an award at the podium that night, two weeks before Thank Me Later came out, and Dwayne shot it. Every frame is watermarked Dukey Dukez Photographer with a web address, so he had a named photography business online two years before Corexmedia.com existed.",
     plate: { src: "/images/stylus-awards-2010.jpg", w: 1440, h: 960, alt: "Drake in a yellow jacket at a clear podium on the Stylus Awards stage, award in hand, speaking into a microphone.", caption: "Drake at the podium, Stylus Awards, 1 June 2010. Watermark bottom right: dukeydukez.com." } },
-
   { year: 2010, date: "25 June", lane: "build", title: "Star Struck, edition two", tag: "HighClass night",
     body: "Chic Lounge on King West, with iPull Numbers and Platinum Touch." },
-
   { year: 2010, date: "6 October", lane: "film", title: "Redway, Close Enough", tag: "Hosted on his own site",
     body: "Directed for his best friend and posted to dukeydukez.com. HipHopCanada ran it that January, and it reached number two on WBLK's Unsigned Hype chart the month after." },
-
   { year: 2010, date: "18 October", lane: "film", title: "drewFLYs, directed by Dukez", body: "Another directing credit out of the Toronto scene." },
-
   { year: 2010, date: "22 October", lane: "build", title: "Star Struck, edition three", tag: "Femi's birthday",
     body: "Empire Lounge, doubling as Femi Lawson's birthday. Third room in seven months, same brand on the door." },
-
   { year: 2011, lane: "film", title: "Twelve more productions", tag: "Background performer",
     body: "Total Recall, Bomb Girls, Transporter, The Listener, and the fifth season of Degrassi." },
-
   { year: 2011, lane: "build", title: "The media room upstairs at Driftwood", tag: "Digital Media Coordinator",
     body: "A part-time job with the City of Toronto running the media program out of a room upstairs at the Driftwood Community Centre, in the neighbourhood he grew up in. He held it for seven years, to October 2018, while everything else was being built around it. It is the room where Idil Mohamed met him, eleven years old at the time, and she is only the one the paper trail happens to prove. This is where the mentorship starts, before it had a name or a budget line.",
     voice: { text: "I honestly don't know who I would be today if I hadn't entered that media room, and met him.", who: "Idil Mohamed", role: "met him there at eleven", when: "2018" }
   },
-
+  { year: 2011, lane: "stage", title: "Identify \u2019N\u2019 Impact Award", tag: "City of Toronto",
+    body: "A City of Toronto award, and the first time the work got recognised by the city he grew up in rather than by the scene he built. He brought his mother and his brother.",
+    plate: { src: "/images/early/ini-award-2011.jpg", w: 960, h: 640, alt: "Dwayne with his brother Jordan Robinson and his mother Yvonne Robinson at the Identify N Impact awards.", caption: "Identify \u2019N\u2019 Impact Awards, 2011. Left to right: Jordan Robinson, Yvonne Robinson, and Dwayne." } },
   { year: 2011, date: "7 January", lane: "build", title: "Star Struck, all black edition", tag: "His own birthday",
     body: "Pacha Lounge, six days after turning twenty-three. Fourth edition, fourth venue, ten months after the first. Loft to Chic to Empire to Pacha, one identity the whole way, which is the same muscle the agency runs on now." },
-
   { year: 2011, date: "31 January", lane: "film", title: "Richie Blackz, Left Lane", tag: "World premiere",
     body: "Premiered on The Come Up Show, five years before he sat down for an interview with them himself." },
-
   { year: 2011, date: "February to May", lane: "film", title: "Shooting for Junior Reid in Jamaica", tag: "Flown back and forth",
     body: "Junior Reid, the voice of Black Uhuru and of One Blood, started flying him to the island to shoot videos for himself and for his sons. Two trips on the drive: February, the same visit that produced the Calado video, and May. Seven hundred and thirty files between them, plus a Logic session for The World Is Mine. He was twenty-three and being flown to Jamaica to work.",
     plate: { src: "/images/junior-reid-2011.jpg", w: 2000, h: 1333, alt: "Junior Reid in a green polo and red tam standing with both arms flung wide on a hillside above the Jamaican countryside.", caption: "Junior Reid, Jamaica, 2011." } },
-
   { year: 2011, date: "February", lane: "life", title: "Back to Jamaica", tag: "The REAL Jamaica",
     body: "A week on the island photographing what he captioned the real Jamaica: street corners, a football pitch, Marcus Garvey Drive. Eighteen years after his mother took him off it, and there are HighClass shirts in the frames.",
     plate: { src: "/images/jamaica-2011.jpg", w: 1440, h: 960, alt: "A man in an I Am HighClass t-shirt and sunglasses seated on a wall at night in Jamaica, lit against dark foliage.", caption: "Jamaica, February 2011. HighClass on the ground." } },
-
   { year: 2011, date: "6 February", lane: "film", title: "Close Enough reaches number two", tag: "WBLK Unsigned Hype",
     body: "The Redway video he directed climbs to second on WBLK's Unsigned Hype chart, a month after HipHopCanada ran it. He was managing him, shooting him and getting him placed, all at once." },
-
   { year: 2011, date: "15 February", lane: "film", title: "Directs Sad Streets for Calado in Jamaica", tag: "First on television",
     body: "His first music video shot on the island, and the first of his to reach broadcast. A hundred and ninety-three clips came off the camera on the fifteenth alone, with prep from the eleventh and the edit running into March. It aired on local channels across Jamaica, which put his work on television two years after his first video. He was twenty-three." },
-
   { year: 2011, date: "25 February", lane: "film", title: "Redway, The Auction", body: "Another video for Redway, three weeks after Close Enough charted." },
-
   { year: 2011, date: "5 March", lane: "film", title: "Sad Streets goes out", tag: "Shot in Jamaica",
     body: "Three weeks after the shoot, the Calado video is released and starts airing on local channels across the island." },
-
   { year: 2011, date: "11 March", lane: "film", title: "Junior Reid, Nah Bow Fi Money", tag: "On HYPE TV Jamaica",
     body: "Released as an exclusive and put into rotation on HYPE TV, Jamaica's music channel. Rich Dolarz, Blow My High goes out the same day. Twenty-three years old, with a video on Jamaican television." },
-
+  { year: 2011, date: "28 March", lane: "build", title: "Photography workshop at Lakeshore Arts", tag: "HighClass",
+    body: "A youth photography workshop run for Lakeshore Arts, shot on the 7D he was working off at the time." ,
+    plate: { src: "/images/early/lakeshore-arts-2011.jpg", w: 1000, h: 667, alt: "A youth photography workshop in progress at Lakeshore Arts.", caption: "Photography workshop for Lakeshore Arts, 28 March 2011." } },
   { year: 2011, date: "30 July", lane: "build", title: "Blame It On The Alcohol", tag: "Caribana, with Tory Lanez",
     body: "Vola Lounge on Caribana weekend, with Bullet, DJ Pnutt, MC Breezyy and Tory Lanez on the bill. Lanez was not yet Lanez." },
-
   { year: 2011, date: "22 October", lane: "film", title: "Goes through POV 3rd Street as a participant", tag: "Class of '11",
     body: "Presenting Our Vision, a six-month filmmaking workshop. He came in as a student. His project was The Book of Hope, and the treatment on the drive is filed under his own name. The graduating project put him on a national commercial for ParticipACTION the next year. Five years later he was running the program himself, as Program Manager and Facilitator. Take the seat, then teach the room.",
     plate: { src: "/images/pov-2011.jpg", w: 2000, h: 1333, alt: "Eight members of the POV cohort crouched and sprawled together, mugging for the camera in a bright loft kitchen.", caption: "The POV class of '11, 22 October 2011." } },
-
   { year: 2012, lane: "stage", title: "Youth Arts Award, ArtReach Toronto", body: "For creating arts opportunities for youth and promoting equity and social justice." },
   { year: 2012, lane: "film", title: "Cinematographer on Seed of a Deadbeat", body: "Short film. He also books RoboCop and Suits that year." },
   { year: 2012, date: "8 January", lane: "film", title: "Co-directs a Joe Budden music video with Jordan Oram", tag: "A week after his birthday",
     body: "Jordan Oram's first music video, and Joe Budden was Dwayne's favourite artist at the time. It went up on YouTube on 8 January, seven days after his birthday, and he counts it as a present to himself. It lands eleven months before Corexmedia.com exists, so his first three directing credits all predate the brand entirely. It was not a one-off either: Oram came back a year later to shoot Neza's Wish Is My Command for him. He went on to shoot God's Plan, In My Feelings and Life Is Good for Drake, earned a Grammy nomination for the first, lit Spiral for the Saw franchise, and took a Canadian Screen Award for photography on the CBC series The Porter. He also shot When Morning Comes, which Sasha Henry produced. Two people from the same Toronto room, on the same film, a decade later.",
     quote: "That's a nice birthday present to myself." },
-
   { year: 2012, date: "15 January", lane: "film", title: "Charlie Black, Last Night", body: "Another directing credit out of the Toronto scene." },
-
+  { year: 2012, date: "1 May", lane: "stage", title: "Published in BOSS Magazine", tag: "Founder and board member",
+    body: "A Toronto publication he helped start and sat on the board of, and which then published him. Being in the magazine and building the magazine were the same act.",
+    plate: { src: "/images/early/boss-magazine-2012.jpg", w: 1800, h: 1350, alt: "A spread from BOSS Magazine, 2012.", caption: "BOSS Magazine, May 2012." } },
   { year: 2012, date: "22 May", lane: "film", title: "itzDubb, Church In The Wild", tag: "Made WorldStar",
     body: "Directed by him, and WorldStarHipHop picked it up. The first time his work reached that audience." },
-
   { year: 2012, date: "August", lane: "stage", title: "Certificate of Appreciation from the Hon. Judy Sgro, M.P.", body: "For meaningful contribution to the people and communities of York West." },
   { year: 2012, date: "September", lane: "film", title: "Co-directs a national commercial for ParticipACTION", tag: "First national spot",
     body: "The Bring Back Play campaign, thirty seconds, shot for JWT and produced by Radke Films. It was the graduating project of POV 3rd Street, the program he had come through the year before, and it worked the way the program intends: industry mentors stood on set while the alumni directed. He shared the chair with Kobi Ntiri. They cast it themselves, sitting through more than a hundred kids and parents that July. The client's own behind-the-scenes film puts his credit on screen: Co-Director, POV Alumni.",
     plate: { src: "/images/participaction-2012.jpg", w: 1280, h: 720, alt: "Dwayne in a plaid shirt beside the camera and monitor on the ParticipACTION set, the operator working the rig beside him and crew behind.", caption: "On set, ParticipACTION Bring Back Play, summer 2012." } },
-
   { year: 2012, date: "18 December", lane: "build", title: "Corexmedia.com goes up", tag: "The brand begins",
-    body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated.",
+    body: "Announced as coming soon on Facebook. The earliest public reference to Corex anywhere, two years before the company is incorporated. The name was already legal by then: a Master Business Licence registered Corex Media as a sole proprietorship on 3 December 2012, fifteen days before the site went up, business activity Creative Media, in the name Dwayne Winston Holness.",
     voice: { text: "After graduating university I met Dwayne and asked if he would mentor me. He agreed. For the next three years he spent mornings, afternoons, evenings, nights and weekends teaching me anything he knew. A teacher once told me a phrase that stayed with me: you only need one. One job. One meeting. One idea. One friend. One person to believe in you. How lucky am I that Dwayne is my one.", who: "Sasha Henry", role: "producer", when: "2018" }
   },
-
   { year: 2013, date: "27 January", lane: "film", title: "Neza, Wish Is My Command", tag: "Awards nominee",
     body: "Directed, with Jordan Oram, then credited as Jyeoram, shooting it. The same Jordan Oram he had co-directed the Joe Budden video with a year earlier, back now on his shoot as DP. It was nominated for Best Music Video at the AE Awards that August, with Neza up for Best Female Artist alongside it." },
-
   { year: 2013, date: "18 April", lane: "film", title: "Flies to Whitehorse to mentor filmmakers for Coca-Cola", tag: "Yukon",
     body: "He was at Gravity, a Toronto ad agency running Coca-Cola's film grant program under the Open Happiness campaign. The brief was real people and real stories with a documentary feel, up to two minutes, hunting unique perspectives on happiness from across Canada. Canada meant all of it, so the team flew to the Yukon. He went as a mentor to the filmmakers, four months before FEVA TV hired him.",
     plate: { src: "/images/whitehorse-2013.jpg", w: 2000, h: 1333, alt: "Dwayne in a black cap and fur-hooded parka standing alone in a snowbound sled dog yard, huskies on their kennel boxes around him, boreal forest and a snow-capped mountain behind.", caption: "Sled dog yard outside Whitehorse, 21 April 2013." },
     voice: { text: "I went from thinking I got into filmmaking too late, to getting into filmmaking at the right time.", who: "Oliver Miller", role: "filmmaker", when: "2018" }
   },
-
   { year: 2013, date: "August", lane: "build", title: "Producer and Creative Director at FEVA TV", tag: "Hired pre-launch",
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches.",
     voice: { text: "Loved working with this guy at FEVA TV. Very creative and technically proficient and, to top it all off, a hell of a nice guy.", who: "Graham Saywell", role: "FEVA TV", when: "2024" }
   },
   { year: 2013, date: "September", lane: "build", title: "FEVA launches its platform",
     body: "He is on staff through the launch, leading creative and production direction for original programming." },
-
   { year: 2013, date: "28 September", lane: "film", title: "Corey Fila ft. Ty Craig, You", body: "Another directing credit, and a commercial for Ehiwogun Autos follows in October." },
-
   { year: 2013, date: "17 October", lane: "stage", title: "Speaks to a hundred youth", tag: "The speaking starts here",
     body: "His own note that day: living my dreams, had the opportunity to speak and share my story in front of over a hundred youth. Nine years before he would tell an interviewer he wanted to step properly into speaking.",
     voice: { text: "He sees the potential in people before they see it themselves. He's redefining what community work can actually look like in this city.", who: "Balu Kamagalingam", when: "2018" }
   },
-
   { year: 2013, date: "21 November", lane: "stage", title: "Back at Emery Collegiate, speaking to the Grade 9s", tag: "Nine years later",
-    body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room. Six years on from Dukez and Bullet, and Lawson is still the person standing next to him." },
-
+    body: "He and Femi Lawson returned to the school that took him in after the expulsion, to talk to fourteen-year-olds about bullying. Same building, opposite side of the room. Six years on from Dukez and Bullet, and Lawson is still the person standing next to him.",
+    plate: { src: "/images/early/emery-talk-2013.jpg", w: 1800, h: 1200, alt: "Dwayne and Femi Lawson speaking to students in a school room at Emery Collegiate.", caption: "Back at Emery with Femi Lawson, 21 November 2013." } },
   { year: 2013, date: "22 December", lane: "film", title: "Neza, Only God Knows", body: "His second video for Neza that year." },
-
   { year: 2014, lane: "life", title: "Hodan Nalayeh walks in", tag: "The meeting",
     body: "She comes to FEVA to pitch a home for Integration TV. On her way out she stops at his room. The pitch never closes and Integration TV never airs, which is what kept her building the channel herself. The professional door shuts and the personal one opens in the same afternoon.",
     quote: "I've heard about you." },
   { year: 2014, date: "11 August", lane: "film", title: "Tamara Madison, Journey", body: "Directed and co-directed. The last of the independent music video run before Corex incorporates." },
-
   { year: 2014, date: "28 August", lane: "build", title: "FEVA launches as a television channel", tag: "Bell and Rogers",
     body: "Carriage on Bell and Rogers, which is what turns a platform into an actual channel in Canadian homes. A year into the role and still there. On staff for both launches.",
     plate: { src: "/images/feva-channel-2014.jpg", w: 1350, h: 1950, alt: "FEVA TV subscribe flyer listing Rogers channel 470 and Bell Fibe channel 2662 with a call to subscribe.", caption: "The carriage, in print. Rogers 470, Bell Fibe 2662." } },
@@ -284,7 +246,6 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/artreach-pitch-2014.jpg", w: 2000, h: 1333, alt: "Six people in Corex Creative t-shirts holding an oversized cheque reading Youth Arts Pitch Contest 2014, pay to the order of Corex, two thousand five hundred dollars. From left: Sasha Henry, Latoucha Thomas, Soji Oyinsan, Kobi Ntiri, Jeffrey Sarkodie, with Dwayne.", caption: "Youth Arts Pitch Contest, 30 October 2014. Left to right: Sasha Henry, Latoucha Thomas, Soji Oyinsan, Kobi Ntiri, Jeffrey Sarkodie." } },
   { year: 2014, date: "13 November", lane: "stage", title: "First recorded interview",
     body: "RoyaltyRadio. The earliest audio reference to Corex Creative Group anywhere." },
-
   { year: 2014, date: "23 December", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Corporation 1928743",
     body: "The name becomes a company, two days before Christmas. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed. This corporation does not survive: he closes it in 2018 and starts again in 2019.",
     voice: { text: "Someone we worked with made an error on a project we had been hired to do. I asked if he wanted me to find someone more experienced. I expected she might be fired. He laughed and told me to ask her when she was free: invite her to my house, we'll have dinner, and I can show her how to do it correctly.", who: "Sasha Henry", role: "on how he runs a set", when: "2018" }
@@ -293,12 +254,9 @@ export const EVENTS: TimelineEvent[] = [
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year.",
     voice: { text: "He said, if you want to come back next week with your camera, I'll be here and I'll show you how it works. I came back, and he showed me all I needed was an SD card, a class ten for the DSLR. From there I had the honour of joining Corex and working on a few projects, and I promised him that my very first project, we would collaborate. That was at Rogers. He also helped me get the role at Rogers. I was in sales and I wanted to move into marketing, so he helped me with Photoshop and putting my application together. Now I've got my own consulting firm and we're still working together. He's even teaching me entrepreneurship.", who: "Danielle Pinnock", role: "Rogers, then her own consulting firm" }
   },
-
   { year: 2015, date: "17 March", lane: "film", title: "Interviews Exco Levi", tag: "Four-time Juno winner",
     body: "Shot at FEVA TV. One of the biggest reggae artists in the country, sitting for him." },
-
   { year: 2015, date: "28 March", lane: "film", title: "Shoots for Vulkan Magazine and Kalado", body: "A fashion magazine and a Jamaican dancehall artist in the same week, the latter cut at RD Studios in Jamaica." },
-
   { year: 2015, date: "June", lane: "build", title: "Leaves FEVA TV after two years",
     body: "He worked on most of the early FEVA originals. Co-founder Lonzo Nzekwe later writes that he is a consummate professional with great leadership skills." },
   { year: 2015, date: "21 July", lane: "life", title: "First use of the words Calculated Steps", tag: "The book starts here",
@@ -306,137 +264,105 @@ export const EVENTS: TimelineEvent[] = [
     quote: "Today is going to be a special day. Today I'm going to make history." },
   { year: 2015, date: "1 August", lane: "life", title: "Redway dies", tag: "Aged thirty",
     body: "Shane Redway. The city felt it: Drake and Kardinal Offishall both posted. He was the best friend, the roommate, the artist Dwayne had managed and shot and built for since 2008, and the reason he had picked up a camera in the first place. Eleven days earlier Dwayne had used the words Calculated Steps in public for the first time. The poem came six months after this." },
-
   { year: 2015, date: "9 December", lane: "life", title: "First time in Africa", tag: "Somalia, with Hodan",
     body: "Six months after leaving FEVA TV, where she had walked in to pitch him. Two and a half weeks across Somaliland and Somalia, then Nairobi, mapped by the GPS in 283 photographs. The first of six trips to the region, all of them now mapped from the GPS in his phone archive.",
     plate: { src: "/images/somalia-2015.jpg", w: 2000, h: 1333, alt: "Dwayne holding a phone up for a selfie in the Somali countryside with Hodan Nalayeh in a teal headscarf beside him and camels in the background.", caption: "Somalia, 9 December 2015." } },
-
   { year: 2016, lane: "film", title: "Mogadishu Rising", tag: "With Hodan",
     body: "Filmed with Hodan Nalayeh, on one of the trips they made to Somalia together." },
   { year: 2016, lane: "build", title: "Starts CREATIVE Capsoul", tag: "Two thousand hats",
     body: "A brand for creatives, built around one object: a cap with CREATIVE embroidered on the front and a lightning bolt on the side, made in fourteen colourways with its own pop-art packaging and a printed cloth to match. More than two thousand of them went out to creatives around the world. The name is the one he came back to years later for this page.",
     plate: { src: "/images/creative-capsoul-2016.jpg", w: 1439, h: 1439, alt: "Fourteen baseball caps in different colours, each embroidered CREATIVE in gold, arranged on a pool table with pop-art printed boxes and a matching printed cloth.", caption: "CREATIVE Capsoul, the full colourway run." } },
-
   { year: 2016, date: "24 to 29 January", lane: "life", title: "Back to Somalia and Kenya", tag: "Second trip",
     body: "Five weeks after the first trip ended he went again. Seventy-three geotagged photographs place the route: Somalia, then Addis Ababa to change planes, then Kenya, all inside six days." },
-
   { year: 2016, date: "February", lane: "stage", title: "Back at Beverly Heights for Black History Month", tag: "His middle school",
     body: "The school he went to as a kid, the one he was attending when he joined the theatre program and signed with an agent. He came back to speak to the whole student body for Black History Month, in a Corex Creative cap, in the gym he used to sit in.",
     plate: { src: "/images/beverly-heights-2016.jpg", w: 1080, h: 718, alt: "Dwayne in a red Corex Creative cap and a patched jacket, arms spread wide, standing in a school gym in front of hundreds of students seated across the floor.", caption: "Beverly Heights Middle School, February 2016." } },
-
   { year: 2016, date: "3 February", lane: "life", title: "Releases the Calculated Steps poem", tag: "Where the book begins",
     body: "Six months after burying his best friend, he wrote it, recorded it, and put it on YouTube. Everything that carries the name since has come out of this: the daily livestreams in 2018, the podcast in 2020, the nineteen chapters finished in 2026. It started as a poem." },
-
   { year: 2016, date: "3 April", lane: "life", title: "His father's funeral", tag: "Jamaica",
     body: "He was born on the island and left it at five. He came back at twenty-eight to bury his father.",
     plate: { src: "/images/fathers-funeral-2016.jpg", w: 2000, h: 1333, alt: "A large gathering at a graveside in rural Jamaica, a white casket covered in red, white and blue floral sprays, red earth underfoot and green hills behind.", caption: "Jamaica, 3 April 2016." } },
-
   { year: 2016, date: "4 April", lane: "stage", title: "Men of Honour Award", tag: "BBPA",
     body: "From the Black Business and Professional Association, for outstanding contribution to the Black community. He was twenty-eight, and it is the anchor for the Legacy in Motion chapter of the book.",
     voice: { text: "He has a hunger that has translated into a force to create an army of creatives who are ready and eager to follow their dreams. He is a friend, a mentor and a role model.", who: "Jollene Phillips", when: "2018" }
   },
-
   { year: 2016, date: "October", lane: "build", title: "Returns to POV 3rd Street as Program Manager and Facilitator", tag: "Participant to manager",
     body: "The same program he had come through as a student in 2011, now his to run, and Idil Mohamed followed him into it from the Driftwood media room. A workforce development program putting people into content production, taught in weekly cohorts. He was Program Manager and Facilitator for two years and kept mentoring its participants long after he left, giving notes on their edits and writing their reference letters.",
     plate: { src: "/images/pov-2017.jpg", w: 2000, h: 1333, alt: "Dwayne in a black jacket mid-explanation beside two cinema cameras on tripods, nine POV participants gathered around him in a bright loft studio.", caption: "POV 3rd Street, week seven, 25 February 2017." },
     voice: { text: "Dwayne is dedicated to improving his community one individual at a time. As one of those people fortunate enough to have been chosen, I can tell you without equivocation that I would not be where I am today without his guidance.", who: "Danny Sedore", role: "co-facilitator, POV 3rd Street", when: "2018" }
   },
-
   { year: 2016, date: "November", lane: "stage", title: "First long-form podcast appearances", body: "The Come Up Show, then Making It In Toronto." },
-
   { year: 2017, lane: "film", title: "Directing music videos and short film",
     body: "Just Chase, EGO and Friyie, Don't Worry, plus cinematography on Rich Africans." },
-
   { year: 2017, date: "24 January", lane: "stage", title: "Toronto Tastemakers panel", body: "YMCA Grosvenor. His first major in-person panel." },
   { year: 2017, date: "4 June", lane: "film", title: "Shoots Ego in Los Angeles", tag: "His biggest music video",
     body: "For Just Chase, and about forty thousand dollars of production. Call time was ten in the morning at 5610 Soto Street in Huntington Park, with Department 4 running the floor and a second unit picking up aerials of the LA skyline and night driving under the palms. He cut it himself through June. Six weeks later he was on a plane to Somalia." },
-
   { year: 2017, date: "10 June", lane: "build", title: "Sends a sixteen-year-old his invoice template", tag: "Idil Mohamed",
     body: "He books Idil Mohamed as an official photographer on the AfroChic Cultural Arts Exhibit, six years after she walked into the Driftwood media room at eleven. Three weeks later he forwards her his own invoice template and tells her to fill in the blanks. Teaching her to shoot was the workshop. Teaching her to invoice was the point. She joined his POV 3rd Street cohort that January, came out an alumna in August, and by November 2019 he was introducing her to his own clients as the photographer on the job.",
     voice: { text: "Hiring Dwayne as lead Creative Director for AfroChic was a no-brainer and he certainly did not disappoint. Dwayne is a man on a mission.", who: "Amoye Henry", role: "AfroChic", when: "2018" }
   },
-
   { year: 2017, date: "15 to 30 July", lane: "life", title: "Somalia, Tanzania, Kenya, then Istanbul", tag: "Four countries, sixteen days",
     body: "The longest of the six trips and the one that reached furthest. Nine days across Somalia, then down to Tanzania, a day in Kenya, and Turkey on the way home. The whole itinerary was recovered from phone GPS, because no folder on the drive records it." },
-
   { year: 2017, date: "16 November", lane: "stage", title: "Featured in 6ix Rising", tag: "Credited on screen",
     body: "Shawney Cohen's seventy-seven minute documentary on Toronto's rap scene, released by Noisey. The film credits him on screen as Dukey Dukez, Video Director. He directed Friyie's Don't Worry that same year, and Friyie is one of the artists the film follows. Five days after it dropped he posted about it without mentioning that he was in it: go watch this, it is a big look for the city.",
     plate: { src: "/images/6ix-rising-2017.jpg", w: 2000, h: 1120, alt: "Dwayne laughing outdoors in a camo t-shirt and gold chain in a still from 6ix Rising, the on-screen caption reading Dukey Dukez, Video Director, with the Noisey logo in the corner.", caption: "6ix Rising, Noisey, 2017. His on-screen credit." } },
-
   { year: 2018, lane: "life", title: "One hundred and forty-three days of daily Instagram Live", tag: "Calculated Steps",
     body: "One hundred and forty-nine episodes archived, seventy-nine of them with guests including Randell Adjei, Hodan Nalayeh and Sasha Exeter. The method proven in public, daily." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
   { year: 2018, date: "July", lane: "film", title: "Reggae Sumfest, Jamaica", tag: "Chronixx tour",
     body: "Montego Bay. The biggest reggae festival on the island, and the first time the tour takes him home to work.",
     plate: { src: "/images/sumfest-2018.jpg", w: 2000, h: 1333, alt: "Chronixx and another performer on stage at dusk at Reggae Sumfest, arms raised over a crowd stretching to the horizon.", caption: "Reggae Sumfest, Montego Bay, July 2018." } },
-
   { year: 2018, date: "8 July", lane: "life", title: "A line that becomes a philosophy",
     body: "The Epiphany Project episode takes its title from something he says in it.",
     quote: "If I get paid, they get paid, we gotta eat together." },
   { year: 2018, date: "29 July", lane: "stage", title: "The Calculated Steps Brunch", tag: "All white",
     body: "He put on his own event under the name: a brunch and networking room, all-white dress code, long banquet tables, two photographers and 244 photographs. Two and a half years after the poem went up, Calculated Steps had become something people showed up for in person.",
     plate: { src: "/images/cs-brunch-2018.jpg", w: 2000, h: 1333, alt: "Dwayne in a white suit with black lapels, black hat and sunglasses, arms spread at the head of a long banquet table packed with guests applauding.", caption: "Calculated Steps Brunch, 29 July 2018." } },
-
   { year: 2018, date: "4 August", lane: "life", title: "Hodan buys a one-way ticket",
     body: "She calls him in excitement. He journals it that night.",
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
   { year: 2018, date: "18 September", lane: "build", title: "Corex Creative Ltd is dissolved", tag: "Four years, closed",
     body: "Shazia Hafeez, who kept his books and filed his returns, had been guiding him for years by this point, and the advice that year was to close the company: it was not earning enough to justify keeping it open. He started it himself on 16 May, emailing her the steps he had got from the CRA, and she had the consent letter drafted and signed back the same day. He sent the letter to dissolve on 11 September. The final corporate return was prepared up to 18 September, and on 5 November she confirmed the CRA had the articles of dissolution. He signed the last form from Kenya. The money it saved was small. What it cost was four years of continuous corporate history, which is what banks and bonding companies and grant panels ask you to prove. He reopened the following year and started that clock at zero.",
     quote: "I wish I kept it to keep the years of business history, but I didn't know better." },
-
   { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
     body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
-
   { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya, one last time", tag: "The last trip",
     body: "Three weeks after getting home from Somalia he was back on the continent, through Addis again and on to Kenya. A hundred and nine geotagged frames. It is the last trip the two of them made before she was killed." },
-
   { year: 2018, date: "24 to 27 December", lane: "film", title: "Christmas in Spain, then Gambia", tag: "The 2am show",
     body: "Spain on Christmas Eve, then straight to Gambia for Christmas. He shot the show there from the stage at two in the morning on the twenty-seventh. The Chronixx Gambia film came out of these three days.",
     plate: { src: "/images/chronixx-2018.jpg", w: 1333, h: 2000, alt: "Chronixx photographed from behind on stage with one arm raised, facing a packed crowd lit by phone screens and flags.", caption: "On stage with Chronixx, 27 December 2018." } },
-
   { year: 2019, lane: "build", title: "Re-incorporates Corex Creative", tag: "Year one, again",
     body: "A new corporation, one year after closing the first. The work had never stopped, only the paperwork, which is why the company is accurately described as starting in 2014 and as incorporated in 2019 without either being wrong. Both dates are true and they belong to two different companies." },
-
   { year: 2019, date: "February", lane: "film", title: "Colombia and Mexico", tag: "Chronixx tour",
     body: "Two countries in a month, with a Super 8 roll shot in Colombia alongside the digital.",
     plate: { src: "/images/colombia-2019.jpg", w: 2000, h: 1125, alt: "The view from the back of the stage over a festival crowd of many thousands in Colombia, a lone figure at the front of the stage with an arm raised.", caption: "Colombia, February 2019." } },
-
   { year: 2019, date: "March", lane: "film", title: "Jamaica again, for LWTF", tag: "Chronixx tour",
     body: "His second Jamaican leg in eight months.",
     plate: { src: "/images/lwtf-2019.jpg", w: 2000, h: 1335, alt: "Chronixx and his band in low stage light during the LWTF show in Jamaica, drums and stage rigging around them.", caption: "LWTF, Jamaica, March 2019." } },
-
   { year: 2019, date: "21 to 30 June", lane: "film", title: "Germany, then Uganda", tag: "Chronixx tour",
     body: "Three days in Germany and then five in Uganda, where he shot the Nile River alongside the show. The camera he used was running a year behind, which is why this leg sat in the archive dated 2018 until his phone corrected it.",
     plate: { src: "/images/uganda-2019.jpg", w: 2000, h: 1333, alt: "Black and white photograph of Chronixx singing into a microphone stand inside a shaft of stage light and smoke.", caption: "Uganda, June 2019." } },
-
   { year: 2019, date: "12 July", lane: "life", title: "Hodan Nalayeh is killed in Kismayo", tag: "The turn",
     body: "He had been invited on the trip that became her last.",
     quote: "I was supposed to be there with her but by the grace of God, my mission wasn't done yet." },
-
   { year: 2019, date: "August", lane: "film", title: "Belize, Spain and the UK", tag: "The biggest leg",
     body: "Three countries. In the UK it is Boomtown, the O2 Warehouse and O2 Leeds, and this leg leaves behind more frames than any other on the tour.",
     plate: { src: "/images/uk-2019.jpg", w: 2000, h: 1333, alt: "Chronixx at the microphone inside a fan of blue stage beams at the O2 Warehouse.", caption: "O2 Warehouse, London, August 2019." } },
-
   { year: 2019, date: "December", lane: "film", title: "Negril and St. Lucia", tag: "Last leg",
     body: "The run closes where it feels like it should, back in Jamaica at Negril and then across to St. Lucia, where he shoots from a boat. Eighteen months and nine countries after Germany.",
     plate: { src: "/images/negril-2019.jpg", w: 2000, h: 1333, alt: "A man in a number eleven jersey leaning on a railing looking out at turquoise Caribbean water with a catamaran anchored offshore.", caption: "Negril, December 2019." } },
-
   { year: 2020, lane: "life", title: "Buys his mother a house", tag: "Twenty-seven years later",
     body: "Yvonne Robinson left Kingston in 1993 with a five-year-old and no plan beyond a belief that the other side of the ocean held something better. Twenty-seven years later her son bought her a house. This record opens with her risk. This is where it lands.",
     plate: { src: "/images/mother-house-2020.jpg", w: 1331, h: 2000, alt: "Dwayne and his mother Yvonne Robinson standing together in the driveway, the house behind them, both laughing.", caption: "Yvonne Robinson outside the house, 2020." } },
-
   { year: 2020, lane: "film", title: "Chronixx, Soul Circle Writing Camp",
     body: "Director and editor. The camp itself was shot in September 2019, in a house turned into a studio. He also shoots the Bring Back Play campaign for South Riverdale CHC.",
     plate: { src: "/images/soul-circle-2020.jpg", w: 2000, h: 1333, alt: "Black and white photograph of Chronixx singing into a handheld microphone in a living room converted to a studio, audio gear in the foreground and light trails across the frame.", caption: "Soul Circle writing camp, September 2019." } },
-
   { year: 2020, date: "15 to 23 February", lane: "film", title: "On tour with Ms. Lauryn Hill", tag: "Creative Director",
     body: "His highest-profile artist engagement. Nine days and four venues: Westbury on Long Island, The VETS in Providence, the Capitol Theatre in Port Chester, and the United Palace in New York City. Every show ran past midnight, so the files land on two dates each. He came home with more than nine hundred frames. The dates after these were cancelled as COVID closed the touring industry, three weeks before the shutdown reached everyone else.",
     plate: { src: "/images/lauryn-hill-2020.jpg", w: 2000, h: 1333, alt: "The view from the wings of a packed theatre during a Lauryn Hill show, a performer lit green at the microphone with the balcony full behind them.", caption: "From the wings, 20 February 2020." } },
-
   { year: 2020, date: "October", lane: "film", title: "Ofuur", tag: "Eight hundred files",
     body: "A sustained engagement through the autumn, cut and delivered across three export rounds in late September and October." },
-
   { year: 2021, lane: "build", title: "Eight hundred thousand dollars", tag: "The biggest year",
     body: "The year the company was at its largest, and the only figure he ever wrote down for it sits in a private note: eight hundred thousand and up in sales. Two agency-of-record appointments, LCBO and CSA Group. Forty-eight people on payroll. More than three hundred and fifty thousand of it paid back out to Black creatives. He also bought a house, an investment property and, for the first time, something purely for himself. It is the high-water mark of the record, and the corporate tax bill for it, twenty-one thousand five hundred, is still the largest single year he has ever been assessed.",
     plate: { src: "/images/lcbo/lcbo-monitor-2021.jpg", w: 1800, h: 1800, alt: "Dwayne, in an orange cap and a black jacket printed with the words it's a beautiful day to be beautiful and it's a great day to be great, watching a director's monitor beside a colleague on the LCBO set.", caption: "At the monitor on Spirit of Sustainability, 2021. The jacket is his own line. The slate on the screen reads Dwayne Holness and Kobi Ntiri." } },
@@ -444,7 +370,6 @@ export const EVENTS: TimelineEvent[] = [
     voice: { text: "Probably one of the most important things is that Dwayne cares. He cares about relationships. He cares about the end product and his own team. It shows in the work.", who: "Leigh Himel", role: "co-founder, Gravity Partners", when: "2021" },
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
-
   { year: 2021, lane: "build", title: "Co-founds All Out Canada", tag: "With Monumental Projects",
     body: "A project to make the outdoors accessible to racialized communities, and to put them in the frame when Ontario nature gets photographed. Founded with Shereen Ashman of the CEE Centre for Young Black Professionals and Kofi Hope and Zahra Ebrahim of Monumental Projects, with Corex as the media partner. He made the films: episode one on the Man Dem Cycling Club, episode two on Black Foodie, both on his own channel. The Narwhal covered it that July under the line that it shakes up stereotypes about Ontario\u2019s outdoors. When a student asked to use the footage in a thesis the following spring, the credit Monumental asked for was Monumental Projects, All Out Canada and Corex Creative, in that order." },
   { year: 2021, lane: "film", title: "Creative director on Ups and Downs, featured in Rolling Stone", tag: "First Rolling Stone credit",
@@ -453,23 +378,19 @@ export const EVENTS: TimelineEvent[] = [
     body: "A Black History Month feature on the station. The same year he hosted the ArtWorksTO graduation, sat with Smile Jamaica's morning show, mentored at Futurpreneur Canada as well as Artscape upstART, and met David Suzuki." },
   { year: 2021, date: "29 April", lane: "life", title: "Joins the Rotary Club of Innisfil", tag: "Service above self",
     body: "His member account is created the same week. Food drives in Sandy Cove Acres, Quiet Santa for kids who cannot manage a mall Santa, bottle drives. He had moved his life north to Simcoe County, and this is where the local roots go in." },
-
   { year: 2021, date: "May", lane: "film", title: "Becomes the employer of record for forty-eight young Black creatives", tag: "CEE and the YESS Program",
     body: "The part of that year nobody sees. Corex ran the payroll for the CEE Centre for Young Black Professionals' YESS Program, which put young Black people into paid creative work, with the LCBO supporting the wider partnership. Forty-eight went on his payroll. Forty-five made it to the end and qualified for a completion bonus, thirty-six thousand dollars paid out in one go in March 2022, and CEE's own list of their names runs to four columns. Across the year he moved more than three hundred and fifty thousand dollars to Black creatives. He also made the films: the All Out work, a colour-graded Getaway cut, and later CEE's ten-year impact video. One of the people on that payroll lived on Driftwood Court, the same Driftwood as the community centre where he had run the media room from 2011. Eleven years after he started teaching in that neighbourhood, he was signing its paycheques." },
-
   { year: 2021, date: "31 August", lane: "build", title: "Mentors at upstART", tag: "Artscape Weston Common",
     body: "A creative entrepreneurship mentor on upstART, Artscape's youth accelerator at Weston Common, invoiced at eight hundred and fifty dollars for the season. The programme coordinator's closing note to the mentors puts it plainly: gaining the participation of experts was critical, and they were asked to share time and expertise rather than deliver a curriculum. Two people came out of that room and into his work. Lauren Eden, who wrote him a reference for it a fortnight later, and Alicia Reid, who was editing for Corex within five months.",
     voice: { text: "Dwayne mentored me during my time at the Artscape Weston Common upstART creative youth program and he taught me so much about media practices as well as the creative process. His impressive work experience, his generosity in sharing his knowledge, and his kindness made him an excellent mentor.", who: "Lauren Eden", role: "upstART participant", when: "2021" } },
   { year: 2021, date: "September", lane: "film", title: "UPlift Black", tag: "Simcoe County",
     body: "His first work with the Barrie organisation, five years before the regional network around it turns into the DMZ Innisfil cohort and the CreaTech seat." },
-
   { year: 2021, date: "13 September", lane: "life", title: "Sponsors a South African photographer through school", tag: "Nontobeko Sisonke Shabangu",
     body: "Siso first wrote to him from South Africa in February 2020 with a documentary proposal. He wrote back the same day telling her to start on a treatment and sent her sample ones to learn from. Eighteen months later she asked him to sponsor her through Through The Lens Collective in Johannesburg, a ten-month advanced photography course, so she could move closer to the country's creative centre. He paid for it. Her letter at the end of that school year is the clearest thing anyone in this record has said about what he does. The check-ins did not stop when the course did: the calendar carries Mentor Check-in with Siso through 2023, 2024 and 2025, booked from Toronto for a woman seven time zones away, and in November 2025 she sent him books as a gift.",
     voice: { text: "Thank you so much for affording me the opportunity to go study this photography course. You have made a great difference in my life and I'll definitely pay it forward. I don't take what you did lightly, it was a sacrifice and an act of belief that has pushed me to becoming better. Thank you for planting a seed in my life not only in words but also in actions.", who: "Nontobeko Sisonke Shabangu", role: "Johannesburg", when: "2022" } },
   { year: 2021, date: "21 October", lane: "stage", title: "President's Panel, Xcelerate Summit", tag: "Invited as a president",
     body: "Georgian College's Henry Bernick Entrepreneurship Centre put him on a panel of company presidents, alongside heads of a plastics manufacturer and a travel company. Virtual, run over Zoom. The director who invited him wrote afterward that it was the best one they had done.",
     quote: "It was so amazing to have you on our President's Panel. You were out of this World, I truly believe it was our best." },
-
   { year: 2021, date: "28 October", lane: "build", title: "Joins the Program Advisory Committee at Centennial College",
     body: "An industry seat reviewing curriculum and program direction. He is still serving. After his first meeting the program coordinator writes to him.",
     quote: "Dwayne, you are a great addition, thanks for your input today." },
@@ -478,43 +399,34 @@ export const EVENTS: TimelineEvent[] = [
     body: "Director and editor. The couple who escaped enslavement in Kentucky and built Toronto's first taxi company." },
   { year: 2022, date: "February", lane: "film", title: "AFP, Ideas For Change", tag: "Full campaign",
     body: "A complete campaign build for the Association of Fundraising Professionals: films, logo work and flyers in every size, three hundred and twenty-six files in all." },
-
   { year: 2022, date: "15 March", lane: "build", title: "The year the books catch up with him", tag: "After the LCBO",
     body: "The biggest campaign of his career landed in 2021 and the money moved faster than the systems around it. In mid-March his accountants tell him to pay a twenty-six thousand dollar corporate instalment inside two weeks, and fifteen thousand more personally, six of it CRB he had not been entitled to once his income cleared the threshold. He forwards it to his financial adviser within the hour, asking how to get out of the mess. Then Nabil Shash, his operations manager, sat with it overnight and went back the next morning to check: the twenty-six thousand was an estimate at fifteen percent of profit, the ceiling of what he might owe rather than a number anyone had worked out. That is the moment the company started reading its own numbers instead of receiving them. The assessments across these years run past a hundred thousand dollars in tax. Nothing was hidden and nothing was stolen. The books were being kept after the fact, and the CRA taxes what actually moved rather than what was planned.",
     quote: "How can we get out of this mess?" },
   { year: 2022, date: "8 October", lane: "film", title: "Hodan's Story premieres on CBC", tag: "Written and directed",
     body: "A portrait of the friend and mentor he met at FEVA TV, which he both wrote and directed. His CBC debut. Three years after her death, he puts her on national television himself.",
     plate: { src: "/images/writing/the-secret-to-winning-is-knowing-how-to-lose/2-hodan.jpg", w: 1600, h: 1067, alt: "A packed room watching a Hodan\u2019s Story screening, the CBC Docs poster on the screen behind two speakers.", caption: "A screening and question and answer for Hodan\u2019s Story." } },
-
   { year: 2023, lane: "stage", title: "The Business Anecdote interview", body: "Founder and chief executive, long form." },
   { year: 2023, date: "6 February", lane: "stage", title: "Speaks to the entrepreneurship class at Georgian College", tag: "Where speaking becomes the plan",
     body: "Sara Bentham, who runs the Henry Bernick Entrepreneurship Centre and had put him on the President's Panel two years earlier, invited him into her class. No set topic. Just tell them how you got here. She wrote the next morning to say the students had voted him their favourite speaker and offered to introduce him to speaking agencies. He wrote back that stepping further into speaking was exactly what he was aiming at that year. Everything after this is that decision compounding.",
     quote: "They shared that you have been their favourite speaker. They were engaged, inspired and felt included." },
-
   { year: 2023, date: "March", lane: "film", title: "Jack.org", tag: "National youth mental health",
     body: "Five hundred and seventy-five files, all inside a single month, for one of the country's largest youth mental health charities." },
-
   { year: 2023, date: "April", lane: "film", title: "Destiny Villa", tag: "The largest client folder",
     body: "Nine and a half thousand files, more than any other client on the drive, running from late 2018 to late 2023. The longest single engagement Corex has on record." },
-
   { year: 2023, date: "28 April", lane: "build", title: "Shareholder loan cleared, seven percent", tag: "Thirteen months later",
     body: "His accountant files the 2022 personal return and reports two things: the effective income tax rate is down to seven percent, and the shareholder loan that started the whole panic is cleared. Thirteen months from the March morning he was asking how to get out of it. The fix was not a windfall. It was reading the numbers as they happened rather than a year afterwards.",
     quote: "I appreciate everything you've done to help get me back on track." },
   { year: 2023, date: "26 October", lane: "stage", title: "Speaks at the Xcelerate Summit",
     body: "Back a third year, this time on a panel billed From Rocks to Resilience at Georgian College's downtown Barrie campus. He had done the President's Panel in 2021 and a filmed pop-up talk, What's Your Brand Story, in 2022.",
     plate: { src: "/images/xcelerate-2023.jpg", w: 1600, h: 2000, alt: "Dwayne in a black leather jacket standing in front of an Xcelerate Summit step and repeat banner.", caption: "Xcelerate Summit, 26 October 2023." } },
-
   { year: 2023, date: "December", lane: "film", title: "Wifeys Kitchen", tag: "Product films",
     body: "A flavour-by-flavour shoot: Asian Red, Citrus Tango, Mango Chipotle, Just Peachy, Bomb Purpose. Food work, which the agency had not done before." },
-
   { year: 2024, lane: "stage", title: "TIFF Next Wave, Thriving as an Artist",
     body: "A panel at the Toronto International Film Festival's youth program, presented with Toronto Film School.",
     plate: { src: "/images/tiff-nextwave-2024.jpg", w: 1333, h: 2000, alt: "A panel of speakers seated on stage at TIFF Next Wave, the screen behind them reading Thriving as an Artist.", caption: "TIFF Next Wave, Thriving as an Artist." } },
-
   { year: 2024, lane: "stage", title: "The CanadianSME Small Business Podcast", tag: "Visionary Storytelling in Business",
     body: "A full episode on storytelling as a business function. Partners on the season: RBC, UPS and Xero.",
     plate: { src: "/images/sme-podcast-2024.jpg", w: 2000, h: 981, alt: "Dwayne mid-gesture in a tan blazer and white turtleneck in the CanadianSME podcast studio, magazine covers on the wall behind him.", caption: "Visionary Storytelling in Business, CanadianSME Small Business Podcast, 2024." } },
-
   { year: 2024, date: "15 February", lane: "stage", title: "CanvasRebel Magazine", body: "A long-form question and answer profile." },
   { year: 2024, date: "1 March", lane: "stage", title: "Another Ep. with Stephen Rochester", tag: "Long form",
     body: "A sit-down on Stephen Rochester's show. He turned up in Corex orange, head to toe.",
@@ -525,24 +437,19 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2024, date: "29 May", lane: "life", title: "Films the Hodan Nalayeh Legacy Day", tag: "First year covering it",
     body: "The Changemaker Awards at Hodan Nalayeh Secondary School in Vaughan, the school renamed for her. The Nalayeh family brought Corex in to shoot it. He has been back every year since.",
     plate: { src: "/images/legacy-day-2024.jpg", w: 2000, h: 1333, alt: "An overhead view of the school atrium during the Changemaker Awards, a Be A Changemaker banner above the stage and students seated across the floor.", caption: "Changemaker Awards, 29 May 2024." } },
-
   { year: 2024, date: "June", lane: "film", title: "Grillz by Mazz", tag: "Two-day shoot",
     body: "Fourteen hundred files across two shoot days, with a news segment and sound design in the build." },
-
   { year: 2024, date: "10 July", lane: "stage", title: "Speaks at Success Beyond Limits",
     body: "A youth program he returns to. He would be back the following July.",
     plate: { src: "/images/sbl-2024.jpg", w: 1125, h: 2000, alt: "A lecture theatre filled with students during the Success Beyond Limits session.", caption: "Success Beyond Limits, 10 July 2024." },
     voice: { text: "Dwayne instilled this notion in me that I can do anything. We hear that all the time, but the difference is he made me believe it, and that has been a game changer in my life. Once I believed, I went out and did it.", who: "Erin-Ashley Talucci", when: "2018" }
   },
-
   { year: 2024, date: "10 July", lane: "build", title: "First Creative Connect podcast taping", tag: "The community gets a show",
     body: "Two and a half hours after he finished speaking at Success Beyond Limits that same morning. Three cameras, a softbox and two chairs in a lobby.",
     plate: { src: "/images/creative-connect-2024.jpg", w: 2000, h: 1126, alt: "Two men seated in armchairs in a bright lobby surrounded by three cameras on tripods, a softbox and monitors, during the first Creative Connect podcast taping.", caption: "First Creative Connect taping, 10 July 2024." } },
-
   { year: 2024, date: "24 July", lane: "stage", title: "Speaks at the Jean Augustine Chair",
     body: "Named for the first Black woman elected to the House of Commons.",
     plate: { src: "/images/jean-augustine-2024.jpg", w: 2000, h: 1127, alt: "A large group of young people in a lecture hall with hands raised, photographed in black and white.", caption: "Jean Augustine Chair, 24 July 2024." } },
-
   { year: 2024, date: "28 July", lane: "life", title: "Gets the girl of his dreams", tag: "His own words",
     body: "The date he wrote down for Tracy. Ten weeks later he proposed, and four months after that they were married. He recorded it in his own year-end list between starting a podcast and speaking at York, which is exactly where it sat in the year." },
   { year: 2024, date: "15 September", lane: "life", title: "Baptized at Kingsway Community Life Centre", tag: "The point it changed",
@@ -554,47 +461,36 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2024, date: "27 October", lane: "stage", title: "Innovate, Thrive and Network", tag: "FACE Coalition",
     body: "A Small Business Month panel for the FACE Coalition on the role of Black entrepreneurs in Canada's small business economy. A five hundred dollar honorarium. FACE would go on to become his largest client.",
     plate: { src: "/images/face-innovate-2024.jpg", w: 1333, h: 2000, alt: "Dwayne mid-gesture on a panel in front of a FACE Coalition backdrop, a fellow panellist seated beside him.", caption: "Innovate, Thrive and Network, FACE Coalition, 27 October 2024." } },
-
   { year: 2024, date: "30 November", lane: "life", title: "Marries Tracy", tag: "Eight weeks later",
     body: "Fifty-six days after the question. He wore a white dinner jacket, she wore a birdcage veil, and the photographs are the only ones in this record where he is the subject rather than the author.",
     plate: { src: "/images/wedding-2024.jpg", w: 1333, h: 2000, alt: "Dwayne in a white dinner jacket and black bow tie laughing beside Tracy in a white gown and birdcage veil holding a bouquet of white roses.", caption: "Dwayne and Tracy, 30 November 2024." } },
-
   { year: 2024, date: "December", lane: "film", title: "Juice Comedy", tag: "Two live shows",
     body: "A thousand files across two live comedy shows. Multi-camera event coverage, which becomes the shape of the Melamoon tour work two years later." },
-
   { year: 2024, date: "4 December", lane: "film", title: "Co-directs Dexta Daps, Lockdown", tag: "With Louis Mensah",
     body: "A music video directed jointly with Louis Mensah.",
     plate: { src: "/images/dexta-shoot-2024.jpg", w: 2000, h: 1334, alt: "Dwayne in an orange cap leaning over a marble island on the Lockdown set, two crew members beside him under magenta lighting.", caption: "On the Lockdown set, 4 December 2024." } },
-
   { year: 2025, lane: "stage", title: "Community Hero Award", tag: "Reverence",
     body: "Named a Community Hero at the 2025 Reverence awards.",
     plate: { src: "/images/reverence-2025.jpg", w: 1633, h: 1104, alt: "Dwayne accepting a small gold award on stage, the screen behind reading Reverence 2025 Community Hero, Dwayne Dukez Holness.", caption: "Reverence Community Hero Award, 2025." } },
-
   { year: 2025, lane: "film", title: "Still booking union work at thirty-seven", tag: "Twenty years on set",
     body: "Two engagements on Precision for WildBrain. The most recent entries in a record that runs back to 2006." },
   { year: 2025, date: "22 January", lane: "stage", title: "BMO and Creative Connect live podcast",
     body: "A live recording inside a BMO branch, pairing his own community with a bank's.",
     plate: { src: "/images/bmo-cc-2025.jpg", w: 1333, h: 2000, alt: "An audience seated inside a BMO branch for a live Creative Connect podcast recording.", caption: "BMO and Creative Connect, 22 January 2025." } },
-
   { year: 2025, date: "3 March", lane: "stage", title: "Creative Currency financial literacy workshop",
     body: "Week five of BusinessSmARTs at the Nia Centre for the Arts. Certificates at the end of it.",
     plate: { src: "/images/creative-currency-2025.jpg", w: 2000, h: 1125, alt: "Participants around a long wooden table holding certificates of completion and celebrating.", caption: "Creative Currency, Nia Centre for the Arts, 3 March 2025." } },
-
   { year: 2025, date: "28 May", lane: "life", title: "Legacy Day, second year", tag: "Asked back",
     body: "Same school, same week in the calendar. Barwako Nalayeh asked him back directly: you did an amazing job last year.",
     plate: { src: "/images/legacy-day-2025.jpg", w: 2000, h: 1333, alt: "Students packed into the school atrium watching the Changemaker Awards, camera operators working in the foreground.", caption: "Changemaker Awards, 28 May 2025." } },
-
   { year: 2025, date: "23 July", lane: "stage", title: "Success Beyond Limits, second year", tag: "He came back",
     body: "A year and thirteen days after the first one.",
     plate: { src: "/images/sbl-2025.jpg", w: 1333, h: 2000, alt: "Dwayne in a black cap and all black, hands pressed together mid-sentence, speaking in front of a classroom whiteboard with students seated in the foreground.", caption: "Success Beyond Limits, 23 July 2025." } },
-
   { year: 2025, date: "10 August", lane: "stage", title: "Panel at The Shift Tradeshow",
     body: "The Shift: Changing of the Times, hosted by Storhouse. A free event for a room of up to four hundred, and he took it without an honorarium.",
     plate: { src: "/images/the-shift-2025.jpg", w: 2000, h: 1333, alt: "Six panellists standing together in front of a lit Storhouse sign after The Shift Tradeshow session.", caption: "The Shift Tradeshow, 10 August 2025." } },
-
   { year: 2025, date: "November", lane: "life", title: "Co-founds Jamaica Strong", tag: "Twenty-two thousand raised",
     body: "After Hurricane Melissa displaces more than thirty thousand people, he raises over twenty thousand dollars in nine days, then self-funds a production trip through St. James, Westmoreland and St. Elizabeth. It becomes the short documentary Rising After The Storm." },
-
   { year: 2025, date: "18 November", lane: "film", title: "CSA Group, Policy Pathways", tag: "The whole crew",
     body: "Director. Two Policy Pathways films this year, one on aging in Canada and one on building a thriving Canadian economy.",
     plate: { src: "/images/csa-2025.jpg", w: 2000, h: 1333, alt: "Eight Corex crew members in black branded polos posing with cameras, gimbals and headsets in front of a city skyline wall.", caption: "The Corex crew on the Policy Pathways shoot, 18 November 2025." } },
@@ -602,7 +498,6 @@ export const EVENTS: TimelineEvent[] = [
     body: "Produced and edited for the FACE Coalition, hosted by Danielle Pinnock. Shot on location with each guest through the autumn, delivered bilingual, and released an episode a month. Season five followed the next year.",
     voice: { text: "Dwayne took season four of our organization's podcast to another level. His ability to understand his client's desired outcome and create a polished visual story that captures the core essence of the narrative is a rare gift.", who: "Tiffany Callender", role: "CEO, FACE Coalition", when: "2026" }
   },
-
   { year: 2026, lane: "build", title: "Awarded a Toronto Arts Council mentorship", tag: "As the mentor",
     body: "The Newcomer and Refugee Artist Mentorship, mentoring filmmaker Doyinsola Ajayi on her short film If Not You. Each one teach one, now with an arts council behind it." },
   { year: 2026, date: "1 January", lane: "life", title: "Chapter 38, Chosen, Tested, Trusted", body: "His birthday reflection, and the best performing post of his year." },
@@ -629,20 +524,16 @@ export const EVENTS: TimelineEvent[] = [
     voice: { text: "Thank you so much Dwayne for helping make this possible! Truly appreciate it!", who: "Hadassah Okebugwu", role: "AI Operations and Workflow Strategist, M5V Developments", when: "2026" } },
   { year: 2026, date: "23 May", lane: "film", title: "Melamoon tour begins in Montreal", tag: "Five cities, solo shooter",
     body: "FACE Coalition's Black founder launchpad went on the road, and Corex went with it. Twenty-five thousand plus HST, paid up front, for a five-minute film and a social cut out of every city, shot solo. Montreal opened it at The Nucleus over Grand Prix weekend, and he came home with more than twelve hundred files from two days." },
-
   { year: 2026, date: "28 May", lane: "life", title: "Legacy Day, third year", tag: "Three for three",
     body: "Three years running, all of them his. The friend who walked into FEVA TV in 2014 now has a school named after her, and he is the one who films the day it holds in her name. He cut the 2026 video overnight so the family could share it while the day was still fresh.",
     plate: { src: "/images/legacy-day-2026.jpg", w: 1333, h: 2000, alt: "A Corex crew member in a company shirt and headphones standing in the school atrium facing the Be A Changemaker banner.", caption: "Changemaker Awards, 28 May 2026." } },
   { year: 2026, date: "13 June", lane: "film", title: "Melamoon, Halifax", tag: "City two",
     body: "The east coast pop-up. Four hundred and seventy-three files in a day, and the edit that came out of it set the six-act structure every city after it followed." },
-
   { year: 2026, date: "27 June", lane: "stage", title: "GODfidence Conference", tag: "Toronto Pavilion",
     body: "Lekan Olawoye's inaugural faith and leadership conference at the Toronto Pavilion. He sat on a panel with Nneka Ezu and Mo Ekujumi, convened by Leading Ladies Connect, then took the conference recordings and cut the highlight film while travelling. Speaking and producing the same event. He was later offered a place in the inaugural GODfidence Leadership Cohort.",
     plate: { src: "/images/godfidence-2026.jpg", w: 1333, h: 2000, alt: "Dwayne on the GODfidence stage in a blue check suit, seated in a white armchair mid-answer, the conference hashtag lit on the screen behind him.", caption: "GODfidence Conference, 27 June 2026." } },
-
   { year: 2026, date: "4 July", lane: "film", title: "Melamoon, Vancouver", tag: "City three",
     body: "Across the country for the third pop-up, four thousand kilometres from the last one." },
-
   { year: 2026, date: "17 July", lane: "build", title: "Nine recorded mentor sessions in nine months", tag: "The practice, formalised",
     body: "By the middle of 2026 the mentoring is no longer informal. He runs standing one-to-one sessions on video, recorded and transcribed, and between December 2025 and August 2026 there are nine of them across seven people. Some come to him through LinkedIn without an introduction. One person books twice inside a week. What they say in those calls is theirs, not the record's, but the shape of the thing is his: the mentorship that started in a room upstairs at Driftwood in 2011 now has a calendar, an archive and a queue.",
     quote: "I can't force anyone to grow. I plant seeds and provide resources." },
@@ -650,14 +541,11 @@ export const EVENTS: TimelineEvent[] = [
     body: "A volunteer mentor with Kingston Creative, paired for a full incubation cycle with Earle Lamont of Phantom Flight Media, a Jamaican founder. The match came through on 21 July, he had the introductory call booked within a day, and by August they were meeting weekly. Thirty-three years after his mother took him off the island, he is mentoring a founder on it." },
   { year: 2026, date: "18 July", lane: "film", title: "Melamoon, Edmonton", tag: "City four",
     body: "Three hundred and eighty files on the day. Four down, one to go, all of them shot by one person." },
-
   { year: 2026, date: "23 July", lane: "build", title: "Backs CTRL+ALT+BEAT", tag: "Mentor and sponsor",
     body: "Corex Creative sponsors the show and Dwayne mentors its two founders, Tisania Smith and Chelsi Campbell. Each one teach one, with a cheque attached.",
     plate: { src: "/images/ctrl-alt-beat-2026.jpg", w: 1333, h: 2000, alt: "Dwayne between the two CTRL+ALT+BEAT founders at the episode three live taping, all three laughing and posing for the camera.", caption: "At the CTRL+ALT+BEAT episode three taping, 23 July 2026." } },
-
   { year: 2026, date: "14 August", lane: "film", title: "Melamoon, Toronto", tag: "City five",
     body: "The last of the five pop-ups, and the biggest haul of the tour at eight hundred files. Five cities since May, every one of them shot alone. The Culmination at Steam Whistle in October closes the contract." },
-
   { year: 2026, date: "14 August", lane: "build", title: "Accepted into DMZ Innisfil", tag: "Fall 2026 cohort",
     body: "Toronto Metropolitan University's startup incubator. Still building." },
   { year: 2026, date: "1 September", lane: "stage", title: "Named a Jamaican Diaspora Impact Award recipient", tag: "Consulate-General of Jamaica",
