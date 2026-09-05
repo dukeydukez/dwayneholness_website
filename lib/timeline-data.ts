@@ -285,15 +285,15 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2014, date: "13 November", lane: "stage", title: "First recorded interview",
     body: "RoyaltyRadio. The earliest audio reference to Corex Creative Group anywhere." },
 
+  { year: 2014, date: "23 December", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Corporation 1928743",
+    body: "The name becomes a company, two days before Christmas. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed.",
+    voice: { text: "Someone we worked with made an error on a project we had been hired to do. I asked if he wanted me to find someone more experienced. I expected she might be fired. He laughed and told me to ask her when she was free: invite her to my house, we'll have dinner, and I can show her how to do it correctly.", who: "Sasha Henry", role: "on how he runs a set", when: "2018" }
+  },
   { year: 2015, lane: "film", title: "Directs and edits the Rogers Outrank campaign", tag: "Rogers Communications",
     body: "Director and editor on the campaign, for a national telecom. Six years earlier he had been background talent in a Rogers commercial. Same client, opposite side of the camera. He also directs the Modo, Beard Gang music video that year.",
     voice: { text: "I enjoyed working with Dwayne so much at Rogers that I knew I had to work with him again when I started at AudienceView.", who: "Danielle Pinnock", role: "Rogers Communications", when: "2018" }
   },
 
-  { year: 2015, date: "31 January", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Official",
-    body: "The name becomes a company. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed.",
-    voice: { text: "Someone we worked with made an error on a project we had been hired to do. I asked if he wanted me to find someone more experienced. I expected she might be fired. He laughed and told me to ask her when she was free: invite her to my house, we'll have dinner, and I can show her how to do it correctly.", who: "Sasha Henry", role: "on how he runs a set", when: "2018" }
-  },
   { year: 2015, date: "17 March", lane: "film", title: "Interviews Exco Levi", tag: "Four-time Juno winner",
     body: "Shot at FEVA TV. One of the biggest reggae artists in the country, sitting for him." },
 
