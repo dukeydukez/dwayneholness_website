@@ -628,6 +628,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, date: "4 July", lane: "film", title: "Melamoon, Vancouver", tag: "City three",
     body: "Across the country for the third pop-up, four thousand kilometres from the last one." },
 
+  { year: 2026, date: "17 July", lane: "build", title: "Nine recorded mentor sessions in nine months", tag: "The practice, formalised",
+    body: "By the middle of 2026 the mentoring is no longer informal. He runs standing one-to-one sessions on video, recorded and transcribed, and between December 2025 and August 2026 there are nine of them across seven people. Some come to him through LinkedIn without an introduction. One person books twice inside a week. What they say in those calls is theirs, not the record's, but the shape of the thing is his: the mentorship that started in a room upstairs at Driftwood in 2011 now has a calendar, an archive and a queue.",
+    quote: "I can't force anyone to grow. I plant seeds and provide resources." },
   { year: 2026, date: "17 July", lane: "build", title: "Mentor, CreaTech Incubator", tag: "Kingston, Jamaica",
     body: "A volunteer mentor with Kingston Creative, paired with a Jamaican founder for a full incubation cycle." },
   { year: 2026, date: "18 July", lane: "film", title: "Melamoon, Edmonton", tag: "City four",
