@@ -612,6 +612,9 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2026, date: "April", lane: "film", title: "The Other Canada, season five", tag: "Second season running",
     body: "Six episodes split between Montreal and Toronto. The second season Corex has produced for the FACE Coalition." },
   { year: 2026, date: "7 April", lane: "build", title: "Black Screen Office Symposium, year three", body: "Advisory board and symposium advisory." },
+  { year: 2026, date: "18 April", lane: "build", title: "Makes an introduction, then gets out of the way", tag: "Hadassah Okebugwu",
+    body: "He met her at a Pinball Foundation mentoring event, and she booked a session with him off the back of it. The same day they spoke he wrote to Sherard McQueen at M5V Developments, a client of his, introducing her as an architecture graduate who had zeroed in on design management. The email is worth reading for how it ends: he vouches for her, says she is sharp and does her research, and then hands her the pen. Reach out directly and tell Sherard what you are building toward. Sherard's first answer was that there might not be a perfect fit right now. She asked for the meeting anyway, and by his account she ended up hired there, and thanked him for it publicly.",
+    quote: "I told her you'd be worth meeting. I'll let you two take it from here." },
   { year: 2026, date: "23 May", lane: "film", title: "Melamoon tour begins in Montreal", tag: "Five cities, solo shooter",
     body: "FACE Coalition's Black founder launchpad went on the road, and Corex went with it. Twenty-five thousand plus HST, paid up front, for a five-minute film and a social cut out of every city, shot solo. Montreal opened it at The Nucleus over Grand Prix weekend, and he came home with more than twelve hundred files from two days." },
 
@@ -632,7 +635,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "By the middle of 2026 the mentoring is no longer informal. He runs standing one-to-one sessions on video, recorded and transcribed, and between December 2025 and August 2026 there are nine of them across seven people. Some come to him through LinkedIn without an introduction. One person books twice inside a week. What they say in those calls is theirs, not the record's, but the shape of the thing is his: the mentorship that started in a room upstairs at Driftwood in 2011 now has a calendar, an archive and a queue.",
     quote: "I can't force anyone to grow. I plant seeds and provide resources." },
   { year: 2026, date: "17 July", lane: "build", title: "Mentor, CreaTech Incubator", tag: "Kingston, Jamaica",
-    body: "A volunteer mentor with Kingston Creative, paired with a Jamaican founder for a full incubation cycle." },
+    body: "A volunteer mentor with Kingston Creative, paired for a full incubation cycle with Earle Lamont of Phantom Flight Media, a Jamaican founder. The match came through on 21 July, he had the introductory call booked within a day, and by August they were meeting weekly. Thirty-three years after his mother took him off the island, he is mentoring a founder on it." },
   { year: 2026, date: "18 July", lane: "film", title: "Melamoon, Edmonton", tag: "City four",
     body: "Three hundred and eighty files on the day. Four down, one to go, all of them shot by one person." },
 
