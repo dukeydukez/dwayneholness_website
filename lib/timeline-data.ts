@@ -363,10 +363,6 @@ export const EVENTS: TimelineEvent[] = [
     body: "Shawney Cohen's seventy-seven minute documentary on Toronto's rap scene, released by Noisey. The film credits him on screen as Dukey Dukez, Video Director. He directed Friyie's Don't Worry that same year, and Friyie is one of the artists the film follows. Five days after it dropped he posted about it without mentioning that he was in it: go watch this, it is a big look for the city.",
     plate: { src: "/images/6ix-rising-2017.jpg", w: 2000, h: 1120, alt: "Dwayne laughing outdoors in a camo t-shirt and gold chain in a still from 6ix Rising, the on-screen caption reading Dukey Dukez, Video Director, with the Noisey logo in the corner.", caption: "6ix Rising, Noisey, 2017. His on-screen credit." } },
 
-  { year: 2018, lane: "build", title: "Dissolves Corex Creative Ltd", tag: "On his accountant's advice",
-    body: "His accountant at the time told him to close the company, because it was not earning enough that year to justify keeping it open. He did it. The money it saved was small and the thing it cost was not money at all: four years of continuous corporate history, the kind banks and bonding companies and grant panels ask you to prove. He reopened the following year and started that clock at zero.",
-    quote: "I wish I kept it to keep the years of business history, but I didn't know better." },
-
   { year: 2018, lane: "life", title: "One hundred and forty-three days of daily Instagram Live", tag: "Calculated Steps",
     body: "One hundred and forty-nine episodes archived, seventy-nine of them with guests including Randell Adjei, Hodan Nalayeh and Sasha Exeter. The method proven in public, daily." },
   { year: 2018, lane: "film", title: "Directs Manifesto 11, Afro Chic and Chronixx Gambia", body: "Plus the Ontario Works TESS campaign." },
@@ -384,6 +380,10 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2018, date: "4 August", lane: "life", title: "Hodan buys a one-way ticket",
     body: "She calls him in excitement. He journals it that night.",
     quote: "It's amazing how we can really commit to our words and make it happen even after a couple years." },
+  { year: 2018, date: "18 September", lane: "build", title: "Corex Creative Ltd is dissolved", tag: "Four years, closed",
+    body: "His accountant, Shazia Hafeez, had been guiding him for years by this point, and the advice that year was to close the company: it was not earning enough to justify keeping it open. He started it himself on 16 May, emailing her the steps he had got from the CRA, and she had the consent letter drafted and signed back the same day. He sent the letter to dissolve on 11 September. The final corporate return was prepared up to 18 September, and on 5 November she confirmed the CRA had the articles of dissolution. He signed the last form from Kenya. The money it saved was small. What it cost was four years of continuous corporate history, which is what banks and bonding companies and grant panels ask you to prove. He reopened the following year and started that clock at zero.",
+    quote: "I wish I kept it to keep the years of business history, but I didn't know better." },
+
   { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
     body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
