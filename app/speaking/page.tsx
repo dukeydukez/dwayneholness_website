@@ -623,7 +623,7 @@ export default function SpeakingPage() {
               marginBottom: "3rem",
             }}
           >
-            What Organisers Say
+            What Organizers Say
           </motion.p>
           <div
             style={{

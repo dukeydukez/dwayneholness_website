@@ -13,7 +13,7 @@ Someone told me recently that they felt behind. Like everyone around them had a 
 
 I asked them one question. Whose story are you comparing yours to?
 
-They paused. And in that pause, I could see the realisation landing: they had been running a race against a highlight reel. Someone else's curated summary. The speaking stage shot, the milestone post, the case study that makes it all look clean and inevitable.
+They paused. And in that pause, I could see the realization landing: they had been running a race against a highlight reel. Someone else's curated summary. The speaking stage shot, the milestone post, the case study that makes it all look clean and inevitable.
 
 Not the years of uncertainty that came before it. Not the pivots nobody announced. Not the moments that almost broke the person on that stage.
 
