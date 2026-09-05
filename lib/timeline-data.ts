@@ -444,7 +444,8 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
 
-  { year: 2021, lane: "build", title: "Founds All Out Canada", body: "A venture started in the same year as everything else." },
+  { year: 2021, lane: "build", title: "Co-founds All Out Canada", tag: "With Monumental Projects",
+    body: "A project to make the outdoors accessible to racialized communities, and to put them in the frame when Ontario nature gets photographed. Founded with Shereen Ashman of the CEE Centre for Young Black Professionals and Kofi Hope and Zahra Ebrahim of Monumental Projects, with Corex as the media partner. He made the films: episode one on the Man Dem Cycling Club, episode two on Black Foodie, both on his own channel. The Narwhal covered it that July under the line that it shakes up stereotypes about Ontario\u2019s outdoors. When a student asked to use the footage in a thesis the following spring, the credit Monumental asked for was Monumental Projects, All Out Canada and Corex Creative, in that order." },
   { year: 2021, lane: "film", title: "Creative director on Ups and Downs, featured in Rolling Stone", tag: "First Rolling Stone credit",
     body: "The furthest his work had travelled in print to that point." },
   { year: 2021, lane: "stage", title: "Flow 93.5 names him a Toronto Hustler", tag: "Black History Month",
