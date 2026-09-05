@@ -72,8 +72,8 @@ export const EVENTS: TimelineEvent[] = [
   { year: 2005, lane: "life", title: "First tattoo, for his grandmother", tag: "Age 17",
     body: "Edith Brown, 25 February 1952 to 2 October 2004, his mother's mother. She died the year before, at fifty-two, when he was sixteen. He was the grandchild who felt safest around her. The first thing he ever put on his body permanently was her, and he was seventeen when he did it. It sits in the years the archive holds nothing, and it is the one that left a mark you can still see." },
 
-  { year: 2006, lane: "build", title: "Co-founds the NISE collective", tag: "Age 18",
-    body: "His earliest creative collective, six years before the Corex name exists. By this year NISE is already staging a fashion show at Captain John's." },
+  { year: 2006, lane: "build", title: "Ambassador and model for NISE", tag: "Age 18",
+    body: "The clothing line was Michael Webb's, known as Klipz. Dwayne wore it, modelled it and carried it, which is the first time he is out front of a brand that is not his own. NISE ran through the same rooms he did: a lot of the Wolfpack wore it, so the crew that got him expelled from Western Tech two years earlier and the label he was fronting were the same set of people in different clothes. By this year NISE is staging a fashion show at Captain John's." },
 
   { year: 2006, lane: "film", title: "Already shooting", tag: "It starts with photography",
     body: "His own archive opens here, with 589 photographs across seven folders: the NISE fashion show, a jam night, behind the scenes from a shoot. Every file is a JPG. The first documented year of his creative work is photography, a year before he starts at Humber." },
@@ -684,7 +684,7 @@ export const THROUGH_LINES: ThroughLine[] = [
 export const STATS = [
   { value: "38", label: "Years", detail: "Kingston 1988 to Toronto 2026" },
   { value: "66", label: "Screen productions", detail: "Background performer on all but one, 2006 to 2025" },
-  { value: "9", label: "Ventures founded", detail: "From HighClass to Corex OS" },
+  { value: "11", label: "Ventures founded", detail: "Co-founded included, from Dukez and Bullet to Corex OS" },
   { value: "25+", label: "Public appearances", detail: "Panels, podcasts and features on record" },
 ];
 
@@ -790,8 +790,8 @@ export const VENTURES: Venture[] = [
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
   { name: "106 and York", role: "Co-founder", span: "2009 to 2013", note: "Urban arts festival run under HighClass. Six editions, North York Arts Centre to Yorkwoods Library.", live: false },
   { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2007 to 2009", note: "With Femi Lawson. Artist development out of the Red Room: shooting, editing, music and interviews. His first venture, a year before HighClass.", live: false },
+  { name: "All Out Canada", role: "Co-founder", span: "2021", note: "With Shereen Ashman of CEE and Kofi Hope and Zahra Ebrahim of Monumental Projects. Corex was the media partner. Two episodes, covered by The Narwhal.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
-  { name: "NISE Collective", role: "Co-Founder", span: "2006", note: "The earliest one, before Corex existed by name.", live: false },
 ];
 
 export type Detail = { label: string; body: string };
