@@ -291,7 +291,8 @@ export const EVENTS: TimelineEvent[] = [
   },
 
   { year: 2015, date: "31 January", lane: "build", title: "Corex Creative Ltd is incorporated", tag: "Official",
-    voice: { text: "Probably one of the most important things is that Dwayne cares. He cares about relationships. He cares about the end product and his own team. It shows in the work.", who: "Leigh Himel", role: "co-founder, Gravity Partners", when: "2021" }
+    body: "The name becomes a company. Corexmedia.com had gone up three years earlier and he had been working under Corex ever since, so this is the paperwork catching up to something that already existed.",
+    voice: { text: "Someone we worked with made an error on a project we had been hired to do. I asked if he wanted me to find someone more experienced. I expected she might be fired. He laughed and told me to ask her when she was free: invite her to my house, we'll have dinner, and I can show her how to do it correctly.", who: "Sasha Henry", role: "on how he runs a set", when: "2018" }
   },
   { year: 2015, date: "17 March", lane: "film", title: "Interviews Exco Levi", tag: "Four-time Juno winner",
     body: "Shot at FEVA TV. One of the biggest reggae artists in the country, sitting for him." },
@@ -430,6 +431,7 @@ export const EVENTS: TimelineEvent[] = [
     body: "A sustained engagement through the autumn, cut and delivered across three export rounds in late September and October." },
 
   { year: 2021, lane: "film", title: "LCBO, Spirit of Sustainability", tag: "Two hundred thousand dollars", body: "Director on the largest campaign of the decade, and the one that reset what he thought work was worth. A single project at two hundred thousand dollars, thirteen years after a company that started with a Nikon D60 and forty-six dollars for eight hours on a film set. He also edits Chronixx, Safe N Sound that year.",
+    voice: { text: "Probably one of the most important things is that Dwayne cares. He cares about relationships. He cares about the end product and his own team. It shows in the work.", who: "Leigh Himel", role: "co-founder, Gravity Partners", when: "2021" },
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
 
