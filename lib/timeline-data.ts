@@ -442,6 +442,11 @@ export const EVENTS: TimelineEvent[] = [
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
 
+  { year: 2021, lane: "build", title: "Founds All Out Canada", body: "A venture started in the same year as everything else." },
+  { year: 2021, lane: "film", title: "Creative director on Ups and Downs, featured in Rolling Stone", tag: "First Rolling Stone credit",
+    body: "The furthest his work had travelled in print to that point." },
+  { year: 2021, lane: "stage", title: "Flow 93.5 names him a Toronto Hustler", tag: "Black History Month",
+    body: "A Black History Month feature on the station. The same year he hosted the ArtWorksTO graduation, sat with Smile Jamaica's morning show, mentored at Futurpreneur Canada as well as Artscape upstART, and met David Suzuki." },
   { year: 2021, date: "29 April", lane: "life", title: "Joins the Rotary Club of Innisfil", tag: "Service above self",
     body: "His member account is created the same week. Food drives in Sandy Cove Acres, Quiet Santa for kids who cannot manage a mall Santa, bottle drives. He had moved his life north to Simcoe County, and this is where the local roots go in." },
 
@@ -534,6 +539,8 @@ export const EVENTS: TimelineEvent[] = [
     body: "Named for the first Black woman elected to the House of Commons.",
     plate: { src: "/images/jean-augustine-2024.jpg", w: 2000, h: 1127, alt: "A large group of young people in a lecture hall with hands raised, photographed in black and white.", caption: "Jean Augustine Chair, 24 July 2024." } },
 
+  { year: 2024, date: "28 July", lane: "life", title: "Gets the girl of his dreams", tag: "His own words",
+    body: "The date he wrote down for Tracy. Ten weeks later he proposed, and four months after that they were married. He recorded it in his own year-end list between starting a podcast and speaking at York, which is exactly where it sat in the year." },
   { year: 2024, date: "15 September", lane: "life", title: "Baptized at Kingsway Community Life Centre", tag: "The point it changed",
     body: "Baptized by Pastor Richard Brown, with Pastor Dennis Martin, on a Sunday. He describes surrender as the moment his life changed direction, and it is the anchor of chapter thirteen of his book. Three weeks later he proposed.",
     plate: { src: "/images/baptism-2024.jpg", w: 2000, h: 1125, alt: "Dwayne rising out of the baptism tank with both hands raised and laughing. Pastor Richard Brown stands over him on the left, Pastor Dennis Martin holds a white towel on the right, both in I Have Decided To Follow Jesus shirts.", caption: "Kingsway Community Life Centre, 15 September 2024." } },
