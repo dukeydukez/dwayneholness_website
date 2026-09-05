@@ -85,7 +85,7 @@ I calculate every window. If I take this opportunity, where does it lead? What d
 
 A flight to Cuba off my camera work led to Jamaica, which led to TVJ, which led to touring, which led to Lauryn Hill. None of it was a straight line. All of it was calculated. Not in a spreadsheet. In my mind. In my willingness to see the window and walk through.
 
-Within five years of incorporating Corex Creative in 2014, we generated $2.5 million in sales. Every one of those dollars traces back to a window of opportunity I could have missed. A phone call I could have ignored. A last-minute edit I could have said no to. A little camera I could have been embarrassed by.
+Within five years of incorporating Corex Creative in 2019, we generated $2.5 million in sales. Every one of those dollars traces back to a window of opportunity I could have missed. A phone call I could have ignored. A last-minute edit I could have said no to. A little camera I could have been embarrassed by.
 
 The windows are there. They're always there. The question is whether you're looking up long enough to see them. And whether you're willing to step through before you feel ready.
 
