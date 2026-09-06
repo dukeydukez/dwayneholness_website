@@ -393,8 +393,8 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
     voice: { text: "Probably one of the most important things is that Dwayne cares. He cares about relationships. He cares about the end product and his own team. It shows in the work.", who: "Leigh Himel", role: "co-founder, Gravity Partners", when: "2021" },
     plate: { src: "/images/lcbo/lcbo-directing.jpg", w: 1600, h: 1067, alt: "Dwayne directing on the LCBO Spirit of Sustainability shoot.", caption: "Directing the Spirit of Sustainability campaign." } },
   { year: 2021, lane: "stage", title: "Toronto Caribbean and The Hype Magazine features", body: "Two profiles in one year." },
-  { year: 2021, lane: "build", title: "Co-founds All Out Canada", tag: "With Monumental Projects",
-    body: "A project to make the outdoors accessible to racialized communities, and to put them in the frame when Ontario nature gets photographed. Founded with Shereen Ashman of the CEE Centre for Young Black Professionals and Kofi Hope and Zahra Ebrahim of Monumental Projects, with Corex as the media partner. He made the films: episode one on the Man Dem Cycling Club, episode two on Black Foodie, both on his own channel. The Narwhal covered it that July under the line that it shakes up stereotypes about Ontario\u2019s outdoors. When a student asked to use the footage in a thesis the following spring, the credit Monumental asked for was Monumental Projects, All Out Canada and Corex Creative, in that order." },
+  { year: 2021, lane: "build", title: "Media partner on All Out Canada", tag: "He made the films",
+    body: "A project to make the outdoors accessible to racialized communities, and to put them in the frame when Ontario nature gets photographed. Founded by Shereen Ashman of the CEE Centre for Young Black Professionals with Kofi Hope and Zahra Ebrahim of Monumental Projects. Corex came in as the media partner, not as a founder. He made the films: episode one on the Man Dem Cycling Club, episode two on Black Foodie, both on his own channel. The Narwhal covered it that July under the line that it shakes up stereotypes about Ontario\u2019s outdoors. When a student asked to use the footage in a thesis the following spring, the credit Monumental asked for was Monumental Projects, All Out Canada and Corex Creative, in that order." },
   { year: 2021, lane: "film", title: "Creative director on Ups and Downs, featured in Rolling Stone", tag: "First Rolling Stone credit",
     body: "The furthest his work had travelled in print to that point." },
   { year: 2021, lane: "stage", title: "Flow 93.5 names him a Toronto Hustler", tag: "Black History Month",
@@ -604,7 +604,7 @@ export const THROUGH_LINES: ThroughLine[] = [
 export const STATS = [
   { value: "38", label: "Years", detail: "Kingston 1988 to Toronto 2026" },
   { value: "66", label: "Screen productions", detail: "Background performer on all but one, 2006 to 2025" },
-  { value: "11", label: "Ventures founded", detail: "Co-founded included, from Dukez and Bullet to Corex OS" },
+  { value: "10", label: "Ventures founded", detail: "Co-founded included, from Dukez and Bullet to Corex OS" },
   { value: "25+", label: "Public appearances", detail: "Panels, podcasts and features on record" },
 ];
 
@@ -731,7 +731,7 @@ export const VENTURES: Venture[] = [
   { name: "FEVA TV", role: "Producer and Creative Director", span: "2013 to 2015", note: "Employment, not ownership. On staff for both launches.", live: false },
   { name: "106 and York", role: "Co-founder", span: "2009 to 2013", note: "Urban arts festival run under HighClass. Six editions, North York Arts Centre to Yorkwoods Library.", live: false },
   { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2007 to 2009", note: "With Femi Lawson. Artist development out of the Red Room: shooting, editing, music and interviews. His first venture, a year before HighClass.", live: false },
-  { name: "All Out Canada", role: "Co-founder", span: "2021", note: "With Shereen Ashman of CEE and Kofi Hope and Zahra Ebrahim of Monumental Projects. Corex was the media partner. Two episodes, covered by The Narwhal.", live: false },
+  { name: "All Out Canada", role: "Media partner", span: "2021", note: "Founded by Shereen Ashman of CEE with Kofi Hope and Zahra Ebrahim of Monumental Projects. Corex was the media partner and he made both episodes. Covered by The Narwhal.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
 ];
 
