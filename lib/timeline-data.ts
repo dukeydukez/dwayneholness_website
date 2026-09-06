@@ -652,7 +652,7 @@ export const CREDITS: CreditGroup[] = [
   },
   {
     discipline: "Music video",
-    note: "Twenty-seven on record, from 2009.",
+    note: "Forty-six on record, from 2009.",
     credits: [
       { year: "2025", title: "Dexta Daps, Lockdown", role: "Director" },
       { year: "2021", title: "Chronixx, Safe N Sound", role: "Editor" },
