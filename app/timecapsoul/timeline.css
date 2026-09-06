@@ -943,3 +943,37 @@ html:has(.tl) .discovery-trigger { display: none !important; }
   .tl-row-date { flex-basis: 100%; }
 }
 
+/* ── Countries ─────────────────────────────────────────────
+   Grouped by region. The note carries the reason he was there, so the
+   row is three fields, not two. */
+.tl-geo { display: grid; gap: 2.6rem; }
+
+.tl-geo-region {
+  margin: 0 0 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--era);
+  transition: color 700ms ease;
+}
+
+.tl-geo-list { list-style: none; margin: 0; padding: 0; }
+
+.tl-geo-row {
+  display: grid;
+  grid-template-columns: minmax(9rem, 12rem) minmax(10rem, 14rem) 1fr;
+  gap: 0.2rem 1.4rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid var(--hair);
+  align-items: baseline;
+}
+.tl-geo-row:last-child { border-bottom: 0; }
+
+.tl-geo-name { font-size: clamp(1rem, 1.4vw, 1.14rem); font-weight: 500; letter-spacing: -0.012em; }
+.tl-geo-years { color: var(--era); font-size: 0.9rem; font-variant-numeric: tabular-nums; transition: color 700ms ease; }
+.tl-geo-note { color: var(--txt-dim); font-size: 0.92rem; line-height: 1.55; }
+
+@media (max-width: 760px) {
+  .tl-geo-row { grid-template-columns: 1fr; gap: 0.25rem; padding: 1.1rem 0; }
+}

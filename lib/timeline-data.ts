@@ -770,6 +770,60 @@ export type Place = {
 
 /* Everywhere the record actually places him, with dates. Coordinates are the
    city or the nearest named point; weight is how much work came out of it. */
+export type CountryGroup = { region: string; countries: { name: string; years: string; note: string }[] };
+
+/** Every country in the record, from the geotagged photo archive cross-checked
+ *  against the dated entries above. Twenty-two in total. */
+export const COUNTRIES: CountryGroup[] = [
+  {
+    region: "North America",
+    countries: [
+      { name: "Canada", years: "1993 to now", note: "Home since he was five. Toronto, and coast to coast for work: Montreal, Halifax, Vancouver, Edmonton, and Whitehorse in 2013." },
+      { name: "United States", years: "2010 to 2025", note: "New York, Los Angeles for the Ego shoot, Providence." },
+      { name: "Mexico", years: "2017, 2019, 2024", note: "Mexico City, and the Chronixx tour run through Latin America." },
+    ],
+  },
+  {
+    region: "The Caribbean",
+    countries: [
+      { name: "Jamaica", years: "1988, and twelve separate years since", note: "Born in Kingston. Back for Sad Streets and the Junior Reid videos, Reggae Sumfest, Negril. The most photographed place in the archive after home." },
+      { name: "Cuba", years: "2010", note: "Santiago de Cuba, flown out to shoot Lavish for G-Swag. The phone also clipped Camaguey in 2026, but that was an overflight." },
+      { name: "Saint Lucia", years: "2019, 2022", note: "Castries." },
+      { name: "Belize", years: "2019", note: "Belize City." },
+      { name: "Barbados", years: "2019", note: "Briefly, on the same run." },
+    ],
+  },
+  {
+    region: "South America",
+    countries: [
+      { name: "Brazil", years: "2026", note: "Nine days in Rio de Janeiro, and the single biggest haul of frames from any trip." },
+      { name: "Colombia", years: "2019", note: "Bogota, on the Chronixx tour." },
+    ],
+  },
+  {
+    region: "Africa",
+    countries: [
+      { name: "Somalia", years: "2015 to 2019", note: "Mogadishu, Kismayo, Laascaanood, Garoowe, and Hargeisa in Somaliland. Four years of trips, most of them with Hodan Nalayeh." },
+      { name: "Kenya", years: "2013 to 2018", note: "Nairobi, usually either side of Somalia." },
+      { name: "Uganda", years: "2019", note: "Kampala, on the Chronixx tour." },
+      { name: "Tanzania", years: "2017", note: "Dar es Salaam and Mto wa Mbu." },
+      { name: "Ethiopia", years: "2016, 2018", note: "Addis Ababa." },
+      { name: "Gambia", years: "2018", note: "Banjul. Christmas with the tour and the two in the morning show." },
+    ],
+  },
+  {
+    region: "Europe",
+    countries: [
+      { name: "United Kingdom", years: "2016 to 2026", note: "London, Leeds for the O2 show, Nottingham." },
+      { name: "Spain", years: "2018, 2019", note: "Madrid, and Christmas Eve before the flight to Gambia." },
+      { name: "Germany", years: "2019", note: "Berlin, on the Chronixx tour." },
+      { name: "Portugal", years: "2018", note: "In passing." },
+      { name: "Netherlands", years: "2018", note: "In passing, between Somalia and home." },
+      { name: "Turkey", years: "2017", note: "Istanbul, between Somalia and Tanzania." },
+    ],
+  },
+];
+
 export const PLACES: Place[] = [
   { name: "Jamaica", region: "Kingston, Negril, Montego Bay", lat: 18.15, lon: -77.35, years: "1988 to 2019", weight: 3,
     note: "Born in Kingston, left at five, and back for work ever since: Sad Streets and the Junior Reid videos in 2011, Reggae Sumfest in 2018, and Negril closing the Chronixx run in 2019." },

@@ -6,6 +6,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import {
   CLIENTS_MORE,
   CLIENT_LOGOS,
+  COUNTRIES,
   CREDITS,
   ERAS,
   EVENTS,
@@ -583,6 +584,31 @@ export default function TimelineExperience() {
               </div>
             ))}
           </dl>
+        </section>
+
+        {/* ── Countries ── */}
+        <section className="tl-close">
+          <h2>Twenty-two countries</h2>
+          <p className="tl-close-lede">
+            Everywhere the work and the life have taken him, drawn from the
+            geotagged photo archive and checked against the dated entries above.
+          </p>
+          <div className="tl-geo">
+            {COUNTRIES.map((g) => (
+              <div className="tl-geo-group" key={g.region}>
+                <h3 className="tl-geo-region">{g.region}</h3>
+                <ul className="tl-geo-list">
+                  {g.countries.map((c) => (
+                    <li className="tl-geo-row" key={c.name}>
+                      <span className="tl-geo-name">{c.name}</span>
+                      <span className="tl-geo-years">{c.years}</span>
+                      <span className="tl-geo-note">{c.note}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* ── Still to come ── */}
