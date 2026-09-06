@@ -351,7 +351,7 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
     body: "Shazia Hafeez, who kept his books and filed his returns, had been guiding him for years by this point, and the advice that year was to close the company: it was not earning enough to justify keeping it open. He started it himself on 16 May, emailing her the steps he had got from the CRA, and she had the consent letter drafted and signed back the same day. He sent the letter to dissolve on 11 September. The final corporate return was prepared up to 18 September, and on 5 November she confirmed the CRA had the articles of dissolution. He signed the last form from Kenya. The money it saved was small. What it cost was four years of continuous corporate history, which is what banks and bonding companies and grant panels ask you to prove. He reopened the following year and started that clock at zero.",
     quote: "I wish I kept it to keep the years of business history, but I didn't know better." },
   { year: 2018, date: "28 September to 12 October", lane: "life", title: "Back in Somalia with Hodan", tag: "Nine months left",
-    body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
+    body: "A working trip of about two weeks, with a Kenyan leg either side, and 190 photographs on a Sony A7 II beyond what his phone recorded. Regional airstrips and an Ocean Airlines turboprop, camel country, a camera in his hands the whole way. He was shooting the airline's commercial, which is why the itinerary hops around the country the way it does. He did not know it at the time, but this is the last documented trip the two of them made together. She was killed nine months later.",
     plate: { src: "/images/somalia-2018.jpg", w: 2000, h: 1126, alt: "Dwayne in a mustard shirt filming with a cinema camera beside an Ocean Airlines turboprop on a Somali airstrip, a flight attendant in an orange hijab at the airstair and ground crew in ear defenders nearby.", caption: "Somalia, October 2018." } },
   { year: 2018, date: "4 to 14 November", lane: "life", title: "Kenya, one last time", tag: "The last trip",
     body: "Three weeks after getting home from Somalia he was back on the continent, through Addis again and on to Kenya. A hundred and nine geotagged frames. It is the last trip the two of them made before she was killed." },
@@ -638,6 +638,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2021", title: "Spirit of Sustainability", role: "Director", client: "LCBO" },
       { year: "2020", title: "Bring Back Play", role: "Director", client: "South Riverdale CHC" },
       { year: "2019", title: "Kaela Kay SS19", role: "Director, Editor", client: "Kaela Kay" },
+      { year: "2018", title: "Ocean Airlines commercial", role: "Director", client: "Shot across Somalia" },
       { year: "2018", title: "TESS campaign", role: "Director", client: "Ontario Works" },
       { year: "2018", title: "Manifesto 11, festival recap", role: "Director, Editor", client: "Manifesto" },
       { year: "2018", title: "Manifesto Talks, the Summit videos", role: "Director, Editor", client: "Manifesto" },
@@ -806,7 +807,7 @@ export const COUNTRIES: CountryGroup[] = [
   {
     region: "Africa",
     countries: [
-      { name: "Somalia", years: "2015 to 2019", note: "Mogadishu, Kismayo, Laascaanood, Garoowe, and Hargeisa in Somaliland. Four years of trips, most of them with Hodan Nalayeh." },
+      { name: "Somalia", years: "2015 to 2019", note: "Six trips. Mogadishu, Kismayo, Laascaanood, Garoowe, Berbera on the coast, and Hargeisa in Somaliland. Most of them with Hodan Nalayeh, and one of them shooting the Ocean Airlines commercial." },
       { name: "Uganda", years: "2019", note: "Kampala, on the Chronixx tour." },
       { name: "Kenya", years: "2013 to 2018", note: "Nairobi, usually either side of Somalia." },
       { name: "Ethiopia", years: "2016, 2018", note: "Addis Ababa." },
