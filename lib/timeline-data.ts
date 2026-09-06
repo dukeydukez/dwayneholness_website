@@ -790,10 +790,10 @@ export const COUNTRIES: CountryGroup[] = [
     region: "The Caribbean",
     countries: [
       { name: "Jamaica", years: "1988, and twelve separate years since", note: "Born in Kingston. Back for Sad Streets and the Junior Reid videos, Reggae Sumfest, Negril. The most photographed place in the archive after home." },
-      { name: "Cuba", years: "2010", note: "Santiago de Cuba, flown out to shoot Lavish for G-Swag. The phone also clipped Camaguey in 2026, but that was an overflight." },
       { name: "Saint Lucia", years: "2019, 2022", note: "Castries." },
       { name: "Belize", years: "2019", note: "Belize City." },
       { name: "Barbados", years: "2019", note: "Briefly, on the same run." },
+      { name: "Cuba", years: "2010", note: "Santiago de Cuba, flown out to shoot Lavish for G-Swag. The phone also clipped Camaguey in 2026, but that was an overflight." },
     ],
   },
   {
@@ -807,11 +807,11 @@ export const COUNTRIES: CountryGroup[] = [
     region: "Africa",
     countries: [
       { name: "Somalia", years: "2015 to 2019", note: "Mogadishu, Kismayo, Laascaanood, Garoowe, and Hargeisa in Somaliland. Four years of trips, most of them with Hodan Nalayeh." },
-      { name: "Kenya", years: "2013 to 2018", note: "Nairobi, usually either side of Somalia." },
       { name: "Uganda", years: "2019", note: "Kampala, on the Chronixx tour." },
-      { name: "Tanzania", years: "2017", note: "Dar es Salaam and Mto wa Mbu." },
+      { name: "Kenya", years: "2013 to 2018", note: "Nairobi, usually either side of Somalia." },
       { name: "Ethiopia", years: "2016, 2018", note: "Addis Ababa." },
       { name: "Gambia", years: "2018", note: "Banjul. Christmas with the tour and the two in the morning show." },
+      { name: "Tanzania", years: "2017", note: "Dar es Salaam and Mto wa Mbu." },
     ],
   },
   {
