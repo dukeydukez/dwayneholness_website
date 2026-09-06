@@ -779,7 +779,7 @@ export const COUNTRIES: CountryGroup[] = [
     region: "North America",
     countries: [
       { name: "Canada", years: "1993 to now", note: "Home since he was five. Toronto, and coast to coast for work: Montreal, Halifax, Vancouver, Edmonton, and Whitehorse in 2013." },
-      { name: "United States", years: "2010 to 2025", note: "New York, Los Angeles for the Ego shoot, Providence." },
+      { name: "United States", years: "2010 to 2025", note: "New York, Los Angeles for the Ego shoot, Miami, Washington, Philadelphia, Minneapolis and Providence." },
       { name: "Mexico", years: "2017, 2019, 2024", note: "Mexico City, and the Chronixx tour run through Latin America." },
     ],
   },
