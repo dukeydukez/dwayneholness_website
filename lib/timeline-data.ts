@@ -550,6 +550,8 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
     body: "Narratively complete and print ready, opening with a letter to his mother. He is targeting publication in 2027." },
   { year: 2026, date: "April", lane: "film", title: "The Other Canada, season five", tag: "Second season running",
     body: "Six episodes split between Montreal and Toronto. The second season Corex has produced for the FACE Coalition." },
+  { year: 2026, date: "2 April", lane: "build", title: "Toronto Arts Council funds the Jamaica Strong film", tag: "Seven thousand dollars",
+    body: "A Project grant under the council's Black Arts program, application 50606. He had already paid for the shoot himself; this covered the edit and the screening of Rising After The Storm. Results came back on 2 April, the deposit was scheduled for the twenty-first, and the file has since been reported on and closed. The relief drive raised the money to help; the grant put the film in front of people." },
   { year: 2026, date: "7 April", lane: "build", title: "Black Screen Office Symposium, year three", body: "Advisory board and symposium advisory." },
   { year: 2026, date: "18 April", lane: "build", title: "Makes an introduction, then gets out of the way", tag: "Hadassah Okebugwu",
     body: "He met her at a Pinball Foundation mentoring event, and she booked a session with him off the back of it. The same day they spoke he wrote to Sherard McQueen at M5V Developments, a client of his, introducing her as an architecture graduate who had zeroed in on design management. The email is worth reading for how it ends: he vouches for her, says she is sharp and does her research, and then hands her the pen. Reach out directly and tell Sherard what you are building toward. Sherard's first answer was that there might not be a perfect fit right now. She asked for the meeting anyway. She joined M5V as their AI Operations and Workflow Strategist, which is not the job the introduction was aimed at, and that is the point: the door was the thing, not the room behind it.",
@@ -625,7 +627,7 @@ export const CREDITS: CreditGroup[] = [
     discipline: "Documentary",
     note: "The work he would be introduced by.",
     credits: [
-      { year: "2025", title: "Jamaica Strong: Rising After The Storm", role: "Director", client: "Self-funded" },
+      { year: "2025", title: "Jamaica Strong: Rising After The Storm", role: "Director", client: "Self-funded shoot, post and screening on a Toronto Arts Council grant" },
       { year: "2022", title: "Hodan's Story", role: "Writer, Director", client: "CBC Docs Shorts" },
       { year: "2022", title: "The Blackburn Story", role: "Director, Editor", client: "Historica Canada" },
       { year: "2020", title: "Chronixx, Soul Circle Writing Camp", role: "Director, Editor", client: "Soul Circle" },
