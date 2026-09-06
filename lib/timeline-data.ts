@@ -686,7 +686,7 @@ export const CREDITS: CreditGroup[] = [
       { year: "2010", title: "Redway, Close Enough", role: "Director", client: "HipHopCanada, No.2 on WBLK Unsigned Hype" },
       { year: "2010", title: "drewFLYs", role: "Director" },
       { year: "2010", title: "Femi Lawson, Hold Yuh", role: "Director", client: "Gyptian and Nicki Minaj parody" },
-      { year: "2010", title: "Redway ft. JReadi, My Way", role: "Director" },
+      { year: "2010", title: "Redway ft. JReadi, My Way", role: "Director, Editor" },
       { year: "2009", title: "Versatile, Just Like Kingston", role: "Director", client: "Jane and Finch, feat. Beenie Man" },
     ],
   },
