@@ -541,6 +541,15 @@ html:has(.tl) { --floating-offset: calc(78px + 1.25rem); }
   border: 1px solid var(--hair);
 }
 .tl-plate-move { position: absolute; inset: -10% 0; }
+/* Designed assets sit flush in the frame: no over-scan to parallax through,
+   no crop, and no veil tinting a brand's own colours. */
+/* A card carries type, so it needs more width than a portrait photo to stay
+   readable, without towering over the entry. */
+.tl-plate.is-whole.is-portrait { max-width: 42ch; }
+.tl-plate.is-whole .tl-plate-move { inset: 0; }
+.tl-plate.is-whole .tl-plate-img { object-fit: contain; }
+.tl-plate.is-whole .tl-plate-veil { display: none; }
+.tl-plate.is-whole .tl-plate-frame { background: var(--ink); }
 .tl-plate-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 /* Grade the still into the act it belongs to. */
 .tl-plate-veil {

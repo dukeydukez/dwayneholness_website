@@ -90,14 +90,16 @@ function Plate({ plate }: { plate: NonNullable<TimelineEvent["plate"]> }) {
   const y = useTransform(scrollYProgress, [0, 1], reduced ? ["0%", "0%"] : ["-9%", "9%"]);
 
   const portrait = plate.h > plate.w;
+  // A designed card has its own margins. Cropping or drifting it breaks the layout.
+  const whole = plate.fit === "whole";
 
   return (
-    <figure className={`tl-plate${portrait ? " is-portrait" : ""}`} ref={ref}>
+    <figure className={`tl-plate${portrait ? " is-portrait" : ""}${whole ? " is-whole" : ""}`} ref={ref}>
       <div
         className="tl-plate-frame"
         style={{ aspectRatio: `${plate.w} / ${plate.h}` }}
       >
-        <motion.div className="tl-plate-move" style={{ y }}>
+        <motion.div className="tl-plate-move" style={whole ? undefined : { y }}>
           <Image
             src={plate.src}
             alt={plate.alt}

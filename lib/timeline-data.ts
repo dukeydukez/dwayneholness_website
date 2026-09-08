@@ -14,7 +14,9 @@ export type TimelineEvent = {
   /** Withheld from public view until an embargo lifts. */
   embargo?: string;
   /** A verified still. Caption states what the photograph actually shows. */
-  plate?: { src: string; alt: string; caption: string; w: number; h: number };
+  /** `fit: "whole"` for designed assets (cards, posters, screenshots) that must not
+   *  be cropped. Photographs default to the parallax crop. */
+  plate?: { src: string; alt: string; caption: string; w: number; h: number; fit?: "whole" };
 };
 
 export type Era = {
@@ -548,7 +550,7 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
   { year: 2026, date: "February", lane: "stage", title: "BMO features him for Black History Month", tag: "He edited the bank's copy",
     body: "It came through his own relationship manager. Obot Egbo-Egbo put him in front of BMO's marketing team rather than the other way round, and Migena Latifi wrote back that it was their absolute honour to feature him on the Business Banking page. He asked for it to run in the new year because his birthday is 1 January and he wanted it as a present. Then he shaped it. In December he asked them to work Jamaica Strong into the copy given the Black History Month timing, and the bank rewrote the post to carry it. In January he asked for one more change, that the relief effort be named as Jamaica Strong rather than credited loosely to his team, and they took his wording. BMO booked it for 9 February, though he was posting his thanks on the fourth, so the exact publication day is his to confirm. A month later their own account called Corex proof that purpose and profit can coexist. Their draft opened on a line he did not write but might as well have: stories can spark change.",
     quote: "Real impact does not start with recognition. It starts with obedience and consistency.",
-    plate: { src: "/images/bmo-feature-2026.jpg", w: 1600, h: 2000, alt: "The card BMO published: a circular crop of Dwayne on set in an orange CREATIVE cap and headphones beside a cinema camera, set on BMO blue, reading Meet BMO Client, Dwayne Holness, Founder and Creative Director, Corex Creative, with the BMO logo beneath.", caption: "BMO's own card for the feature." } },
+    plate: { src: "/images/bmo-feature-2026.jpg", w: 1601, h: 2000, fit: "whole", alt: "The card BMO published: a circular crop of Dwayne on set in an orange CREATIVE cap and headphones beside a cinema camera, set on BMO blue, reading Meet BMO Client, Dwayne Holness, Founder and Creative Director, Corex Creative, with the BMO logo beneath.", caption: "BMO's own card for the feature." } },
   { year: 2026, date: "18 February", lane: "stage", title: "Canadian Tire Black History Month", tag: "Hired to shoot it, asked to speak at it",
     body: "Corex was contracted to photograph the keynote event, and then Canadian Tire asked him to be highlighted in it. He spoke for five minutes under the title Spotlight on Black Entrepreneurship, remarks sent ahead to the event interpreters, then introduced the keynote himself: Randell Adjei, Ontario's first Poet Laureate, who had been a guest on his Instagram Live back in 2018 when the show was the platform and Dwayne was the one holding it. Eight years on they were on the same programme and Dwayne went first. Over 726 people watched virtually on top of the room itself, and the photographs went out credited to Dwayne and the Corex team. Both sides of the camera in one afternoon.",
     plate: { src: "/images/BHMCorexCT-4621.jpeg", w: 1000, h: 1500, alt: "Dwayne speaking at a podium against a Canadian Tire backdrop, the screen beside him reading Spotlight on Black Entrepreneurship, Dwayne Holness, Founder and CEO, Corex Creative.", caption: "Speaking at the Canadian Tire Black History Month keynote, 18 February 2026." },
