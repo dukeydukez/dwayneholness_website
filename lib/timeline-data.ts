@@ -46,7 +46,8 @@ export const LANES: Record<Lane, { label: string; short: string }> = {
   life: { label: "Life and legacy", short: "Life" },
 };
 
-export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows." },
+export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows.",
+    plate: { src: "/images/early/kingston-early-1990s.jpg", w: 1166, h: 1783, alt: "A small boy of about three in oversized glasses, a teal checkerboard shirt and shorts, striped tube socks and high-tops, holding a portable radio with its antenna up, standing in front of an oleander bush.", caption: "Kingston, Jamaica, around 1991." } },
   { year: 1993, lane: "life", title: "His mother moves them to Canada", tag: "The original risk",
     body: "Yvonne Robinson leaves Kingston with her son. He is five. Jane and Finch becomes home.",
     quote: "My biggest risk was taken by my mother when she decided to move to Canada from Jamaica.",
