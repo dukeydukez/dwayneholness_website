@@ -46,7 +46,7 @@ export const LANES: Record<Lane, { label: string; short: string }> = {
   life: { label: "Life and legacy", short: "Life" },
 };
 
-export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane: "life", title: "Born in Kingston, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows.",
+export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane: "life", title: "Born in Spanish Town, Jamaica", tag: "Six in the morning, a Friday", body: "The first day of the year, at Spanish Town Hospital, which means every birthday since has arrived with the calendar turning over. The starting point for everything that follows. Years later he would find out Tracy was born in the same hospital.",
     plate: { src: "/images/early/kingston-early-1990s.jpg", w: 1166, h: 1783, alt: "A small boy of about three in oversized glasses, a teal checkerboard shirt and shorts, striped tube socks and high-tops, holding a portable radio with its antenna up, standing in front of an oleander bush.", caption: "Kingston, Jamaica, around 1991." } },
   { year: 1993, lane: "life", title: "His mother moves them to Canada", tag: "The original risk",
     body: "Yvonne Robinson leaves Kingston with her son. He is five. Jane and Finch becomes home.",
@@ -417,9 +417,13 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
   { year: 2021, lane: "film", title: "Creative director on Ups and Downs, featured in Rolling Stone", tag: "First Rolling Stone credit",
     body: "The furthest his work had travelled in print to that point." },
   { year: 2021, lane: "stage", title: "Flow 93.5 names him a Toronto Hustler", tag: "Black History Month",
-    body: "A Black History Month feature on the station. The same year he hosted the ArtWorksTO graduation, sat with Smile Jamaica's morning show, mentored at Futurpreneur Canada as well as Artscape upstART, and met David Suzuki." },
+    body: "A Black History Month feature on the station. The same year he hosted the ArtWorksTO graduation, mentored at Futurpreneur Canada as well as Artscape upstART, and met David Suzuki." },
   { year: 2021, date: "23 February", lane: "stage", title: "Young, Black and Gifted", tag: "Black History Month, hosted by Tridel",
     body: "Agapi Gessesse, executive director of the CEE Centre for Young Black Professionals, put him on a Black History Month panel with Abigail Moriah and Hackim Farrell, hosted by Tridel. It was booked for 9 February and moved to the twenty-third because Tridel wanted longer to promote it. The bio he sent for it opens with three words other people had used about him, and lists TD Bank, Umbro, Coca-Cola and CSA. Three months later CEE would hand him a payroll of forty-eight." },
+  { year: 2021, date: "14 April", lane: "stage", title: "Smile Jamaica's Diaspora Check-In", tag: "Live on the island, from Toronto",
+    body: "The biggest morning show in Jamaica zoomed in to his studio in Toronto for ten minutes. The host's first surprise was the accent: he left at five and it never left him. Then the questions came in order. Coca-Cola and TD Bank. Wanting to be the next Will Smith at fifteen before he moved behind the camera. Lauryn Hill's team needing a video in two days, and the tour that followed once he delivered it. And when he was asked what discipline the young people watching would need, he gave them a name for it. Six in the morning, pen and paper ready, and a thing he called calculated steps: breaking bad habits and building new routines. The book would take another five years. He said its thesis on Jamaican television first. He posted the clip three days later, saying it felt amazing to be recognized by his own country.",
+    quote: "It doesn't matter where you come from. It matters about what you want and what you see for your life.",
+    plate: { src: "/images/smile-jamaica-2021.jpg", w: 1920, h: 1080, fit: "whole", alt: "A Smile Jamaica broadcast split screen: the host laughing on the morning show set at left, Dwayne smiling on a video call from his Toronto studio at right in a black and gold jacket, a banner beneath reading Diaspora Check-In with Dwayne Holness.", caption: "Diaspora Check-In with Dwayne Holness, Smile Jamaica, 14 April 2021." } },
   { year: 2021, date: "16 April", lane: "stage", title: "A Zoom call with Tory Lanez", tag: "Ten years after Vola Lounge",
     body: "They had shared a bill at Vola Lounge on Caribana weekend in 2011, when Lanez was not yet Lanez. Ten years later it was a Zoom, and Lanez spent it on a single point: that Dwayne had always been the one who cleared the bar and then went past it, and that he should keep doing exactly that. Nothing commercial came of the call. It is on the record because of who said it and how long the gap was.",
     voice: { text: "I commend you, bro. Don't stop. Just keep on going, keep going hard. You've always been somebody doing something bigger than everybody else. The quota was always there, and you always kind of just outdid it. Keep outdoing yourself.", who: "Tory Lanez", when: "16 April 2021" } },
@@ -856,7 +860,7 @@ export const COUNTRIES: CountryGroup[] = [
   {
     region: "The Caribbean",
     countries: [
-      { name: "Jamaica", years: "1988, and twelve separate years since", note: "Born in Kingston. Back for Sad Streets and the Junior Reid videos, Reggae Sumfest, Negril. The most photographed place in the archive after home." },
+      { name: "Jamaica", years: "1988, and twelve separate years since", note: "Born in Spanish Town. Back for Sad Streets and the Junior Reid videos, Reggae Sumfest, Negril. The most photographed place in the archive after home." },
       { name: "Saint Lucia", years: "2019, 2022", note: "Castries." },
       { name: "Belize", years: "2019", note: "Belize City." },
       { name: "Barbados", years: "2019", note: "Briefly, on the same run." },
@@ -896,7 +900,7 @@ export const COUNTRIES: CountryGroup[] = [
 
 export const PLACES: Place[] = [
   { name: "Jamaica", region: "Kingston, Negril, Montego Bay", lat: 18.15, lon: -77.35, years: "1988 to 2019", weight: 3,
-    note: "Born in Kingston, left at five, and back for work ever since: Sad Streets and the Junior Reid videos in 2011, Reggae Sumfest in 2018, and Negril closing the Chronixx run in 2019." },
+    note: "Born in Spanish Town, left at five, and back for work ever since: Sad Streets and the Junior Reid videos in 2011, Reggae Sumfest in 2018, and Negril closing the Chronixx run in 2019." },
   { name: "Toronto", region: "Ontario", lat: 43.653, lon: -79.383, years: "1993 to now", weight: 3,
     note: "Jane and Finch, the Red Room, HighClass, FEVA TV, Corex. Where nearly all of it happened. Hamilton an hour west gave Street Time and the ACTRA card the same day in 2002; Barrie and Innisfil an hour north gave Xcelerate, UPlift Black, the Chamber and the DMZ cohort from 2021 on." },
   { name: "Santiago de Cuba", region: "Cuba", lat: 20.025, lon: -75.822, years: "2010", weight: 2,
