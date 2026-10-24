@@ -429,6 +429,10 @@
   white-space: nowrap;
 }
 .tl-play:hover { border-color: var(--era); color: var(--era); }
+.tl-play:active { transform: scale(0.97); }
+.tl-rail-actions { display: flex; gap: 0.5rem; }
+/* Clear the sticky filter bar when landing on #latest. */
+#latest { scroll-margin-top: 6rem; }
 .tl-play:focus-visible, .tl-track:focus-visible, .tl-filter:focus-visible {
   outline: 2px solid var(--era);
   outline-offset: 3px;

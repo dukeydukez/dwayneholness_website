@@ -221,6 +221,13 @@ export default function TimelineExperience() {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
 
+  // The newest entry is the last one in the record, not the top of its year.
+  const latestRef = useRef<HTMLElement>(null);
+  const goToLatest = useCallback(() => {
+    setPlaying(false);
+    latestRef.current?.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+  }, [reduced]);
+
   /* Scrub: map a pointer position on the rail to the nearest recorded year. */
   const scrubFrom = useCallback(
     (clientX: number) => {
@@ -424,10 +431,15 @@ export default function TimelineExperience() {
                   </div>
 
                   <div className="tl-events">
-                    {block.events.map((ev, i) => (
+                    {block.events.map((ev, i) => {
+                      const isLatest =
+                        block === years[years.length - 1] && i === block.events.length - 1;
+                      return (
                       <article
                         key={`${ev.year}-${i}`}
                         className={`tl-ev${isMuted(ev.lane) ? " is-muted" : ""}`}
+                        id={isLatest ? "latest" : undefined}
+                        ref={isLatest ? latestRef : undefined}
                       >
                         <div className="tl-ev-top">
                           <span className="tl-lane">{LANES[ev.lane].label}</span>
@@ -460,7 +472,8 @@ export default function TimelineExperience() {
                           <p className="tl-embargo">Embargoed &middot; {ev.embargo}</p>
                         )}
                       </article>
-                    ))}
+                      );
+                    })}
                   </div>
                 </section>
               </div>
@@ -720,14 +733,24 @@ export default function TimelineExperience() {
           {activeYear}, {era.name}
         </p>
 
-        <button
-          type="button"
-          className="tl-play"
-          onClick={() => setPlaying((p) => !p)}
-          aria-label={playing ? "Pause the timeline" : "Play the timeline"}
-        >
-          {playing ? "Pause" : "Play"}
-        </button>
+        <div className="tl-rail-actions">
+          <button
+            type="button"
+            className="tl-play"
+            onClick={() => setPlaying((p) => !p)}
+            aria-label={playing ? "Pause the timeline" : "Play the timeline"}
+          >
+            {playing ? "Pause" : "Play"}
+          </button>
+          <button
+            type="button"
+            className="tl-play"
+            onClick={goToLatest}
+            aria-label="Jump to the latest entry"
+          >
+            Latest
+          </button>
+        </div>
       </div>
       )}
     </div>
