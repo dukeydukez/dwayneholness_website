@@ -101,7 +101,7 @@ export default function Hero() {
             marginBottom: "2rem",
           }}
         >
-          Speaker · Brand Architect · Strategist
+          Award-Winning Entrepreneur · Founder · Speaker
         </motion.p>
 
         <motion.h1

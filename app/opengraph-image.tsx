@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Dwayne Holness | Speaker · Brand Architect · Strategist";
+export const alt = "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -89,7 +89,7 @@ export default async function Image() {
               display: "flex",
             }}
           >
-            Speaker · Brand Architect · Strategist
+            Award-Winning Entrepreneur · Founder · Speaker
           </div>
 
           <div

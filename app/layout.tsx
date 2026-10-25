@@ -18,7 +18,12 @@ const jsonLd = {
       "@id": "https://dwayneholness.com/#person",
       name: "Dwayne Holness",
       url: "https://dwayneholness.com",
-      jobTitle: "Speaker, Brand Architect & Strategist",
+      jobTitle: "Award-Winning Entrepreneur, Founder of Corex Creative",
+      award: [
+        "CIBC Entrepreneurship Award, BlackNorth Initiative (2026)",
+        "Jamaican Diaspora Impact Award, Consulate-General of Jamaica in Toronto (2026)",
+        "Men of Honour, Black Business and Professional Association (2016)",
+      ],
       worksFor: {
         "@type": "Organization",
         name: "Corex Creative Inc.",
@@ -67,14 +72,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
+  title: "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker",
   description:
-    "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
-  keywords: ["speaker", "brand architect", "brand strategist", "thought leadership", "Toronto"],
+    "Award-winning entrepreneur Dwayne Holness, founder of Corex Creative and 2026 CIBC Entrepreneurship Award recipient, helps founders and enterprise brands build media systems that compound authority.",
+  keywords: ["award-winning entrepreneur", "Corex Creative", "speaker", "brand strategist", "thought leadership", "Toronto"],
   openGraph: {
-    title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
+    title: "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker",
     description:
-      "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
+      "Award-winning entrepreneur Dwayne Holness, founder of Corex Creative and 2026 CIBC Entrepreneurship Award recipient, helps founders and enterprise brands build media systems that compound authority.",
     url: "https://dwayneholness.com",
     siteName: "Dwayne Holness",
     type: "website",
@@ -83,14 +88,14 @@ export const metadata: Metadata = {
         url: "https://dwayneholness.com/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Dwayne Holness | Speaker · Brand Architect · Strategist",
+        alt: "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dwayne Holness | Speaker · Brand Architect · Strategist",
-    description: "Dwayne Holness helps founders and enterprise brands build media systems that compound authority and create category leadership over time.",
+    title: "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker",
+    description: "Award-winning entrepreneur Dwayne Holness, founder of Corex Creative and 2026 CIBC Entrepreneurship Award recipient, helps founders and enterprise brands build media systems that compound authority.",
     images: ["https://dwayneholness.com/images/og-image.png"],
   },
 };

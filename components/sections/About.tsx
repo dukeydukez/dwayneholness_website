@@ -79,12 +79,12 @@ export default function About() {
               marginBottom: "1.5rem",
             }}
           >
-            I&apos;m Dwayne Holness, a Toronto-based speaker, brand
-            architect, and Founder of Corex Creative Inc. For over a
-            decade, I&apos;ve helped founders and enterprise brands turn content
-            into systems, building the kind of media infrastructure that
-            generates authority, compounds attention, and creates category
-            leadership.
+            I&apos;m Dwayne Holness, an award-winning entrepreneur, filmmaker
+            and the Founder of Corex Creative Inc. I built Corex from a side
+            hustle in Jane and Finch into a multimillion-dollar storytelling
+            company trusted by Canadian Tire, TD, Rogers and CBC, and I
+            co-founded Perus, a platform opening real estate investing to
+            everyday Canadians.
           </p>
           <p
             style={{
@@ -94,9 +94,11 @@ export default function About() {
               marginBottom: "3rem",
             }}
           >
-            My work sits at the intersection of media strategy, thought
-            leadership, and ecosystem design, helping founders move from
-            well-kept secret to undeniable, category-defining presence.
+            In October 2026 that work earned the CIBC Entrepreneurship Award
+            from the BlackNorth Initiative and the Jamaican Diaspora Impact
+            Award, on back-to-back nights. Today I help founders and enterprise
+            brands turn their story into media systems that build authority
+            and keep earning attention long after launch.
           </p>
 
           {/* Pillars */}
