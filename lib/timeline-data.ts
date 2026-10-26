@@ -853,13 +853,14 @@ export type Service = { span: string; role: string; org: string; note: string; c
 
 export const SERVICE: Service[] = [
   { span: "2022 to now", role: "Head of Media Team", org: "Kingsway Community Life Centre", note: "Eight volunteers on cameras, live stream, audio, screens, graphics and social, every Sunday. Corex built the church website.", current: true },
-  { span: "2023 to now", role: "Advisory Board", org: "Black Screen Office", note: "Invited by Joan Jenkinson in August 2023, a year before the first symposium. Renewed every year since, and the symposium has sold out every year.", current: true },
+  { span: "2023 to now", role: "Advisory Board", org: "Black Screen Office", note: "Invited by Joan Jenkinson in August 2023, a year before the first symposium. Renewed every year since, and the symposium has sold out every year. His work with BSO began in 2021.", current: true },
   { span: "2021 to now", role: "Program Advisory Committee", org: "Centennial College", note: "An industry seat reviewing the photography program's curriculum and direction.", current: true },
   { span: "2026", role: "Mentor, CreaTech Incubator", org: "Kingston Creative, Jamaica", note: "Paired with a Jamaican founder for the August to November cycle.", current: true },
   { span: "2026", role: "Mentor", org: "Toronto Arts Council", note: "Mentoring filmmaker Doyinsola Ajayi through her short, If Not You.", current: true },
   { span: "2026", role: "Mentor and sponsor", org: "CTRL+ALT+BEAT", note: "Corex sponsors the live-taped music series. He mentors its founders, Tisania Smith and Chelsi Campbell.", current: true },
   { span: "2024 to now", role: "Films the day", org: "Hodan Nalayeh Legacy Day", note: "Every year at Hodan Nalayeh Secondary School, for the woman who believed in him first.", current: true },
   { span: "2025", role: "Co-founder", org: "Jamaica Strong", note: "$22,454 from 98 donors after Hurricane Melissa, carried by hand to St. James, Westmoreland and St. Elizabeth.", current: false },
+  { span: "2021", role: "Fade to Black Advisory Committee", org: "Black Screen Office", note: "One of a handful of advisors on Fade to Black, BSO's study of Black Canadians working in the screen industries, shaping its questions and testing its findings against lived experience.", current: false },
   { span: "2015", role: "Mentor", org: "Youth mentorship", note: "Named as Oliver Miller's mentor in the Toronto Star's United Way feature, Connecting at-risk youth.", current: false },
   { span: "2013", role: "Mentor", org: "Coca-Cola Open Happiness", note: "Mentored grant filmmakers from Whitehorse to Toronto, where Maaz Khan's Roses made the paper.", current: false },
 ];
