@@ -234,6 +234,10 @@ export const EVENTS: TimelineEvent[] = [  { year: 1988, date: "1 January", lane:
     plate: { src: "/images/whitehorse-2013.jpg", w: 2000, h: 1333, alt: "Dwayne in a black cap and fur-hooded parka standing alone in a snowbound sled dog yard, huskies on their kennel boxes around him, boreal forest and a snow-capped mountain behind.", caption: "Sled dog yard outside Whitehorse, 21 April 2013." },
     voice: { text: "I went from thinking I got into filmmaking too late, to getting into filmmaking at the right time.", who: "Oliver Miller", role: "filmmaker", when: "2018" }
   },
+  { year: 2013, date: "2 August", lane: "film", title: "His mentee makes the paper", tag: "Roses, for Coca-Cola",
+    body: "The Open Happiness grant came home to Toronto. Maaz Khan was a teenager just out of Stephen Leacock Collegiate with Ryerson ahead of him, and Dwayne mentored him through his short, Roses: a crew of kids handing free roses to strangers near Queen and Spadina and filming the smiles. They shot it in May. On 2 August, Thien Huynh's In the City column in 24 Hours, the Toronto commuter paper, ran it under the headline Stories told through the camera lens. Maaz posted the clipping that morning, and the first name he thanked was his mentor's.",
+    voice: { text: "Got featured in today's newspaper! Special thanks to Dwayne Holness for being such an amazing mentor!", who: "Maaz Khan", role: "Filmmaker, Roses", when: "2 August 2013" },
+    plate: { src: "/images/roses-shoot-2013.jpg", w: 1256, h: 816, fit: "whole", alt: "A sunny campus courtyard. Maaz Khan in a plaid shirt kneels with a camera while Dwayne leans over his shoulder, guiding the shot. Two actors sit on a concrete ledge facing them, the young man holding a single red rose.", caption: "Maaz Khan on one knee, Dwayne at his shoulder, shooting Roses. 27 May 2013. Photo: Mustafa Mawla." } },
   { year: 2013, date: "August", lane: "build", title: "Producer and Creative Director at FEVA TV", tag: "Hired pre-launch",
     body: "The first Canadian television channel aimed at Black Canadians. FEVA stands for First Entertainment Voice of Africa. He joins one month before it launches.",
     voice: { text: "Loved working with this guy at FEVA TV. Very creative and technically proficient and, to top it all off, a hell of a nice guy.", who: "Graham Saywell", role: "FEVA TV", when: "2024" }
@@ -825,6 +829,39 @@ export const VENTURES: Venture[] = [
   { name: "Dukez and Bullet Productions", role: "Co-founder", span: "2007 to 2009", note: "With Femi Lawson. Artist development out of the Red Room: shooting, editing, music and interviews. His first venture, a year before HighClass.", live: false },
   { name: "All Out Canada", role: "Media partner", span: "2021", note: "Founded by Shereen Ashman of CEE with Kofi Hope and Zahra Ebrahim of Monumental Projects. Corex was the media partner and he made both episodes. Covered by The Narwhal.", live: false },
   { name: "HighClass", role: "Founder", span: "2008 to 2013", note: "His first registered company. Talent, photography and youth employment, and every event of the era ran under it: Star Struck, Almost Famous, Infatuation, Maino Live, Blame It On The Alcohol, 106 and York, The Bigger Picture.", live: false },
+];
+
+export type Honour = { year: string; title: string; issuer: string; note: string; kind: string };
+
+export const HONOURS: Honour[] = [
+  { year: "2026", title: "CIBC Entrepreneurship Award", issuer: "BlackNorth Initiative", note: "Presented 24 October at the Excellence Gala, Fairmont Royal York, for entrepreneurial leadership, business achievement and community impact.", kind: "Award" },
+  { year: "2026", title: "Jamaican Diaspora Impact Award", issuer: "Consulate-General of Jamaica in Toronto", note: "Nominated, then chosen by an independent panel. Presented 23 October to a sold-out room, with his mother in it.", kind: "Award" },
+  { year: "2026", title: "Certificate of Congratulations", issuer: "Andrea Hazell, MPP, Legislative Assembly of Ontario", note: "Marking the Jamaican Diaspora Impact Award.", kind: "Certificate" },
+  { year: "2026", title: "Certificate of Appreciation", issuer: "KCLC Ministries", note: "A surprise on Pastor Appreciation Day, 25 October, for leading the media team.", kind: "Certificate" },
+  { year: "2026", title: "Newcomer and Refugee Artist Mentorship", issuer: "Toronto Arts Council", note: "Juried. $15,000, as mentor to filmmaker Doyinsola Ajayi on her short If Not You.", kind: "Grant" },
+  { year: "2025", title: "Community Hero Award", issuer: "Reverence", note: "Presented at the 2025 Reverence awards.", kind: "Award" },
+  { year: "2016", title: "Distinguished Men of Honour", issuer: "Black Business and Professional Association", note: "One of fifteen named at the 2016 BBPA Exchange on 4 April. He was 28.", kind: "Award" },
+  { year: "2014", title: "Youth Arts Pitch Contest, second place", issuer: "ArtReach Toronto", note: "$2,500 at Scarborough Civic Centre. The first time he pitched Corex in public.", kind: "Prize" },
+  { year: "2012", title: "Youth Arts Award", issuer: "ArtReach Toronto", note: "For creating arts opportunities for youth and promoting equity and social justice.", kind: "Award" },
+  { year: "2012", title: "Certificate of Appreciation", issuer: "Hon. Judy Sgro, M.P.", note: "For a meaningful contribution to the people and communities of York West.", kind: "Certificate" },
+  { year: "2011", title: "Identify 'N' Impact Award", issuer: "City of Toronto", note: "Building community through the arts.", kind: "Award" },
+  { year: "2010", title: "YMCA Community Award", issuer: "YMCA", note: "At 22, for putting young people to work through HighClass.", kind: "Award" },
+  { year: "2010", title: "Graduated with honours, top student", issuer: "Humber College", note: "Multimedia Design and Production Technician.", kind: "Academic" },
+];
+
+export type Service = { span: string; role: string; org: string; note: string; current: boolean };
+
+export const SERVICE: Service[] = [
+  { span: "2022 to now", role: "Head of Media Team", org: "Kingsway Community Life Centre", note: "Eight volunteers on cameras, live stream, audio, screens, graphics and social, every Sunday. Corex built the church website.", current: true },
+  { span: "2023 to now", role: "Advisory Board", org: "Black Screen Office", note: "Invited by Joan Jenkinson in August 2023, a year before the first symposium. Renewed every year since, and the symposium has sold out every year.", current: true },
+  { span: "2021 to now", role: "Program Advisory Committee", org: "Centennial College", note: "An industry seat reviewing the photography program's curriculum and direction.", current: true },
+  { span: "2026", role: "Mentor, CreaTech Incubator", org: "Kingston Creative, Jamaica", note: "Paired with a Jamaican founder for the August to November cycle.", current: true },
+  { span: "2026", role: "Mentor", org: "Toronto Arts Council", note: "Mentoring filmmaker Doyinsola Ajayi through her short, If Not You.", current: true },
+  { span: "2026", role: "Mentor and sponsor", org: "CTRL+ALT+BEAT", note: "Corex sponsors the live-taped music series. He mentors its founders, Tisania Smith and Chelsi Campbell.", current: true },
+  { span: "2024 to now", role: "Films the day", org: "Hodan Nalayeh Legacy Day", note: "Every year at Hodan Nalayeh Secondary School, for the woman who believed in him first.", current: true },
+  { span: "2025", role: "Co-founder", org: "Jamaica Strong", note: "$22,454 from 98 donors after Hurricane Melissa, carried by hand to St. James, Westmoreland and St. Elizabeth.", current: false },
+  { span: "2015", role: "Mentor", org: "Youth mentorship", note: "Named as Oliver Miller's mentor in the Toronto Star's United Way feature, Connecting at-risk youth.", current: false },
+  { span: "2013", role: "Mentor", org: "Coca-Cola Open Happiness", note: "Mentored grant filmmakers from Whitehorse to Toronto, where Maaz Khan's Roses made the paper.", current: false },
 ];
 
 export type Detail = { label: string; body: string };

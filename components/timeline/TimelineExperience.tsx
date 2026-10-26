@@ -14,6 +14,8 @@ import {
   STATS,
   THROUGH_LINES,
   VENTURES,
+  HONOURS,
+  SERVICE,
   DETAILS,
   AMBITIONS,
   type Lane,
@@ -564,6 +566,46 @@ export default function TimelineExperience() {
                 <span className="tl-venture-role">{v.role}</span>
                 <span className="tl-venture-note">{v.note}</span>
                 <span className="tl-venture-state">{v.live ? "Running" : "Closed"}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* ── Honours ── */}
+        <section className="tl-close">
+          <h2>What he was given</h2>
+          <p className="tl-close-lede">
+            From a YMCA award at twenty-two to three honours in one October
+            weekend.
+          </p>
+          <ol className="tl-ventures">
+            {HONOURS.map((h) => (
+              <li className="tl-venture" key={`${h.year}-${h.title}`}>
+                <span className="tl-venture-span">{h.year}</span>
+                <span className="tl-venture-name">{h.title}</span>
+                <span className="tl-venture-role">{h.issuer}</span>
+                <span className="tl-venture-note">{h.note}</span>
+                <span className="tl-venture-state">{h.kind}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* ── Service ── */}
+        <section className="tl-close">
+          <h2>Where he gives back</h2>
+          <p className="tl-close-lede">
+            Unpaid seats, mentorships and the work he does because somebody once
+            did it for him.
+          </p>
+          <ol className="tl-ventures">
+            {SERVICE.map((s) => (
+              <li className={`tl-venture${s.current ? " is-live" : ""}`} key={`${s.org}-${s.role}`}>
+                <span className="tl-venture-span">{s.span}</span>
+                <span className="tl-venture-name">{s.org}</span>
+                <span className="tl-venture-role">{s.role}</span>
+                <span className="tl-venture-note">{s.note}</span>
+                <span className="tl-venture-state">{s.current ? "Serving" : "Past"}</span>
               </li>
             ))}
           </ol>

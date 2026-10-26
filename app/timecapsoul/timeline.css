@@ -678,6 +678,9 @@ html:has(.tl) { --floating-offset: calc(78px + 1.25rem); }
   transition: background 700ms ease;
 }
 
+/* Fixed label column so issuer and note columns line up across rows. */
+@media (min-width: 900px) { .tl-venture-state { min-width: 12ch; text-align: right; } }
+
 /* ── Clients ──────────────────────────────────────────────────────────── */
 .tl-logos {
   display: grid;
