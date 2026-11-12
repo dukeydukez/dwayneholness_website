@@ -17,21 +17,33 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://dwayneholness.com/#person",
       name: "Dwayne Holness",
+      alternateName: "Dukeydukez",
       url: "https://dwayneholness.com",
-      jobTitle: "Award-Winning Entrepreneur, Founder of Corex Creative",
+      mainEntityOfPage: "https://dwayneholness.com",
+      description:
+        "Dwayne Holness is a filmmaker and the founder of Corex Creative, a legacy storytelling agency for purpose-driven leaders.",
+      jobTitle: "Founder and Creative Director",
+      image: "https://dwayneholness.com/images/DH1.png",
       award: [
         "CIBC Entrepreneurship Award, BlackNorth Initiative (2026)",
-        "Jamaican Diaspora Impact Award, Consulate-General of Jamaica in Toronto (2026)",
-        "Men of Honour, Black Business and Professional Association (2016)",
+        "2026 Jamaican Diaspora Impact Award, Consulate General of Jamaica, Toronto",
+        "Distinguished Men of Honour, Black Business and Professional Association (2016)",
+        "Youth Arts Award, ArtReach Toronto (2012)",
+        "Identify 'N' Impact Award, City of Toronto (2011)",
       ],
-      worksFor: {
-        "@type": "Organization",
-        name: "Corex Creative Inc.",
-        url: "https://corexcreative.com",
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: "Humber College",
+        url: "https://humber.ca",
       },
+      worksFor: { "@id": "https://corexcreative.com/#organization" },
+      founder: { "@id": "https://corexcreative.com/#organization" },
       sameAs: [
         "https://www.linkedin.com/in/dwayneholness",
-        "https://twitter.com/dwayneholness",
+        "https://www.instagram.com/dukeydukez/",
+        "https://x.com/dukeydukez",
+        "https://www.facebook.com/MrHolness",
+        "https://www.imdb.com/name/nm5163773/",
       ],
       knowsAbout: [
         "Brand Strategy",
@@ -40,6 +52,13 @@ const jsonLd = {
         "Documentary Filmmaking",
         "Creative Direction",
       ],
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://corexcreative.com/#organization",
+      name: "Corex Creative Inc.",
+      url: "https://corexcreative.com",
+      founder: { "@id": "https://dwayneholness.com/#person" },
     },
     {
       "@type": "WebSite",
@@ -72,6 +91,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dwayneholness.com"),
   title: "Dwayne Holness | Award-Winning Entrepreneur · Founder · Speaker",
   description:
     "Award-winning entrepreneur Dwayne Holness, founder of Corex Creative and 2026 CIBC Entrepreneurship Award recipient, helps founders and enterprise brands build media systems that compound authority.",

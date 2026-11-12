@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
 import About from "@/components/sections/About";
@@ -10,6 +11,11 @@ import FreeResource from "@/components/sections/FreeResource";
 import WritingPreview from "@/components/sections/WritingPreview";
 import BookCTA from "@/components/sections/BookCTA";
 import { getAllArticles } from "@/lib/articles";
+
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const latestPosts = getAllArticles().slice(0, 3).map(({ slug, date, title, excerpt }) => ({ slug, date, title, excerpt }));
