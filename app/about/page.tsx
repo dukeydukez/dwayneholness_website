@@ -117,6 +117,7 @@ const profiles = [
   { label: "Instagram", url: "https://www.instagram.com/dukeydukez/" },
   { label: "X", url: "https://x.com/dukeydukez" },
   { label: "Facebook", url: "https://www.facebook.com/MrHolness" },
+  { label: "Wikidata", url: "https://www.wikidata.org/wiki/Q142125748" },
 ];
 
 const jsonLd = {

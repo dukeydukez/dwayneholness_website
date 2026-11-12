@@ -44,6 +44,7 @@ const jsonLd = {
         "https://x.com/dukeydukez",
         "https://www.facebook.com/MrHolness",
         "https://www.imdb.com/name/nm5163773/",
+        "https://www.wikidata.org/wiki/Q142125748",
       ],
       knowsAbout: [
         "Brand Strategy",
