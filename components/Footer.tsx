@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, type FormEvent } from "react";
 
 const navLinks = [
+  { href: "/about", label: "About" },
   { href: "/speaking", label: "Speaking" },
   { href: "/work", label: "Work" },
   { href: "/writing", label: "Thoughts" },

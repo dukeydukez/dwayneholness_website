@@ -19,7 +19,7 @@ const jsonLd = {
       name: "Dwayne Holness",
       alternateName: "Dukeydukez",
       url: "https://dwayneholness.com",
-      mainEntityOfPage: "https://dwayneholness.com",
+      mainEntityOfPage: "https://dwayneholness.com/about",
       description:
         "Dwayne Holness is a filmmaker and the founder of Corex Creative, a legacy storytelling agency for purpose-driven leaders.",
       jobTitle: "Founder and Creative Director",
