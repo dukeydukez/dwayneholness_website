@@ -4,7 +4,7 @@ date: "6 November 2026, 9:00 AM"
 readTime: "4 min read"
 category: "Entrepreneurship"
 tags: ["Entrepreneurship", "Community", "Founder-Led Content"]
-excerpt: "This week I counted everyone Corex has paid since 2013. More than 240 creatives, close to $1M into creative work, and a number that almost stopped in year three."
+excerpt: "This week I counted everyone Corex has paid since 2013. More than 380 creatives, more than $1M into creative work, and a number that almost stopped in year three."
 nextSlug: ""
 nextTitle: ""
 ---
@@ -15,7 +15,7 @@ Three inboxes. Payroll records. Crew contracts. Every name I could find of someo
 
 ![2013. Corex was barely a company, and the crew was whoever believed in the idea.](/images/writing/we-gotta-eat-together/1-crew-2013.jpg)
 
-The count came back at more than 240 creatives. Filmmakers, editors, designers, colourists, sound people, producers, crew. Close to $1M into creative work.
+The count came back at more than 380 creatives. Filmmakers, editors, designers, colourists, sound people, producers, crew. More than $1M into creative work.
 
 I've said for years that numbers are the greatest storytellers. I just hadn't run this one.
 
@@ -41,11 +41,11 @@ I was running some version of it before Corex had a name. HighClass in 2008, 106
 
 ![HighClass, 2009. Each one teach one, years before Corex had a name.](/images/writing/we-gotta-eat-together/2-highclass-2009.jpg)
 
-The 240 aren't a cost line I manage. They're the point.
+The 380 aren't a cost line I manage. They're the point.
 
-## What 240 actually looks like
+## What 380 actually looks like
 
-It looks like 2021, when we paid 73 freelancers in a single year.
+It looks like 2021, when we paid 93 freelancers in a single year.
 
 ![At the monitor in 2021, the most creatives we've ever paid in a single year.](/images/writing/we-gotta-eat-together/3-monitor-2021.jpg)
 
@@ -63,7 +63,7 @@ If you're building something, run the count.
 
 Not followers. Not revenue. Not projects shipped. Count the people who got paid because your thing exists. Then ask whether that number is growing, and whether the way you price, the way you say yes, and the way you say no is protecting it.
 
-Mine almost stopped at a handful. It's now more than 240, and I'm not finished.
+Mine almost stopped at a handful. It's now more than 380, and I'm not finished.
 
 ![Still on set. Still counting.](/images/writing/we-gotta-eat-together/5-directing.jpg)
 
