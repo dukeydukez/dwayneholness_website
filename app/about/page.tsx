@@ -38,6 +38,12 @@ const honours = [
 
 const press = [
   {
+    outlet: "Ron Fanfair",
+    title: "Dwayne Holness honours the mother whose sacrifice gave him a second chance",
+    date: "27 October 2026",
+    url: "https://www.ronfanfair.com/home/2026/10/27/seeexa4i5idir8sj7w544ptwpqrm57",
+  },
+  {
     outlet: "Jamaica Gleaner",
     title: "Six to be honoured at Jamaican Diaspora Impact Awards",
     date: "10 October 2026",
@@ -61,6 +67,48 @@ const press = [
     date: "October 2026",
     url: "https://tcn-now.com/jamaican-diaspora-honours-six-leaders/",
   },
+  {
+    outlet: "Black Screen Office",
+    title: "Symposium Advisory Board",
+    date: "January 2025",
+    url: "https://bso-ben.ca/symposium/advisory-board/",
+  },
+  {
+    outlet: "CBC News",
+    title: "Absolutely Canadian showcases independent documentaries and short films from Ontario",
+    date: "August 2023",
+    url: "https://www.cbc.ca/news/canada/ottawa/absolutely-canadian-returns-with-new-ontario-docs-1.6505832",
+  },
+  {
+    outlet: "CBC Docs",
+    title: "\"Don't dim your light\": Life lessons I learned from the late Somali-Canadian journalist Hodan Nalayeh",
+    date: "4 October 2022",
+    url: "https://www.cbc.ca/documentaries/short-docs/don-t-dim-your-light-life-lessons-i-learned-from-the-late-somali-canadian-journalist-hodan-nalayeh-1.6605279",
+  },
+  {
+    outlet: "CBC Gem",
+    title: "Hodan's Story",
+    date: "4 October 2022",
+    url: "https://gem.cbc.ca/hodans-story",
+  },
+  {
+    outlet: "CBC Short Docs",
+    title: "Hodan's Story",
+    date: "2022",
+    url: "https://www.cbc.ca/shortdocs/shorts/hodans-story",
+  },
+  {
+    outlet: "TCN Now",
+    title: "Dwayne Winston Holness aka \"Dukey Dukez\", setting the example and being that example",
+    date: "18 January 2021",
+    url: "https://tcn-now.com/dwayne-winston-holness-aka-dukey-dukes-setting-the-example-and-being-that-example/",
+  },
+  {
+    outlet: "SHIFTER Magazine",
+    title: "The \"E\" Project: Dwayne Holness, Film Director",
+    date: "January 2018",
+    url: "https://shiftermagazine.com/e-project/dwayne-holness-film-director",
+  },
 ];
 
 const profiles = [
@@ -73,11 +121,24 @@ const profiles = [
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "@id": `${SITE}/about#profilepage`,
-  url: `${SITE}/about`,
-  name: "About Dwayne Holness",
-  mainEntity: { "@id": `${SITE}/#person` },
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": `${SITE}/about#profilepage`,
+      url: `${SITE}/about`,
+      name: "About Dwayne Holness",
+      mainEntity: { "@id": `${SITE}/#person` },
+    },
+    {
+      "@type": "Movie",
+      "@id": `${SITE}/about#hodans-story`,
+      name: "Hodan's Story",
+      dateCreated: "2022",
+      director: { "@id": `${SITE}/#person` },
+      productionCompany: { "@type": "Organization", name: "CBC Docs" },
+      sameAs: ["https://gem.cbc.ca/hodans-story", "https://www.cbc.ca/shortdocs/shorts/hodans-story"],
+    },
+  ],
 };
 
 const eyebrow = {
