@@ -9,7 +9,7 @@ import { generateArticle, ROOT } from "./lib/generate.mjs";
 
 const inputArg = process.argv[2];
 if (!inputArg) {
-  console.error("Usage: npm run article drafts/your-file.txt");
+  console.error("Usage: npm run article content/article_bank/your-file.txt");
   process.exit(1);
 }
 

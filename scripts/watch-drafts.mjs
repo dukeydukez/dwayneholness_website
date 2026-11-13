@@ -11,11 +11,12 @@ import fs from "fs";
 import path from "path";
 import { generateArticle, ROOT } from "./lib/generate.mjs";
 
-const DRAFTS_DIR = path.join(ROOT, "drafts");
-const PROCESSED_DIR = path.join(ROOT, "drafts", "processed");
-const SUPPORTED = new Set([".txt", ".md", ".text", ".docx"]);
+const PROCESSING_DIR = path.join(ROOT, "content", "processing");
+const PROCESSED_DIR = path.join(ROOT, "content", "processed");
+const SUPPORTED = new Set([".txt", ".md", ".text", ".docx", ".pdf"]);
 
-// Ensure processed/ folder exists
+// Ensure folders exist
+fs.mkdirSync(PROCESSING_DIR, { recursive: true });
 fs.mkdirSync(PROCESSED_DIR, { recursive: true });
 
 const processing = new Set();
@@ -25,7 +26,7 @@ async function handleFile(filename) {
   const ext = path.extname(filename).toLowerCase();
   if (!SUPPORTED.has(ext)) return;
 
-  const filePath = path.join(DRAFTS_DIR, filename);
+  const filePath = path.join(PROCESSING_DIR, filename);
   if (!fs.existsSync(filePath)) return;
   if (processing.has(filename)) return;
 
@@ -57,13 +58,13 @@ async function handleFile(filename) {
   }
 }
 
-// Watch the drafts directory
-fs.watch(DRAFTS_DIR, { persistent: true }, (eventType, filename) => {
+// Watch the processing directory
+fs.watch(PROCESSING_DIR, { persistent: true }, (eventType, filename) => {
   if (eventType === "rename") {
     handleFile(filename);
   }
 });
 
-console.log(`\n[drafts] Watching ${DRAFTS_DIR}`);
-console.log("[drafts] Drop a .txt, .md, or .docx file into drafts/ to auto-generate an article.");
+console.log(`\n[drafts] Watching ${PROCESSING_DIR}`);
+console.log("[drafts] Drop a .txt, .md, .docx, or .pdf file into content/processing/ to auto-generate an article.");
 console.log("[drafts] Press Ctrl+C to stop.\n");

@@ -3,6 +3,9 @@ import path from "path";
 import { fileURLToPath } from "url";
 import Anthropic from "@anthropic-ai/sdk";
 import mammoth from "mammoth";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pdfParse = require("pdf-parse");
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const ROOT = path.resolve(__dirname, "../..");
@@ -20,7 +23,7 @@ if (fs.existsSync(envPath)) {
   }
 }
 
-const SYSTEM_PROMPT = `You are a writing editor for Dwayne Holness, founder of Corex Creative Inc. — a Toronto-based cinematic brand storytelling agency with $2M+ revenue.
+const SYSTEM_PROMPT = `You are a writing editor for Dwayne Holness, founder of Corex Creative Inc., a legacy storytelling agency for purpose-driven leaders.
 
 Dwayne writes for founders, creatives, and thought leaders. His voice is:
 - Confident and direct, not preachy or motivational-poster
@@ -64,6 +67,10 @@ export async function generateArticle(inputPath) {
   if (ext === ".docx") {
     const { value } = await mammoth.extractRawText({ path: inputPath });
     rawContent = value;
+  } else if (ext === ".pdf") {
+    const buffer = fs.readFileSync(inputPath);
+    const { text } = await pdfParse(buffer);
+    rawContent = text;
   } else {
     rawContent = fs.readFileSync(inputPath, "utf8");
   }
