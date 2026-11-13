@@ -7,8 +7,6 @@ const packages = [
   {
     id: "01",
     label: "Creative Strategy Session",
-    price: "$500",
-    priceNote: "1-hour session",
     tagline: "Come with your questions. Leave with a clear strategy.",
     description:
       "A focused 60-minute session built around your specific challenge. Whether you are navigating a brand pivot, unsure about your content direction, or need a second opinion on a major decision, this session gives you direct access to strategic thinking and creative direction you can act on immediately.",
@@ -19,15 +17,13 @@ const packages = [
       "Session notes and 3 priority action items delivered within 24 hours",
       "One follow-up email for clarifying questions within 7 days",
     ],
-    cta: "Book a Session",
-    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
+    cta: "Request a Quote",
+    href: "mailto:dwayne@corexcreative.com?subject=Creative%20Strategy%20Session%20Quote",
     highlight: false,
   },
   {
     id: "02",
     label: "Strategic Brand & Growth Session",
-    price: "$8,500",
-    priceNote: "flexible payment plans available",
     tagline: "Diagnose, position, and build your executive roadmap.",
     description:
       "This is the session where the real work begins. A comprehensive strategy engagement that covers your brand positioning, content infrastructure, audience architecture, and revenue clarity. You walk away with a concrete roadmap built around your business model and goals, not a generic template.",
@@ -41,18 +37,16 @@ const packages = [
       "Full session recording",
       "30-day follow-up check-in call",
     ],
-    cta: "Book This Session",
-    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
+    cta: "Request a Quote",
+    href: "mailto:dwayne@corexcreative.com?subject=Strategic%20Brand%20%26%20Growth%20Session%20Quote",
     highlight: true,
   },
   {
     id: "03",
     label: "Book Dwayne to Speak",
-    price: "$5,000+",
-    priceNote: "per engagement",
     tagline: "Bring a practitioner to your stage, not a motivational speaker.",
     description:
-      "Dwayne delivers keynotes, panels, and workshops on brand architecture, thought leadership systems, and the architecture of creative ecosystems. Every talk is built around your audience, grounded in real experience building a multi-million dollar creative agency from the ground up.",
+      "Dwayne delivers keynotes, panels, and workshops on brand architecture, thought leadership systems, and the architecture of creative ecosystems. Every talk is built around your audience, grounded in real experience building Corex Creative from the ground up.",
     who: "Conference organizers, corporate event planners, and community leaders looking for a speaker who brings strategy and substance.",
     includes: [
       "45–90 minute keynote tailored to your audience",
@@ -69,11 +63,9 @@ const packages = [
   {
     id: "04",
     label: "Production & Strategy",
-    price: "Custom",
-    priceNote: "project-based or retainer",
-    tagline: "Full-scale cinematic brand storytelling, built to last.",
+    tagline: "Full-scale legacy storytelling, built to outlast you.",
     description:
-      "For founders and enterprise brands ready to build a media infrastructure that does the heavy lifting. This is end-to-end: strategy, production, distribution systems, and content architecture designed to generate authority, attract opportunity, and compound over time.",
+      "For founders, families and institutions with something worth leaving behind, ready to build a media infrastructure that does the heavy lifting. This is end-to-end: strategy, production, distribution systems, and content architecture designed to generate authority, attract opportunity, and compound over time.",
     who: "Established brands and growth-stage founders who need a trusted creative partner, not just a vendor.",
     includes: [
       "Brand strategy and positioning",
@@ -92,8 +84,8 @@ const packages = [
 const process = [
   {
     step: "01",
-    title: "Book a call",
-    body: "Select the session that fits where you are. If you are unsure, start with a Book a Call and we will figure out the right path together.",
+    title: "Request a quote",
+    body: "Request a quote for the path that fits where you are. If you are unsure, send a note and we will figure out the right path together.",
   },
   {
     step: "02",
@@ -171,14 +163,14 @@ export default function PackagesPage() {
             maxWidth: "56ch",
           }}
         >
-          Every engagement is built around one goal: giving you the clarity, strategy, and creative direction to build something that lasts. Pick the level that matches where you are right now.
+          Every engagement is built around one goal: giving you the clarity, strategy, and creative direction to build something that lasts. Pick the path that fits where you are. Each one is quoted to the work, so tell me what you&apos;re building and I&apos;ll send you a quote.
         </motion.p>
       </div>
 
       {/* Packages */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "5rem 2rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {packages.map(({ id, label, price, priceNote, tagline, description, who, includes, cta, href, highlight }, i) => (
+          {packages.map(({ id, label, tagline, description, who, includes, cta, href, highlight }, i) => (
             <motion.div
               key={id}
               initial={{ opacity: 0, y: 32 }}
@@ -246,30 +238,6 @@ export default function PackagesPage() {
                   >
                     {id} — {label}
                   </p>
-                  <div style={{ marginBottom: "1.5rem" }}>
-                    <p
-                      style={{
-                        fontFamily: "var(--font-display), sans-serif",
-                        fontSize: "clamp(2rem, 4vw, 3rem)",
-                        fontWeight: 700,
-                        color: "var(--cream)",
-                        letterSpacing: "-0.03em",
-                        lineHeight: 1,
-                        marginBottom: "0.375rem",
-                      }}
-                    >
-                      {price}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: "0.75rem",
-                        color: "var(--cream-dim)",
-                        letterSpacing: "0.06em",
-                      }}
-                    >
-                      {priceNote}
-                    </p>
-                  </div>
                   <p
                     style={{
                       fontFamily: "var(--font-display), sans-serif",
@@ -529,7 +497,7 @@ export default function PackagesPage() {
             marginBottom: "1.5rem",
           }}
         >
-          Book a 15-minute intro call.
+          Tell me what you&apos;re building.
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
@@ -544,7 +512,7 @@ export default function PackagesPage() {
             margin: "0 auto 2.5rem",
           }}
         >
-          We will talk through where you are, what you are building, and which path makes the most sense for your goals.
+          Send a few lines on where you are and where you want to go. I&apos;ll point you to the right path and send a quote.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -553,9 +521,7 @@ export default function PackagesPage() {
           transition={{ duration: 0.6, delay: 0.3, ease }}
         >
           <a
-            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:dwayne@corexcreative.com?subject=Project%20Inquiry"
             style={{
               display: "inline-block",
               padding: "1rem 2.5rem",
@@ -571,7 +537,7 @@ export default function PackagesPage() {
               transition: "opacity 0.2s ease",
             }}
           >
-            BOOK A CALL
+            REQUEST A QUOTE
           </a>
         </motion.div>
       </div>

@@ -21,41 +21,35 @@ const testimonials = [
     quote:
       "Dwayne is a gifted creative leader who has a unique ability to bring initiatives to life through powerful storytelling, photography, and videography. He is a trusted partner, an innovative thinker, and simply a wonderful person to work with.",
     name: "Letecia Rose",
-    role: "Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
+    role: "Former Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
   },
 ];
 
 const tiers = [
   {
     label: "Creative Strategy Session",
-    price: "$500",
-    priceNote: "1-hour session",
     features: [
       "60-minute video session",
       "Session notes & 3 action items",
       "One follow-up email (7 days)",
     ],
-    cta: "Book a Session",
-    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wvra2q2NrE-VbCzPrVxNzwUGK2PTcNHkDFMZ7VVhFQ047CbGSp_YVPkT5A2AJK3I03_f9J4vS?gv=true",
+    cta: "Request a Quote",
+    href: "mailto:dwayne@corexcreative.com?subject=Creative%20Strategy%20Session%20Quote",
     highlight: false,
   },
   {
     label: "Strategic Brand & Growth Session",
-    price: "$8,500",
-    priceNote: "flexible payment plans available",
     features: [
       "Executive strategy intensive",
       "Positioning & messaging framework",
       "Prioritized 90-day roadmap",
     ],
-    cta: "Book This Session",
-    href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ08-awbVrViK-zftiLE4XecqfL_Y7i3tv0XG7WZfH1rWs-ZXD24iECcP340121SFVu9LdnXCUAy?gv=true",
+    cta: "Request a Quote",
+    href: "mailto:dwayne@corexcreative.com?subject=Strategic%20Brand%20%26%20Growth%20Session%20Quote",
     highlight: true,
   },
   {
     label: "Book Dwayne to Speak",
-    price: "$5,000+",
-    priceNote: "per engagement",
     features: [
       "Keynotes, panels & workshops",
       "Tailored to your audience",
@@ -67,8 +61,6 @@ const tiers = [
   },
   {
     label: "Production & Strategy",
-    price: "Custom",
-    priceNote: "project-based or retainer",
     features: [
       "Full-scale cinematic production",
       "Multi-platform content systems",
@@ -249,7 +241,7 @@ export default function WorkWithMe() {
           </h2>
         </motion.div>
 
-        {/* Pricing rows */}
+        {/* Service rows */}
         <div
           style={{
             display: "flex",
@@ -281,44 +273,20 @@ export default function WorkWithMe() {
               }}
               className="work-with-me-row"
             >
-              {/* Column 1: Label + Price */}
+              {/* Column 1: Service */}
               <div>
                 <p
                   style={{
-                    fontSize: "0.6875rem",
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: tier.highlight ? "var(--gold)" : "var(--cream-dim)",
-                    fontWeight: 500,
-                    marginBottom: "0.5rem",
+                    fontFamily: "var(--font-display), sans-serif",
+                    fontSize: "1.25rem",
+                    lineHeight: 1.25,
+                    letterSpacing: "-0.01em",
+                    color: tier.highlight ? "var(--gold)" : "var(--cream)",
+                    fontWeight: 700,
                   }}
                 >
                   {tier.label}
                 </p>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display), sans-serif",
-                    fontSize: "1.75rem",
-                    fontWeight: 700,
-                    color: "var(--cream)",
-                    letterSpacing: "-0.02em",
-                    lineHeight: 1,
-                  }}
-                >
-                  {tier.price}
-                </p>
-                {tier.priceNote && (
-                  <p
-                    style={{
-                      fontSize: "0.6875rem",
-                      color: "var(--cream-dim)",
-                      letterSpacing: "0.04em",
-                      marginTop: "0.25rem",
-                    }}
-                  >
-                    {tier.priceNote}
-                  </p>
-                )}
               </div>
 
               {/* Column 2: Features (stacked vertically for alignment) */}
