@@ -81,8 +81,8 @@ export default function About() {
           >
             I&apos;m Dwayne Holness, an award-winning entrepreneur, filmmaker
             and the Founder of Corex Creative Inc. I built Corex from a side
-            hustle in Jane and Finch into a multimillion-dollar storytelling
-            company trusted by Canadian Tire, TD, Rogers and CBC, and I
+            hustle in Jane and Finch into a legacy storytelling agency trusted
+            by CSA Group, Canadian Tire, TD, Rogers and CBC, and I
             co-founded Perus, a platform opening real estate investing to
             everyday Canadians.
           </p>

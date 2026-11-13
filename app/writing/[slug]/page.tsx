@@ -395,7 +395,7 @@ export default async function WritingPostPage({
                 maxWidth: "48ch",
               }}
             >
-              Filmmaker, brand strategist, and creative director. Founder of Corex Creative, a Toronto-based creative media agency building cinematic brand stories for founders and thought leaders.
+              Filmmaker, brand strategist, and creative director. Founder of Corex Creative, a legacy storytelling agency for purpose-driven leaders building something that lasts.
             </p>
           </div>
         </div>

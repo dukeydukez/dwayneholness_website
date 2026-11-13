@@ -99,7 +99,7 @@ const testimonials = [
     quote:
       "Dwayne is a gifted creative leader who has a unique ability to bring initiatives to life through powerful storytelling, photography, and videography. His team's work captured the essence of our programming, events, and milestones in ways that truly validated their impact — many of which are now featured in Canadian Tire's annual DIB Year in Review.",
     name: "Letecia Rose",
-    role: "Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
+    role: "Former Chief Equity, Diversity & Inclusion Officer, Canadian Tire",
   },
 ];
 
